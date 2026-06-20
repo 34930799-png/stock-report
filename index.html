@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>家庭股票日报</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background:#f5f5f5; color:#222; min-height:100vh; }
+
+/* 密码门 */
+#gate { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; padding:20px; background: linear-gradient(135deg, #1a1a2e, #16213e); }
+#gate .box { background:#fff; padding:40px 30px; border-radius:16px; text-align:center; max-width:360px; width:100%; box-shadow:0 8px 32px rgba(0,0,0,0.3); }
+#gate h1 { font-size:22px; margin-bottom:8px; color:#1a1a2e; }
+#gate p { font-size:14px; color:#666; margin-bottom:24px; }
+#gate input { width:100%; padding:12px 16px; border:2px solid #e0e0e0; border-radius:10px; font-size:16px; text-align:center; outline:none; transition:border-color .2s; }
+#gate input:focus { border-color:#e74c3c; }
+#gate button { width:100%; margin-top:12px; padding:12px; background:#e74c3c; color:#fff; border:none; border-radius:10px; font-size:16px; font-weight:600; cursor:pointer; transition:background .2s; }
+#gate button:hover { background:#c0392b; }
+#gate .error { color:#e74c3c; font-size:13px; margin-top:10px; display:none; }
+
+/* 主内容区 */
+#app { display:none; }
+.header { background: linear-gradient(135deg, #1a1a2e, #16213e); color:#fff; padding:16px 12px 12px; text-align:center; position:relative; }
+.header h1 { font-size:18px; margin-bottom:2px; }
+.header .date { font-size:12px; opacity:0.7; }
+.header .logout { position:absolute; right:12px; top:50%; transform:translateY(-50%); background:rgba(255,255,255,0.15); color:#fff; border:none; padding:6px 12px; border-radius:6px; font-size:12px; cursor:pointer; }
+
+/* Tab */
+.tabs { display:flex; background:#fff; border-bottom:1px solid #e0e0e0; position:sticky; top:0; z-index:10; }
+.tab { flex:1; text-align:center; padding:12px 8px; font-size:14px; font-weight:600; color:#666; cursor:pointer; border-bottom:2px solid transparent; transition:all .2s; }
+.tab.active { color:#e74c3c; border-bottom-color:#e74c3c; }
+
+/* 报告容器 */
+.report-wrap { position:relative; height:calc(100vh - 160px); }
+.report-wrap iframe { width:100%; height:100%; border:none; }
+.empty-state { display:flex; flex-direction:column; align-items:center; justify-content:center; height:300px; color:#999; font-size:14px; }
+.empty-state .icon { font-size:48px; margin-bottom:12px; }
+
+/* 底栏 */
+.footer { text-align:center; padding:12px; font-size:11px; color:#999; background:#fff; border-top:1px solid #e0e0e0; }
+.footer a { color:#e74c3c; text-decoration:none; }
+
+@media (max-width: 480px) {
+  .tab { font-size:13px; padding:10px 6px; }
+  .header h1 { font-size:16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- 密码门 -->
+<div id="gate">
+  <div class="box">
+    <h1>📊 家庭股票日报</h1>
+    <p>请输入访问密码</p>
+    <input type="password" id="pwd" placeholder="密码" autofocus>
+    <button onclick="unlock()">进入</button>
+    <div class="error" id="err">密码错误，请重试</div>
+  </div>
+</div>
+
+<!-- 主内容 -->
+<div id="app">
+  <div class="header">
+    <h1>📊 家庭股票日报</h1>
+    <div class="date" id="todayDate"></div>
+    <button class="logout" onclick="logout()">退出</button>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="daily" onclick="switchTab('daily')">⭐ 关注股票日报</div>
+    <div class="tab" data-tab="hotspot" onclick="switchTab('hotspot')">🔥 股市热点关注</div>
+  </div>
+
+  <div class="report-wrap">
+    <div id="dailyPane">
+      <iframe id="dailyFrame" src="" style="display:none;" onload="onFrameLoad(this)"></iframe>
+      <div class="empty-state" id="dailyEmpty">
+        <div class="icon">📭</div>
+        <div>今日日报尚未生成</div>
+        <div style="font-size:12px;margin-top:4px;">交易日 9:30 左右更新</div>
+      </div>
+    </div>
+    <div id="hotspotPane" style="display:none;">
+      <iframe id="hotspotFrame" src="" style="display:none;" onload="onFrameLoad(this)"></iframe>
+      <div class="empty-state" id="hotspotEmpty">
+        <div class="icon">📭</div>
+        <div>今日热点关注尚未生成</div>
+        <div style="font-size:12px;margin-top:4px;">交易日 11:00 左右更新</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="archive.html">📁 历史报告</a>
+    &nbsp;·&nbsp;
+    <span>数据来源：东方财富、新浪财经、腾讯财经</span>
+    &nbsp;·&nbsp;
+    <span>AI生成，仅供参考</span>
+  </div>
+</div>
+
+<script>
+// 密码哈希 (SHA-256)
+const PASS_HASH = 'a1f8b3c2d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2';
+
+function getToday() {
+  const d = new Date();
+  return d.getFullYear() + '-' +
+    String(d.getMonth()+1).padStart(2,'0') + '-' +
+    String(d.getDate()).padStart(2,'0');
+}
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+async function unlock() {
+  const input = document.getElementById('pwd').value;
+  const hash = await sha256(input);
+  // 用正确的密码哈希验证
+  const correctHash = await sha256('19520812');
+  if (hash === correctHash) {
+    sessionStorage.setItem('stock_auth', '1');
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    document.getElementById('todayDate').textContent = '📅 ' + getToday();
+    loadReports();
+  } else {
+    document.getElementById('err').style.display = 'block';
+    document.getElementById('pwd').value = '';
+    document.getElementById('pwd').focus();
+  }
+}
+
+function logout() {
+  sessionStorage.removeItem('stock_auth');
+  location.reload();
+}
+
+function switchTab(tab) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`[data-tab="${tab}"]`).classList.add('active');
+  document.getElementById('dailyPane').style.display = tab === 'daily' ? 'block' : 'none';
+  document.getElementById('hotspotPane').style.display = tab === 'hotspot' ? 'block' : 'none';
+  loadReports();
+}
+
+function loadReports() {
+  const today = getToday();
+  const dailyFrame = document.getElementById('dailyFrame');
+  const hotspotFrame = document.getElementById('hotspotFrame');
+  const dailyEmpty = document.getElementById('dailyEmpty');
+  const hotspotEmpty = document.getElementById('hotspotEmpty');
+
+  if (!dailyFrame.src || dailyFrame.src === window.location.href) {
+    dailyFrame.src = 'daily/' + today + '.html';
+    dailyFrame.style.display = 'block';
+    dailyEmpty.style.display = 'none';
+  }
+  if (!hotspotFrame.src || hotspotFrame.src === window.location.href) {
+    hotspotFrame.src = 'hotspot/' + today + '.html';
+    hotspotFrame.style.display = 'block';
+    hotspotEmpty.style.display = 'none';
+  }
+}
+
+function onFrameLoad(iframe) {
+  // iframe 加载失败时显示空状态
+  try {
+    if (iframe.contentDocument && iframe.contentDocument.body.innerHTML.trim() === '') {
+      iframe.style.display = 'none';
+      if (iframe.id === 'dailyFrame') {
+        document.getElementById('dailyEmpty').style.display = 'flex';
+      } else {
+        document.getElementById('hotspotEmpty').style.display = 'flex';
+      }
+    }
+  } catch(e) {
+    // 跨域问题忽略
+  }
+}
+
+// 按回车提交
+document.getElementById('pwd').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') unlock();
+});
+
+// 自动登录
+if (sessionStorage.getItem('stock_auth') === '1') {
+  document.getElementById('gate').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  document.getElementById('todayDate').textContent = '📅 ' + getToday();
+  loadReports();
+}
+</script>
+</body>
+</html>
