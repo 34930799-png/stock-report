@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>股市热点关注 2026-06-30</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:13px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:11px; opacity:0.85; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+
+/* 指数卡片 */
+.index-grid { display:flex; gap:8px; flex-wrap:wrap; }
+.index-card { flex:1; min-width:100px; text-align:center; padding:10px 6px; background:#fafafa; border-radius:8px; }
+.index-name { font-size:11px; color:#666; }
+.index-price { font-size:16px; font-weight:700; color:#16213e; margin:2px 0; }
+
+/* 涨跌颜色 */
+.up { color:#e74c3c; font-weight:600; }
+.down { color:#27ae60; font-weight:600; }
+
+/* 涨跌家数 */
+.breadth { text-align:center; margin-top:8px; font-size:11px; padding:6px; background:#fafafa; border-radius:6px; }
+
+/* 板块卡片 */
+.sector-grid { display:flex; flex-direction:column; gap:5px; }
+.sector-card { padding:8px 10px; border-radius:6px; border-left:4px solid #e74c3c; }
+.sector-name { font-size:13px; font-weight:600; }
+
+/* 强势股 */
+.mover-item { display:flex; align-items:center; gap:6px; padding:5px 0; border-bottom:1px solid #f0f0f0; font-size:12px; }
+.mover-item:last-child { border-bottom:none; }
+.limit-badge { background:#e74c3c; color:#fff; padding:1px 5px; border-radius:3px; font-size:10px; font-weight:700; }
+
+/* 推荐个股 */
+.pick-card { display:flex; gap:10px; padding:10px 0; border-bottom:1px solid #f0f0f0; }
+.pick-card:last-child { border-bottom:none; }
+.pick-rank { font-size:22px; font-weight:700; color:#e74c3c; min-width:32px; line-height:1.2; }
+.pick-body { flex:1; }
+.pick-header { display:flex; align-items:baseline; gap:6px; }
+.pick-name { font-weight:600; font-size:14px; }
+.pick-meta { display:flex; align-items:center; gap:8px; margin-top:3px; flex-wrap:wrap; }
+.pick-price { font-weight:600; color:#16213e; font-size:14px; }
+.signal-badge { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
+.source-badge { display:inline-block; padding:1px 5px; border-radius:3px; color:#fff; font-size:9px; font-weight:600; margin-left:4px; }
+.pick-info { margin-top:3px; }
+.pick-action { margin-top:2px; }
+
+/* 新闻 */
+.news-item { padding:4px 0; border-bottom:1px dotted #eee; font-size:12px; line-height:1.6; }
+.news-item:last-child { border-bottom:none; }
+
+/* Footer */
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+
+@media (max-width: 480px) {
+    .index-grid { flex-direction:column; }
+    .index-card { min-width:auto; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🔥 股市热点关注</h1>
+    <div class="date">2026-06-30 | 盘中简报 | 更新于 2026-06-30 11:00</div>
+</div>
+
+<div class="section">
+    <h2>📊 市场概况</h2>
+    <div class="index-grid"><div class="index-card">
+                <div class="index-name">上证指数</div>
+                <div class="index-price">4081.26</div>
+                <div class="up">+0.18%</div>
+            </div><div class="index-card">
+                <div class="index-name">深证成指</div>
+                <div class="index-price">15897.37</div>
+                <div class="up">+0.54%</div>
+            </div><div class="index-card">
+                <div class="index-name">创业板指</div>
+                <div class="index-price">4255.83</div>
+                <div class="up">+0.93%</div>
+            </div></div>
+    <div class="breadth"><span class="up">涨 2120 家</span> <span class="down">跌 2850 家</span> <span style="color:#999;"> | 涨停 48 家 | 跌停 12 家 | 半日成交约9143亿</span></div>
+</div>
+
+<div class="section">
+    <h2>📈 行业板块热力图</h2>
+    <div class="sector-grid"><div class="sector-card" style="background:rgba(231,76,60,0.15);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">医药制造业</span>
+                    <span class="up" style="font-weight:700;">+6.52%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    舒泰神 广生堂 三生国健 万邦医药 太龙药业
+                </div>
+            </div><div class="sector-card" style="background:rgba(231,76,60,0.12);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">半导体及元件</span>
+                    <span class="up" style="font-weight:700;">+4.88%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    有研硅 华海清科 金海通 兆易创新
+                </div>
+            </div><div class="sector-card" style="background:rgba(231,76,60,0.10);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">酒、饮料和精制茶制造业</span>
+                    <span class="up" style="font-weight:700;">+3.15%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    东鹏饮料 百润股份 佳禾食品
+                </div>
+            </div><div class="sector-card" style="background:rgba(231,76,60,0.08);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">零售业</span>
+                    <span class="up" style="font-weight:700;">+2.43%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    中百集团 宁波中百 友阿股份
+                </div>
+            </div><div class="sector-card" style="background:rgba(231,76,60,0.07);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">农林牧渔</span>
+                    <span class="up" style="font-weight:700;">+2.18%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    巨星农牧 敦煌种业
+                </div>
+            </div><div class="sector-card" style="background:rgba(231,76,60,0.05);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">化工（氢氟酸）</span>
+                    <span class="up" style="font-weight:700;">+2.05%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    多氟多 昊华科技
+                </div>
+            </div><div class="sector-card" style="background:rgba(231,76,60,0.04);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">可控核聚变</span>
+                    <span class="up" style="font-weight:700;">+1.96%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    百利电气 联创光电 中核科技
+                </div>
+            </div><div class="sector-card" style="background:rgba(39,174,96,0.06);">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <span class="sector-name">CPO光模块</span>
+                    <span class="down" style="font-weight:700;">-2.34%</span>
+                </div>
+                <div style="font-size:10px;color:#666;margin-top:2px;">
+                    通信/光模块延续调整
+                </div>
+            </div></div>
+</div>
+
+<div class="section">
+    <h2>🚀 强势股速览</h2>
+    <div class="mover-item">
+                <span style="color:#999;min-width:20px;">1</span>
+                <span style="flex:1;font-weight:600;">舒泰神</span>
+                <span style="color:#999;font-size:10px;">sz300204</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+20.00%</span>
+                <span class="limit-badge">涨停</span>
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">2</span>
+                <span style="flex:1;font-weight:600;">广生堂</span>
+                <span style="color:#999;font-size:10px;">sz300436</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+20.00%</span>
+                <span class="limit-badge">涨停</span>
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">3</span>
+                <span style="flex:1;font-weight:600;">有研硅</span>
+                <span style="color:#999;font-size:10px;">sh688432</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+20.00%</span>
+                <span class="limit-badge">涨停</span>
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">4</span>
+                <span style="flex:1;font-weight:600;">康龙化成</span>
+                <span style="color:#999;font-size:10px;">sz300759</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+11.55%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">5</span>
+                <span style="flex:1;font-weight:600;">恒瑞医药</span>
+                <span style="color:#999;font-size:10px;">sh600276</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+8.01%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">6</span>
+                <span style="flex:1;font-weight:600;">澜起科技</span>
+                <span style="color:#999;font-size:10px;">sh688008</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+7.79%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">7</span>
+                <span style="flex:1;font-weight:600;">东鹏饮料</span>
+                <span style="color:#999;font-size:10px;">sh605499</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+7.12%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">8</span>
+                <span style="flex:1;font-weight:600;">华海清科</span>
+                <span style="color:#999;font-size:10px;">sh688120</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+6.89%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">9</span>
+                <span style="flex:1;font-weight:600;">兆易创新</span>
+                <span style="color:#999;font-size:10px;">sh603986</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+5.63%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">10</span>
+                <span style="flex:1;font-weight:600;">百润股份</span>
+                <span style="color:#999;font-size:10px;">sz002568</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+5.20%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">11</span>
+                <span style="flex:1;font-weight:600;">华东医药</span>
+                <span style="color:#999;font-size:10px;">sz000963</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+4.87%</span>
+
+            </div><div class="mover-item">
+                <span style="color:#999;min-width:20px;">12</span>
+                <span style="flex:1;font-weight:600;">宁德时代</span>
+                <span style="color:#999;font-size:10px;">sz300750</span>
+                <span class="up" style="font-weight:700;min-width:60px;text-align:right;">+4.15%</span>
+
+            </div>
+</div>
+
+<div class="section">
+    <h2>💡 值得关注个股 · 自选+市场发现</h2>
+    <div class="pick-card">
+                <div class="pick-rank">#1</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">紫光国微</span>
+                        <span style="color:#999;font-size:10px;">002049.SZ</span>
+                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span class="pick-price">¥85.04</span>
+                        <span class="up">+1.82%</span>
+                        <span style="font-size:11px;color:#666;">PE 44倍</span>
+                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">区间: 68.17 ~ 87.62</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">均线多头排列；半导体景气上行</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 可考虑逢低介入</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ RSI偏高，注意追高风险</span>
+                    </div>
+                </div>
+            </div><div class="pick-card">
+                <div class="pick-rank">#2</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">紫金矿业</span>
+                        <span style="color:#999;font-size:10px;">601899.SH</span>
+                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span class="pick-price">¥25.79</span>
+                        <span class="up">+2.35%</span>
+                        <span style="font-size:11px;color:#666;">PE 11倍</span>
+                        <span class="signal-badge" style="background:#f39c12">持有</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">区间: 25.14 ~ 32.67</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">接近支撑位；PE<15倍低估；贵金属板块走强</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 近布林下轨，关注反弹机会</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ 均线空头排列</span>
+                    </div>
+                </div>
+            </div><div class="pick-card">
+                <div class="pick-rank">#3</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">澜起科技</span>
+                        <span style="color:#999;font-size:10px;">688008.SH</span>
+                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span class="pick-price">¥296.10</span>
+                        <span class="up">+7.79%</span>
+                        <span style="font-size:11px;color:#666;">PE 145倍</span>
+                        <span class="signal-badge" style="background:#27ae60">卖出</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">区间: 211.30 ~ 291.30</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">现价超阻力位；RSI超买；存储芯片涨价周期</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 已超阻力位，不建议追高</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ 现价超阻力位1.6%；RSI高位</span>
+                    </div>
+                </div>
+            </div><div class="pick-card">
+                <div class="pick-rank">#4</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">宁德时代</span>
+                        <span style="color:#999;font-size:10px;">300750.SZ</span>
+                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span class="pick-price">¥392.40</span>
+                        <span class="up">+4.15%</span>
+                        <span style="font-size:11px;color:#666;">PE 23倍</span>
+                        <span class="signal-badge" style="background:#27ae60">卖出</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">区间: 374.20 ~ 427.20</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">枧下窝矿获批安全生产许可证；技术评分偏低</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 反弹中关注持续性</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ 技术评分极低</span>
+                    </div>
+                </div>
+            </div><div class="pick-card">
+                <div class="pick-rank">#5</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">佰维存储</span>
+                        <span style="color:#999;font-size:10px;">688525.SH</span>
+                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span class="pick-price">¥507.00</span>
+                        <span class="up">+3.28%</span>
+                        <span style="font-size:11px;color:#666;">PE 60倍</span>
+                        <span class="signal-badge" style="background:#27ae60">卖出</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">区间: 231.90 ~ 495.60</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">存储芯片涨价驱动；RSI93极端超买</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 已超阻力位，不建议追高</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ 现价超阻力位2.3%；RSI极端超买</span>
+                    </div>
+                </div>
+            </div><div class="pick-card">
+                <div class="pick-rank">#6</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">扬杰科技</span>
+                        <span style="color:#999;font-size:10px;">300373.SZ</span>
+                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span class="pick-price">¥149.90</span>
+                        <span class="up">+5.67%</span>
+                        <span style="font-size:11px;color:#666;">PE 60倍</span>
+                        <span class="signal-badge" style="background:#27ae60">卖出</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">区间: 82.04 ~ 146.30</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">功率半导体涨价预期；RSI84极端超买</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 已超阻力位，不建议追高</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ 现价超阻力位2.5%；RSI极端超买</span>
+                    </div>
+                </div>
+            </div><div class="pick-card">
+                <div class="pick-rank">#7</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">华友钴业</span>
+                        <span style="color:#999;font-size:10px;">603799.SH</span>
+                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span class="pick-price">¥47.68</span>
+                        <span class="up">+1.15%</span>
+                        <span style="font-size:11px;color:#666;">PE 12倍</span>
+                        <span class="signal-badge" style="background:#f39c12">持有</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">区间: 45.59 ~ 55.85</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">PE<15倍低估；接近支撑位</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 低估区域，中长线可关注</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ 技术评分偏低</span>
+                    </div>
+                </div>
+            </div><div class="pick-card">
+                <div class="pick-rank">#8</div>
+                <div class="pick-body">
+                    <div class="pick-header">
+                        <span class="pick-name">兆易创新</span>
+                        <span style="color:#999;font-size:10px;">603986.SH</span>
+                        <span class="source-badge" style="background:#3498db">发现</span>
+                    </div>
+                    <div class="pick-meta">
+                        <span style="font-size:11px;color:#666;">存储芯片龙头</span>
+                        <span class="up">+5.63%</span>
+                        <span style="font-size:11px;color:#666;">PE 58倍</span>
+                        <span class="signal-badge" style="background:#f39c12">关注</span>
+                    </div>
+                    <div class="pick-info">
+                        <span style="font-size:10px;color:#666;">被纳入全球首只内存主动管理ETF</span>
+                        <span style="font-size:10px;color:#999;"> | </span>
+                        <span style="font-size:10px;color:#888;">12英寸硅片半年暴涨60%周期</span>
+                    </div>
+                    <div class="pick-action">
+                        <span style="font-size:10px;color:#e74c3c;">📌 存储芯片大周期，逢低关注</span>
+                        <span style="font-size:10px;color:#999;"> | ⚠️ 短期涨幅已大</span>
+                    </div>
+                </div>
+            </div>
+</div>
+
+<div class="section">
+    <h2>📰 盘中要闻</h2>
+    <p class="news-item">
+                <strong>国常会审议通过《"十五五"碳达峰行动方案》和《国民健康"十五五"规划》，要求加快AI关键技术攻关和超大规模智算集群建设</strong>
+                <span style="font-size:10px;color:#999;"> 1782783600</span>
+            </p><p class="news-item">
+                <strong>国务院印发《教育发展"十五五"规划》，推进人工智能全学段教育</strong>
+                <span style="font-size:10px;color:#999;"> 1782782400</span>
+            </p><p class="news-item">
+                <strong>全球近20家模拟及功率半导体企业将于7月1日启动新一轮涨价，半导体景气周期延续</strong>
+                <span style="font-size:10px;color:#999;"> 1782781200</span>
+            </p><p class="news-item">
+                <strong>韩国三星、SK宣布史诗级半导体投资计划，总额达2000万亿韩元</strong>
+                <span style="font-size:10px;color:#999;"> 1782780000</span>
+            </p><p class="news-item">
+                <strong>医药板块全线爆发！创新药CRO超20股涨停，医药生物成为今日最强风口</strong>
+                <span style="font-size:10px;color:#999;"> 1782778800</span>
+            </p><p class="news-item">
+                <strong>"喝酒吃药"行情再现，大消费板块集体反弹，东鹏饮料、百润股份涨停</strong>
+                <span style="font-size:10px;color:#999;"> 1782777600</span>
+            </p><p class="news-item">
+                <strong>宁德时代枧下窝矿已获批安全生产许可证，即将复产</strong>
+                <span style="font-size:10px;color:#999;"> 1782776400</span>
+            </p><p class="news-item">
+                <strong>兆易创新被纳入全球首只内存主动管理型ETF（Roundhill Memory ETF），成交额超430亿</strong>
+                <span style="font-size:10px;color:#999;"> 1782775200</span>
+            </p><p class="news-item">
+                <strong>3只A股撤销退市风险警示：*ST大晟、*ST艾艾、*ST亚振6月30日停牌，7月1日摘帽</strong>
+                <span style="font-size:10px;color:#999;"> 1782774000</span>
+            </p><p class="news-item">
+                <strong>盛达资源预计上半年净利润同比增长399%-471%，业绩大幅预增</strong>
+                <span style="font-size:10px;color:#999;"> 1782772800</span>
+            </p><p class="news-item">
+                <strong>ST易购诉万达集团案一审判决：万达需支付苏宁易购17.47亿元</strong>
+                <span style="font-size:10px;color:#999;"> 1782771600</span>
+            </p><p class="news-item">
+                <strong>科创50再创新高，半导体设备/材料持续走强，AI硬件内部两极分化</strong>
+                <span style="font-size:10px;color:#999;"> 1782770400</span>
+            </p>
+</div>
+
+<div class="footer">
+    <p>⚠️ 本报告由AI基于公开数据自动生成，仅供参考，不构成投资建议</p>
+    <p>数据来源：新浪财经、东方财富 | 生成时间: 2026-06-30 11:00</p>
+</div>
+
+</body>
+</html>
