@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>关注股票日报 2026-07-06</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background: linear-gradient(135deg, #1a1a2e, #16213e); color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:12px; opacity:0.7; }
+.alert { background:#fff3cd; border:1px solid #ffc107; margin:8px; border-radius:8px; padding:10px 12px; font-size:12px; color:#856404; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:680px; }
+th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; position:sticky; top:0; }
+td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; white-space:nowrap; }
+tr:hover { background:#fffbf0; }
+.stock-name { font-weight:600; }
+.stock-code { color:#999; font-size:10px; }
+.price { font-weight:600; font-size:13px; }
+.signal { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
+.range { color:#666; font-size:11px; }
+.small { font-size:10px; color:#666; max-width:100px; white-space:normal; }
+.top-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
+.top-card:last-child { border-bottom:none; }
+.top-rank { font-size:24px; font-weight:700; color:#e74c3c; min-width:36px; }
+.top-name { font-weight:600; font-size:14px; }
+.top-price { font-size:14px; font-weight:600; color:#16213e; }
+.top-reason { font-size:11px; color:#666; }
+.hot-item { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f0f0f0; font-size:12px; }
+.hot-item:last-child { border-bottom:none; }
+.hot-name { font-weight:600; }
+.hot-pct { color:#e74c3c; font-weight:600; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+.summary { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+.summary-item { background:#f0f0f0; padding:4px 8px; border-radius:4px; font-size:11px; }
+.buy-count { color:#e74c3c; font-weight:700; }
+.hold-count { color:#f39c12; font-weight:700; }
+.sell-count { color:#27ae60; font-weight:700; }
+.feature-box { background:#f8f9fa; border-radius:4px; padding:8px; margin:4px 0; font-size:12px; }
+.warning { color:#e74c3c; font-weight:700; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>📊 关注股票日报</h1>
+    <div class="date">2026-07-06 | 更新于 2026-07-06 16:19</div>
+</div>
+
+<div class="alert">
+    ⚠️ <strong>系统提示</strong>：K线数据截止7月3日。MoE权重自3月19日后未重新训练（109天），信号可信度有限。近期发现技术面专家权重(0.40)过高+均线突破打分机制导致追涨倾向，正在评估调参方案。
+</div>
+
+<div class="section">
+    <h2>📋 信号概览</h2>
+    <div class="summary">
+        <div class="summary-item">★★★★☆ 大华股份 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★★☆ 佰维存储 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★★☆ 紫光国微 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★★☆ 扬杰科技 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★★☆ 四方达 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★☆☆ 普冉股份 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★☆☆ 中钨高新 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★☆☆ 华友钴业 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★☆☆ 青岛啤酒 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★★☆☆ 紫金矿业 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 澜起科技 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 华测导航 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 立讯精密 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 中际旭创 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 宁德时代 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 汉得信息 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 科大讯飞 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★★☆☆☆ 环旭电子 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★☆☆☆☆ 科华数据 <span style="color:#f39c12">HOLD</span></div><div class="summary-item">★☆☆☆☆ 新易盛 <span style="color:#27ae60">SELL</span></div>
+    </div>
+    <div style="margin-top:12px; display:flex; gap:12px; font-size:13px;">
+        <span>🔴 <span class="buy-count">买入</span> <strong>0</strong> 只</span>
+        <span>🟠 <span class="hold-count">持有观望</span> <strong>19</strong> 只</span>
+        <span>🟢 <span class="sell-count">卖出</span> <strong>1</strong> 只</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>⭐ 推荐一览表（按MoE综合评分排列）</h2>
+    <div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th><th>股票</th><th>评分</th><th>信号</th><th>推荐</th><th>技术面</th><th>Alpha</th><th>基本面</th><th>量价行为</th><th>置信度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td><span class="stock-name">大华股份</span><br><span class="stock-code">002236.SZ</span></td>
+            <td style="font-weight:700">0.53</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★★☆</td>
+            <td class="small"><span style="color:#e74c3c">看多(0.62)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.32)</span></td>
+            <td class="small"><span style="color:#e74c3c">看多(0.75)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">低</td>
+        </tr><tr>
+            <td>2</td>
+            <td><span class="stock-name">佰维存储</span><br><span class="stock-code">688525.SH</span></td>
+            <td style="font-weight:700">0.51</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★★☆</td>
+            <td class="small"><span style="color:#e74c3c">看多(0.60)</span></td>
+            <td class="small"><span style="color:#888">中性(0.37)</span></td>
+            <td class="small"><span style="color:#888">中性(0.57)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr><tr>
+            <td>3</td>
+            <td><span class="stock-name">紫光国微</span><br><span class="stock-code">002049.SZ</span></td>
+            <td style="font-weight:700">0.51</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★★☆</td>
+            <td class="small"><span style="color:#888">中性(0.56)</span></td>
+            <td class="small"><span style="color:#888">中性(0.47)</span></td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>4</td>
+            <td><span class="stock-name">扬杰科技</span><br><span class="stock-code">300373.SZ</span></td>
+            <td style="font-weight:700">0.49</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★★☆</td>
+            <td class="small"><span style="color:#888">中性(0.54)</span></td>
+            <td class="small"><span style="color:#888">中性(0.48)</span></td>
+            <td class="small"><span style="color:#888">中性(0.38)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>5</td>
+            <td><span class="stock-name">四方达</span><br><span class="stock-code">300179.SZ</span></td>
+            <td style="font-weight:700">0.49</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★★☆</td>
+            <td class="small"><span style="color:#e74c3c">看多(0.60)</span></td>
+            <td class="small"><span style="color:#888">中性(0.45)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.26)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr><tr>
+            <td>6</td>
+            <td><span class="stock-name">普冉股份</span><br><span class="stock-code">688766.SH</span></td>
+            <td style="font-weight:700">0.47</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="small"><span style="color:#e74c3c">看多(0.67)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.31)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.26)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">低</td>
+        </tr><tr>
+            <td>7</td>
+            <td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td>
+            <td style="font-weight:700">0.44</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.43)</span></td>
+            <td class="small"><span style="color:#888">中性(0.38)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>8</td>
+            <td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td>
+            <td style="font-weight:700">0.43</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="small"><span style="color:#27ae60">看空(0.28)</span></td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#e74c3c">看多(0.75)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">低</td>
+        </tr><tr>
+            <td>9</td>
+            <td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td>
+            <td style="font-weight:700">0.43</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="small"><span style="color:#888">中性(0.38)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
+            <td class="small"><span style="color:#e74c3c">看多(0.75)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">低</td>
+        </tr><tr>
+            <td>10</td>
+            <td><span class="stock-name">紫金矿业</span><br><span class="stock-code">601899.SH</span></td>
+            <td style="font-weight:700">0.43</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="small"><span style="color:#888">中性(0.38)</span></td>
+            <td class="small"><span style="color:#888">中性(0.35)</span></td>
+            <td class="small"><span style="color:#e74c3c">看多(0.63)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr><tr>
+            <td>11</td>
+            <td><span class="stock-name">澜起科技</span><br><span class="stock-code">688008.SH</span></td>
+            <td style="font-weight:700">0.41</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.40)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.26)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr><tr>
+            <td>12</td>
+            <td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td>
+            <td style="font-weight:700">0.40</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#888">中性(0.40)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.34)</span></td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>13</td>
+            <td><span class="stock-name">立讯精密</span><br><span class="stock-code">002475.SZ</span></td>
+            <td style="font-weight:700">0.39</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#888">中性(0.36)</span></td>
+            <td class="small"><span style="color:#888">中性(0.36)</span></td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>14</td>
+            <td><span class="stock-name">中际旭创</span><br><span class="stock-code">300308.SZ</span></td>
+            <td style="font-weight:700">0.39</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#27ae60">看空(0.33)</span></td>
+            <td class="small"><span style="color:#888">中性(0.42)</span></td>
+            <td class="small"><span style="color:#888">中性(0.38)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>15</td>
+            <td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td>
+            <td style="font-weight:700">0.39</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#27ae60">看空(0.27)</span></td>
+            <td class="small"><span style="color:#888">中性(0.37)</span></td>
+            <td class="small"><span style="color:#e74c3c">看多(0.63)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr><tr>
+            <td>16</td>
+            <td><span class="stock-name">汉得信息</span><br><span class="stock-code">300170.SZ</span></td>
+            <td style="font-weight:700">0.39</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#27ae60">看空(0.28)</span></td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr><tr>
+            <td>17</td>
+            <td><span class="stock-name">科大讯飞</span><br><span class="stock-code">002230.SZ</span></td>
+            <td style="font-weight:700">0.38</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#888">中性(0.40)</span></td>
+            <td class="small"><span style="color:#888">中性(0.35)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.29)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr><tr>
+            <td>18</td>
+            <td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td>
+            <td style="font-weight:700">0.38</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="small"><span style="color:#27ae60">看空(0.33)</span></td>
+            <td class="small"><span style="color:#888">中性(0.37)</span></td>
+            <td class="small"><span style="color:#888">中性(0.44)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>19</td>
+            <td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td>
+            <td style="font-weight:700">0.38</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="small"><span style="color:#27ae60">看空(0.34)</span></td>
+            <td class="small"><span style="color:#888">中性(0.38)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.33)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">高</td>
+        </tr><tr>
+            <td>20</td>
+            <td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td>
+            <td style="font-weight:700">0.34</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="small"><span style="color:#27ae60">看空(0.31)</span></td>
+            <td class="small"><span style="color:#888">中性(0.35)</span></td>
+            <td class="small"><span style="color:#27ae60">看空(0.26)</span></td>
+            <td class="small"><span style="color:#888">中性(0.50)</span></td>
+            <td class="small">中</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔍 四专家分歧分析</h2>
+    <div class="feature-box">专家分歧越大，信号可信度越低。以下为分歧最大的5只股票：</div>
+    <div class="hot-item"><span class="hot-name">青岛啤酒 <span class="stock-code">600600.SH</span></span><span style="font-size:11px">技术面中性(0.38), Alpha看空(0.30), 基本面看多(0.75)</span></div><div class="hot-item"><span class="hot-name">华友钴业 <span class="stock-code">603799.SH</span></span><span style="font-size:11px">技术面看空(0.28), Alpha中性(0.44), 基本面看多(0.75)</span></div><div class="hot-item"><span class="hot-name">普冉股份 <span class="stock-code">688766.SH</span></span><span style="font-size:11px">技术面看多(0.67), Alpha看空(0.31), 基本面看空(0.26)</span></div><div class="hot-item"><span class="hot-name">大华股份 <span class="stock-code">002236.SZ</span></span><span style="font-size:11px">技术面看多(0.62), Alpha看空(0.32), 基本面看多(0.75)</span></div><div class="hot-item"><span class="hot-name">宁德时代 <span class="stock-code">300750.SZ</span></span><span style="font-size:11px">技术面看空(0.27), Alpha中性(0.37), 基本面看多(0.63)</span></div>
+</div>
+
+<div class="section">
+    <h2>📊 信号分布分析</h2>
+    <div class="feature-box">
+        <p>📌 <strong>今日特征</strong>：无买入信号，19只持有观望，1只卖出。评分集中在0.34~0.53窄幅区间，系统区分度不足。</p>
+        <p>⚠️ <strong>追涨问题分析</strong>：技术面专家权重(0.40)过高，且评分逻辑为「价格>均线→看多」。7月3日环旭电子(+4.39%)因此被误判为BUY。今日该股权重已回落至HOLD(0.38)，印证了追涨陷阱。</p>
+        <p>🔧 <strong>计划修复</strong>：7月10日将基于近一周数据验证调参方案（sell阈值0.35→0.30、vwap权重0.322→0.50、macd_cross权重0.913→0.70），并增加追涨过滤器。</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📈 综合评分 Top 5</h2>
+    <div class="top-card">
+            <div class="top-rank">#1</div>
+            <div class="top-info">
+                <div class="top-name">大华股份 <span class="stock-code">002236.SZ</span></div>
+                <div class="top-price">评分 0.53 ★★★★☆</div>
+                <div class="top-reason">基本面优秀，估值合理 | 信号: HOLD</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#2</div>
+            <div class="top-info">
+                <div class="top-name">佰维存储 <span class="stock-code">688525.SH</span></div>
+                <div class="top-price">评分 0.51 ★★★★☆</div>
+                <div class="top-reason">技术面偏强，但需警惕追涨风险 | 信号: HOLD</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#3</div>
+            <div class="top-info">
+                <div class="top-name">紫光国微 <span class="stock-code">002049.SZ</span></div>
+                <div class="top-price">评分 0.51 ★★★★☆</div>
+                <div class="top-reason">技术面偏强，但需警惕追涨风险 | 信号: HOLD</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#4</div>
+            <div class="top-info">
+                <div class="top-name">扬杰科技 <span class="stock-code">300373.SZ</span></div>
+                <div class="top-price">评分 0.49 ★★★★☆</div>
+                <div class="top-reason">多空均衡，观望为主 | 信号: HOLD</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#5</div>
+            <div class="top-info">
+                <div class="top-name">四方达 <span class="stock-code">300179.SZ</span></div>
+                <div class="top-price">评分 0.49 ★★★★☆</div>
+                <div class="top-reason">技术面偏强，但需警惕追涨风险 | 信号: HOLD</div>
+            </div>
+        </div>
+</div>
+
+<div class="footer">
+    <p>⚠️ 免责声明：本报告由MoE混合专家量化模型自动生成，仅供参考，不构成投资建议。</p>
+    <p>模型权重最后训练于 2026-03-19（109天前）| 数据来源: BitSoul Quant | 生成时间: 2026-07-06 16:19</p>
+    <p>MoE专家权重: 技术面0.40 / Alpha因子0.30 / 基本面0.15 / 量价行为0.15 | 买入阈值≥0.60 卖出阈值≤0.35</p>
+</div>
+
+</body>
+</html>
