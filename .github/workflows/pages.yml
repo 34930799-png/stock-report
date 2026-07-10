@@ -21,3 +21,5 @@ jobs:
           path: '.'
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Trigger Netlify deploy
+        run: curl -X POST https://api.netlify.com/build_hooks/6a506cda3f48c00f03553223
