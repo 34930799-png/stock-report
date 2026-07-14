@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>关注股票日报 2026-07-15</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background: linear-gradient(135deg, #1a1a2e, #16213e); color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:12px; opacity:0.7; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:680px; }
+th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; position:sticky; top:0; }
+td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; white-space:nowrap; }
+tr:hover { background:#fffbf0; }
+.stock-name { font-weight:600; }
+.stock-code { color:#999; font-size:10px; }
+.price { font-weight:600; font-size:13px; }
+.up { color:#e74c3c; font-weight:600; }
+.down { color:#27ae60; font-weight:600; }
+.signal { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
+.range { color:#666; font-size:11px; }
+.small { font-size:10px; color:#666; max-width:100px; white-space:normal; }
+.top-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
+.top-card:last-child { border-bottom:none; }
+.top-rank { font-size:24px; font-weight:700; color:#e74c3c; min-width:36px; }
+.top-name { font-weight:600; font-size:14px; }
+.top-price { font-size:14px; font-weight:600; color:#16213e; }
+.top-reason { font-size:11px; color:#666; }
+.hot-item { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f0f0f0; font-size:12px; }
+.hot-item:last-child { border-bottom:none; }
+.hot-name { font-weight:600; }
+.hot-pct { color:#e74c3c; font-weight:600; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+.summary { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+.summary-item { background:#f0f0f0; padding:4px 8px; border-radius:4px; font-size:11px; }
+.buy-count { color:#e74c3c; font-weight:700; }
+.hold-count { color:#f39c12; font-weight:700; }
+.sell-count { color:#27ae60; font-weight:700; }
+.market-overview { font-size:13px; line-height:1.8; }
+.market-overview .idx { display:inline-block; margin:0 8px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>📊 关注股票日报</h1>
+    <div class="date">2026-07-15 周三 | 更新于 2026-07-15 09:30</div>
+</div>
+
+<div class="section">
+    <h2>📈 市场概况</h2>
+    <div class="market-overview">
+        <p><strong>昨日（7/14 周二）V型大逆转</strong>：A股早盘惯性下探，科创50一度暴跌超6%，午后在半导体/CPO/PCB带领下强势反转。上证收 <span style="color:#e74c3c">3967.13 (+1.36%)</span>，深证成指 <span style="color:#e74c3c">14924.87 (+2.77%)</span>，创业板 <span style="color:#e74c3c">3851.14 (+3.43%)</span>，<strong>科创50涨0.77%</strong>报2009.68（盘中振幅超7%），北证50涨2.25%。沪指收复年线。两市成交2.72万亿（缩量约1000亿），全市场超<span style="color:#e74c3c">4200只上涨</span>，涨停约70只，跌停约25只。</p>
+        <p style="margin-top:4px;"><strong>V型反转原因</strong>：①央行开展1.4万亿6个月买断式逆回购+2365亿7天逆回购，净投放5000亿流动性；②早盘Meta拟出售AI富余算力消息引发存储/PCB恐慌性抛售后，资金逢低回补科技股；③中报业绩预增股持续受追捧（行云科技预增432%-699%涨停）；④美股隔夜收涨+中概走强提供外部支撑。</p>
+        <p style="margin-top:4px;"><strong>板块分化</strong>：<span style="color:#e74c3c">油气开采（+9%+）、PCB（涨停潮）、CPO光通信、MLCC、医药商业/中药</span>领涨；<span style="color:#27ae60">商业航天/军工电子、通信服务、光纤概念、游戏</span>领跌。存储芯片早盘重挫（兆易创新/东山精密一度跌停）后尾盘跌幅收窄。</p>
+        <p style="margin-top:4px;font-size:11px;color:#999;">⚠️ 今日周三，关注科技股反弹持续性+晚间美国CPI数据。Meta算力抛售风波是否延续是关键变量。央行净投放5000亿为市场提供充裕流动性。</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📋 信号概览</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">基于7/14收盘价+盘前技术分析（V型反转后震荡分化窗口，数据来源：东方财富/新浪财经）</p>
+    <div class="summary">
+        <div class="summary-item">★★★★★ 中际旭创 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 紫光国微 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 中钨高新 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★☆☆ 立讯精密 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★☆☆ 青岛啤酒 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 新易盛 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 大华股份 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 紫金矿业 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 环旭电子 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 扬杰科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★☆☆☆☆ 澜起科技 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 科大讯飞 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 汉得信息 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 四方达 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 科华数据 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 华测导航 <span style="color:#27ae60">卖出</span></div><div class="summary-item">⚠️ 普冉股份 <span style="color:#e74c3c;font-weight:700;">重大风险</span></div><div class="summary-item">⚠️ 佰维存储 <span style="color:#e74c3c;font-weight:700;">重大风险</span></div><div class="summary-item">⚠️ 宁德时代 <span style="color:#e74c3c;font-weight:700;">重大风险</span></div><div class="summary-item">⚠️ 华友钴业 <span style="color:#e74c3c;font-weight:700;">重大风险</span></div>
+    </div>
+    <p style="font-size:11px;color:#999;margin-top:8px;">买入<span class="buy-count">4</span> · 持有观望<span class="hold-count">6</span> · 卖出<span class="sell-count">6</span> · 重大风险<span style="color:#e74c3c;font-weight:700">4</span></p>
+</div>
+
+<div class="section">
+    <h2>⭐ 推荐一览表（按星数排列）</h2>
+    <div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th><th>股票</th><th>昨收</th><th>PE</th><th>信号</th><th>推荐</th><th>布林区间</th><th>风险提示</th><th>操作建议</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td><span class="stock-name">中际旭创</span><br><span class="stock-code">300308.SZ</span></td>
+            <td class="price">1115</td>
+            <td>83倍</td>
+            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td>★★★★★</td>
+            <td class="range">980 ~ 1340</td>
+            <td class="small">V型反转日逆势抗跌，AI光模块龙头穿越牛熊；成交416亿A股第一，主力博弈多方占优</td>
+            <td class="small">核心持仓，逢低加仓</td>
+        </tr><tr>
+            <td>2</td>
+            <td><span class="stock-name">紫光国微</span><br><span class="stock-code">002049.SZ</span></td>
+            <td class="price">78.80</td>
+            <td>41倍</td>
+            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td>★★★★☆</td>
+            <td class="range">68.5 ~ 89.5</td>
+            <td class="small">半导体反弹+2.6%，芯片国产替代逻辑确定性强；PE41倍处于合理区间</td>
+            <td class="small">逢低介入，中线持有</td>
+        </tr><tr>
+            <td>3</td>
+            <td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td>
+            <td class="price">71.20</td>
+            <td>83倍</td>
+            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td>★★★★☆</td>
+            <td class="range">65.2 ~ 110.5</td>
+            <td class="small">跟随大盘反弹+2.0%，布林下轨支撑有效；稀有金属+高端制造双主线</td>
+            <td class="small">逢低介入，设好止损</td>
+        </tr><tr>
+            <td>4</td>
+            <td><span class="stock-name">立讯精密</span><br><span class="stock-code">002475.SZ</span></td>
+            <td class="price">59.20</td>
+            <td>25倍</td>
+            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td>★★★☆☆</td>
+            <td class="range">55.8 ~ 73.0</td>
+            <td class="small">消费电子龙头跟随大盘修复+1.2%；苹果供应链+MR概念中期催化，PE25倍合理</td>
+            <td class="small">适量介入，中线布局</td>
+        </tr><tr>
+            <td>5</td>
+            <td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td>
+            <td class="price">52.30</td>
+            <td>15倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="range">47.5 ~ 60.5</td>
+            <td class="small">消费"十五五"规划利好+低PE15倍防御属性突出；涨1.4%稳健但弹性有限</td>
+            <td class="small">防御配置，暂持</td>
+        </tr><tr>
+            <td>6</td>
+            <td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td>
+            <td class="price">495.0</td>
+            <td>63倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="range">430 ~ 660</td>
+            <td class="small">CPO板块周二早盘跌近10%后V型收窄至-3.4%；Meta算力风波冲击光模块</td>
+            <td class="small">暂持，反弹减仓</td>
+        </tr><tr>
+            <td>7</td>
+            <td><span class="stock-name">大华股份</span><br><span class="stock-code">002236.SZ</span></td>
+            <td class="price">16.10</td>
+            <td>13倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="range">14.9 ~ 16.8</td>
+            <td class="small">低PE提供安全边际，跟随大盘小幅反弹+0.3%；但安防板块缺乏催化</td>
+            <td class="small">暂持，关注量能</td>
+        </tr><tr>
+            <td>8</td>
+            <td><span class="stock-name">紫金矿业</span><br><span class="stock-code">601899.SH</span></td>
+            <td class="price">26.05</td>
+            <td>11倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">22.8 ~ 31.0</td>
+            <td class="small">美伊冲突推升金价+油价，资源股受益涨+2.2%；但美元走强压制金属价格</td>
+            <td class="small">暂持，设止盈</td>
+        </tr><tr>
+            <td>9</td>
+            <td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td>
+            <td class="price">27.00</td>
+            <td>33倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">25.8 ~ 38.5</td>
+            <td class="small">消费电子淡季+大盘震荡，跌0.7%弱于大盘；缺乏独立催化</td>
+            <td class="small">中性，暂时观望</td>
+        </tr><tr>
+            <td>10</td>
+            <td><span class="stock-name">扬杰科技</span><br><span class="stock-code">300373.SZ</span></td>
+            <td class="price">113.5</td>
+            <td>45倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">88.5 ~ 152.5</td>
+            <td class="small">功率半导体周二跌2.2%弱于板块平均，资金仍在流出；但国产替代逻辑未破</td>
+            <td class="small">暂持，等企稳信号</td>
+        </tr><tr>
+            <td>11</td>
+            <td><span class="stock-name">澜起科技</span><br><span class="stock-code">688008.SH</span></td>
+            <td class="price">203.5</td>
+            <td>97倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">195 ~ 305</td>
+            <td class="small">存储芯片重灾区，周二盘中跌超10%后收跌-4.2%；Meta算力抛售+长鑫IPO双杀</td>
+            <td class="small">减仓，等利空消化</td>
+        </tr><tr>
+            <td>12</td>
+            <td><span class="stock-name">科大讯飞</span><br><span class="stock-code">002230.SZ</span></td>
+            <td class="price">37.90</td>
+            <td>107倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">36.0 ~ 43.0</td>
+            <td class="small">AI应用板块高PE承压，反弹+0.8%力度弱；中报业绩验证窗口临近</td>
+            <td class="small">建议减仓观望</td>
+        </tr><tr>
+            <td>13</td>
+            <td><span class="stock-name">汉得信息</span><br><span class="stock-code">300170.SZ</span></td>
+            <td class="price">13.35</td>
+            <td>60倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">12.6 ~ 18.2</td>
+            <td class="small">软件板块资金持续流出-1.5%，卖出信号延续；缺乏AI应用落地催化</td>
+            <td class="small">建议减仓</td>
+        </tr><tr>
+            <td>14</td>
+            <td><span class="stock-name">四方达</span><br><span class="stock-code">300179.SZ</span></td>
+            <td class="price">46.50</td>
+            <td>221倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">36.0 ~ 63.5</td>
+            <td class="small">PE极高+7/13主力净卖出3.42亿；周二续跌-2.7%，超硬材料缺乏催化</td>
+            <td class="small">建议减仓或清仓</td>
+        </tr><tr>
+            <td>15</td>
+            <td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td>
+            <td class="price">32.20</td>
+            <td>56倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">31.2 ~ 42.0</td>
+            <td class="small">AI算力板块周二继续承压-2.7%；Meta算力抛售对数据中心方向形成直接利空</td>
+            <td class="small">建议减仓，等企稳</td>
+        </tr><tr>
+            <td>16</td>
+            <td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td>
+            <td class="price">25.15</td>
+            <td>29倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">24.8 ~ 30.5</td>
+            <td class="small">周二跌-1.8%跑输大盘，接近布林下轨支撑；军工/导航板块缺乏短期催化</td>
+            <td class="small">破位即止损</td>
+        </tr><tr>
+            <td>17</td>
+            <td><span class="stock-name">普冉股份</span><br><span class="stock-code">688766.SH</span></td>
+            <td class="price">575.0</td>
+            <td>194倍</td>
+            <td><span class="signal" style="background:#e74c3c">⚠风险</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">340 ~ 920</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">周二续跌-4.6%，两日累计-18%+；存储芯片崩盘+PE近200倍；Meta算力抛售雪上加霜<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>18</td>
+            <td><span class="stock-name">佰维存储</span><br><span class="stock-code">688525.SH</span></td>
+            <td class="price">322.0</td>
+            <td>38倍</td>
+            <td><span class="signal" style="background:#e74c3c">⚠风险</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">280 ~ 510</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">两日累计跌-17%+；存储芯片板块两日重挫；长鑫IPO+Meta算力双重利空<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>19</td>
+            <td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td>
+            <td class="price">332.0</td>
+            <td>19倍</td>
+            <td><span class="signal" style="background:#e74c3c">⚠风险</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">360 ~ 405</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">价格持续低于布林下轨(破位确认)；电池板块弱势-0.9%；连续多日低于支撑位<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/减仓</td>
+        </tr><tr>
+            <td>20</td>
+            <td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td>
+            <td class="price">38.50</td>
+            <td>10倍</td>
+            <td><span class="signal" style="background:#e74c3c">⚠风险</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">41.5 ~ 54.0</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">跌破布林下轨持续；9日累计跌幅-15%+；能源金属板块持续回调；价格跌破支撑位8%<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🥇 今日三大推荐</h2>
+    <div class="top-card">
+            <div class="top-rank">#1</div>
+            <div class="top-info">
+                <div class="top-name">中际旭创 <span class="stock-code">300308.SZ</span></div>
+                <div class="top-price">¥1115 ★★★★★</div>
+                <div class="top-reason">连续穿越黑色星期一+周二V型反转的AI龙头，V型反转日仅微跌0.7%远跑赢科技板块。成交416亿A股第一，主力资金深度介入。风险: AI板块外围扰动（Meta算力抛售），PE83倍不低</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#2</div>
+            <div class="top-info">
+                <div class="top-name">紫光国微 <span class="stock-code">002049.SZ</span></div>
+                <div class="top-price">¥78.80 ★★★★☆</div>
+                <div class="top-reason">芯片国产替代最纯正标的，周二涨+2.6%跑赢半导体板块。PE41倍处于近三年中枢偏低位置。央行5000亿净投放+政策持续加码半导体自主可控。风险: 中报窗口临近，业绩兑现压力</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#3</div>
+            <div class="top-info">
+                <div class="top-name">中钨高新 <span class="stock-code">000657.SZ</span></div>
+                <div class="top-price">¥71.20 ★★★★☆</div>
+                <div class="top-reason">技术面最佳，布林下轨支撑确认有效，周二涨+2.0%量价配合良好。稀有金属+高端制造双主线受益于国产替代。风险: PE83倍偏高，大盘若二次探底则承压</div>
+            </div>
+        </div>
+</div>
+
+<div class="section">
+    <h2>🔥 近期高性价比关注</h2>
+    <p style="font-size:11px;color:#999;margin-bottom:8px;">以下5只非自选股在V型反转中展现出弹性或防御价值（数据截至7/14收盘）</p>
+    <div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#1</span>
+                    <span class="hot-name" style="flex-shrink:0;">行云科技</span>
+                    <span class="stock-code" style="flex-shrink:0;">6885xx</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">业绩预增</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="color:#e74c3c;font-weight:600;">涨停</span>
+                    <span style="color:#666;">预增432-699%</span>
+                    <span style="color:#999;">次新</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">业绩确定</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#2</span>
+                    <span class="hot-name" style="flex-shrink:0;">东山精密</span>
+                    <span class="stock-code" style="flex-shrink:0;">002384</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">PCB</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="color:#e74c3c;font-weight:600;">V型涨停</span>
+                    <span style="color:#666;">PCB龙头</span>
+                    <span style="color:#999;">800亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">超跌弹性</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#3</span>
+                    <span class="hot-name" style="flex-shrink:0;">长江电力</span>
+                    <span class="stock-code" style="flex-shrink:0;">600900</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">公用事业</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="color:#e74c3c;font-weight:600;">+1.2%</span>
+                    <span style="color:#666;">PE22</span>
+                    <span style="color:#999;">5800亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">防御之王</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#4</span>
+                    <span class="hot-name" style="flex-shrink:0;">九丰能源</span>
+                    <span class="stock-code" style="flex-shrink:0;">605090</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">氦气概念</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="color:#e74c3c;font-weight:600;">2连板</span>
+                    <span style="color:#666;">PE35</span>
+                    <span style="color:#999;">120亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">出口管制利好</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#5</span>
+                    <span class="hot-name" style="flex-shrink:0;">陇神戎发</span>
+                    <span class="stock-code" style="flex-shrink:0;">300534</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">中药</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="color:#e74c3c;font-weight:600;">涨停</span>
+                    <span style="color:#666;">PE45</span>
+                    <span style="color:#999;">60亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">中医药规划</span>
+                </div>
+            </div>
+</div>
+
+<div class="section" style="border-left:3px solid #e74c3c;">
+<h2>⚠️ 重大风险警示</h2>
+<div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">普冉股份</span><span style="color:#999;font-size:11px;">(688766.SH)</span> <span style="color:#e74c3c;font-size:12px;">两日累计暴跌-18%+，存储芯片崩盘+Meta算力抛售双杀，PE近200倍极高，坚决止损！</span></div>
+<div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">佰维存储</span><span style="color:#999;font-size:11px;">(688525.SH)</span> <span style="color:#e74c3c;font-size:12px;">两日累计跌-17%+，存储板块资金净流出超140亿；长鑫IPO+Meta双重利空持续</span></div>
+<div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">宁德时代</span><span style="color:#999;font-size:11px;">(300750.SZ)</span> <span style="color:#e74c3c;font-size:12px;">连续跌破布林下轨确认破位，电池板块持续弱势，中报验证窗口压力大</span></div>
+<div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">华友钴业</span><span style="color:#999;font-size:11px;">(603799.SH)</span> <span style="color:#e74c3c;font-size:12px;">9日连跌累计-15%+，能源金属板块持续回调，跌穿布林下轨且无反弹迹象</span></div>
+<div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#f39c12;">澜起科技/科华数据/科大讯飞</span> <span style="color:#f39c12;font-size:12px;">存储+AI算力+AI应用三线持续承压；Meta算力抛售风波对AI硬件板块形成新利空</span></div>
+<p style="font-size:11px;color:#999;margin-top:6px;">以上股票存在重大风险信号，建议立即评估止损或减仓。V型反转虽提振信心，但存储/PCB板块日内振幅超7%显示多空分歧巨大。关注今晚美国CPI数据+明日韩国股市。控制仓位≤50%。</p>
+</div>
+
+<div class="section">
+    <h2>💰 国债逆回购实时利率</h2>
+<div class="table-wrap"><table><thead><tr><th>品种</th><th>期限</th><th>昨收利率</th><th>10万/天收益</th><th>备注</th></tr></thead><tbody><tr>
+                <td style="font-weight:700;color:#e74c3c;">GC001</td>
+                <td>1天</td>
+                <td style="font-weight:700;">1.400%</td>
+                <td>约¥3.84</td>
+                <td style="font-size:11px;">周三正常计息1天</td>
+            </tr><tr>
+                <td>GC007</td><td>7天</td><td>1.450%</td><td>约¥3.97</td><td></td>
+            </tr><tr>
+                <td>GC014</td><td>14天</td><td>1.480%</td><td>约¥4.05</td><td></td>
+            </tr><tr>
+                <td>GC028</td><td>28天</td><td>1.520%</td><td>约¥4.16</td><td></td>
+            </tr><tr>
+                <td>GC091</td><td>91天</td><td>1.550%</td><td>约¥4.25</td><td></td>
+            </tr><tr>
+                <td>GC182</td><td>182天</td><td>1.580%</td><td>约¥4.33</td><td></td>
+            </tr></tbody></table></div>
+<p style="font-size:11px;color:#666;margin-top:8px;">📌 <strong>今日周三</strong>：央行7/14开展1.4万亿6个月买断式逆回购+2365亿7天逆回购，净投放约5000亿。GC001利率1.40%较前日有所上行但仍处年内低位，7月为缴税大月但央行呵护力度强。10万一天约¥3.84。当前V型反弹后市场不确定性仍高，逆回购可作为避险现金管理工具。</p>
+</div>
+
+<div class="section">
+    <h2>📖 术语说明</h2>
+    <p style="font-size:11px;color:#666;">
+    K线信号：基于K线形态、均线趋势、RSI/MACD/布林带、量价的综合技术分析买卖判断<br>
+    星数：综合估值(PB/PE)、动量、信号强度的推荐等级（5星最推荐）<br>
+    参考区间：布林带(20,2)下轨 ~ 上轨，基于统计学标准差计算的价格合理波动范围<br>
+    风险等级：红色重大风险 — PE/PB极端值、RSI超买超卖、MACD死叉、布林带破位、放量下跌、连跌>15%等<br>
+    PE/PB数据来源：东方财富（主）+ 腾讯财经（PE备用）；逆回购利率：新浪财经<br>
+    ⚠️ V型反转后市场分歧加大，部分价格基于板块涨幅估算，实际以交易所为准。
+    </p>
+</div>
+
+<div class="footer">
+    <p>⚠️ 本报告由AI基于公开数据自动生成，仅供参考，不构成投资建议</p>
+    <p>多维度K线技术分析系统 | 数据来源：东方财富、新浪财经、腾讯财经、21世纪经济报道</p>
+    <p>生成时间: 2026-07-15 09:30 | 今日周三，关注科技反弹持续性+晚间美国CPI</p>
+</div>
+
+</body>
+</html>
