@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>关注股票日报 2026-07-17</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background: linear-gradient(135deg, #1a1a2e, #16213e); color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:12px; opacity:0.7; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:680px; }
+th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; position:sticky; top:0; }
+td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; white-space:nowrap; }
+tr:hover { background:#fffbf0; }
+.stock-name { font-weight:600; }
+.stock-code { color:#999; font-size:10px; }
+.price { font-weight:600; font-size:13px; }
+.up { color:#e74c3c; font-weight:600; }
+.down { color:#27ae60; font-weight:600; }
+.signal { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
+.range { color:#666; font-size:11px; }
+.small { font-size:10px; color:#666; max-width:100px; white-space:normal; }
+.top-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
+.top-card:last-child { border-bottom:none; }
+.top-rank { font-size:24px; font-weight:700; color:#e74c3c; min-width:36px; }
+.top-name { font-weight:600; font-size:14px; }
+.top-price { font-size:14px; font-weight:600; color:#16213e; }
+.top-reason { font-size:11px; color:#666; }
+.hot-item { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f0f0f0; font-size:12px; }
+.hot-item:last-child { border-bottom:none; }
+.hot-name { font-weight:600; }
+.hot-pct { color:#e74c3c; font-weight:600; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+.summary { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+.summary-item { background:#f0f0f0; padding:4px 8px; border-radius:4px; font-size:11px; }
+.buy-count { color:#e74c3c; font-weight:700; }
+.hold-count { color:#f39c12; font-weight:700; }
+.sell-count { color:#27ae60; font-weight:700; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>📊 关注股票日报</h1>
+    <div class="date">2026-07-17 | 更新于 2026-07-17 08:40</div>
+</div>
+
+<div class="section">
+    <h2>📋 信号概览</h2>
+    <div class="summary">
+        <div class="summary-item">★★★★★ 佰维存储 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 紫金矿业 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★☆☆ 中际旭创 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 汉得信息 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 环旭电子 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 华测导航 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★★☆☆☆ 科大讯飞 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★★☆☆☆ 四方达 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★★☆☆☆ 科华数据 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★★☆☆☆ 普冉股份 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★★☆☆☆ 澜起科技 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★★☆☆☆ 紫光国微 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★★☆☆☆ 扬杰科技 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 中钨高新 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 华友钴业 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 大华股份 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 宁德时代 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 青岛啤酒 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 立讯精密 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 新易盛 <span style="color:#27ae60">卖出</span></div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>⭐ 推荐一览表（按星数排列）</h2>
+    <div class="table-wrap">
+    <table>
+        <thead>
+            <tr>
+                <th>#</th><th>股票</th><th>现价</th><th>涨跌</th><th>PE</th><th>信号</th><th>推荐</th><th>布林区间</th><th>风险提示</th><th>操作建议</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td><span class="stock-name">佰维存储</span><br><span class="stock-code">688525.SH</span></td>
+            <td class="price">300.2</td>
+            <td class="down">-1.36%</td>
+            <td>12倍</td>
+            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td>★★★★★</td>
+            <td class="range">297.6 ~ 530.1</td>
+            <td class="small" style="">无明显风险信号</td>
+            <td class="small">超卖区买入信号，可积极介入</td>
+        </tr><tr>
+            <td>2</td>
+            <td><span class="stock-name">紫金矿业</span><br><span class="stock-code">601899.SH</span></td>
+            <td class="price">29.25</td>
+            <td class="up">+1.46%</td>
+            <td>13倍</td>
+            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td>★★★★☆</td>
+            <td class="range">24.47 ~ 30.51</td>
+            <td class="small" style="">RSI74超买</td>
+            <td class="small">可考虑逢低介入</td>
+        </tr><tr>
+            <td>3</td>
+            <td><span class="stock-name">中际旭创</span><br><span class="stock-code">300308.SZ</span></td>
+            <td class="price">1113</td>
+            <td class="down">-4.82%</td>
+            <td>83倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="range">1023 ~ 1391</td>
+            <td class="small" style="">无明显风险信号</td>
+            <td class="small">中性，暂时观望</td>
+        </tr><tr>
+            <td>4</td>
+            <td><span class="stock-name">汉得信息</span><br><span class="stock-code">300170.SZ</span></td>
+            <td class="price">15.21</td>
+            <td class="up">+1.33%</td>
+            <td>69倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="range">13.38 ~ 17.87</td>
+            <td class="small" style="">无明显风险信号</td>
+            <td class="small">中性，暂时观望</td>
+        </tr><tr>
+            <td>5</td>
+            <td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td>
+            <td class="price">26.10</td>
+            <td class="down">-4.33%</td>
+            <td>32倍</td>
+            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td>★★★☆☆</td>
+            <td class="range">24.61 ~ 38.26</td>
+            <td class="small" style="">无明显风险信号</td>
+            <td class="small">中性，暂时观望</td>
+        </tr><tr>
+            <td>6</td>
+            <td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td>
+            <td class="price">27.41</td>
+            <td class="up">+0.48%</td>
+            <td>32倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">26.65 ~ 29.33</td>
+            <td class="small" style="">卖出信号</td>
+            <td class="small">建议减仓或观望</td>
+        </tr><tr>
+            <td>7</td>
+            <td><span class="stock-name">科大讯飞</span><br><span class="stock-code">002230.SZ</span></td>
+            <td class="price">41.99</td>
+            <td class="up">+1.55%</td>
+            <td>-149倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">39.16 ~ 43.80</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">PE为负<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>8</td>
+            <td><span class="stock-name">四方达</span><br><span class="stock-code">300179.SZ</span></td>
+            <td class="price">39.46</td>
+            <td class="down">-6.78%</td>
+            <td>188倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">40.05 ~ 65.29</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">跌破支撑位；日内波动-6.78%；价格跌破布林下轨<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>9</td>
+            <td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td>
+            <td class="price">31.87</td>
+            <td class="down">-2.15%</td>
+            <td>56倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">31.24 ~ 44.44</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">RSI8极端超卖<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>10</td>
+            <td><span class="stock-name">普冉股份</span><br><span class="stock-code">688766.SH</span></td>
+            <td class="price">526.0</td>
+            <td class="down">-9.00%</td>
+            <td>178倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">541.0 ~ 873.0</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">跌破支撑位；日内波动-9.00%；价格跌破布林下轨<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>11</td>
+            <td><span class="stock-name">澜起科技</span><br><span class="stock-code">688008.SH</span></td>
+            <td class="price">211.1</td>
+            <td class="down">-16.44%</td>
+            <td>101倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">224.6 ~ 313.6</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">跌破支撑位；日内波动-16.44%；价格跌破布林下轨<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>12</td>
+            <td><span class="stock-name">紫光国微</span><br><span class="stock-code">002049.SZ</span></td>
+            <td class="price">70.16</td>
+            <td class="down">-2.88%</td>
+            <td>36倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">73.43 ~ 91.49</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">跌破支撑位；价格跌破布林下轨<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>13</td>
+            <td><span class="stock-name">扬杰科技</span><br><span class="stock-code">300373.SZ</span></td>
+            <td class="price">101.7</td>
+            <td class="down">-3.66%</td>
+            <td>40倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★★☆☆☆</td>
+            <td class="range">101.7 ~ 158.1</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">跌破支撑位；价格跌破布林下轨<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>14</td>
+            <td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td>
+            <td class="price">67.25</td>
+            <td class="down">-3.65%</td>
+            <td>79倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">60.87 ~ 114.3</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">RSI18极端超卖<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr><tr>
+            <td>15</td>
+            <td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td>
+            <td class="price">38.82</td>
+            <td class="down">-2.66%</td>
+            <td>10倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">37.00 ~ 55.32</td>
+            <td class="small" style="">技术评分偏低；卖出信号</td>
+            <td class="small">卖出信号但RSI超卖，减仓即可</td>
+        </tr><tr>
+            <td>16</td>
+            <td><span class="stock-name">大华股份</span><br><span class="stock-code">002236.SZ</span></td>
+            <td class="price">16.50</td>
+            <td class="down">-0.42%</td>
+            <td>14倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">15.83 ~ 17.26</td>
+            <td class="small" style="">技术评分偏低；卖出信号</td>
+            <td class="small">建议减仓或观望</td>
+        </tr><tr>
+            <td>17</td>
+            <td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td>
+            <td class="price">366.2</td>
+            <td class="down">-1.82%</td>
+            <td>20倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">349.6 ~ 410.1</td>
+            <td class="small" style="">技术评分偏低；卖出信号</td>
+            <td class="small">建议减仓或观望</td>
+        </tr><tr>
+            <td>18</td>
+            <td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td>
+            <td class="price">52.86</td>
+            <td class="up">+0.51%</td>
+            <td>15倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">51.69 ~ 54.77</td>
+            <td class="small" style="">技术评分偏低；卖出信号</td>
+            <td class="small">建议减仓或观望</td>
+        </tr><tr>
+            <td>19</td>
+            <td><span class="stock-name">立讯精密</span><br><span class="stock-code">002475.SZ</span></td>
+            <td class="price">61.58</td>
+            <td class="up">+1.84%</td>
+            <td>32倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">56.60 ~ 74.44</td>
+            <td class="small" style="">技术评分偏低；卖出信号</td>
+            <td class="small">建议减仓或观望</td>
+        </tr><tr>
+            <td>20</td>
+            <td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td>
+            <td class="price">542.6</td>
+            <td class="down">-2.41%</td>
+            <td>68倍</td>
+            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td>★☆☆☆☆</td>
+            <td class="range">487.1 ~ 612.5</td>
+            <td class="small" style="color:#e74c3c;font-weight:700;">技术评分极低；卖出信号；PB39.0倍极高<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small">止损/大幅减仓</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🥇 今日三大推荐</h2>
+    <div class="top-card">
+            <div class="top-rank">#1</div>
+            <div class="top-info">
+                <div class="top-name">佰维存储 <span class="stock-code">688525.SH</span></div>
+                <div class="top-price">¥300.2 ★★★★★</div>
+                <div class="top-reason">超卖区买入信号，可积极介入 | 风险: 无明显风险信号</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#2</div>
+            <div class="top-info">
+                <div class="top-name">紫金矿业 <span class="stock-code">601899.SH</span></div>
+                <div class="top-price">¥29.25 ★★★★☆</div>
+                <div class="top-reason">可考虑逢低介入 | 风险: RSI74超买</div>
+            </div>
+        </div><div class="top-card">
+            <div class="top-rank">#3</div>
+            <div class="top-info">
+                <div class="top-name">中际旭创 <span class="stock-code">300308.SZ</span></div>
+                <div class="top-price">¥1113 ★★★☆☆</div>
+                <div class="top-reason">中性，暂时观望 | 风险: 无明显风险信号</div>
+            </div>
+        </div>
+</div>
+
+<div class="section">
+    <h2>🔥 近期高性价比关注</h2>
+    <div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#1</span>
+                    <span class="hot-name" style="flex-shrink:0;">振石股份</span>
+                    <span class="stock-code" style="flex-shrink:0;">601112</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">玻纤制造</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="font-weight:600;">15.47</span>
+                    <span class="up">+0.32%</span>
+                    <span style="color:#666;">PE34</span>
+                    <span style="color:#999;">269亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.73</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#2</span>
+                    <span class="hot-name" style="flex-shrink:0;">长海股份</span>
+                    <span class="stock-code" style="flex-shrink:0;">300196</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">玻纤制造</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="font-weight:600;">18.40</span>
+                    <span class="down">-5.54%</span>
+                    <span style="color:#666;">PE23</span>
+                    <span style="color:#999;">75亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.62</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#3</span>
+                    <span class="hot-name" style="flex-shrink:0;">中国巨石</span>
+                    <span class="stock-code" style="flex-shrink:0;">600176</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">玻纤制造</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="font-weight:600;">47.71</span>
+                    <span class="down">-9.98%</span>
+                    <span style="color:#666;">PE38</span>
+                    <span style="color:#999;">1910亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.61</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#4</span>
+                    <span class="hot-name" style="flex-shrink:0;">飞凯材料</span>
+                    <span class="stock-code" style="flex-shrink:0;">300398</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">电子化学品Ⅱ</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="font-weight:600;">38.46</span>
+                    <span class="down">-7.53%</span>
+                    <span style="color:#666;">PE42</span>
+                    <span style="color:#999;">219亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.60</span>
+                </div>
+            </div><div class="hot-item">
+                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
+                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#5</span>
+                    <span class="hot-name" style="flex-shrink:0;">上海新阳</span>
+                    <span class="stock-code" style="flex-shrink:0;">300236</span>
+                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">电子化学品Ⅱ</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
+                    <span style="font-weight:600;">93.70</span>
+                    <span class="down">-9.52%</span>
+                    <span style="color:#666;">PE71</span>
+                    <span style="color:#999;">294亿</span>
+                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.60</span>
+                </div>
+            </div>
+</div>
+
+<div class="section" style="border-left:3px solid #e74c3c;"><h2>重大风险警示</h2><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">科大讯飞</span><span style="color:#999;font-size:11px;">(002230.SZ)</span> <span style="color:#e74c3c;font-size:12px;">PE为负，公司亏损</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">四方达</span><span style="color:#999;font-size:11px;">(300179.SZ)</span> <span style="color:#e74c3c;font-size:12px;">价格跌破布林下轨(破位)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">科华数据</span><span style="color:#999;font-size:11px;">(002335.SZ)</span> <span style="color:#e74c3c;font-size:12px;">RSI8极端超卖(<20)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">普冉股份</span><span style="color:#999;font-size:11px;">(688766.SH)</span> <span style="color:#e74c3c;font-size:12px;">价格跌破布林下轨(破位)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">澜起科技</span><span style="color:#999;font-size:11px;">(688008.SH)</span> <span style="color:#e74c3c;font-size:12px;">日内巨幅波动-16.44%</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">澜起科技</span><span style="color:#999;font-size:11px;">(688008.SH)</span> <span style="color:#e74c3c;font-size:12px;">价格跌破布林下轨(破位)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">紫光国微</span><span style="color:#999;font-size:11px;">(002049.SZ)</span> <span style="color:#e74c3c;font-size:12px;">价格跌破布林下轨(破位)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">扬杰科技</span><span style="color:#999;font-size:11px;">(300373.SZ)</span> <span style="color:#e74c3c;font-size:12px;">5日连跌-24.9%(>15%)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">扬杰科技</span><span style="color:#999;font-size:11px;">(300373.SZ)</span> <span style="color:#e74c3c;font-size:12px;">价格跌破布林下轨(破位)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">中钨高新</span><span style="color:#999;font-size:11px;">(000657.SZ)</span> <span style="color:#e74c3c;font-size:12px;">RSI18极端超卖(<20)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">新易盛</span><span style="color:#999;font-size:11px;">(300502.SZ)</span> <span style="color:#e74c3c;font-size:12px;">技术评分极低(<0.2)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">新易盛</span><span style="color:#999;font-size:11px;">(300502.SZ)</span> <span style="color:#e74c3c;font-size:12px;">PB39.0倍极端高估</span></div><p style="font-size:11px;color:#999;margin-top:6px;">以上股票存在重大风险信号，建议立即评估止损或减仓操作。</p></div>
+
+<div class="section">
+    <h2>💰 国债逆回购实时利率</h2>
+<div class="table-wrap"><table><thead><tr><th>品种</th><th>期限</th><th>最新利率</th><th>开盘</th><th>昨收</th><th>最高</th><th>最低</th><th>10万/天收益</th><th>成交(亿)</th></tr></thead><tbody><tr>
+                <td style="">GC001</td>
+                <td>1天</td>
+                <td style="">1.385%</td>
+                <td>1.420%</td>
+                <td>1.395%</td>
+                <td>1.445%</td>
+                <td>1.340%</td>
+                <td>¥3.79</td>
+                <td>1.97</td>
+            </tr><tr>
+                <td style="">GC007</td>
+                <td>7天</td>
+                <td style="">1.430%</td>
+                <td>1.440%</td>
+                <td>1.435%</td>
+                <td>1.440%</td>
+                <td>1.400%</td>
+                <td>¥3.92</td>
+                <td>0.17</td>
+            </tr><tr>
+                <td style="">GC014</td>
+                <td>14天</td>
+                <td style="">1.430%</td>
+                <td>1.410%</td>
+                <td>1.430%</td>
+                <td>1.440%</td>
+                <td>1.410%</td>
+                <td>¥3.92</td>
+                <td>0.02</td>
+            </tr><tr>
+                <td style="font-weight:700;color:#e74c3c;">GC028</td>
+                <td>28天</td>
+                <td style="font-weight:700;color:#e74c3c;">1.435%</td>
+                <td>1.410%</td>
+                <td>1.435%</td>
+                <td>1.450%</td>
+                <td>1.410%</td>
+                <td>¥3.93</td>
+                <td>0.01</td>
+            </tr><tr>
+                <td style="">GC091</td>
+                <td>91天</td>
+                <td style="">1.435%</td>
+                <td>1.410%</td>
+                <td>1.430%</td>
+                <td>1.450%</td>
+                <td>1.410%</td>
+                <td>¥3.93</td>
+                <td>0.0</td>
+            </tr><tr>
+                <td style="">GC182</td>
+                <td>182天</td>
+                <td style="">1.420%</td>
+                <td>1.415%</td>
+                <td>1.415%</td>
+                <td>1.425%</td>
+                <td>1.415%</td>
+                <td>¥3.89</td>
+                <td>0.0</td>
+            </tr></tbody></table></div><p style="font-size:11px;color:#666;margin-top:8px;">当前利率最高: <span style="color:#e74c3c;font-weight:600;">GC028(28天) 1.435%</span>，10万元一天约赚 ¥3.93。资金可用日取回无手续费。</p>
+</div>
+
+<div class="section">
+    <h2>📖 术语说明</h2>
+    <p style="font-size:11px;color:#666;">
+    K线信号：基于新浪财经K线形态、均线趋势、RSI/MACD/布林带、量价的综合技术分析买卖判断（MoE数据库不可用，已自动切换）<br>
+    星数：综合估值(PB/PE)、动量、信号强度的推荐等级（5星最推荐）<br>
+    参考区间：布林带(20,2)下轨 ~ 上轨，基于统计学标准差计算的价格合理波动范围<br>
+    风险等级：红色重大风险(normal/elevated/major) — PE/PB极端值、RSI超买超卖、MACD死叉、布林带破位、放量下跌、连跌>15%等触发重大风险<br>
+    风险提示：市盈率/市净率/信号/波动/量价/RSI/MACD/布林带等维度的风险预警<br>
+    PE/PB数据来源：东方财富（主）+ 腾讯财经（PE备用）
+    </p>
+</div>
+
+<div class="footer">
+    <p>⚠️ 本报告由AI基于公开数据自动生成，仅供参考，不构成投资建议</p>
+    <p>多维度K线技术分析系统 | 数据来源：东方财富、新浪财经、腾讯财经 | 逆回购利率：新浪财经</p>
+    <p>生成时间: 2026-07-17 08:40</p>
+</div>
+
+</body>
+</html>
