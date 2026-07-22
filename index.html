@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-<title>家庭股票日报</title>
+<title>家庭股票网站（最新）</title>
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background:#f5f5f5; min-height:100vh; }
-#gate { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; padding:20px; background: linear-gradient(135deg, #1a1a2e, #16213e); }
+body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background:#f3e8ff; min-height:100vh; }
+#gate { display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; padding:20px; background: linear-gradient(135deg, #4a1d6e, #7c3aed); }
 #gate .box { background:#fff; padding:40px 30px; border-radius:16px; text-align:center; max-width:340px; width:100%; }
-#gate h1 { font-size:22px; margin-bottom:6px; color:#1a1a2e; }
+#gate h1 { font-size:22px; margin-bottom:6px; color:#4a1d6e; }
 #gate p { font-size:14px; color:#666; margin-bottom:20px; }
 #gate input { width:100%; padding:12px; border:2px solid #ddd; border-radius:10px; font-size:16px; text-align:center; outline:none; }
 #gate input:focus { border-color:#e74c3c; }
@@ -18,14 +18,14 @@ body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 #gate .error { color:#e74c3c; font-size:13px; margin-top:8px; display:none; }
 
 #app { display:none; }
-.topbar { background: linear-gradient(135deg, #1a1a2e, #16213e); color:#fff; padding:20px 16px 18px; text-align:center; }
+.topbar { background: linear-gradient(135deg, #4a1d6e, #7c3aed); color:#fff; padding:20px 16px 18px; text-align:center; }
 .topbar h1 { font-size:20px; }
 .topbar .sub { font-size:12px; opacity:0.7; margin-top:4px; }
 
 .cards { padding:16px 12px; }
 .card { background:#fff; border-radius:12px; padding:20px 16px; margin-bottom:14px; box-shadow:0 1px 4px rgba(0,0,0,0.06); cursor:pointer; transition:transform .15s; }
 .card:active { transform:scale(0.98); }
-.card .title { font-size:17px; font-weight:700; color:#1a1a2e; margin-bottom:4px; }
+.card .title { font-size:17px; font-weight:700; color:#4a1d6e; margin-bottom:4px; }
 .card .desc { font-size:13px; color:#999; }
 .card .badge { display:inline-block; padding:3px 10px; border-radius:4px; font-size:11px; font-weight:600; color:#fff; margin-top:8px; }
 .badge-buy { background:#e74c3c; }
@@ -43,7 +43,7 @@ body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 
 <div id="gate">
   <div class="box">
-    <h1>📊 家庭股票日报</h1>
+    <h1>📊 家庭股票网站（最新）</h1>
     <p>请输入访问密码</p>
     <input type="password" id="pwd" placeholder="密码" autofocus>
     <button onclick="unlock()">进入</button>
@@ -53,7 +53,7 @@ body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 
 <div id="app">
   <div class="topbar">
-    <h1>📊 家庭股票日报</h1>
+    <h1>📊 家庭股票网站（最新）</h1>
     <div class="sub" id="subtitle"></div>
   </div>
   <div id="notice"></div>
