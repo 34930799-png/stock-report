@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>股市热点关注 2026-07-24</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:12px; opacity:0.9; }
+.header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
+th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
+td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
+tr:hover { background:#fffbf0; }
+.up { color:#e74c3c; font-weight:600; }
+.down { color:#27ae60; font-weight:600; }
+.news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
+.news-item:last-child { border-bottom:none; }
+.news-title { font-weight:600; color:#16213e; }
+.news-src { font-size:10px; color:#999; }
+.tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
+.tag-semicon { background:#e74c3c; }
+.tag-ai { background:#8e44ad; }
+.tag-policy { background:#2980b9; }
+.tag-market { background:#f39c12; }
+.tag-energy { background:#27ae60; }
+.tag-risk { background:#c0392b; }
+.tag-foreign { background:#16a085; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+.sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
+.sector-name { font-weight:600; min-width:90px; font-size:12px; }
+.sector-pct { font-weight:600; font-size:12px; min-width:60px; }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
+.stock-card:last-child { border-bottom:none; }
+.watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
+.watch-card:last-child { border-bottom:none; }
+.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-info { flex:1; }
+.watch-name { font-weight:600; font-size:13px; }
+.watch-detail { font-size:11px; color:#666; }
+.watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
+.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#e74c3c; }
+.heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🔥 股市热点关注</h1>
+    <div class="date">2026-07-24 周五 · 低开分化：电网锂电延续强势，半导体绝地反击</div>
+    <div class="subtitle">美股科技重挫+中东局势升温+美国新关税生效，A股大幅低开后结构性分化</div>
+</div>
+
+<div class="section">
+    <h2>📊 市场概况</h2>
+    <table>
+        <tr><th>指数</th><th>昨收(7/23)</th><th>今开</th><th>盘中表现</th><th>成交额</th></tr>
+        <tr>
+            <td>上证指数</td>
+            <td style="font-weight:600;">3876.78</td>
+            <td class="down">3853.63</td>
+            <td class="down">低开-0.6%，盘中最低跌约-2.5%</td>
+            <td rowspan="5" style="font-weight:700;">约2.0万亿<br><span style="font-size:10px;color:#999;">缩量明显（前日2.2万亿）</span></td>
+        </tr>
+        <tr>
+            <td>深证成指</td>
+            <td style="font-weight:600;">14123.31</td>
+            <td class="down">13915.04</td>
+            <td class="down">低开-1.47%，盘中一度跌逾-2%</td>
+        </tr>
+        <tr>
+            <td>创业板指</td>
+            <td style="font-weight:600;">3575.52</td>
+            <td class="down">3515.50</td>
+            <td class="down">低开-1.68%，盘中一度跌逾-2%</td>
+        </tr>
+        <tr>
+            <td style="color:#e74c3c;font-weight:700;">科创50</td>
+            <td style="font-weight:600;">1789.69</td>
+            <td class="down">低开-1.32%</td>
+            <td class="up">盘中翻红！半导体绝地反击</td>
+        </tr>
+        <tr>
+            <td>北证50</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+    </table>
+    <div class="market-note">
+        ⚠️ <strong>盘中实时数据（非收盘）</strong>：今日三大指数集体大幅低开，开盘超4600只个股下跌。受隔夜美股科技重挫（纳指-2.15%、特斯拉-14%）、中东冲突升级（布油破100美元）、美国对60国新关税今日生效等多重利空共振。但盘中半导体设备强势拉升（至纯科技涨停、科创50翻红），电网/电力/锂电延续强势，市场结构性分化剧烈。<strong>注意：今日周五+月末效应，缩量震荡为主，下周一政治局会议是核心变量。</strong>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔥 行业热力图</h2>
+    <div class="sector-bar"><span class="sector-name">电网设备</span><span class="sector-pct up">+5~6%</span><div class="sector-bar-fill" style="width:100%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">石油天然气</span><span class="sector-pct up">+4~5%</span><div class="sector-bar-fill" style="width:83%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">电力/新能源</span><span class="sector-pct up">+3~4%</span><div class="sector-bar-fill" style="width:67%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">锂矿/能源金属</span><span class="sector-pct up">+3~4%</span><div class="sector-bar-fill" style="width:64%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">军工装备</span><span class="sector-pct up">+2~3%</span><div class="sector-bar-fill" style="width:50%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">半导体设备</span><span class="sector-pct up">+2~3%</span><div class="sector-bar-fill" style="width:45%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">银行</span><span class="sector-pct up">+1%</span><div class="sector-bar-fill" style="width:25%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">煤炭</span><span class="sector-pct up">+0~1%</span><div class="sector-bar-fill" style="width:18%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">贵金属</span><span class="sector-pct down" style="color:#27ae60;">-3~4%</span><div class="sector-bar-fill green" style="width:60%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">半导体/算力</span><span class="sector-pct down" style="color:#27ae60;">-2~3%</span><div class="sector-bar-fill green" style="width:50%;"></div></div>
+    <div class="heatmap-legend">
+        <span>🔴 <strong>领涨</strong>：电网设备（特高压招标292.6亿超去年全年+十五五电网投资5万亿）| 油气（布油破100美元）| 锂电（VC暴涨超10%）| 军工</span>
+        <span>🟢 <strong>领跌</strong>：贵金属（金价回吐逾2%）| 半导体材料/GPU/ASIC | 算力硬件 | 机器人 | 光伏</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>⚡ 强势股速览（7/24涨停/大涨核心）</h2>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">立新能源</span> <span style="color:#999;">001258</span></div>
+        <div style="font-size:11px;">电力妖股 · 7连板 · H1净利预增570-794%</div>
+        <div class="up">7连板 🔥</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">至纯科技</span> <span style="color:#999;">603690</span></div>
+        <div style="font-size:11px;">半导体设备 · 开盘4分钟直线涨停 · SEMI预计全球设备+23.2%</div>
+        <div class="up">涨停</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">长缆科技</span> <span style="color:#999;">002879</span></div>
+        <div style="font-size:11px;">电缆龙头 · 4连板 · 特高压招标+电网投资受益</div>
+        <div class="up">4连板</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">通富微电</span> <span style="color:#999;">002156</span></div>
+        <div style="font-size:11px;">先进封装千亿龙头 · 盘中触及涨停 · 半导体情绪修复</div>
+        <div class="up">盘中涨停</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">盛新锂能</span> <span style="color:#999;">002240</span></div>
+        <div style="font-size:11px;">锂矿龙头 · 涨停（封单16.8亿）· 碳酸锂站稳14.5万+VC暴涨</div>
+        <div class="up">涨停</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">长城军工</span> <span style="color:#999;">601606</span></div>
+        <div style="font-size:11px;">军工 · 2连板 · 中东冲突升级+军工板块逆势走强</div>
+        <div class="up">2连板</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">中曼石油</span> <span style="color:#999;">603619</span></div>
+        <div style="font-size:11px;">油气开采 · 涨超8% · 布油破100美元+美国新关税豁免油气</div>
+        <div class="up">+8%+</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">托伦斯</span> <span style="color:#999;">688XXX</span></div>
+        <div style="font-size:11px;">半导体设备龙头 · 涨超12% · 国产替代+SEMI数据催化</div>
+        <div class="up">+12%+</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">中国西电</span> <span style="color:#999;">601179</span></div>
+        <div style="font-size:11px;">特高压龙头 · 中标国网63亿 · 三批招标总额超去年全年</div>
+        <div class="up">涨停</div>
+    </div>
+    <div class="stock-card">
+        <div><span style="font-weight:700;">新能股份</span> <span style="color:#999;">-</span></div>
+        <div style="font-size:11px;">电力新能源 · 3连板 · 迎峰度夏用电负荷15.51亿千瓦创纪录</div>
+        <div class="up">3连板</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📌 自选股关注（基于今日盘面）</h2>
+    <p style="font-size:11px;color:#999;margin-bottom:6px;">结合今日实时盘面+日报信号，筛选8只值得重点关注的标的</p>
+
+    <div class="watch-card">
+        <div class="watch-rank">#1</div>
+        <div class="watch-info">
+            <div class="watch-name">紫金矿业 <span style="color:#999;font-size:11px;">601899.SH</span></div>
+            <div class="watch-detail">★★★★★ 买入 · 金铜双驱龙头。今日受国际金价回吐逾2%影响低开3.7%，但PE仅12倍的资源核心资产在"高低切"中筹码稀缺。逢低是加仓良机</div>
+        </div>
+        <div class="watch-action" style="color:#e74c3c;">低开是机会<br>逢低加仓</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">#2</div>
+        <div class="watch-info">
+            <div class="watch-name">宁德时代 <span style="color:#999;font-size:11px;">300750.SZ</span></div>
+            <div class="watch-detail">★★★★☆ 买入 · 今日放榜！锂电龙头+3.69%后强势整理。碳酸锂站上14.5万+VC暴涨+锂电消费税催化，业绩超预期概率大。关注盘后财报</div>
+        </div>
+        <div class="watch-action" style="color:#e74c3c;">持仓等财报<br>顺势而为</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">#3</div>
+        <div class="watch-info">
+            <div class="watch-name">华友钴业 <span style="color:#999;font-size:11px;">603799.SH</span></div>
+            <div class="watch-detail">★★★★☆ 买入 · PE仅11倍全池最低，锂钴双受益。今日锂电产业链延续强势，VC暴涨利好电解液/添加剂方向。安全边际极厚</div>
+        </div>
+        <div class="watch-action" style="color:#e74c3c;">性价比最优<br>逢低介入</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">#4</div>
+        <div class="watch-info">
+            <div class="watch-name">紫光国微 <span style="color:#999;font-size:11px;">002049.SZ</span></div>
+            <div class="watch-detail">★★★★☆ 买入 · 芯片国产替代标杆。半导体板块-3.24%中逆势抗跌+1.4%，今日半导体设备反弹有望带动。最抗跌的芯片股</div>
+        </div>
+        <div class="watch-action" style="color:#e74c3c;">中线布局<br>逆势抗跌</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">#5</div>
+        <div class="watch-info">
+            <div class="watch-name">立讯精密 <span style="color:#999;font-size:11px;">002475.SZ</span></div>
+            <div class="watch-detail">★★★★☆ 买入 · 消费电子龙头+3.43%，受惠高低切资金流入。公司开启股份回购计划。PE27倍合理，消费电子旺季临近</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">中线持有<br>回购利好</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">#6</div>
+        <div class="watch-info">
+            <div class="watch-name">科华数据 <span style="color:#999;font-size:11px;">002335.SZ</span></div>
+            <div class="watch-detail">★★★☆☆ 持有观望 · 数据中心/AI基建受益电网设备大涨的联动效应，+3.47%反弹。电网投资5万亿间接利好数据中心电力配套</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">暂持<br>关注量能</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">#7</div>
+        <div class="watch-info">
+            <div class="watch-name">澜起科技 <span style="color:#999;font-size:11px;">688008.SH</span></div>
+            <div class="watch-detail">★★★☆☆ 持有观望 · 存储龙头+1.12%小幅反弹。贝莱德称芯片股抛售是反应过度，长鑫IPO前资金避险但下方有支撑。等7/27长鑫上市落地</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">等长鑫落地<br>暂不加仓</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">#8</div>
+        <div class="watch-info">
+            <div class="watch-name">青岛啤酒 <span style="color:#999;font-size:11px;">600600.SH</span></div>
+            <div class="watch-detail">★★★☆☆ 持有观望 · +1.57%摆脱风险区，PE16倍防御属性突出。市场大幅震荡中消费蓝筹有避险价值。设止损位50</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">防御配置<br>止损50</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📰 盘中要闻</h2>
+
+    <div class="news-item">
+        <span class="tag tag-risk">中东</span>
+        <span class="tag tag-energy">油价</span>
+        <span class="news-title">中东局势急剧升级：美军连续袭击伊朗，布伦特原油突破100美元/桶</span>
+        <p style="font-size:11px;color:#666;">美伊对峙加剧，布油突破100美元大关，WTI涨超6%至95美元。全球通胀预期升温，美联储加息概率升至36%。油气板块逆势大涨，中曼石油涨超8%；但航空/航运/化工等成本敏感板块承压。高油价持续将拖累全球经济复苏。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-policy">关税</span>
+        <span class="tag tag-risk">风险</span>
+        <span class="news-title">美国对60国新关税今日正式生效：加征10%-12.5%，覆盖99.4%美国贸易</span>
+        <p style="font-size:11px;color:#666;">特朗普政府新一轮关税体系今日起征，覆盖绝大多数贸易伙伴。石油、天然气、食品获豁免。中美正探讨300亿美元对等降税框架安排作为对冲。市场开盘即消化关税利空。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-semicon">半导体</span>
+        <span class="news-title">SEMI：2026年全球半导体设备销售额预计增长23.2%至1659亿美元</span>
+        <p style="font-size:11px;color:#666;">全球半导体行业协会报告称，2028年将创历史新高达2295亿美元。数据直接催化A股半导体设备板块盘中强势拉升，至纯科技4分钟直线涨停，托伦斯涨超12%，通富微电盘中涨停。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-energy">电网</span>
+        <span class="tag tag-policy">政策</span>
+        <span class="news-title">国家电网特高压第三批招标结果落地：前三批合计292.6亿元，超去年全年</span>
+        <p style="font-size:11px;color:#666;">中国西电、平高电气等合计中标逾63亿元。"十五五"电网固定资产投资超5万亿（较十四五增幅超80%），可再生能源装机目标35亿千瓦。电网设备板块连续第二日大涨，中国西电涨停。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-energy">锂电</span>
+        <span class="news-title">碳酸亚乙烯酯（VC）价格暴涨超10%，报价逼近20万元/吨</span>
+        <p style="font-size:11px;color:#666;">7月累计涨幅近25%。亘元、天赐投产延期致VC供给极度紧张，厂商库存仅1周左右，Q3-Q4供需易现失衡。锂电产业链延续强势，盛新锂能涨停（封单16.8亿），永杉锂业、国城矿业等多股涨停。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-ai">AI</span>
+        <span class="tag tag-foreign">外资</span>
+        <span class="news-title">美股科技深夜暴跌：纳指-2.15%，特斯拉-14%，谷歌-7%，七巨头蒸发8000亿美元</span>
+        <p style="font-size:11px;color:#666;">特斯拉利润远逊预期（利润率仅1.4%），谷歌资本支出上调至2050亿美元致自由现金流转负，AI烧钱担忧蔓延。但英特尔Q2财报大超预期（营收+25%，数据中心AI+59%），盘后涨超10%。贝莱德称芯片股抛售是反应过度，更便宜的AI将加速普及。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-policy">政策</span>
+        <span class="tag tag-semicon">科创板</span>
+        <span class="news-title">上海出台直接融资"20条"：扩大科创板第五套标准，支持未盈利前沿企业上市</span>
+        <p style="font-size:11px;color:#666;">覆盖可控核聚变、具身智能、大模型、量子计算、脑机接口等前沿领域。商务部数据显示上半年高技术产业引资1703亿元（+33.2%）。政策持续支持科技创新企业融资。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-policy">政策</span>
+        <span class="tag tag-market">证监会</span>
+        <span class="news-title">证监会定调：当前市场具备较好配置价值，部署七方面重点工作</span>
+        <p style="font-size:11px;color:#666;">全力维护市场平稳运行、推动中长期资金入市、从严监管推进AI在监管中的应用、扶优限劣促进上市公司做优做强。央行连续第三个月加量续作5000亿MLF保持流动性充裕。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-market">连板</span>
+        <span class="tag tag-energy">电力</span>
+        <span class="news-title">立新能源7连板成妖（累涨77%），长缆科技4连板，电力股全线扩散</span>
+        <p style="font-size:11px;color:#666;">立新能源H1净利预增570-794%，但公司明确表示"无算力产业相关业务"。电网设备掀涨停潮约29只涨停，电力板块受迎峰度夏（用电负荷15.51亿千瓦创纪录）催化持续走强。</p>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-foreign">外资</span>
+        <span class="news-title">贝莱德：芯片股抛售是反应过度；高盛唱多锂矿；瑞银称科技仍是A股核心主线</span>
+        <p style="font-size:11px;color:#666;">贝莱德认为市场混淆了"AI竞争格局转变"与"AI投资崩溃"，维持美股超配。瑞银判断科技仍是A股核心主线，回调即布局机会。北向资金与机构联手加仓工业金属（电解铝龙头获净买入1.69亿）。</p>
+    </div>
+</div>
+
+<div class="section" style="border-left:3px solid #e74c3c;">
+    <h2>⚠️ 风险提示与策略建议</h2>
+    <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
+        <span style="font-weight:700;color:#e74c3c;">外围多重利空共振</span>
+        <span style="color:#e74c3c;font-size:12px;">美股科技重挫（纳指-2.15%）+中东冲突升温（布油破100）+美国新关税生效+美债收益率4.7%，今日A股大幅低开。周五叠加月末效应，市场情绪脆弱</span>
+    </div>
+    <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
+        <span style="font-weight:700;color:#f39c12;">存储芯片/CPO持续失血</span>
+        <span style="color:#f39c12;font-size:12px;">长鑫7/27 IPO抽血效应持续，科创50三连阴累跌约-6%。佰维存储、普冉股份仍在风险区。贝莱德虽喊"反应过度"，但短线不宜抄底，等长鑫上市落地后再评估</span>
+    </div>
+    <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
+        <span style="font-weight:700;color:#f39c12;">油价飙升的双刃剑</span>
+        <span style="color:#f39c12;font-size:12px;">布油破100利好油气/能源板块，但推升全球通胀预期，美联储加息概率升至36%。航空、化工、物流等成本敏感行业承压。高油价若持续，将压制整体市场风险偏好</span>
+    </div>
+    <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
+        <span style="font-weight:700;color:#e74c3c;">下周核心变量</span>
+        <span style="color:#e74c3c;font-size:12px;">①7月政治局会议（稳增长政策预期）②长鑫科技7/27 IPO申购落地 ③宁德时代今日盘后财报 ④中美300亿美元对等降税谈判进展</span>
+    </div>
+    <p style="font-size:11px;color:#999;margin-top:8px;">
+        <strong>策略建议</strong>：市场处于"高低切"第二阶段——资源/电网/锂电主线确认，科技股超跌后有技术性反弹（今日半导体设备已现）。建议仓位5成以下，配置向电网设备+锂电+消费电子倾斜，回避存储/CPO/AI应用。今日周五，控制仓位等周末政治局会议信号。周一将是关键变盘窗口。
+    </p>
+</div>
+
+<div class="footer">
+    <p>⚠️ 本报告由AI基于公开数据自动生成，仅供参考，不构成投资建议</p>
+    <p>数据来源：东方财富、财联社、第一财经、新浪财经、证券时报、SEMI</p>
+    <p>生成时间: 2026-07-24 盘中 | 今日周五 · 美股科技重挫+中东局势+关税三重冲击</p>
+</div>
+
+</body>
+</html>
