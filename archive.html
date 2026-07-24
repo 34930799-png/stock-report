@@ -27,7 +27,7 @@ body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 
 <div class="header">
   <h1>📁 历史报告</h1>
-  <a href="index.html">← 返回今日日报</a>
+  <a href="index">← 返回今日日报</a>
 </div>
 
 <div class="section">
@@ -51,7 +51,7 @@ body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 <script>
 // 密码保护：从首页跳转过来时 sessionStorage 已有 auth
 if (sessionStorage.getItem('sa') !== '1') {
-  location.href = 'index.html';
+  location.href = 'index';
 }
 
 const weekdays = ['日','一','二','三','四','五','六'];
@@ -70,7 +70,7 @@ function buildList(prefix, containerId) {
       String(d.getMonth()+1).padStart(2,'0') + '-' +
       String(d.getDate()).padStart(2,'0');
     html += `<li>
-      <a href="${prefix}/${ds}.html">📄 ${ds}</a>
+      <a href="${prefix}/${ds}">📄 ${ds}</a>
       <span class="weekday">周${weekdays[d.getDay()]}</span>
     </li>`;
     count++;
