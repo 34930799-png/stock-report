@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>股市热点关注 2026-07-30</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:12px; opacity:0.9; }
+.header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
+th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
+td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
+tr:hover { background:#fffbf0; }
+.up { color:#e74c3c; font-weight:600; }
+.down { color:#27ae60; font-weight:600; }
+.news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
+.news-item:last-child { border-bottom:none; }
+.news-title { font-weight:600; color:#16213e; }
+.news-src { font-size:10px; color:#999; }
+.tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
+.tag-semicon { background:#e74c3c; }
+.tag-ai { background:#8e44ad; }
+.tag-policy { background:#2980b9; }
+.tag-market { background:#f39c12; }
+.tag-energy { background:#27ae60; }
+.tag-risk { background:#c0392b; }
+.tag-foreign { background:#16a085; }
+.tag-gold { background:#d4a017; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+.sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
+.sector-name { font-weight:600; min-width:90px; font-size:12px; }
+.sector-pct { font-weight:600; font-size:12px; min-width:60px; }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
+.stock-card:last-child { border-bottom:none; }
+.watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
+.watch-card:last-child { border-bottom:none; }
+.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-info { flex:1; }
+.watch-name { font-weight:600; font-size:13px; }
+.watch-detail { font-size:11px; color:#666; }
+.watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
+.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#e74c3c; }
+.heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🔥 股市热点关注</h1>
+    <div class="date">2026-07-30 周四 · 美联储鹰派五连停，黄金$4100创历史新高</div>
+    <div class="subtitle">美光-10%暴击存储＋中东战云密布油价+6%＋中国金龙指数逆涨，A股今日验证"脱钩"韧性！</div>
+</div>
+
+<div class="section">
+    <h2>📊 市场概况（盘前预估）</h2>
+    <table>
+        <tr><th>指数</th><th>昨收(7/29)</th><th>涨跌幅</th><th>今开预估</th><th>关键点位</th></tr>
+        <tr>
+            <td>上证指数</td>
+            <td style="font-weight:600;">3828.47</td>
+            <td class="up">+0.40%</td>
+            <td class="down">3810~3820</td>
+            <td>支撑3780 / 压力3850</td>
+        </tr>
+        <tr>
+            <td>深证成指</td>
+            <td style="font-weight:600;">13658.44</td>
+            <td class="up">+1.10%</td>
+            <td class="down">13550~13600</td>
+            <td>支撑13400 / 压力13800</td>
+        </tr>
+        <tr>
+            <td>创业板指</td>
+            <td style="font-weight:600;">3378.70</td>
+            <td class="up">+1.55%</td>
+            <td class="down">3350~3370</td>
+            <td>支撑3300 / 压力3420</td>
+        </tr>
+        <tr>
+            <td style="color:#e74c3c;font-weight:700;">科创50 🔥</td>
+            <td style="font-weight:600;">1678.74</td>
+            <td class="down">-0.87%</td>
+            <td class="down" style="font-weight:700;">1640~1660</td>
+            <td>支撑1630 / 压力1700</td>
+        </tr>
+        <tr>
+            <td>北证50</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>关注小盘股情绪</td>
+        </tr>
+    </table>
+    <div class="market-note">
+        <strong>⚡ 盘前核心矛盾：美联储鹰派超预期 VS A股独立韧性。</strong>凌晨FOMC决议五连停但3票要求加息25bp（2016年以来首现三张一致反对票），沃什明确不给降息时间表，美股先涨后暴跌（道指-2.19%、纳指-1.74%、标普-1.52%）。但多空交织：黄金突破$4100创历史新高、中国金龙指数逆涨+1.73%、昨日A股4253股上涨全面修复、千亿回购潮持续（宁王400亿+中际40-80亿）、宽基ETF连续放量托底。<strong>今日最大看点：A股在隔夜美股暴跌+美光-10%的双重暴击下，能否复制7/28→7/29的低开V反模式，实现与美股半导体的正式"脱钩"。</strong>如果科创50在1630-1650区间V回翻红，将是极其强烈的独立行情信号。
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔥 行业热力图（盘前预估·基于隔夜消息面）</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">预计今日强势板块</p>
+    <div class="sector-bar">
+        <span class="sector-name">🥇 黄金/贵金属</span>
+        <span class="sector-pct up">+2.0~4.0%</span>
+        <div class="sector-bar-fill" style="width:380px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">⛽ 石油/能源</span>
+        <span class="sector-pct up">+1.5~3.0%</span>
+        <div class="sector-bar-fill" style="width:300px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">🍺 食品饮料/消费</span>
+        <span class="sector-pct up">+0.5~1.5%</span>
+        <div class="sector-bar-fill" style="width:180px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">🏦 银行/高股息</span>
+        <span class="sector-pct up">+0.3~0.8%</span>
+        <div class="sector-bar-fill" style="width:100px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">🛡️ 军工/国防</span>
+        <span class="sector-pct up">+0.5~1.5%</span>
+        <div class="sector-bar-fill" style="width:180px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">🔋 锂电/新能源</span>
+        <span class="sector-pct up">+0.3~1.0%</span>
+        <div class="sector-bar-fill" style="width:120px;"></div>
+    </div>
+    <p style="font-size:12px;color:#666;margin:12px 0 8px;">预计承压板块</p>
+    <div class="sector-bar">
+        <span class="sector-name">💾 存储芯片</span>
+        <span class="sector-pct down">-2.0~4.5%</span>
+        <div class="sector-bar-fill green" style="width:420px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">🏭 半导体设备</span>
+        <span class="sector-pct down">-1.5~3.0%</span>
+        <div class="sector-bar-fill green" style="width:300px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">🔌 CPO光模块</span>
+        <span class="sector-pct down">-1.0~2.5%</span>
+        <div class="sector-bar-fill green" style="width:250px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">🖥️ AI算力/IDC</span>
+        <span class="sector-pct down">-0.5~1.5%</span>
+        <div class="sector-bar-fill green" style="width:180px;"></div>
+    </div>
+    <div class="sector-bar">
+        <span class="sector-name">✈️ 航空/航运</span>
+        <span class="sector-pct down">-0.5~1.5%</span>
+        <div class="sector-bar-fill green" style="width:180px;"></div>
+    </div>
+    <div class="heatmap-legend">
+        <span>🔴 红色=预估涨幅  🟢 绿色=预估跌幅  柱长=涨跌幅强度  |  ⚠️ 开盘前预估值，以实际行情为准</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🚀 强势股速览（隔夜消息面+昨日动能结合的今日重点标的）</h2>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#1</span>
+            <span style="font-weight:600;">紫金矿业</span><span class="stock-code" style="font-size:10px;color:#999;">601899</span>
+            <span class="tag tag-gold">黄金</span>
+        </div>
+        <span class="up">32.15 +1.45%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">黄金$4100新高！今日最强催化</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#2</span>
+            <span style="font-weight:600;">宁德时代</span><span class="stock-code" style="font-size:10px;color:#999;">300750</span>
+            <span class="tag tag-energy">锂电</span>
+        </div>
+        <span class="up">396.84 +1.53%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">400亿回购创纪录！距400仅一步</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#3</span>
+            <span style="font-weight:600;">青岛啤酒</span><span class="stock-code" style="font-size:10px;color:#999;">600600</span>
+            <span class="tag tag-market">消费</span>
+        </div>
+        <span class="up">55.56 +2.06%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">两连阳+4.7%！消费主线核心</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#4</span>
+            <span style="font-weight:600;">华友钴业</span><span class="stock-code" style="font-size:10px;color:#999;">603799</span>
+            <span class="tag tag-energy">能源金属</span>
+        </div>
+        <span class="up">40.30 +2.60%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">PE10倍+油价+6%+资源共振</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#5</span>
+            <span style="font-weight:600;">普冉股份</span><span class="stock-code" style="font-size:10px;color:#999;">688766</span>
+            <span class="tag tag-semicon">存储芯片</span>
+        </div>
+        <span class="up">338.50 +9.19%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">昨暴涨+9.19%！今日美光-10%大考</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#6</span>
+            <span style="font-weight:600;">中际旭创</span><span class="stock-code" style="font-size:10px;color:#999;">300308</span>
+            <span class="tag tag-ai">CPO</span>
+        </div>
+        <span class="up">951.00 +4.74%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">40-80亿回购！反弹成色今日验证</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#7</span>
+            <span style="font-weight:600;">华测导航</span><span class="stock-code" style="font-size:10px;color:#999;">300627</span>
+            <span class="tag tag-market">导航</span>
+        </div>
+        <span class="up">28.60 +3.85%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">两日逆涨+5.8%！独立于科技波动</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#8</span>
+            <span style="font-weight:600;">立讯精密</span><span class="stock-code" style="font-size:10px;color:#999;">002475</span>
+            <span class="tag tag-ai">消费电子</span>
+        </div>
+        <span class="up">62.35 +3.74%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">苹果市值5万亿！AI大单双催化</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#27ae60;min-width:24px;">🔻</span>
+            <span style="font-weight:600;">中钨高新</span><span class="stock-code" style="font-size:10px;color:#999;">000657</span>
+            <span class="tag tag-risk">钨材料</span>
+        </div>
+        <span class="down">52.54 -2.67%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">三连跌-10.9%跌破止损！严重预警</span>
+    </div>
+    <div class="stock-card">
+        <div style="display:flex;align-items:center;gap:8px;flex:1;">
+            <span style="font-weight:700;color:#27ae60;min-width:24px;">🔻</span>
+            <span style="font-weight:600;">佰维存储</span><span class="stock-code" style="font-size:10px;color:#999;">688525</span>
+            <span class="tag tag-semicon">存储</span>
+        </div>
+        <span class="up">211.88 +0.98%</span>
+        <span style="font-size:10px;color:#666;min-width:160px;text-align:right;">昨反弹最弱！美光-10%雪上加霜</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>👀 自选股关注</h2>
+    <div class="watch-card">
+        <div class="watch-rank">1</div>
+        <div class="watch-info">
+            <div class="watch-name">紫金矿业 601899 <span class="up">收32.15 +1.45%</span></div>
+            <div class="watch-detail">黄金突破$4100创历史新高！美元指数跌破101至100.92，美联储鹰派反而推动避险资金涌入黄金。紫金作为A股黄金+铜双龙头，PE仅12倍，今日确定性最强的逻辑。昨日已涨+1.45%，今日高开概率大。关注能否突破33元——如果放量突破，下一目标35元。中东局势升级（特朗普威胁"痛击伊朗"）进一步推升避险需求。</div>
+        </div>
+        <div class="watch-action up">强势持有/加仓</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">2</div>
+        <div class="watch-info">
+            <div class="watch-name">宁德时代 300750 <span class="up">收396.84 +1.53%</span></div>
+            <div class="watch-detail">200-400亿A股史上最大回购+超预期业绩+锂电独立主线=三重支撑。连续2日站稳390上方，距400仅一步之遥。昨日成交额全市场前五，回购资金持续进场。锂电板块已完全与AI硬件/美股半导体脱钩——这是最大的alpha。今日关注能否站上400元——如果突破，420（布林上轨）是下一目标。若回踩390-395是加仓良机。</div>
+        </div>
+        <div class="watch-action up">核心仓位持有</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank">3</div>
+        <div class="watch-info">
+            <div class="watch-name">青岛啤酒 600600 <span class="up">收55.56 +2.06% · 两连阳+4.7%</span></div>
+            <div class="watch-detail">消费防御连续2日成为全市场最强主线！昨日乳业超10股涨停、零售/教育/游戏批量封板，资金从科技向消费的迁移趋势明确。PE16倍合理+夏季旺季催化+防御属性。如果今日消费板块不补跌，将确认风格切换趋势成立，青啤有望三连阳。美股大跌+美联储鹰派反而加速资金向消费防御迁移。关注能否突破57元。</div>
+        </div>
+        <div class="watch-action up">积极持有</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank" style="color:#e74c3c;">!</div>
+        <div class="watch-info">
+            <div class="watch-name">科创50 & 半导体标的 <span class="down">科创50昨-0.87%跑输 · 美光-10%新压力</span></div>
+            <div class="watch-detail"><strong>今日核心矛盾！</strong>科创50昨日在全面上涨中逆势收跌-0.87%，半导体设备/存储/电子元器件持续弱势。隔夜美光-10%+费半持续走弱，今日科创50开盘承压确定。关键看点：① 1630-1650区间能否V回——昨日盘中最低一度逼近1600后V反至1678，1650是短期生命线；② 如果科创50在美光暴击下低开至1630附近然后V回翻红，则是极其强烈的A股半导体与美股"脱钩"信号——绝对是加仓科技股的时机；③ 如果跌破1600且无力反弹，则短期科技全面回避。</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">关键观察窗口</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank" style="color:#e74c3c;">!</div>
+        <div class="watch-info">
+            <div class="watch-name">存储三剑客：普冉+佰维+澜起 <span class="up">昨普冉+9.19% / 佰维+0.98% / 澜起+0.90%</span></div>
+            <div class="watch-detail"><strong>美光-10%暴击是今日存储最大变量！</strong>普冉昨暴涨+9.19%（310→338.50）是近期最强单日反弹，但今日面临获利盘+美光双重压力——如果普冉今天能守住330以上不破，说明反弹有持续性。佰维昨仅+0.98%反弹力度全池最弱，在美光冲击下最易跌破200元关口。澜起+0.90%同样反弹乏力，PE105倍无安全边际。操作建议：存储方向今日早盘30-60分钟内不操作，等美光冲击充分消化后再做判断。</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">观望等消化</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank" style="color:#e74c3c;">!</div>
+        <div class="watch-info">
+            <div class="watch-name">CPO双雄：中际旭创+新易盛 <span class="up">中际951 +4.74% / 新易盛421 +3.51%</span></div>
+            <div class="watch-detail">中际40-80亿回购是最强支撑信号，但隔夜英伟达持续承压+光通信板块下跌。今日竞价中际约910（低开约-4.3%），新易盛约404（低开约-4%）。关键观察：① 低开后能否在30分钟内V回——如果中际从910拉回940以上、新易盛从404拉回415以上，则是强力做多信号；② 英伟达今晚能否止跌——如果英伟达继续下跌，CPO明天还要承压。回购支撑下900-910有较强底部支撑。</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">观察低开V反</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank" style="color:#27ae60;">7</div>
+        <div class="watch-info">
+            <div class="watch-name">中钨高新 000657 <span class="down">收52.54 -2.67% · 三连跌-10.9%跌破止损位</span></div>
+            <div class="watch-detail">三日从58.99→52.54累跌-10.9%，55元止损位已确认失守且未修复。在全市场4253股上涨的全面修复日继续下跌，说明并非大盘拖累而是独立利空。PE85倍+无板块催化+前期V反被证伪。布林下轨48元是下一支撑但距离当前还有-8.6%。如果中美贸易摩擦升级中方以稀土/钨反制，是唯一潜在反转催化剂——但时间不确定。止损纪律必须执行，不建议继续持有。</div>
+        </div>
+        <div class="watch-action down">坚决止损</div>
+    </div>
+    <div class="watch-card">
+        <div class="watch-rank" style="color:#27ae60;">8</div>
+        <div class="watch-info">
+            <div class="watch-name">科华数据 002335 <span class="up">收28.80 +0.35% · 全池反弹最弱</span></div>
+            <div class="watch-detail">昨日4200+只上涨中仅微涨+0.35%，反弹力度全池倒数第一。IDC/AI算力方向受科技板块拖累严重，资金从AI算力向消费+资源迁移的趋势明确。PE72倍高企，成交量萎缩无资金回补信号。接近布林下轨25元但无企稳迹象。若跌破25元将触发止损盘踩踏。建议减仓观望，至少等科技板块整体企稳再考虑。</div>
+        </div>
+        <div class="watch-action down">建议减仓</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📰 盘前要闻</h2>
+    <div class="news-item">
+        <span class="tag tag-market">美联储</span>
+        <span class="news-title">美联储五连停但鹰派超预期！3票要求加息25bp，2016年以来首现三张反对票</span>
+        <div class="news-src">维持利率3.5-3.75%不变，但FOMC罕见出现3位地区联储主席一致投票主张加息。沃什明确不给降息时间表、不释放宽松信号，9月加息概率大幅抬升至40%+。美股决议后先涨后暴跌，道指-2.19%、纳指-1.74%。美元指数跌破101至100.92</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-semicon">美光暴跌</span>
+        <span class="news-title">美光科技隔夜暴跌近10%！全球存储芯片龙头遭重创</span>
+        <div class="news-src">叠加费半持续走弱，存储芯片估值体系重构仍在加速。对A股存储/半导体板块构成直接压力，普冉/佰维/澜起等存储标的早盘承压。关注美光是否企稳——如果今晚继续跌，A股存储明天还要承压</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-gold">黄金新高</span>
+        <span class="news-title">现货黄金突破4100美元/盎司创历史新高！全球避险情绪飙升</span>
+        <div class="news-src">美联储鹰派+中东局势升级+美元走弱三重共振，黄金突破$4100大关。美元指数跌破101至100.92。利好A股黄金/贵金属板块——紫金矿业、山东黄金、中金黄金等直接受益</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-energy">油价飙升</span>
+        <span class="news-title">中东战云密布！特朗普威胁"痛击伊朗"，国际油价暴涨超6%</span>
+        <div class="news-src">WTI原油暴涨突破78美元，特朗普公开威胁对伊朗采取军事行动。利好石油/能源/军工板块，利空航空/航运。中国海油（PE6倍）等标的直接受益。关注事态是否进一步升级</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-foreign">中概逆涨</span>
+        <span class="news-title">纳斯达克中国金龙指数逆势大涨+1.73%！中概股独立走强</span>
+        <div class="news-src">在美股全面大跌背景下中概逆涨，反映海外资金对中国资产信心。对今日A股情绪形成正面托底，是今日A股低开后V反的重要信心来源</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-policy">证监会</span>
+        <span class="news-title">证监会定调下半年：扶优限劣促上市公司做优做强，推动并购重组释放活力</span>
+        <div class="news-src">明确畅通出口、强化惩戒，夯实财务造假综合惩防体系，构建"不敢造假、不能造假、不想造假"市场生态。利好市场长期健康发展。关注并购重组主题——科创板可能受益</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-policy">科技金融</span>
+        <span class="news-title">央行九部门发文：加强科技金融数据开发利用，推动可信数据空间试点</span>
+        <div class="news-src">支持市场化征信机构建设科技型企业数据库，利好金融科技/数据要素板块。与证监会扶优限劣政策形成共振，政策面为科技股提供中期支撑</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-foreign">中美博弈</span>
+        <span class="news-title">中美摩擦多点升级：FCC限制中国机器人进口+美方威胁制裁AI企业+逆变器受限</span>
+        <div class="news-src">美国FCC宣布对外国制造先进机器人（含中国人形机器人）实施进口限制。美方拟对AI企业所谓"蒸馏"美前沿模型开展调查并制裁。FTC更新受限设备清单，电力逆变器无法取得FCC授权。利空机器人/AI应用/逆变器板块。关注中方反制措施——稀土/钨可能成为反制工具</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-market">回购潮</span>
+        <span class="news-title">千亿级龙头密集回购！宁德时代200-400亿创纪录，7月累计1800亿增持回购</span>
+        <div class="news-src">宁德时代（200-400亿注销减资）、中际旭创（40-80亿）、京东方（5-10亿增持）、工业富联（10-20亿）等纷纷出手。7月以来650余家公司官宣增持回购，涉及资金约1800亿元。产业资本用真金白银投票，是最强的底部信号</div>
+    </div>
+    <div class="news-item">
+        <span class="tag tag-policy">宏观日历</span>
+        <span class="news-title">7月下旬政治局会议窗口待定！光伏价格合规指导+IPv6专项行动</span>
+        <div class="news-src">政治局会议通常7月下旬召开，若今日盘后出通稿释放政策利好（财政刺激、产业支持、资本市场改革），可能成为日内逆转催化剂。市场监管总局7/31在盐城开展光伏价格合规指导。网信办启动AI大模型IPv6能力提升专项行动</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🎯 今日操作要点</h2>
+    <p style="font-size:13px;line-height:1.8;">
+        <strong>💰 仓位建议：5~6成</strong>，隔夜美股大跌+美联储鹰派+美光-10%三重外部暴击，但昨日A股全面修复+千亿回购潮+ETF放量托底提供坚实支撑。低开不恐慌，V反是机会<br>
+        <strong>📈 主线方向：</strong>① <strong>黄金/贵金属</strong>（核心仓位——黄金$4100历史新高+美元破101，紫金矿业确定性最强）；② <strong>消费防御</strong>（食品饮料连续2日领涨，风格切换趋势明确，青岛啤酒/乳业板块）；③ <strong>石油/能源</strong>（中东升级油价+6%，中国海油PE6倍+高股息）；④ <strong>锂电/新能源</strong>（宁王400亿回购铁底+锂电独立主线，与美股科技脱钩的alpha）<br>
+        <strong>🚫 回避方向：</strong>存储芯片（美光-10%直接暴击，早盘至少30分钟不操作）、半导体设备（费半持续走弱+资金流出未止）、高PE AI算力（科华数据等资金持续流出）、航空/航运（油价飙升直接利空）<br>
+        <strong>⏰ 关键观察：</strong><br>
+        · <strong>科创50 1630-1650生命线</strong>——低开后能否V回？若能翻红，A股半导体与美股正式脱钩，强烈看多信号，可加仓科技<br>
+        · <strong>存储三剑客早盘表现</strong>——开盘前30分钟不操作，等美光冲击充分消化。如果低开后V回（如普冉守住330、佰维守住200），说明存储板块抄底资金积极<br>
+        · <strong>CPO双雄V反验证</strong>——中际竞价约910（低开-4.3%），关注能否在30分钟内拉回940+。V反则反弹成立，低开低走则减仓<br>
+        · <strong>消费板块三连阳验证</strong>——如果食品饮料/零售在今日早盘不补跌，则风格切换趋势正式确认，加仓消费防御<br>
+        · <strong>紫金矿业能否突破33元</strong>——黄金$4100利好+PE12倍，如果放量突破33，趋势加速<br>
+        · <strong>政治局会议通稿</strong>——7月下旬惯例窗口，如果盘后发布可构成重大政策催化，是潜在逆转变量<br>
+        · <strong>今晚美股科技巨头能否止跌</strong>——如果英伟达/美光今晚继续跌，A股科技明天还要承压。反之如果企稳，明天科技反弹<br>
+        <strong>⚠️ 核心策略：低开是试金石，不是逃跑信号。</strong>昨日A股4253股上涨的全面修复不是偶然——千亿回购潮+宽基ETF连续放量+中国金龙指数逆涨，说明内资承接意愿极强。今日如果科创50在美光暴击下低开至1630-1650然后V回翻红，将是A股独立行情的里程碑式确认——这是从"跟随美股"到"自主定价"的质变信号。届时果断加仓：黄金+消费主线+CPO（如果V反确认）。反之如果科创50跌破1600且无力反弹，短线先观望，但中长期看多逻辑不变（回购潮+政策催化+估值修复）。
+    </p>
+</div>
+
+<div class="footer">
+    <p>⚠️ 本报告由AI基于公开数据自动生成，仅供参考，不构成投资建议</p>
+    <p>数据来源：新浪财经、东方财富、财联社、格隆汇 | 盘前分析 · 数据截至 2026-07-30 09:20</p>
+    <p>生成时间: 2026-07-30 09:20 | 美联储鹰派五连停3票要求加息 | 黄金$4100历史新高 | 美光-10% | 中东局势升级油价+6% | 政治局会议窗口</p>
+</div>
+
+</body>
+</html>
