@@ -109,6 +109,10 @@ async function initApp() {
     if(!hotspotDate && await exists('hotspot/'+d)) hotspotDate=d;
   }
 
+  // 预存到全局变量，供 openReport 同步跳转（避免 async/await 后被浏览器拦截弹窗）
+  window._dailyDate = dailyDate;
+  window._hotspotDate = hotspotDate;
+
   document.getElementById('dailyDate').textContent = dailyDate ? '📄 '+dailyDate : '尚未生成';
   document.getElementById('hotspotDate').textContent = hotspotDate ? '📄 '+hotspotDate : '尚未生成';
 
@@ -119,16 +123,12 @@ async function initApp() {
 }
 
 function openReport(type) {
-  let dates = getDates(6);
-  // 查找最近可用报告日期
-  (async ()=>{
-    for(let d of dates) {
-      if (await exists(type+'/'+d)) {
-        window.open(type+'/'+d, '_blank'); return;
-      }
-    }
+  var d = type === 'daily' ? window._dailyDate : window._hotspotDate;
+  if (d) {
+    window.open(type+'/'+d, '_blank');
+  } else {
     alert('报告尚未生成');
-  })();
+  }
 }
 
 document.getElementById('pwd').addEventListener('keydown',e=>{if(e.key==='Enter')unlock();});
