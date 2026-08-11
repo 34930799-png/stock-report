@@ -32,451 +32,225 @@ tr:hover { background:#fffbf0; }
 .top-name { font-weight:600; font-size:14px; }
 .top-price { font-size:14px; font-weight:600; color:#16213e; }
 .top-reason { font-size:11px; color:#666; line-height:1.6; }
-.hot-item { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f0f0f0; font-size:12px; }
-.hot-item:last-child { border-bottom:none; }
-.hot-name { font-weight:600; }
-.hot-pct { color:#e74c3c; font-weight:600; }
-.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
-.footer p { margin:2px 0; }
 .summary { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
 .summary-item { background:#f0f0f0; padding:4px 8px; border-radius:4px; font-size:11px; }
 .buy-count { color:#e74c3c; font-weight:700; }
 .hold-count { color:#f39c12; font-weight:700; }
 .sell-count { color:#27ae60; font-weight:700; }
 .market-overview { font-size:13px; line-height:1.8; }
-.market-overview .idx { display:inline-block; margin:0 8px; }
 .alert-box { background:#fff3cd; border:1px solid #ffc107; border-radius:6px; padding:10px; margin:8px 0; font-size:12px; }
 .alert-box.red { background:#ffeaea; border-color:#e74c3c; }
 .alert-box.green { background:#eafaf1; border-color:#27ae60; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
 </style>
 </head>
 <body>
-
 <div class="header">
     <h1>📊 关注股票日报</h1>
-    <div class="date">2026-08-11 周二 | 盘前分析 · 基于8/10收盘数据+隔夜全球市场</div>
+    <div class="date">2026-08-11 周二 | 盘前分析 · 基于8/10收盘数据+8/11盘前要闻</div>
 </div>
-
 <div class="section">
     <h2>📈 今日盘前市场概况</h2>
     <div class="market-overview">
-        <p><strong>昨日（8/10 周一）复盘</strong>——沪指五连阳兵临4000点大关，市场风格剧烈切换！<strong style="color:#e74c3c;">上证+0.67%收3966.59</strong>五连阳，<strong style="color:#e74c3c;">深证+0.04%收14317</strong>，<strong style="color:#27ae60;">创业板-0.73%收3537</strong>，<strong style="color:#27ae60;">科创50-0.36%收1738</strong>。两市成交约2.54万亿（缩量1400亿），涨跌家数4066:1386，涨停103家跌停5-6家。<strong>沪指周涨幅已超2.8%，自7月底部反弹超6%。</strong></p>
-        <p style="margin-top:4px;"><strong>8/10板块剧烈轮动</strong>：<span style="color:#e74c3c;">医药/大消费——全面爆发（百花医药5连板、药明康德大涨、食品饮料多股涨停）/ 贵金属/黄金——金价续涨（招金黄金涨停、潮宏基涨停）/ 军工——地缘催化（洪都航空、长城军工涨停）/ 有色资源——逆势独撑（中钨高新盘中一度+8.64%！华友钴业+4.68%继续大涨）</span>。资金流入TOP3：医药+89亿 / 食品饮料+55亿 / 有色金属+48亿。<strong style="color:#27ae60;">科技全线重挫</strong>：CPO（中际旭创盘中-6.96%、新易盛盘中-6.83%）/ 存储芯片（普冉盘中-7.04%、长鑫科技-4.08%）/ PCB / 计算机 / 电子 集体回调。<strong>从CPO→存储→PCB的硬科技轮动一周内加速走完，资金选择获利了结科技、加仓资源+消费。这是短期风格切换，不是趋势终结。</strong></p>
-        <p style="margin-top:4px;"><strong>自选池8/10涨跌全景（基于收盘价）</strong>：20只股票<span style="color:#e74c3c">8只收红、12只收绿</span>。涨幅最大：<span style="color:#e74c3c">中钨高新 +8.64%</span>（67.01→72.80元五天+52%！钨材料+有色板块共振，继续狂飙模式）、<span style="color:#e74c3c">华友钴业 +4.68%</span>（44.01→46.07元两天+11%强势反转！美国30亿美元矿产投资+有色大涨催化）、<span style="color:#e74c3c">宁德时代 +1.86%</span>（386.67→393.87元除权后首日企稳回升）、<span style="color:#e74c3c">紫光国微 +1.16%</span>（67.22→68.00元温和上涨）、<span style="color:#e74c3c">紫金矿业 +0.85%</span>（35.15→35.45元稳步上行）。跌幅最大：<span style="color:#27ae60;">中际旭创 -6.01%</span>（919.87→864.58元！CPO龙头两日从955跌至865累计-9.4%，放量暴跌破布林下轨880元）、<span style="color:#27ae60;">新易盛 -5.07%</span>（420.95→399.60元逼近布林下轨400元）、<span style="color:#27ae60;">普冉股份 -4.86%</span>（393.63→374.50元MSCI利好兑现遭获利了结）、<span style="color:#27ae60;">澜起科技 -3.99%</span>（215.52→206.92元DDR5回调）、<span style="color:#27ae60;">扬杰科技 -2.91%</span>（96.93→94.11元跟随半导体回调）。<strong>核心规律：资源股（中钨/华友/紫金）成为最强的独立主线，CPO/存储/半导体集体遭遇获利了结。市场从"科技独舞"转向"资源+消费+医药"三线轮动。沪指五连阳但缩量1400亿——量价背离值得警惕。</strong></p>
-        <p style="margin-top:4px;"><strong>🔴 隔夜全球市场（8/10美股收盘）重大变化</strong>：① <strong style="color:#27ae60;">美股三大指数集体收跌</strong>——道指-0.11%、标普-0.06%、纳指-0.32%。<strong style="color:#e74c3c;">费城半导体指数暴跌-2.94%！</strong>英特尔-4%+（宣布150亿美元增发计划）、英伟达-2.86%。芯片和光通信概念深夜跳水，对A股科技板块情绪形成压制。② <strong style="color:#e74c3c;">黄金COMEX +1.11%报4448.6美元/盎司续创新高，白银+3.75%</strong>——全球避险+央行增持+美元走弱三重共振，资源股最强催化剂。③ <strong style="color:#e74c3c;">WTI原油+5%报82.13美元/桶</strong>——美伊霍尔木兹海峡供应风险升级，能源/化工板块受益。④ <strong style="color:#e74c3c;">中概股逆势走强，金龙指数+1.65%</strong>——阿里巴巴+3%、BOSS直聘+6%、搜狐+5%，中国资产韧性显现。⑤ <strong>英特尔150亿美元增发计划</strong>——晶圆代工烧钱加速，竞争对手台积电/三星受益逻辑。</p>
-        <p style="margin-top:4px;"><strong>📊 今日（8/11 周二）盘前预判</strong>：<strong style="color:#f39c12;">美股芯片暴跌+沪指五连阳缩量+4000点三重压力=今日大概率低开震荡，资源股独撑vs科技继续承压，关注3900-3920支撑位。</strong>核心逻辑：① <strong style="color:#27ae60;">外围利空科技方向</strong>——费城半导体-2.94%，A股CPO/存储/半导体今日开盘大概率承压，但中际旭创等已跌至布林下轨附近（865元），超跌后技术性反弹可期。② <strong style="color:#e74c3c;">资源股最强主线不变</strong>——黄金4448美元续创新高+油价+5%，紫金矿业/中钨高新/华友钴业继续受益，但中钨五天+52%极度超买。③ <strong>沪指五连阳+缩量=4000点关口压力显著</strong>——3965-4000区间堆积6月底套牢盘+五日获利盘，缩量突破难度大，大概率需震荡2-3天消化。④ <strong style="color:#e74c3c;">消费/医药轮动可持续性存疑</strong>——昨日大消费大涨更多是科技资金溢出效应而非基本面驱动，今日持续性待观察。⑤ <strong>中概股走强+A50连阳</strong>——中国资产风险偏好改善，对A股底部有支撑。<strong>操作建议</strong>：周二不追资源股（已涨太多），科技股暴跌不恐慌割肉（CPO已超跌），等市场情绪稳定后分批布局。中钨高新五天+52%强烈建议减仓锁利！整体仓位控制5-6成。</p>
-        <p style="margin-top:4px;font-size:11px;color:#999;">⚠️ 今日核心观察：① 沪指能否守住3930支撑——若跌破则短期调整信号；② CPO/存储能否在布林下轨附近止跌企稳——决定科技方向是否超跌反弹；③ 中钨高新五天+52%后的走势——资源股风向标；④ 黄金4448美元能否站稳——决定资源股持续性；⑤ 费城半导体-2.94%对A股半导体的传导程度；⑥ 成交额能否维持2.4万亿以上——缩量则4000点无望。</p>
+        <p><strong>昨日（8/10 周一）复盘</strong>——沪指五连阳但科技股惨烈血洗！<strong style="color:#e74c3c;">上证+0.67%收3966.59</strong>五连阳（盘中最高3967.59），<strong>深证+0.04%收14317</strong>基本平收，<strong style="color:#27ae60;">创业板-0.73%收3537</strong>，<strong style="color:#27ae60;">科创50-0.36%收1738</strong>。两市成交约2.51万亿（缩量约2200亿），全市场超4000只个股上涨，涨停约106家跌停3家。表面看赚钱效应良好，实则内部剧烈撕裂：<strong style="color:#e74c3c;">贵金属/有色/消费/医药强势领涨</strong>，<strong style="color:#27ae60;">CPO/光通信/半导体/存储惨烈暴跌</strong>——自选池中际旭创-6.01%、新易盛-5.07%、普冉-4.86%、澜起-3.99%集体跳水！<strong>沪指五连阳逼近4000点大关，但双创指数双双收跌，市场呈现罕见的"沪强深弱+指数涨个股跌"撕裂格局。</strong></p>
+        <p style="margin-top:4px;"><strong>8/10板块轮动</strong>：<span style="color:#e74c3c;">贵金属/有色——金价站上4448美元+招金黄金涨停（紫金+0.85%、中钨+8.64%五天+52%、华友钴业+4.68%）/ 泛消费——扩大消费十五五规划（多股涨停）/ 医药生物——创新药BD交易全球前十占八（药明康德H1净利110.8亿+29.43%）/ 军工——全天领涨（长城军工、洪都航空涨停）/ 电力电网——用电负荷创新高+特高压十五五规划</span>。资金流入TOP3：贵金属+87亿 / 医药生物+65亿 / 食品饮料+48亿。<span style="color:#27ae60;">光通信/CPO暴跌——Coherent美股-14%+FCC禁止中国光模块进口草案（中际旭创-6.01%放量457.6亿、新易盛-5.07%放量266.9亿）/ 半导体/存储——板块普跌（普冉-4.86%、澜起-3.99%、长鑫科技-2.25%）/ 电子元器件——整体承压</span>。核心特征：资源+消费成了避风港，科技硬件遭遇恐慌性抛售。</p>
+        <p style="margin-top:4px;"><strong>自选池8/10涨跌全景</strong>：21只股票<span style="color:#e74c3c">10只收红、11只收绿</span>，整体表现弱于大盘。涨幅最大：<span style="color:#e74c3c;">中钨高新 +8.64%</span>（67.01→72.80元五天+52%疯狂继续！62.50起涨已逼近翻倍，钨材料+半导体靶材+有色板块三重共振）、<span style="color:#e74c3c;">华友钴业 +4.68%</span>（44.01→46.07元底部强势反转确立！美国30亿矿产+刚果禁铜钴出口+板块共振）、<span style="color:#e74c3c;">宁德时代 +1.86%</span>（386.67→393.87元除权后强势，8/7除权10派14.11元后不跌反涨说明资金认可）、<span style="color:#e74c3c;">华测导航 +1.24%</span>（28.16→28.51元稳步上行）、<span style="color:#e74c3c;">紫光国微 +1.16%</span>（67.22→68.00元半导体中独自抗跌）。跌幅最大：<span style="color:#27ae60;">中际旭创 -6.01%</span>（919.87→864.58元瀑布式暴跌！成交457.6亿全市场第三，Coherent美股-14%+FCC禁令草案双重暴击）、<span style="color:#27ae60;">新易盛 -5.07%</span>（420.95→399.60元放量266.9亿跟跌CPO惨案）、<span style="color:#27ae60;">普冉股份 -4.86%</span>（393.63→374.50元存储龙头大幅回调，逼近前高后获利盘涌出）、<span style="color:#27ae60;">澜起科技 -3.99%</span>（215.52→206.92元DDR5龙头放量91.5亿大跌）、<span style="color:#27ae60;">四方达 -2.60%</span>（36.92→35.96元独立行情回撤）。<strong>核心规律：CPO全面崩盘+存储集体退潮=科技硬件遭遇系统性抛售。资源+消费成为新避风港。自选池核心矛盾已从"追哪个科技股"变为"科技股要不要清仓"。</strong></p>
+        <p style="margin-top:4px;"><strong>🔴 8/10盘后-8/11盘前重大事件</strong>：① <strong style="color:#e74c3c;">央行印发"十五五"改革发展规划+9份配套行动方案</strong>——科技金融体制+债券市场"科技板"+数字金融+金融支持消费+人民币离岸市场，全方位利好。② <strong style="color:#27ae60;">美股光通信板块惨烈暴跌</strong>——Coherent-14%、Lumentum-8%，直接冲击A股CPO。但纳指仅-0.32%标普-0.06%总体平稳，中概股金龙指数逆势+1.65%。③ <strong style="color:#e74c3c;">黄金续涨+1.11%报4448美元/盎司</strong>——央行21个月增持+美元走弱+地缘政治三重共振。④ <strong style="color:#e74c3c;">WTI原油暴涨+5.05%报82.13美元</strong>——霍尔木兹海峡协议未达成+美国战略石油储备跌至1983年来新低。⑤ <strong style="color:#e74c3c;">阿里云全球数据中心产能拟提升两倍</strong>——首创全模块化设计，AIDC交付工期缩短至100天、成本降低10%以上，利好IDC/AI服务器/液冷/光模块（但短期CPO情绪极差）。⑥ <strong style="color:#e74c3c;">江波龙H1净利润105.77亿元暴增715倍+拟4-8亿回购</strong>——存储产业链业绩兑现，但8/10存储板块普跌说明"利好出尽"。⑦ <strong>煤炭工业十五五规划印发</strong>——2030年智能化煤矿产能比例75%，矿井智能化改造迎窗口期。⑧ <strong>亿纬锂能两类电池将涨价</strong>——锂电池产业集中度有望提升，锂电龙头受益。⑨ <strong>人形机器人加速落地</strong>——宇树科技中签率0.018%、机构称产业化奇点已至。⑩ <strong style="color:#27ae60;">⚠️周三（8/12）被多机构标记为潜在风险窗口</strong>——五连阳后技术面超买+布林上轨压制+月末资金面收紧预期。⑪ <strong>固态电池峰会8/11-12芝加哥+SMM电池大会8/13-14长沙</strong>——电池技术路线催化密集。⑫ <strong>工业富联/湖北宜化等今日中报披露</strong>——关注业绩对科技股情绪的边际影响。</p>
+        <p style="margin-top:4px;"><strong>📊 今日（8/11 周二）盘前预判</strong>：<strong style="color:#e74c3c;">五连阳后沪指逼近4000点整数关口+布林上轨，叠加科技股暴跌拖累双创，今日大概率冲高震荡、结构性分化加剧。</strong>核心逻辑：① <strong style="color:#e74c3c;">沪指五连阳逼近4000点强阻力区</strong>——3965-4000点堆积6月底套牢盘+五日获利盘，突破需成交额维持2.5万亿以上，昨日缩量至2.51万亿说明追高意愿减弱。② <strong style="color:#27ae60;">CPO板块遭遇系统性风险</strong>——美股Coherent-14%+FCC禁令草案+中际旭创放量-6%成交457.6亿，这不是普通回调而是中期调整开始。CPO/光模块短期坚决不抄底！③ <strong style="color:#e74c3c;">资源+消费双主线确立</strong>——金价4448美元+原油暴涨5%+央行十五五规划支持消费，有色/黄金/消费成为新的资金避风港。④ <strong>存储板块"利好出尽"回调</strong>——苹果测试长鑫+江波龙暴增715倍+SK海力士384亿扩产利好叠加，但8/10普冉-4.86%/澜起-3.99%说明短期获利盘集中兑现。存储中期逻辑不变但短期需要消化。⑤ <strong style="color:#e74c3c;">阿里云AIDC扩产利好</strong>——利好IDC/液冷/服务器（科华数据），光模块中长期逻辑不受CPO短期调整影响。⑥ <strong style="color:#27ae60;">⚠️周三（8/12）风险窗口预警</strong>——多机构提示五连阳后技术面超买风险，今明两天可能成为短期高点。<strong>操作建议</strong>：今日以防御为主！中钨高新五天+52%强烈建议减仓1/2-2/3锁利；CPO/存储方向不抄底、不加仓、持有者设好止损；新增资金优先配置资源（紫金/华友钴业）+消费防御（青岛啤酒）+低位优质标的（立讯精密/大华股份）。整体仓位降至5-6成，留现金应对周三潜在回撤。</p>
+        <p style="margin-top:4px;font-size:11px;color:#999;">⚠️ 今日核心观察：① 中际旭创850元能否守住——若跌破则CPO中期调整确认，850元以下是下一支撑位；② 中钨高新五天+52%后是否出现集中获利兑现——资源股行情的风向标；③ 沪指能否放量突破3965-4000阻力区——若缩量则回调概率极大；④ 美股光通信今晚能否止跌——Coherent-14%后是否继续恶化决定周三A股CPO情绪；⑤ 周三（8/12）风险窗口临近——市场情绪可能提前反映。</p>
     </div>
 </div>
 
 <div class="section">
     <h2>📋 信号概览</h2>
-    <p style="font-size:12px;color:#666;margin-bottom:8px;">基于8/10收盘价+隔夜全球市场（美股芯片暴跌/黄金续创新高/中概股走强）+沪指五连阳缩量逼4000点综合评估。核心矛盾：资源股极度强势但超买 vs 科技股连续暴跌但超跌 vs 4000点关口缩量压力。策略：资源股锁利不追、科技股等企稳不割、控制仓位等待方向明朗。</p>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">基于8/10收盘价+隔夜美股光通信暴跌+央行十五五规划+金价4448美元+沪指五连阳逼近4000点综合评估。<strong>核心矛盾：资源/消费强势 vs CPO/存储崩盘，市场风格从科技进攻切换为防御轮动。</strong>策略：减仓超买资源锁利+CPO/存储不抄底不加仓+增配防御消费+留现金应对周三风险窗口。</p>
     <div class="summary">
-        <div class="summary-item">★★★★☆ 紫金矿业 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 华友钴业 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 紫光国微 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★☆☆ 澜起科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 佰维存储 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 普冉股份 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 扬杰科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 宁德时代 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 立讯精密 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 青岛啤酒 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 环旭电子 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 科华数据 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 科大讯飞 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 大华股份 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 中际旭创 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 新易盛 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★☆☆☆☆ 汉得信息 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 华测导航 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 四方达 <span style="color:#27ae60">卖出</span></div><div class="summary-item">⚠️ 中钨高新 <span style="color:#e74c3c;font-weight:700;">重大风险</span></div>
+        <div class="summary-item">★★★★★ 华友钴业 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★★ 紫金矿业 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 宁德时代 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 中钨高新 <span style="color:#e74c3c">买入（锁利！）</span></div><div class="summary-item">★★★★☆ 紫光国微 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 青岛啤酒 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★☆☆ 佰维存储 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 立讯精密 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 环旭电子 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 科华数据 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 华测导航 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 澜起科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 普冉股份 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 长鑫科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 扬杰科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 大华股份 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 四方达 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★☆☆☆☆ 中际旭创 <span style="color:#f39c12">观望不抄底</span></div><div class="summary-item">★☆☆☆☆ 新易盛 <span style="color:#f39c12">观望不抄底</span></div><div class="summary-item">★☆☆☆☆ 科大讯飞 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★☆☆☆☆ 汉得信息 <span style="color:#27ae60">卖出</span></div>
     </div>
-    <p style="font-size:11px;color:#999;margin-top:8px;">买入<span class="buy-count">3</span> · 持有观望<span class="hold-count">13</span> · 卖出<span class="sell-count">3</span> · 重大风险<span style="color:#e74c3c;font-weight:700">1</span> · <span style="color:#999;">（自选池20只）</span></p>
+    <p style="font-size:11px;color:#999;margin-top:8px;">买入<span class="buy-count">6</span> · 持有观望<span class="hold-count">14</span> · 卖出<span class="sell-count">1</span> · <span style="color:#999;">（自选池21只）</span> · <span style="color:#e74c3c;">风格切换：资源+消费替代科技成为新主线</span></p>
 </div>
-
 <div class="section">
-    <h2>⭐ 推荐一览表（按星数排列，20只）</h2>
+    <h2>⭐ 推荐一览表（按星数排列，21只）</h2>
     <div class="table-wrap">
     <table>
         <thead>
-            <tr>
-                <th>#</th><th>股票</th><th>昨收(8/10)</th><th>8/7→8/10</th><th>PE</th><th>信号</th><th>推荐</th><th>布林区间</th><th>风险提示</th><th>操作建议</th>
-            </tr>
+            <tr><th>#</th><th>股票</th><th>昨收(8/10)</th><th>8/7→8/10</th><th>PE</th><th>量价信号</th><th>推荐</th><th>布林区间</th><th>风险提示</th><th>操作建议</th></tr>
         </thead>
         <tbody>
-            <tr style="background:#fffbf0;">
-            <td>1</td>
-            <td><span class="stock-name">紫金矿业</span><br><span class="stock-code">601899.SH</span></td>
-            <td class="price">35.45</td>
-            <td class="up">+0.85%</td>
-            <td>~12x</td>
-            <td><span class="signal" style="background:#e74c3c">买入</span></td>
-            <td>★★★★☆</td>
-            <td class="range">31.0 ~ 37.0</td>
-            <td class="small">金价隔夜续涨1.11%至4448美元续创新高，但美伊协议悬而未决可能引发金价急跌</td>
-            <td class="small">全球矿业龙头12x极低PE+金价4448美元续创新高+央行21个月增持黄金三重利好。攻守兼备首选，持有目标37-38元。但注意中钨暴涨带动板块情绪过热，设止损32.5元</td>
-        </tr>
-        <tr style="background:#fffbf0;">
-            <td>2</td>
-            <td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td>
-            <td class="price">46.07</td>
-            <td class="up">+4.68%</td>
-            <td>~9x</td>
-            <td><span class="signal" style="background:#e74c3c">买入</span></td>
-            <td>★★★★☆</td>
-            <td class="range">39.0 ~ 48.0</td>
-            <td class="small">两天+11%逼近布林上轨48元，短期空间收窄追高需谨慎</td>
-            <td class="small">能源金属一体化龙头9x全市场罕见低PE！44→46元两天+11%+美国30亿美元矿产投资+有色板块共振。持有目标48元，但46元以上不建议追高。止损42元</td>
-        </tr>
-        <tr style="background:#fffbf0;">
-            <td>3</td>
-            <td><span class="stock-name">紫光国微</span><br><span class="stock-code">002049.SZ</span></td>
-            <td class="price">68.00</td>
-            <td class="up">+1.16%</td>
-            <td>~43x</td>
-            <td><span class="signal" style="background:#e74c3c">买入</span></td>
-            <td>★★★★☆</td>
-            <td class="range">62.0 ~ 74.0</td>
-            <td class="small">费城半导体-2.94%隔夜暴跌，今日A股半导体板块可能承压</td>
-            <td class="small">芯片设计龙头67.22→68元温和上涨，未像存储/CPO那样暴涨暴跌。43xPE合理估值+FPGA国产替代逻辑坚实。美股芯片暴跌可能导致今日低开，反而是布局机会。持有，等66以下加仓，止损62元</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td><span class="stock-name">澜起科技</span><br><span class="stock-code">688008.SH</span></td>
-            <td class="price">206.92</td>
-            <td class="down">-3.99%</td>
-            <td>~75x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★★☆☆</td>
-            <td class="range">195 ~ 230</td>
-            <td class="small">DDR5两日回调-7.3%（215→207），美股芯片暴跌+费城半导体-2.94%或继续拖累</td>
-            <td class="small">DDR5接口芯片龙头215.5→207元两日-3.9%。存储方向遭遇"买预期卖事实"获利了结。75xPE偏高+美股芯片暴跌，短期承压。等195-200区间（布林下轨附近）止跌后再评估。不加仓，止损190元</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td><span class="stock-name">佰维存储</span><br><span class="stock-code">688525.SH</span></td>
-            <td class="price">242.00</td>
-            <td class="down">-1.18%</td>
-            <td>~10x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★★☆☆</td>
-            <td class="range">210 ~ 260</td>
-            <td class="small">MSCI生效+苹果测试芯片利好兑现后回调，存储板块整体承压</td>
-            <td class="small">存储模组龙头245→242元-1.18%相对抗跌（对比普冉-4.86%、澜起-3.99%）。10xPE估值极低提供安全垫。MSCI中长期利好不变。持有等回踩230-235加仓，止损210元</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td><span class="stock-name">普冉股份</span><br><span class="stock-code">688766.SH</span></td>
-            <td class="price">374.50</td>
-            <td class="down">-4.86%</td>
-            <td>~55x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★★☆☆</td>
-            <td class="range">320 ~ 420</td>
-            <td class="small">单日-4.86%+隔夜费城半导体-2.94%，存储方向双重压力</td>
-            <td class="small">NOR Flash龙头394→374.5元-4.86%！MSCI+苹果测试利好遭遇"买预期卖事实"集中兑现。但DDR5渗透>50%+HBM供不应求的中长期逻辑完好。等350-360区间止跌后再分批布局。不加仓，设止盈350元</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td><span class="stock-name">扬杰科技</span><br><span class="stock-code">300373.SZ</span></td>
-            <td class="price">94.11</td>
-            <td class="down">-2.91%</td>
-            <td>~33x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★★☆☆</td>
-            <td class="range">82.0 ~ 100.0</td>
-            <td class="small">跟随半导体回调-2.91%，费城半导体-2.94%今日或继续施压</td>
-            <td class="small">功率半导体97→94元-2.91%跟随板块回调。33xPE合理+功率器件国产替代逻辑不变。等回踩88-91区间（布林中轨附近）再加仓。不加仓，止损85元</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td>
-            <td class="price">393.87</td>
-            <td class="up">+1.86%</td>
-            <td>~21x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★★☆☆</td>
-            <td class="range">375.0 ~ 420.0</td>
-            <td class="small">除权后首日企稳+1.86%，但电池板块未跟涨资源股，独立走势不确定</td>
-            <td class="small">除权后386.67→393.87元首日企稳回升+1.86%是好信号。21xPE合理估值，380元支撑暂时守住。继续观望等除权后价格稳定再评估。不抄底，等站稳400元确认方向。止损370元</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td><span class="stock-name">立讯精密</span><br><span class="stock-code">002475.SZ</span></td>
-            <td class="price">55.79</td>
-            <td class="down">-2.11%</td>
-            <td>~29x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">53.0 ~ 62.0</td>
-            <td class="small">回调-2.11%至56元以下，消费电子板块非当前主线</td>
-            <td class="small">消费电子龙头57→55.79元-2.11%持续弱势。29xPE历史估值底部+苹果供应链核心标的，中长线价值显现但短期无催化。耐心持有不加仓，止损52元</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td>
-            <td class="price">53.86</td>
-            <td class="up">+0.49%</td>
-            <td>~10x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">51.0 ~ 58.0</td>
-            <td class="small">消费板块昨日大涨但科技溢出效应为主，持续性待验证</td>
-            <td class="small">啤酒龙头53.6→53.86元微涨+0.49%。8/10大消费全线爆发（食品饮料涨停潮），但更多是科技资金溢出而非基本面驱动。10xPE极低估值提供安全垫，持有不加仓等待消费行情持续性确认</td>
-        </tr>
-        <tr>
-            <td>11</td>
-            <td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td>
-            <td class="price">27.68</td>
-            <td class="up">+0.25%</td>
-            <td>~40x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">22.0 ~ 29.0</td>
-            <td class="small">ICEPT会议已闭幕催化窗口关闭，涨幅从+28%收窄至近乎平盘</td>
-            <td class="small">SiP封装龙头27.61→27.68元微涨+0.25%动能衰竭。ICEPT 8/7闭幕催化窗口正式关闭，一周从21.5→27.68累计+28%后获利了结压力大。持有观望不追高，设止盈26元</td>
-        </tr>
-        <tr>
-            <td>12</td>
-            <td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td>
-            <td class="price">31.28</td>
-            <td class="up">+0.10%</td>
-            <td>~76x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">28.0 ~ 34.0</td>
-            <td class="small">算力概念持续走弱+76xPE偏高，资金持续从科技方向流出</td>
-            <td class="small">算力+数据中心UPS 31.25→31.28元近乎平盘。算力方向持续遭遇资金流出（硬科技CPO→存储→PCB轮动已走完），短期无催化。暂持不加仓，等回调28-29再评估。止损27元</td>
-        </tr>
-        <tr>
-            <td>13</td>
-            <td><span class="stock-name">科大讯飞</span><br><span class="stock-code">002230.SZ</span></td>
-            <td class="price">43.49</td>
-            <td class="down">-0.09%</td>
-            <td>亏损</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">40.0 ~ 47.0</td>
-            <td class="small">PE亏损+AI应用方向非当前主线，资金完全不关注</td>
-            <td class="small">AI应用龙头43.53→43.49元近乎平盘。PE亏损+软件开发板块持续回调+AI应用非主线。当前市场风格在资源+消费，AI应用方向短期无机会。不加仓，止损40元</td>
-        </tr>
-        <tr>
-            <td>14</td>
-            <td><span class="stock-name">大华股份</span><br><span class="stock-code">002236.SZ</span></td>
-            <td class="price">16.85</td>
-            <td class="up">+0.06%</td>
-            <td>~20x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">15.5 ~ 18.5</td>
-            <td class="small">连续5日横盘阴跌，安防板块被市场彻底遗忘</td>
-            <td class="small">安防龙头16.84→16.85元近乎平盘，连续多日在16.8元附近横盘。20xPE估值合理+海外50%营收逻辑不变但毫无资金关注。耐心持有不加仓，等催化剂（中报/海外订单）</td>
-        </tr>
-        <tr style="background:#ffeaea;">
-            <td>15</td>
-            <td><span class="stock-name">中际旭创</span><br><span class="stock-code">300308.SZ</span></td>
-            <td class="price">864.58</td>
-            <td class="down">-6.01%</td>
-            <td>~44x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">830 ~ 1050</td>
-            <td class="small" style="color:#e74c3c;">🚨 CPO龙头两日从955→865暴跌-9.4%！已跌破布林下轨880元！289.8亿天量成交！隔夜费城半导体-2.94%雪上加霜</td>
-            <td class="small">CPO全球龙头遭遇恐慌性踩踏！两日-9.4%跌破布林下轨是技术性超卖信号。英伟达B300订单翻倍中长线逻辑完好，但短期资金出逃趋势极强。绝对不在此价位割肉！等830-850区间止跌企稳+缩量后再布局。若跌至800元以下可视为黄金坑。不抄底，等止跌信号。止损不设（已超跌）</td>
-        </tr>
-        <tr style="background:#ffeaea;">
-            <td>16</td>
-            <td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td>
-            <td class="price">399.60</td>
-            <td class="down">-5.07%</td>
-            <td>~50x</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">380 ~ 460</td>
-            <td class="small" style="color:#e74c3c;">CPO两日-5.3%（421→400）逼近布林下轨380元，隔夜美股光通信概念同步暴跌</td>
-            <td class="small">CPO核心标的421→400元-5.07%逼近布林下轨380。182.7亿成交创天量，主力出逃明确。等380-388区间（布林下轨附近）止跌后再布局，英伟达B300中长期利好不变。不抄底，等缩量止跌。止损370元</td>
-        </tr>
-        <tr style="background:#fff5f5;">
-            <td>17</td>
-            <td><span class="stock-name">汉得信息</span><br><span class="stock-code">300170.SZ</span></td>
-            <td class="price">17.60</td>
-            <td class="down">-1.18%</td>
-            <td>~117x</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td>★☆☆☆☆</td>
-            <td class="range">15.5 ~ 19.5</td>
-            <td class="small">117x极高PE+软件板块持续弱势+反弹夭折后继续阴跌</td>
-            <td class="small">17.81→17.60元持续阴跌。117xPE极高+软件开发板块持续回调+反弹动能耗尽。建议减仓换资源/消费主线</td>
-        </tr>
-        <tr style="background:#fff5f5;">
-            <td>18</td>
-            <td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td>
-            <td class="price">28.51</td>
-            <td class="up">+1.24%</td>
-            <td>~45x</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td>★☆☆☆☆</td>
-            <td class="range">26.0 ~ 31.0</td>
-            <td class="small">连续多日横盘无方向，完全无资金关注，独立标的缺乏板块催化</td>
-            <td class="small">导航赛道独立景气但科技行情中完全无资金关注。45xPE不便宜+持续无方向波动。建议减仓换资源/消费主线</td>
-        </tr>
-        <tr style="background:#fff5f5;">
-            <td>19</td>
-            <td><span class="stock-name">四方达</span><br><span class="stock-code">300179.SZ</span></td>
-            <td class="price">35.96</td>
-            <td class="down">-2.60%</td>
-            <td>~102x</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td>★☆☆☆☆</td>
-            <td class="range">29.0 ~ 38.0</td>
-            <td class="small">102x极高PE+培育钻石独立行情终结-2.60%回调，无板块联动</td>
-            <td class="small">培育钻石36.92→35.96元-2.60%回调。102xPE极高+独立行情逻辑不明+逼近布林上轨后回调。强烈建议减仓锁利，不加仓</td>
-        </tr>
-        <tr style="background:#fff5f5;">
-            <td>20</td>
-            <td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td>
-            <td class="price">72.80</td>
-            <td class="up">+8.64%</td>
-            <td>~45x</td>
-            <td><span class="signal" style="background:#e74c3c">⚠风险</span></td>
-            <td>★★☆☆☆</td>
-            <td class="range">50.0 ~ 75.0</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">五天+52%极度超买！逼近布林上轨75元+布林位置97%！65.2亿放量天量！RSI>85极度超买区！随时可能迎来10-15%的剧烈回调<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险——五天+52%极度超买</span></td>
-            <td class="small">钨业龙头67→72.80元+8.64%五天累计+52%，48→72.8一气呵成！钨材料+半导体靶材+有色共振逻辑坚实，但五天+52%+布林位置97%=极度超买。强烈建议减仓1/2-2/3锁利！余仓博75元，移动止盈设在68元。绝不可追高买入！</td>
-        </tr>
+            <tr style="background:#fffbf0;"><td>1</td><td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td><td class="price">46.07</td><td class="up">+4.68%</td><td>~22x</td><td>放量上涨</td><td><span class="signal" style="background:#e74c3c">买入</span></td><td>★★★★★</td><td class="range">39.0 ~ 48.0</td><td class="small">刚果禁铜钴出口+美国30亿矿产投资+油价暴涨5%，资源股最强催化剂叠加</td><td class="small">能源金属一体化龙头44→46元+4.68%放量72亿强势突破！三重催化共振（刚果禁令+美国矿产计划+油价暴涨），22xPE合理偏低。持有加仓，目标50元，止损42元。<strong>树动买入</strong>：全球资源民族主义升温+供给收缩=基本面改善确定性强。</td></tr>
+            <tr style="background:#fffbf0;"><td>2</td><td><span class="stock-name">紫金矿业</span><br><span class="stock-code">601899.SH</span></td><td class="price">35.45</td><td class="up">+0.85%</td><td>~14x</td><td>放量上涨</td><td><span class="signal" style="background:#e74c3c">买入</span></td><td>★★★★★</td><td class="range">31.0 ~ 37.0</td><td class="small">金价4448美元继续新高但美伊协议随时官宣可能引发金价急跌</td><td class="small">全球矿业龙头35.15→35.45元+0.85%放量96亿稳步上行。14xPE为自选池最低估值+金价4448美元+央行21月增持+美元走弱四重利好。目标37元，止损32.5元。<strong>树动买入</strong>：全球降息周期+央行购金+地缘避险=黄金长期牛市逻辑不变。</td></tr>
+            <tr><td>3</td><td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td><td class="price">393.87</td><td class="up">+1.86%</td><td>~22x</td><td>放量上涨</td><td><span class="signal" style="background:#e74c3c">买入</span></td><td>★★★★☆</td><td class="range">360 ~ 420</td><td class="small">锂电池9/1起征2%消费税，传统锂电成本端小幅承压但龙头受益集中度提升</td><td class="small">电池全球龙头387→394元+1.86%除权后强势反弹！8/7除权（10派14.11元）后不跌反涨说明资金高度认可。亿纬锂能涨价+固态电池峰会催化。22xPE合理，持有目标420元，止损370元。<strong>树动买入</strong>：全球动力电池龙头地位不可撼动+储能第二增长曲线加速。</td></tr>
+            <tr style="background:#fffbf0;"><td>4</td><td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td><td class="price">72.80</td><td class="up">+8.64%</td><td>~37x</td><td>巨量上涨</td><td><span class="signal" style="background:#e74c3c">买入</span></td><td>★★★★☆</td><td class="range">50.0 ~ 78.0</td><td class="small">🔴五天+52%极度超买！成交110亿巨量换手，逼近布林上轨78元，追高风险极大</td><td class="small">钨业龙头67→72.80元+8.64%五天+52%狂飙继续！成交110亿天量说明获利盘集中涌出+新资金接盘博弈激烈。<strong>强烈建议减仓1/2-2/3锁利！</strong>余仓博78元，止损65元。<strong>风动交易</strong>：短期资金驱动为主，基本面改善速度追不上股价涨幅。不追高！</td></tr>
+            <tr><td>5</td><td><span class="stock-name">紫光国微</span><br><span class="stock-code">002049.SZ</span></td><td class="price">68.00</td><td class="up">+1.16%</td><td>~28x</td><td>温和放量上涨</td><td><span class="signal" style="background:#e74c3c">买入</span></td><td>★★★★☆</td><td class="range">62.0 ~ 74.0</td><td class="small">半导体板块8/10普跌，紫光独自抗跌+1.16%说明资金认可度高</td><td class="small">芯片设计龙头67.22→68元+1.16%，半导体普跌中独自收红极为难得。28xPE合理偏低+FPGA国产替代+电子身份证芯片+集成电路条例修订逻辑不变。持有待突破70元，止损63元。<strong>树动买入</strong>：特殊芯片（FPGA/安全芯片）竞争格局清晰、壁垒高。</td></tr>
+            <tr><td>6</td><td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td><td class="price">53.86</td><td class="up">+0.49%</td><td>~22x</td><td>缩量微涨</td><td><span class="signal" style="background:#e74c3c">买入</span></td><td>★★★★☆</td><td class="range">49.0 ~ 57.0</td><td class="small">消费板块走强+扩大消费十五五规划，品牌消费防御价值凸显</td><td class="small">啤酒龙头53.60→53.86元+0.49%温和上涨。扩大消费十五五规划（2030年社零60万亿）+夏季旺季+22xPE历史中低位。防御配置首选，目标57元，止损51元。<strong>树动买入</strong>：品牌消费+稳定现金流+低估值=攻守兼备。科技暴跌时消费防御价值凸显。</td></tr>
+            <tr><td>7</td><td><span class="stock-name">佰维存储</span><br><span class="stock-code">688525.SH</span></td><td class="price">242.00</td><td class="down">-1.18%</td><td>~44x</td><td>放量下跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★★☆☆</td><td class="range">210 ~ 260</td><td class="small">存储板块8/10集体回调，放量75亿下跌，短期获利盘涌出</td><td class="small">存储模组龙头245→242元-1.18%放量回调。苹果测试长鑫+江波龙暴增715倍利好集中兑现后获利盘涌出。中期逻辑不变但短期需消化。持有等230-235止跌再加仓，止损225元。</td></tr>
+            <tr><td>8</td><td><span class="stock-name">立讯精密</span><br><span class="stock-code">002475.SZ</span></td><td class="price">55.79</td><td class="down">-2.11%</td><td>~21x</td><td>放量下跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★★☆☆</td><td class="range">53.0 ~ 62.0</td><td class="small">放量67.7亿下跌-2.11%，消费电子板块非当前主线</td><td class="small">消费电子龙头57→55.79元-2.11%回踩。21xPE为历史估值底部+苹果Vision Pro 2供应链核心+AI手机换机周期。估值极低安全边际充足，耐心持有等催化剂，不加仓。止损52元。</td></tr>
+            <tr><td>9</td><td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td><td class="price">27.68</td><td class="up">+0.25%</td><td>~17x</td><td>缩量微涨</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★★☆☆</td><td class="range">22.0 ~ 29.0</td><td class="small">ICEPT已闭幕催化消退，缩量微涨缺乏上行动力</td><td class="small">SiP封装龙头27.61→27.68元微涨+0.25%。ICEPT催化已过+九月苹果发布会前空窗期。17xPE低估值有安全边际，持有等催化。止损25.5元。</td></tr>
+            <tr><td>10</td><td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td><td class="price">31.28</td><td class="up">+0.10%</td><td>~44x</td><td>缩量微涨</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★★☆☆</td><td class="range">28.0 ~ 34.0</td><td class="small">阿里云AIDC扩产直接利好但量能萎缩说明资金尚未关注</td><td class="small">数据中心UPS 31.25→31.28元微涨。阿里云全球数据中心产能提升两倍+AIDC交付100天为重磅利好！但目前市场风格在资源+消费，科技暂时失宠。持有等催化发酵，止损28元。</td></tr>
+            <tr><td>11</td><td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td><td class="price">28.51</td><td class="up">+1.24%</td><td>~32x</td><td>温和放量上涨</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★★☆☆</td><td class="range">25.0 ~ 31.0</td><td class="small">稳步上行+1.24%但量能一般，缺乏爆发性催化剂</td><td class="small">导航龙头28.16→28.51元+1.24%稳步上行。北斗三代+自动驾驶高精地图+低空经济政策催化。32xPE合理，持有目标31元，止损26.5元。</td></tr>
+            <tr style="background:#fff5f5;"><td>12</td><td><span class="stock-name">澜起科技</span><br><span class="stock-code">688008.SH</span></td><td class="price">206.92</td><td class="down">-3.99%</td><td>~52x</td><td>放量暴跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★☆☆☆</td><td class="range">195 ~ 230</td><td class="small">放量91.5亿暴跌-3.99%！存储板块集体退潮，DDR5渗透利好被短期情绪淹没</td><td class="small">DDR5龙头215.5→206.92元-3.99%放量暴跌。存储板块8/10集体回调（江波龙利好出尽+短期获利盘涌出），但DDR5渗透>50%+AI服务器拉动中长期逻辑不变。持有不加仓，等200元附近止跌再考虑。止损195元。<strong>杀估值不是杀逻辑</strong>——DDR5接口芯片壁垒极高，下跌是机会不是风险。</td></tr>
+            <tr style="background:#fff5f5;"><td>13</td><td><span class="stock-name">普冉股份</span><br><span class="stock-code">688766.SH</span></td><td class="price">374.50</td><td class="down">-4.86%</td><td>~48x</td><td>放量暴跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★☆☆☆</td><td class="range">320 ~ 420</td><td class="small">放量64亿暴跌-4.86%逼近前低，NOR Flash龙头回调幅度最大</td><td class="small">NOR Flash龙头394→374.5元-4.86%放量大跌。逼近前高420元后获利盘集中涌出+存储板块集体退潮。短期调整未完，等350-360区间企稳再考虑加仓。止损345元。<strong>杀估值</strong>：基本面（NOR Flash涨价+AI终端放量）不变，下跌是布局机会但等止跌信号出现。</td></tr>
+            <tr><td>14</td><td><span class="stock-name">长鑫科技</span><br><span class="stock-code">688825.SH</span></td><td class="price">51.30</td><td class="down">-2.25%</td><td>~35x</td><td>巨量下跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★☆☆☆</td><td class="range">46.0 ~ 56.0</td><td class="small">成交256.7亿天量-2.25%！苹果测试利好兑现+MSCI生效后获利盘涌出</td><td class="small">DRAM龙头52.48→51.30元-2.25%天量换手256.7亿！苹果测试长鑫芯片+MSCI生效（千亿被动资金进场）双重利好兑现后短期获利盘涌出。中长期DRAM国产替代逻辑极强，但短期需要消化天量换手。持有不加仓，等48-50元止跌。止损46元。</td></tr>
+            <tr><td>15</td><td><span class="stock-name">扬杰科技</span><br><span class="stock-code">300373.SZ</span></td><td class="price">94.11</td><td class="down">-2.91%</td><td>~35x</td><td>放量下跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★☆☆☆</td><td class="range">82.0 ~ 100.0</td><td class="small">半导体板块普跌拖累-2.91%，前五日+22%获利盘涌出</td><td class="small">功率半导体97→94.11元-2.91%回吐。半导体板块8/10集体承压+前五日+22%获利盘兑现。集成电路条例修订+功率器件国产替代逻辑不变。持有等90-92止跌，止损88元。</td></tr>
+            <tr><td>16</td><td><span class="stock-name">大华股份</span><br><span class="stock-code">002236.SZ</span></td><td class="price">16.85</td><td class="up">+0.06%</td><td>~15x</td><td>缩量平盘</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★☆☆☆</td><td class="range">15.5 ~ 18.5</td><td class="small">15xPE极低估值但科技主线回调，安防被资金彻底遗忘</td><td class="small">安防龙头16.84→16.85元近乎平盘。15xPE为自选池第二低估值（仅次于紫金矿业14x），AI视觉+海外50%逻辑不变但资金完全不关注。极度耐心持有，等AI应用风口回归。不加仓。</td></tr>
+            <tr><td>17</td><td><span class="stock-name">四方达</span><br><span class="stock-code">300179.SZ</span></td><td class="price">35.96</td><td class="down">-2.60%</td><td>~50x</td><td>放量下跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★★☆☆☆</td><td class="range">29.0 ~ 38.0</td><td class="small">前五天+33%后-2.60%回调，独立行情无板块联动</td><td class="small">培育钻石36.92→35.96元-2.60%正常回调。前五天+33%独立行情缺乏板块支撑，继续建议减仓锁利。不加仓。止损33元。</td></tr>
+            <tr style="background:#fff5f5;"><td>18</td><td><span class="stock-name">中际旭创</span><br><span class="stock-code">300308.SZ</span></td><td class="price">864.58</td><td class="down">-6.01%</td><td>~35x</td><td>天量暴跌</td><td><span class="signal" style="background:#27ae60">观望不抄底！</span></td><td>★☆☆☆☆</td><td class="range">830 ~ 1080</td><td class="small">🔴🔴CPO崩盘！-6.01%成交457.6亿天量！Coherent-14%+FCC禁令草案双重暴击</td><td class="small">CPO全球龙头920→864.58元-6.01%放量457.6亿惨烈暴跌！三日从955→864累计-9.5%。美股Coherent-14%（盘后继续跌）+FCC起草禁止中国光模块进口草案=系统性风险而非普通回调。<strong>坚决不抄底！持有者反弹减仓！</strong>等830-850区间出现止跌信号（缩量十字星/锤子线）再考虑试探性布局。英伟达B300订单中长期逻辑不变但短期技术面和情绪面极度恶劣。<strong>风动+心动双杀</strong>：政策打压（风动）+恐慌抛售（心动），树（基本面）没问题但短期必须回避。</td></tr>
+            <tr style="background:#fff5f5;"><td>19</td><td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td><td class="price">399.60</td><td class="down">-5.07%</td><td>~33x</td><td>巨量暴跌</td><td><span class="signal" style="background:#27ae60">观望不抄底！</span></td><td>★☆☆☆☆</td><td class="range">380 ~ 470</td><td class="small">🔴跟跌CPO惨案-5.07%放量267亿！跌破400元整数关口</td><td class="small">CPO核心标的421→399.60元-5.07%放量267亿跌破400元关口！跟跌中际旭创但跌幅同样惨烈。CPO板块系统性风险下不区分个股。<strong>坚决不抄底！反弹减仓！等380元附近缩量止跌再考虑。</strong></td></tr>
+            <tr><td>20</td><td><span class="stock-name">科大讯飞</span><br><span class="stock-code">002230.SZ</span></td><td class="price">43.49</td><td class="down">-0.09%</td><td>~107x</td><td>缩量微跌</td><td><span class="signal" style="background:#f39c12">持有观望</span></td><td>★☆☆☆☆</td><td class="range">40.0 ~ 47.0</td><td class="small">107xPE极高估值+AI应用非当前主线+日成交仅15.7亿无人关注</td><td class="small">AI应用龙头43.53→43.49元微跌。107xPE在自选池中最高+AI应用方向不在当前市场风口（资源+消费为主）。持有不加仓，等中报验证AI商业化进展。止损40元。</td></tr>
+            <tr style="background:#fff5f5;"><td>21</td><td><span class="stock-name">汉得信息</span><br><span class="stock-code">300170.SZ</span></td><td class="price">17.60</td><td class="down">-1.18%</td><td>~38x</td><td>放量下跌</td><td><span class="signal" style="background:#27ae60">卖出</span></td><td>★☆☆☆☆</td><td class="range">15.5 ~ 19.5</td><td class="small">超跌反弹后持续走弱，连续两日下跌回吐涨幅，软件板块非主线</td><td class="small">17.81→17.60元-1.18%继续走弱。超跌反弹动力耗尽+软件板块非当前主线。建议清仓换资源/消费主线。<strong>心动回避</strong>：困境反转型需明确反转信号，目前看不到。</td></tr>
         </tbody>
     </table>
     </div>
 </div>
 
 <div class="section">
-    <h2>🥇 今日三大推荐</h2>
+    <h2>💰 主力资金流向总览（量价推断）</h2>
+    <p style="font-size:12px;color:#999;margin-bottom:8px;">⚠️ 同花顺问财数据今日暂不可用，以下资金方向基于8/10量价关系推断。放量上涨≈主力买入，放量下跌≈主力卖出，缩量≈资金观望。标注🔴🔴🔴为极端流出。</p>
+    <div class="table-wrap">
+    <table>
+        <thead><tr><th>股票</th><th>涨跌</th><th>成交额(亿)</th><th>量价信号</th><th>推断资金方向</th><th>资金态度</th></tr></thead>
+        <tbody>
+            <tr><td>中钨高新</td><td class="up">+8.64%</td><td>110.3</td><td>巨量上涨</td><td style="color:#e74c3c;">主力大幅流入</td><td>🟢 积极流入</td></tr>
+            <tr><td>华友钴业</td><td class="up">+4.68%</td><td>72.0</td><td>放量上涨</td><td style="color:#e74c3c;">主力流入</td><td>🟢 积极流入</td></tr>
+            <tr><td>宁德时代</td><td class="up">+1.86%</td><td>90.3</td><td>放量上涨</td><td style="color:#e74c3c;">主力流入</td><td>🟢 积极流入</td></tr>
+            <tr><td>紫金矿业</td><td class="up">+0.85%</td><td>96.4</td><td>放量上涨</td><td style="color:#e74c3c;">主力流入</td><td>🟢 积极流入</td></tr>
+            <tr><td>华测导航</td><td class="up">+1.24%</td><td>2.4</td><td>温和放量上涨</td><td style="color:#e74c3c;">小幅流入</td><td>⚪ 基本平衡</td></tr>
+            <tr><td>紫光国微</td><td class="up">+1.16%</td><td>16.3</td><td>温和放量上涨</td><td style="color:#e74c3c;">小幅流入</td><td>⚪ 基本平衡</td></tr>
+            <tr><td>青岛啤酒</td><td class="up">+0.49%</td><td>3.4</td><td>缩量微涨</td><td>资金观望</td><td>⚪ 基本平衡</td></tr>
+            <tr><td>环旭电子</td><td class="up">+0.25%</td><td>9.5</td><td>缩量微涨</td><td>资金观望</td><td>⚪ 基本平衡</td></tr>
+            <tr><td>科华数据</td><td class="up">+0.10%</td><td>6.1</td><td>缩量微涨</td><td>资金观望</td><td>⚪ 基本平衡</td></tr>
+            <tr><td>大华股份</td><td class="up">+0.06%</td><td>5.0</td><td>缩量平盘</td><td>资金观望</td><td>⚪ 基本平衡</td></tr>
+            <tr><td>科大讯飞</td><td class="down">-0.09%</td><td>15.7</td><td>缩量微跌</td><td>资金观望</td><td>⚪ 基本平衡</td></tr>
+            <tr><td>佰维存储</td><td class="down">-1.18%</td><td>75.4</td><td>放量下跌</td><td style="color:#27ae60;">主力流出</td><td>🔴 持续流出</td></tr>
+            <tr><td>汉得信息</td><td class="down">-1.18%</td><td>10.3</td><td>放量下跌</td><td style="color:#27ae60;">主力流出</td><td>🔴 持续流出</td></tr>
+            <tr><td>立讯精密</td><td class="down">-2.11%</td><td>67.7</td><td>放量下跌</td><td style="color:#27ae60;">主力流出</td><td>🔴 持续流出</td></tr>
+            <tr><td>长鑫科技</td><td class="down">-2.25%</td><td>256.7</td><td>巨量下跌</td><td style="color:#27ae60;">主力大幅流出</td><td>🔴🔴 严重流出</td></tr>
+            <tr><td>四方达</td><td class="down">-2.60%</td><td>14.0</td><td>放量下跌</td><td style="color:#27ae60;">主力流出</td><td>🔴 持续流出</td></tr>
+            <tr><td>扬杰科技</td><td class="down">-2.91%</td><td>13.6</td><td>放量下跌</td><td style="color:#27ae60;">主力流出</td><td>🔴 持续流出</td></tr>
+            <tr><td>澜起科技</td><td class="down">-3.99%</td><td>91.5</td><td>放量暴跌</td><td style="color:#27ae60;">主力大幅流出</td><td>🔴🔴 严重流出</td></tr>
+            <tr><td>普冉股份</td><td class="down">-4.86%</td><td>64.2</td><td>放量暴跌</td><td style="color:#27ae60;">主力大幅流出</td><td>🔴🔴 严重流出</td></tr>
+            <tr><td>新易盛</td><td class="down">-5.07%</td><td>266.9</td><td>巨量暴跌</td><td style="color:#27ae60;">主力疯狂出逃</td><td>🔴🔴🔴 极端流出</td></tr>
+            <tr><td>中际旭创</td><td class="down">-6.01%</td><td>457.6</td><td>天量暴跌</td><td style="color:#27ae60;">主力疯狂出逃</td><td>🔴🔴🔴 极端流出</td></tr>
+        </tbody>
+    </table>
+    </div>
+    <p style="font-size:11px;color:#999;margin-top:8px;">🟢 积极流入 4只 · ⚪ 基本平衡 7只 · 🔴 持续流出 5只 · 🔴🔴 严重流出 3只 · 🔴🔴🔴 极端流出 2只<br>⚠️ 基于量价关系推断，非精确主力资金数据。问财恢复后将更新为精确数据。</p>
+</div>
+
+<div class="section">
+    <h2>🔴 重大风险警示</h2>
+    <div class="alert-box red">
+        <strong>🚨 CPO光模块板块系统性风险！中际旭创-6.01%成交457.6亿+新易盛-5.07%成交266.9亿</strong><br>
+        美股Coherent盘后-14%+Lumentum-8%+FCC起草禁止中国光模块进口规则草案=三重暴击！<strong>这不是普通回调，是政策+海外竞争+恐慌情绪的三重共振。</strong>中际旭创三日从955→864.58累计-9.5%，新易盛从425→399.60累计-6%。<strong>坚决不抄底！持有者反弹减仓！</strong>等830-850区间出现缩量止跌信号（十字星/锤子线）再考虑试探性布局。英伟达B300中长期逻辑不变但短期必须回避系统性风险。
+    </div>
+    <div class="alert-box red">
+        <strong>🚨 存储板块集体退潮！澜起-3.99%+普冉-4.86%+长鑫-2.25%</strong><br>
+        江波龙H1暴增715倍+苹果测试长鑫+SK海力士384亿扩产——利好集中兑现后获利盘涌出。<strong>这是"利好出尽"式回调，不是杀逻辑。</strong>存储中长期逻辑（DDR5渗透>50%+HBM供不应求+国产替代）不变，但短期需要消化获利盘。持有不加仓，等止跌信号出现（澜起200元附近、普冉350-360元附近）。
+    </div>
+    <div class="alert-box">
+        <strong>⚠️ 中钨高新五天+52%极度超买！成交110亿天量换手！</strong><br>
+        从62.50→72.80元五天+52%，今日成交110亿天量说明获利盘集中涌出+新资金接盘博弈激烈。<strong>强烈建议减仓1/2-2/3锁利！</strong>虽是资源股龙头但涨幅已严重透支短期基本面。余仓博78元（布林上轨），止损65元。
+    </div>
+    <div class="alert-box">
+        <strong>⚠️ 周三（8/12）被多机构标记为潜在风险窗口</strong><br>
+        中信证券等多家机构提示：五连阳后技术面超买+布林上轨压制+月末资金面收紧预期。今明两天可能成为短期高点。建议整体仓位降至5-6成，留现金应对回撤。
+    </div>
+</div>
+
+<div class="section">
+    <h2>🏆 今日三大推荐</h2>
     <div class="top-card">
-            <div class="top-rank">#1</div>
-            <div class="top-info">
-                <div class="top-name">紫金矿业 <span class="stock-code">601899.SH</span></div>
-                <div class="top-price">¥35.45 ★★★★☆ PE 12x</div>
-                <div class="top-reason">全球矿业龙头攻守兼备首选！金价隔夜续涨+1.11%至4448美元续创新高+央行21个月增持黄金+美元走弱三重共振。12x极低PE全市场最具性价比蓝筹之一。五日涨幅仅+8%远小于中钨(+52%)，补涨空间充足。风险：美伊协议若官宣可能引发金价急跌3-5%，设止损32.5元</div>
-            </div>
-        </div><div class="top-card">
-            <div class="top-rank">#2</div>
-            <div class="top-info">
-                <div class="top-name">华友钴业 <span class="stock-code">603799.SH</span></div>
-                <div class="top-price">¥46.07 ★★★★☆ PE 9x</div>
-                <div class="top-reason">全市场罕见9x极低PE！能源金属一体化龙头44→46元两天+11%强势反转，美国30亿美元关键矿产投资+有色板块共振催化。钴/镍/锂全产业链布局+前驱体龙头地位，攻守兼备。风险：两天+11%后短期空间收窄（距上轨48元仅4%），镍钴现货价格仍弱</div>
-            </div>
-        </div><div class="top-card">
-            <div class="top-rank">#3</div>
-            <div class="top-name">紫光国微 <span class="stock-code">002049.SZ</span></div>
-            <div class="top-price">¥68.00 ★★★★☆ PE 43x</div>
-            <div class="top-reason">芯片设计龙头温和上涨未透支！43xPE合理估值+FPGA国产替代逻辑坚实+集成电路条例修订预期。不像存储/CPO暴涨暴跌，也未像中钨极度超买——稳健上行风格适合中长期持有。美股芯片暴跌今日可能低开，反而是布局窗口。风险：费城半导体-2.94%对情绪有压制</div>
+        <div class="top-rank">1</div>
+        <div>
+            <div class="top-name">华友钴业 <span class="stock-code">603799.SH</span> <span class="up">★★★★★ 买入</span></div>
+            <div class="top-price">昨收 46.07元 | +4.68% | PE~22x | 量价：放量上涨</div>
+            <div class="top-reason">
+                <strong>推荐理由（树动买入——全球资源民族主义升温+供给收缩）：</strong><br>
+                ① <strong>三重催化共振</strong>：刚果（金）禁止铜钴精矿出口→全球钴供给收缩+美国30亿美元关键矿产投资→大国资源博弈升级+WTI原油暴涨5.05%→通胀预期升温利好资源股。<br>
+                ② <strong>技术面完美</strong>：41.4→44→46元三级跳放量突破，底部反转形态确认。8/10放量72亿上涨+4.68%，资金积极流入。<br>
+                ③ <strong>估值合理偏低</strong>：22xPE在有色板块中处于合理区间。能源金属一体化龙头（钴+镍+锂+前驱体）竞争壁垒高。<br>
+                ④ <strong>安全边际来源</strong>：全球钴供给收缩（刚果禁令）+新能源车销量持续增长（钴需求刚性）+公司一体化成本优势=盈利改善确定性强。<br>
+                <strong>操作建议</strong>：现价46元附近买入，仓位8-10%，<strong>止损42元（-8.7%）</strong>，目标50元（+8.5%），收益风险比≈1:1。树动买入可中线持有。
             </div>
         </div>
-</div>
-
-<div class="section">
-    <h2>🔥 近期高性价比关注</h2>
-    <p style="font-size:12px;color:#666;margin-bottom:8px;">基于全市场PE最低+现金流最好+股价距52周高点跌幅最大的三维扫描（剔除了ST、PE为负、市值<50亿），本周新增石油石化方向（受油价+5%催化）</p>
-    <div class="hot-item">
-                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#1</span>
-                    <span class="hot-name" style="flex-shrink:0;">传化智联</span>
-                    <span class="stock-code" style="flex-shrink:0;">002010</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">物流</span>
-                </div>
-                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
-                    <span style="font-weight:600;">-</span>
-                    <span style="color:#666;">PE12</span>
-                    <span style="color:#999;">127亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">低估值+高股息</span>
-                </div>
-            </div><div class="hot-item">
-                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#2</span>
-                    <span class="hot-name" style="flex-shrink:0;">韵达股份</span>
-                    <span class="stock-code" style="flex-shrink:0;">002120</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">物流</span>
-                </div>
-                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
-                    <span style="font-weight:600;">-</span>
-                    <span style="color:#666;">PE10</span>
-                    <span style="color:#999;">196亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">极低PE+内需复苏</span>
-                </div>
-            </div><div class="hot-item">
-                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#3</span>
-                    <span class="hot-name" style="flex-shrink:0;">深圳能源</span>
-                    <span class="stock-code" style="flex-shrink:0;">000027</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">公用事业</span>
-                </div>
-                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
-                    <span style="font-weight:600;">-</span>
-                    <span style="color:#666;">PE6</span>
-                    <span style="color:#999;">286亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">全市场最低PE</span>
-                </div>
-            </div><div class="hot-item">
-                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#4</span>
-                    <span class="hot-name" style="flex-shrink:0;">中国石化</span>
-                    <span class="stock-code" style="flex-shrink:0;">600028</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">石油石化</span>
-                </div>
-                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
-                    <span style="font-weight:600;">-</span>
-                    <span style="color:#666;">PE8</span>
-                    <span style="color:#999;">7400亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">油价+5%催化+高股息</span>
-                </div>
-            </div><div class="hot-item">
-                <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#5</span>
-                    <span class="hot-name" style="flex-shrink:0;">皖能电力</span>
-                    <span class="stock-code" style="flex-shrink:0;">000543</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">公用事业</span>
-                </div>
-                <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
-                    <span style="font-weight:600;">-</span>
-                    <span style="color:#666;">PE10</span>
-                    <span style="color:#999;">174亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">低估值防御+夏季用电</span>
-                </div>
+    </div>
+    <div class="top-card">
+        <div class="top-rank">2</div>
+        <div>
+            <div class="top-name">紫金矿业 <span class="stock-code">601899.SH</span> <span class="up">★★★★★ 买入</span></div>
+            <div class="top-price">昨收 35.45元 | +0.85% | PE~14x | 量价：放量上涨</div>
+            <div class="top-reason">
+                <strong>推荐理由（树动买入——全球降息周期+央行购金+地缘避险）：</strong><br>
+                ① <strong>黄金牛市逻辑坚实</strong>：COMEX金价站上4448美元继续新高+央行连续21个月增持黄金+美国非农爆冷→降息预期升温→美元走弱→黄金受益。这不是短期炒作而是长期趋势。<br>
+                ② <strong>估值极低=安全边际极大</strong>：14xPE为自选池最低估值！格雷厄姆标准（PE≤20倍）+邱国鹭"便宜是硬道理"原则双重满足。即使金价回调10%，14xPE的低估值也提供了充分的下行保护。<br>
+                ③ <strong>铜+金双轮驱动</strong>：铜定价从"房地产周期"转向"AI算力+战略矿产"双逻辑——数据中心/充电桩/电网改造拉动铜需求结构性增长。<br>
+                ④ <strong>安全边际来源</strong>：极低PE（14x）+全球央行购金趋势+铜的AI算力新需求=攻守兼备。<br>
+                <strong>操作建议</strong>：现价35.5元附近买入，仓位10-12%，<strong>止损32.5元（-8.5%）</strong>，目标37元短期/45元中期。树动买入可中线重仓持有。注意：美伊协议官宣可能引发金价短期急跌，但跌了反而是加仓机会。
             </div>
-</div>
-
-<div class="section" style="border-left:3px solid #e74c3c;">
-<h2>⚠️ 重大风险警示</h2>
-<div style="padding:8px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">🚨 中钨高新</span><span style="color:#999;font-size:11px;">(000657.SZ)</span> <span style="color:#e74c3c;font-size:12px;">五天+52%极度超买！$48→72.80一气呵成，布林位置97%逼近上轨75元。RSI>85超买区+65.2亿放量天量=随时可能10-15%剧烈回调。强烈建议减仓1/2-2/3锁利！</span></div>
-<div style="padding:8px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">🚨 中际旭创</span><span style="color:#999;font-size:11px;">(300308.SZ)</span> <span style="color:#e74c3c;font-size:12px;">CPO龙头两日暴跌-9.4%($955→865)跌破布林下轨880元！289.8亿天量踩踏+隔夜费城半导体-2.94%双重压力。虽已技术超卖但切勿接飞刀，等830-850区间缩量止跌信号。</span></div>
-<div style="padding:8px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#f39c12;">⚠ 新易盛/普冉股份/澜起科技</span> <span style="color:#f39c12;font-size:12px;">存储+CPO全线回调，隔夜美股芯片暴跌（费城半导体-2.94%）今日将继续施压。短期不抄底，等缩量企稳信号。</span></div>
-<div style="padding:8px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#f39c12;">⚠ 沪指五连阳+缩量1400亿逼近4000点</span> <span style="color:#f39c12;font-size:12px;">量价背离+4000点整数关口+年线+60日均线三重技术压力。若今日成交继续缩量至2.3万亿以下，短期回调概率大。</span></div>
-<p style="font-size:11px;color:#999;margin-top:6px;">以上风险信号基于8/10收盘数据+隔夜全球市场变化综合研判。资源股极度超买+科技股超跌+大盘量价背离三大矛盾并存，今日操作以观望为主，不追高不恐慌。</p>
+        </div>
+    </div>
+    <div class="top-card">
+        <div class="top-rank">3</div>
+        <div>
+            <div class="top-name">宁德时代 <span class="stock-code">300750.SZ</span> <span class="up">★★★★☆ 买入</span></div>
+            <div class="top-price">昨收 393.87元 | +1.86% | PE~22x | 量价：放量上涨</div>
+            <div class="top-reason">
+                <strong>推荐理由（树动买入——全球动力电池绝对龙头+储能第二曲线加速）：</strong><br>
+                ① <strong>除权后强势反弹说明资金高度认可</strong>：8/7除权（每10股14.11元）后不跌反涨+1.86%，成交90亿放量——除权日往往是检验资金态度的最佳窗口，放量上涨=资金积极承接。<br>
+                ② <strong>行业利好密集</strong>：亿纬锂能两类电池涨价→行业集中度提升利好龙头+固态电池峰会（8/11-12芝加哥）+SMM电池大会（8/13-14长沙）密集催化。<br>
+                ③ <strong>估值合理+龙头溢价</strong>：22xPE在全球电池龙头中处于合理偏低区间。动力电池全球市占率37%+储能电池市占率40%，龙头地位不可撼动。<br>
+                ④ <strong>安全边际来源</strong>：全球龙头地位+储能第二增长曲线（营收增速>50%）+22xPE合理估值=成长确定性强。<br>
+                <strong>操作建议</strong>：现价394元附近买入，仓位8-10%，<strong>止损370元（-6.1%）</strong>，目标420元（+6.6%）。树动买入可中线持有。
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="section">
-    <h2>💰 国债逆回购实时利率</h2>
-    <p style="font-size:11px;color:#666;margin-bottom:6px;">以下为近期交易所逆回购参考利率（数据来源：东方财富，8/11盘前）</p>
-<div class="table-wrap"><table><thead><tr><th>品种</th><th>期限</th><th>参考利率</th><th>10万/天收益</th><th>备注</th></tr></thead><tbody><tr>
-                <td style="font-weight:700;color:#e74c3c;">GC001</td>
-                <td>1天</td>
-                <td style="font-weight:700;">~1.450%</td>
-                <td>约¥3.97</td>
-                <td style="font-size:11px;">今日周二，无节假日加成</td>
-            </tr><tr>
-                <td>GC007</td><td>7天</td><td>~1.450%</td><td>约¥3.97</td><td></td>
-            </tr><tr>
-                <td>GC014</td><td>14天</td><td>~1.450%</td><td>约¥3.97</td><td></td>
-            </tr><tr>
-                <td>GC028</td><td>28天</td><td>~1.440%</td><td>约¥3.95</td><td></td>
-            </tr><tr>
-                <td>GC091</td><td>91天</td><td>~1.420%</td><td>约¥3.89</td><td></td>
-            </tr><tr>
-                <td>GC182</td><td>182天</td><td>~1.420%</td><td>约¥3.89</td><td></td>
-            </tr></tbody></table></div>
-<p style="font-size:11px;color:#666;margin-top:8px;">📌 当前市场资金面总体宽松，逆回购利率维持低位（1.42%-1.45%）。利率处于历史较低水平，反映银行间流动性充裕。10万元做GC001一天约赚¥3.97，收益有限。资金若闲置可考虑7-14天期中长期理财或货币基金。</p>
+    <h2>🔍 近期高性价比关注（低估值/超跌+逻辑未破）</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">以下标的短期回调但中长期逻辑未破，适合等止跌信号出现后分批低吸。下跌性质判断：<span style="color:#e74c3c;">杀估值=最佳买入机会</span> | <span style="color:#f39c12;">杀业绩=谨慎判断</span> | <span style="color:#27ae60;">杀逻辑=坚决回避</span></p>
+    <div class="table-wrap">
+    <table>
+        <thead><tr><th>股票</th><th>昨收</th><th>PE</th><th>近期跌幅</th><th>下跌性质</th><th>核心逻辑</th><th>建议关注区间</th></tr></thead>
+        <tbody>
+            <tr><td>中际旭创</td><td>864.58</td><td>~35x</td><td>三日-9.5%</td><td style="color:#f39c12;">风动+心动双杀</td><td class="small">英伟达B300订单翻倍+全球CPO龙头地位不变，政策打压不改变技术领先</td><td>830-850元缩量止跌</td></tr>
+            <tr><td>澜起科技</td><td>206.92</td><td>~52x</td><td>单日-3.99%</td><td style="color:#e74c3c;">杀估值（机会！）</td><td class="small">DDR5渗透>50%+AI服务器拉动+接口芯片壁垒极高</td><td>195-200元</td></tr>
+            <tr><td>普冉股份</td><td>374.50</td><td>~48x</td><td>单日-4.86%</td><td style="color:#e74c3c;">杀估值（机会！）</td><td class="small">NOR Flash涨价周期+AI终端放量+国产替代龙头</td><td>350-360元</td></tr>
+            <tr><td>立讯精密</td><td>55.79</td><td>~21x</td><td>单日-2.11%</td><td style="color:#f39c12;">杀业绩（暂时）</td><td class="small">21xPE历史底部+苹果Vision Pro 2核心+AI手机换机周期</td><td>53-55元</td></tr>
+            <tr><td>大华股份</td><td>16.85</td><td>~15x</td><td>持续阴跌</td><td style="color:#e74c3c;">杀估值</td><td class="small">15xPE极低估值+AI视觉+海外50%，安全边际极厚</td><td>16-16.5元</td></tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📊 国债逆回购利率</h2>
+    <table>
+        <tr><th>品种</th><th>最新价(%)</th><th>昨收(%)</th><th>含义</th></tr>
+        <tr><td>GC001</td><td>1.375</td><td>1.420</td><td>隔夜利率低位运行，流动性充裕</td></tr>
+    </table>
+    <p style="font-size:11px;color:#666;margin-top:6px;">GC001维持1.4%以下低位，银行间流动性宽松。央行"十五五"规划强调维持流动性合理充裕，短期资金面无忧。但需关注月末（8月底）季节性资金收紧。</p>
 </div>
 
 <div class="section">
     <h2>📖 术语说明</h2>
-    <p style="font-size:11px;color:#666;">
-    信号：基于K线形态、均线趋势、RSI/MACD/布林带位置、量价关系、板块资金流向、隔夜全球市场的综合技术分析判断<br>
-    星数：综合估值(PE)、动量强度、布林位置、板块催化的推荐等级（5星最推荐）<br>
-    参考区间：布林带(20,2)下轨 ~ 上轨，基于统计学标准差计算的价格合理波动范围，下轨以下=超卖，上轨以上=超买<br>
-    风险等级：红色重大风险 — PE极端值、RSI超买(>80)/超卖(<20)、MACD死叉/金叉、布林带破位、放量暴跌、连跌>10%等<br>
-    PE数据来源：东方财富（PE-TTM实时）；股价数据：新浪财经API（昨收价）；逆回购利率：东方财富/新浪财经<br>
-    ⚠️ 本报告基于8/10收盘数据+8/11盘前全球市场信息生成，仅供家庭参考，不构成任何投资建议。
+    <p style="font-size:11px;color:#666;line-height:1.8;">
+    <strong>PE</strong>：市盈率 = 股价/每股收益<br>
+    <strong>PEG</strong>：市盈率/盈利增长率(%)，&lt;1低估，≈1合理，&gt;2高估<br>
+    <strong>布林区间</strong>：布林带下轨～上轨，股价在区间内波动的概率约95%<br>
+    <strong>树动</strong>：基本面驱动的股价变动（公司盈利/竞争力变化）——确定性最高，适合中线持有<br>
+    <strong>风动</strong>：政策面驱动的股价变动（货币政策/产业政策）——确定性中等，适合波段交易<br>
+    <strong>心动</strong>：情绪面驱动的股价变动（贪婪恐惧/资金博弈）——确定性最低，不参与<br>
+    <strong>安全边际</strong>：内在价值与市场价格之间的差距，差距越大越安全（格雷厄姆核心原则）<br>
+    <strong>杀估值/杀业绩/杀逻辑</strong>：判断下跌性质的三种框架——杀估值=买入机会，杀业绩=谨慎判断，杀逻辑=坚决回避
     </p>
 </div>
 
 <div class="footer">
-    <p>⚠️ 本报告由AI基于公开数据自动生成，仅供参考，不构成投资建议</p>
-    <p>多维度K线技术分析系统 | 数据来源：东方财富、新浪财经、东方财富网</p>
-    <p>生成时间: 2026-08-11 09:03 | 今日周二 · 沪指五连阳兵临4000 · 注意量价背离风险</p>
+    <p>⚠️ 免责声明：本报告由 AI 自动生成，仅供参考，不构成投资建议。投资有风险，入市须谨慎。</p>
+    <p>数据来源：新浪财经 API（行情） · 量价关系推断（资金流向） · 公开新闻报道</p>
+    <p>生成时间：2026-08-11 周二 盘前 | 基于8/10收盘数据</p>
 </div>
 
 </body>
