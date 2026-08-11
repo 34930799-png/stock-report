@@ -11,6 +11,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
 .header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
+.header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
 .section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
@@ -29,257 +30,343 @@ tr:hover { background:#fffbf0; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
 .tag-market { background:#f39c12; }
+.tag-energy { background:#27ae60; }
 .tag-risk { background:#c0392b; }
-.tag-resource { background:#d35400; }
-.tag-pharma { background:#27ae60; }
-.tag-consumer { background:#e67e22; }
 .tag-foreign { background:#16a085; }
+.tag-gold { background:#d4a017; }
+.tag-nuclear { background:#e67e22; }
+.tag-flash { background:#e74c3c; }
+.tag-copper { background:#b8860b; }
+.tag-rare { background:#6a0dad; }
+.tag-cpo { background:#c0392b; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
-.sector-name { font-weight:600; min-width:100px; font-size:12px; }
-.sector-pct { font-weight:600; font-size:12px; min-width:65px; }
+.sector-name { font-weight:600; min-width:110px; font-size:12px; }
+.sector-pct { font-weight:600; font-size:12px; min-width:80px; }
 .sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
-.stock-card:last-child { border-bottom:none; }
-.stock-card-left { flex:1; }
-.stock-card-mid { flex:2; font-size:11px; color:#666; }
-.stock-card-right { font-weight:600; min-width:80px; text-align:right; }
-.summary-box { font-size:12px; line-height:1.8; color:#444; }
-.rot-box { background:#fffbf0; border-left:3px solid #f39c12; padding:8px 10px; margin:8px 0; font-size:12px; border-radius:4px; }
-.alert-box { background:#fff3cd; border:1px solid #ffc107; border-radius:6px; padding:10px; margin:8px 0; font-size:12px; }
-.alert-box.red { background:#ffeaea; border-color:#e74c3c; }
-.signal { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
+.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
+.watch-card:last-child { border-bottom:none; }
+.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-info { flex:1; }
+.watch-name { font-weight:600; font-size:13px; }
+.watch-detail { font-size:11px; color:#666; }
+.watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
+.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#e74c3c; }
+.heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
+.alert-box { background:#fff5f5; border-left:3px solid #e74c3c; padding:8px 10px; margin:8px 0; font-size:12px; border-radius:0 4px 4px 0; }
+.alert-box strong { color:#c0392b; }
 </style>
 </head>
 <body>
 
 <div class="header">
     <h1>🔥 股市热点关注</h1>
-    <div class="date">2026-08-11 周二 · 沪指六连阳后震荡分化 · 高低切换加速</div>
+    <div class="date">2026-08-11 周二 · 盘中分析：CPO崩盘血洗！中际旭创-6%新易盛-5%，资源+消费接棒成为新主线</div>
+    <div class="subtitle">8/10最大冲击：美股光通信暴跌（Coherent-14%）传导A股CPO惨案！中际旭创成交457.6亿放量暴跌-6.01%，新易盛-5.07%跌破400元。与此同时金价4448美元+原油暴涨5%推动资源股全线大涨（中钨+8.64%五天+52%）。央行"十五五"规划印发+阿里云AIDC扩产两倍+江波龙暴增715倍。市场风格从科技进攻切换为资源+消费防御，周三（8/12）多机构预警风险窗口。</div>
 </div>
 
 <div class="section">
-    <h2>📊 市场概况</h2>
+    <h2>📊 市场概况（8/10收盘 & 8/11盘中预判）</h2>
     <table>
-        <tr><th>指数</th><th>昨收(8/10)</th><th>涨跌</th><th>成交额</th></tr>
-        <tr><td>上证指数</td><td style="font-weight:600;">3966.59</td><td class="up">+0.67%</td><td rowspan="5" style="font-weight:700;">2.52万亿<br><span style="font-size:10px;color:#999;">缩量约1413亿</span></td></tr>
-        <tr><td>深证成指</td><td style="font-weight:600;">14317</td><td class="up">+0.04%</td></tr>
-        <tr><td style="color:#27ae60;">创业板指</td><td style="color:#27ae60;font-weight:600;">3537</td><td class="down">-0.73%</td></tr>
-        <tr><td style="color:#27ae60;">科创50</td><td style="color:#27ae60;font-weight:600;">1738</td><td class="down">-0.36%</td></tr>
-        <tr><td>北证50</td><td>—</td><td>—</td></tr>
+        <tr><th>指数</th><th>8/7收盘</th><th>8/10收盘</th><th>8/10涨跌</th><th>8/11盘前预判</th><th>点评</th></tr>
+        <tr>
+            <td>上证指数</td>
+            <td>3940.04</td>
+            <td style="font-weight:600;">3966.59</td>
+            <td class="up">+0.67%</td>
+            <td class="up">冲高震荡</td>
+            <td style="font-size:11px;">五连阳逼近4000点，但缩量至2.51万亿，追高意愿减弱。3965-4000阻力区需放量突破</td>
+        </tr>
+        <tr>
+            <td>深证成指</td>
+            <td>14311.01</td>
+            <td style="font-weight:600;">14316.96</td>
+            <td class="up">+0.04%</td>
+            <td>平盘震荡</td>
+            <td style="font-size:11px;">基本平收，科技股暴跌抵消了资源+消费的涨幅，深市内部严重分化</td>
+        </tr>
+        <tr>
+            <td>创业板指</td>
+            <td>3563.12</td>
+            <td style="font-weight:600;">3537.21</td>
+            <td class="down">-0.73%</td>
+            <td class="down">承压</td>
+            <td style="font-size:11px;">CPO+半导体拖累创业板收跌，但宁德时代+1.86%逆势走强提供支撑</td>
+        </tr>
+        <tr>
+            <td>科创50</td>
+            <td>1744.02</td>
+            <td style="font-weight:600;">1737.77</td>
+            <td class="down">-0.36%</td>
+            <td class="down">承压</td>
+            <td style="font-size:11px;">存储板块集体回调（普冉-4.86%/澜起-3.99%）拖累科创50，长鑫科技天量256.7亿换手</td>
+        </tr>
     </table>
-    <p style="font-size:11px;color:#999;margin-top:6px;">涨停约106只 · 跌停3只 · 上涨4000+只 vs 下跌~1400只 · <strong style="color:#e74c3c;">沪指六连阳</strong>逼近4000点 · 双创指数收跌极度分化</p>
-    <div class="summary-box" style="margin-top:8px;">
-        <strong>今日（8/11）早盘：</strong>三大指数集体低开，沪指低开0.40%，科创50大跌1.41%。油气、贵金属受地缘局势推动逆势高开；航天、算力硬件、CPO跌幅居前。盘中创业板指/深成指转涨，高低切换特征显著——<strong style="color:#e74c3c;">消费、医药、农林牧渔领涨，科技硬件承压</strong>。
+    <div class="market-note">
+        <strong>🔴 8/10关键特征：</strong>沪指五连阳但双创收跌——市场出现罕见的大小盘+行业方向性撕裂。全市场超4000只个股上涨（赚钱效应好），但CPO/存储/半导体集体暴跌（科技恐慌）。成交2.51万亿缩量2200亿。<strong>资源+消费+医药成为新主线，科技硬件遭遇恐慌性抛售。周三（8/12）被多机构标记为潜在风险窗口。</strong>
     </div>
 </div>
 
 <div class="section">
-    <h2>🔥 行业热力图</h2>
-    <div class="sector-bar"><span class="sector-name">贵金属/黄金</span><span class="sector-pct up">+4.5%+</span><div class="sector-bar-fill" style="width:100%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">油气油服</span><span class="sector-pct up">+4.2%+</span><div class="sector-bar-fill" style="width:93%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">创新药</span><span class="sector-pct up">+3.8%+</span><div class="sector-bar-fill" style="width:84%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">农林牧渔/猪肉</span><span class="sector-pct up">+3.5%+</span><div class="sector-bar-fill" style="width:78%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">影视院线</span><span class="sector-pct up">+3.2%+</span><div class="sector-bar-fill" style="width:71%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">食品饮料/酿酒</span><span class="sector-pct up">+2.8%+</span><div class="sector-bar-fill" style="width:62%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">军工/地面兵装</span><span class="sector-pct up">+2.5%+</span><div class="sector-bar-fill" style="width:56%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">有色金属/小金属</span><span class="sector-pct up">+2.3%+</span><div class="sector-bar-fill" style="width:51%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">电力/公用事业</span><span class="sector-pct up">+2.1%+</span><div class="sector-bar-fill" style="width:47%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">算力租赁</span><span class="sector-pct up">+1.8%+</span><div class="sector-bar-fill" style="width:40%;"></div></div>
-    <p style="font-size:11px;color:#999;margin-top:6px;">
-        🔴 资金流入TOP3：贵金属+87亿 / 医药生物+65亿 / 食品饮料+48亿<br>
-        🟢 领跌方向：<span style="color:#27ae60;">CPO/光通信 -3%+（光迅科技触及跌停、中际旭创新易盛跌超5%）/ 机器人 -2%+ / 保险 -1.5% / 通信设备 -1.2% / 半导体元件 -1%+（寒武纪跌超6%）</span>
+    <h2>🔥 行业热力图（基于8/10收盘+8/11盘前催化）</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">8/10涨幅前10板块 + 8/11盘前消息面催化评估。🆕标记为新增催化。</p>
+
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#e74c3c;">🟢 强势板块</h3>
+
+    <div class="sector-bar">
+        <span class="sector-name">🥇 贵金属/黄金</span>
+        <span class="sector-bar-fill" style="width:92%;"></span>
+        <span class="sector-pct up">板块+3~5%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">COMEX黄金续涨+1.11%报4448美元再创新高！央行21个月连增+非农爆冷降息预期升温+美元走弱三重共振。招金黄金涨停，紫金矿业放量96亿+0.85%。黄金股成为当下最确定的做多方向。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🔋 有色金属</span>
+        <span class="sector-bar-fill" style="width:88%;"></span>
+        <span class="sector-pct up">板块+2~5%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">中钨+8.64%五天+52%狂飙+华友钴业+4.68%底部反转。刚果禁铜钴出口+特朗普30亿矿产计划+原油暴涨5%三重催化。稀土（云南锗业4连板）延续强势。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🆕 石油/能源</span>
+        <span class="sector-bar-fill" style="width:85%;"></span>
+        <span class="sector-pct up">板块+3~5%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">WTI原油暴涨+5.05%报82.13美元！霍尔木兹海峡协议未达成+美国战略石油储备跌至1983年来新低。能源板块全线大涨。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">💊 CXO/创新药</span>
+        <span class="sector-bar-fill" style="width:80%;"></span>
+        <span class="sector-pct up">板块+2~4%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">药明康德H1净利110.8亿+29.43%+创新药BD交易1-7月达1063亿美元（全球前十中国占8席）。医药板块8月以来累涨超20%创年内新高。药明康德/百济神州上调业绩指引。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🛒 泛消费</span>
+        <span class="sector-bar-fill" style="width:75%;"></span>
+        <span class="sector-pct up">板块+1~3%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">扩大消费"十五五"规划提出2030年社零达60万亿目标。白酒/食品/家电普涨，消费从防御变为进攻。青岛啤酒+0.49%温和跟涨。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">⚡ 电力电网</span>
+        <span class="sector-bar-fill" style="width:70%;"></span>
+        <span class="sector-pct up">板块+1~2%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">全国用电负荷创新高+"十五五"特高压规模为"十四五"两倍。电力设备/特高压/智能电网集体走强。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🆕 AIDC/数据中心</span>
+        <span class="sector-bar-fill" style="width:65%;"></span>
+        <span class="sector-pct up">盘前催化</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">阿里云全球数据中心产能拟提升两倍！首创全模块化设计，AIDC交付工期缩短至100天、成本降低10%+。利好IDC/AI服务器/液冷。科华数据直接受益。</p>
+
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#27ae60;">🔴 弱势/风险板块</h3>
+
+    <div class="sector-bar">
+        <span class="sector-name">🔻 CPO光模块</span>
+        <span class="sector-bar-fill green" style="width:90%;"></span>
+        <span class="sector-pct down">板块-4~7%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">🚨CPO惨案！中际旭创-6.01%成交457.6亿+新易盛-5.07%成交266.9亿。美股Coherent-14%+FCC禁止中国光模块进口草案双重暴击。光通信板块遭遇系统性风险，坚决不抄底！</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🔻 半导体/存储</span>
+        <span class="sector-bar-fill green" style="width:75%;"></span>
+        <span class="sector-pct down">板块-1~5%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">普冉-4.86%/澜起-3.99%/长鑫-2.25%。江波龙暴增715倍+苹果测试长鑫利好集中兑现→"利好出尽"式回调。存储中期逻辑不变但短期需消化获利盘。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🔻 电子元器件</span>
+        <span class="sector-bar-fill green" style="width:55%;"></span>
+        <span class="sector-pct down">板块-1~2%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">立讯精密-2.11%放量67.7亿/环旭电子微涨+0.25%。消费电子+EMS方向不在当前风口，科技风格切换中被边缘化。</p>
+
+    <div class="heatmap-legend">
+        <span>🟢 强势/看多</span><span>🔴 弱势/看空</span><span>🆕 盘前新增催化</span>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📰 今日盘中要闻（8/11 周二）</h2>
+
+    <div class="news-item">
+        <span class="tag tag-cpo">🚨CPO</span><span class="tag tag-foreign">🇺🇸美股</span>
+        <div class="news-title">美股光通信板块惨烈暴跌：Coherent-14%、Lumentum-8%，直接冲击A股CPO板块</div>
+        <div class="news-src">隔夜 · 中际旭创/新易盛最直接承压</div>
+        <p style="font-size:11px;color:#666;">Coherent盘后继续下跌+FCC起草禁止中国新型号光模块进口规则草案=政策+海外竞争+恐慌三重暴击。中际旭创8/10已放量457.6亿暴跌-6.01%，三日从955→864.58累计-9.5%。<strong>CPO板块进入中期调整，坚决不抄底。</strong></p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-policy">🏛️央行</span><span class="tag tag-market">宏观</span>
+        <div class="news-title">央行印发"十五五"改革发展规划+9份配套行动方案，全方位利好资本市场</div>
+        <div class="news-src">8/10盘后 · 流动性和改革双利好</div>
+        <p style="font-size:11px;color:#666;">重点部署：科技金融体制+债券市场"科技板"+数字金融+金融支持消费+人民币离岸市场。强调维持流动性合理充裕，稳妥推进金融高水平开放。利好科技金融/数字金融/消费金融方向。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-gold">🥇黄金</span><span class="tag tag-energy">🛢️原油</span>
+        <div class="news-title">黄金续涨+1.11%报4448美元再创新高！WTI原油暴涨+5.05%报82.13美元</div>
+        <div class="news-src">隔夜 · 资源股最强催化剂</div>
+        <p style="font-size:11px;color:#666;">金价：央行21个月增持+非农爆冷降息预期升温+美元走弱。原油：霍尔木兹海峡协议未达成+美国战略石油储备跌至1983年来新低。资源股（黄金/有色/石油）成为当下最强主线。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-ai">🆕AIDC</span><span class="tag tag-policy">科技</span>
+        <div class="news-title">阿里云全球数据中心产能拟提升两倍！AIDC交付工期缩短至100天、成本降低10%+</div>
+        <div class="news-src">8/10盘后 · IDC/服务器/液冷产业链利好</div>
+        <p style="font-size:11px;color:#666;">首创全模块化设计架构，大型AIDC数据中心交付工期从6-18个月缩短至100天，建设成本降低10%以上。利好：IDC（数据港/万国数据）、AI服务器（工业富联）、液冷（英维克/高澜股份）、光模块（中长期）。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-semicon">💾存储</span>
+        <div class="news-title">江波龙H1净利润105.77亿元暴增715倍！拟4亿-8亿元回购</div>
+        <div class="news-src">8/11盘前 · 存储产业链业绩兑现</div>
+        <p style="font-size:11px;color:#666;">存储产业链业绩大爆发！但8/10普冉-4.86%/澜起-3.99%说明"利好出尽"——短期获利盘借利好集中兑现。中长期存储国产替代+AI拉动逻辑不变，回调后反而是布局机会。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-policy">🏭煤炭</span><span class="tag tag-energy">能源</span>
+        <div class="news-title">煤炭工业"十五五"规划印发：2030年智能化煤矿产能比例提升至75%</div>
+        <div class="news-src">8/11盘前 · 矿井智能化改造迎窗口期</div>
+        <p style="font-size:11px;color:#666;">大型现代化煤矿产能比重提升至87%。矿井智能化改造+煤矿安全+煤机设备方向受益。煤炭板块近期持续走强，叠加夏季用电高峰。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-energy">🔋电池</span>
+        <div class="news-title">亿纬锂能两类电池将涨价+锂电池9/1起征2%消费税（钠电池/固态电池豁免）</div>
+        <div class="news-src">8/11盘前 · 电池行业格局变化</div>
+        <p style="font-size:11px;color:#666;">亿纬锂能涨价→行业集中度提升利好龙头（宁德时代）。2%消费税引导技术路线从传统锂电→钠电池/固态电池。固态电池峰会（8/11-12芝加哥）+SMM电池大会（8/13-14长沙）密集催化。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-ai">🤖机器人</span>
+        <div class="news-title">人形机器人加速落地！宇树科技中签率0.018%，机构称产业化奇点已至</div>
+        <div class="news-src">8/11盘前 · 机器人板块情绪催化</div>
+        <p style="font-size:11px;color:#666;">宇树科技科创板上市中签率极低（约万分之二），若按年内新股首日平均涨幅276%测算，中一签账面盈利有望突破20万元。机器人产业链（减速器/电机/传感器）情绪受益。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-risk">⚠️风险</span>
+        <div class="news-title">多机构预警周三（8/12）为潜在风险窗口——五连阳后技术面超买+布林上轨压制</div>
+        <div class="news-src">8/11盘前 · 短期回调风险上升</div>
+        <p style="font-size:11px;color:#666;">中信证券等多家机构建议由超跌反弹转向均衡配置。沪指五连阳逼近4000点+布林上轨+月末资金面收紧预期。今明两天可能成为短期高点。建议整体仓位降至5-6成。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-foreign">🇺🇸中概</span><span class="tag tag-market">宏观</span>
+        <div class="news-title">中概股逆势走强：金龙指数+1.65%，阿里巴巴涨3%、京东涨1.52%</div>
+        <div class="news-src">隔夜 · 外资回流中国资产信号</div>
+        <p style="font-size:11px;color:#666;">尽管美股光通信暴跌，但中概股整体逆势走强。阿里云AIDC扩产+央行十五五规划+消费复苏预期共同催化中概股反弹。A股开盘情绪偏正面但需警惕科技股拖累。</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>⭐ 自选股关注（基于日报信号 + 8/10量价 + 8/11盘前催化）</h2>
+
+    <div class="watch-card">
+        <div class="watch-rank">1</div>
+        <div class="watch-info">
+            <div class="watch-name">华友钴业 <span class="stock-code">603799.SH</span> <span class="up">三重催化共振！</span></div>
+            <div class="watch-detail">8/10收46.07元(+4.68%) · 放量72亿上涨 · 刚果禁令+美国矿产计划+原油暴涨</div>
+        </div>
+        <div class="watch-action up">★★★★★ 买入</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">2</div>
+        <div class="watch-info">
+            <div class="watch-name">紫金矿业 <span class="stock-code">601899.SH</span> <span class="up">金价4448美元新高！</span></div>
+            <div class="watch-detail">8/10收35.45元(+0.85%) · 放量96亿上涨 · 14xPE自选池最低+央行21月增持黄金</div>
+        </div>
+        <div class="watch-action up">★★★★★ 买入</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">3</div>
+        <div class="watch-info">
+            <div class="watch-name">宁德时代 <span class="stock-code">300750.SZ</span> <span class="up">除权后强势！</span></div>
+            <div class="watch-detail">8/10收393.87元(+1.86%) · 放量90亿 · 亿纬锂能涨价+固态电池峰会催化</div>
+        </div>
+        <div class="watch-action up">★★★★☆ 买入</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">4</div>
+        <div class="watch-info">
+            <div class="watch-name">中钨高新 <span class="stock-code">000657.SZ</span> <span class="up">五天+52%！</span></div>
+            <div class="watch-detail">8/10收72.80元(+8.64%) · 成交110亿天量 · 强烈建议减仓锁利！不追高！</div>
+        </div>
+        <div class="watch-action up">★★★★☆ 买入（锁利！）</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">5</div>
+        <div class="watch-info">
+            <div class="watch-name">中际旭创 <span class="stock-code">300308.SZ</span> <span class="down">🚨CPO崩盘！</span></div>
+            <div class="watch-detail">8/10收864.58元(-6.01%) · 天量457.6亿暴跌 · Coherent-14%+FCC禁令=系统性风险</div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 坚决不抄底</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">6</div>
+        <div class="watch-info">
+            <div class="watch-name">科华数据 <span class="stock-code">002335.SZ</span> <span class="up">🆕AIDC利好！</span></div>
+            <div class="watch-detail">8/10收31.28元(+0.10%) · 阿里云AIDC产能提升两倍直接利好，但资金尚未关注</div>
+        </div>
+        <div class="watch-action up">★★★☆☆ 关注</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">7</div>
+        <div class="watch-info">
+            <div class="watch-name">青岛啤酒 <span class="stock-code">600600.SH</span> <span class="up">消费防御首选</span></div>
+            <div class="watch-detail">8/10收53.86元(+0.49%) · 扩大消费十五五规划+夏季旺季+22xPE合理偏低</div>
+        </div>
+        <div class="watch-action up">★★★★☆ 买入</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">8</div>
+        <div class="watch-info">
+            <div class="watch-name">澜起科技 <span class="stock-code">688008.SH</span> <span class="down">存储杀估值</span></div>
+            <div class="watch-detail">8/10收206.92元(-3.99%) · 放量91.5亿 · DDR5逻辑不变但短期需止跌，等200元附近</div>
+        </div>
+        <div class="watch-action" style="color:#f39c12;">★★☆☆☆ 等止跌</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📋 今日操作要点</h2>
+
+    <div class="alert-box">
+        <strong>🚨 CPO坚决不抄底！</strong>中际旭创-6%+新易盛-5%=系统性风险而非普通回调。美股Coherent-14%+FCC禁令草案=政策+海外竞争双重暴击。持有者反弹减仓，空仓者等830-850区间缩量止跌信号。
+    </div>
+
+    <div class="alert-box">
+        <strong>⚠️ 周三（8/12）风险窗口预警！</strong>五连阳+布林上轨+多机构预警。今日以防御为主，整体仓位降至5-6成。中钨高新五天+52%强烈建议减仓1/2-2/3锁利。
+    </div>
+
+    <p style="font-size:12px;line-height:1.8;margin-top:8px;">
+    <strong>💰 仓位建议</strong>：总仓位5-6成，留4-5成现金应对周三潜在回撤<br>
+    <strong>🎯 主线方向</strong>：资源（紫金矿业/华友钴业）+ 消费防御（青岛啤酒）+ 电池龙头（宁德时代）+ AIDC（科华数据）<br>
+    <strong>🚫 回避方向</strong>：CPO光模块（等止跌）+ 高估值AI应用（科大讯飞107xPE）+ 困境反转未确认（汉得信息）<br>
+    <strong>👀 关键观察</strong>：① 中际旭创850元能否守住——跌破则中期调整确认；② 中钨高新是否出现集中获利兑现；③ 沪指能否放量突破4000点；④ 美股光通信今晚能否止跌<br>
+    <strong>📌 核心策略</strong>：防御为主、逢高减仓、留现金等回撤。资源+消费替代科技成为新主线，顺势调仓不恋战。
     </p>
-    <div class="rot-box">
-        <strong>🔄 核心轮动规律：</strong>沪指六连阳但风格剧变——从"科技进攻"切换为"防御轮动"。资源（金/油/有色）+消费（食饮/农牧/医药）+军工三线齐涨，取代CPO/半导体/机器人成为新主线。资金从高位科技赛道大规模流向低位防御板块，<strong>典型的"卖高买低、高低切换"行情</strong>。
-    </div>
-</div>
-
-<div class="section">
-    <h2>⚡ 强势股速览（8/11涨停/领涨核心）</h2>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">百花医药</span> <span style="color:#999;">600721</span></div>
-        <div class="stock-card-mid">创新药龙头 · 8月累计涨超20%</div>
-        <div class="stock-card-right up">6连板 🔥</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">高争民爆</span> <span style="color:#999;">002827</span></div>
-        <div class="stock-card-mid">市场总龙头 · 民爆+西藏基建</div>
-        <div class="stock-card-right up">9天8板 🔥🔥</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">宝鼎科技</span> <span style="color:#999;">002552</span></div>
-        <div class="stock-card-mid">PCB概念 · 军工+电子</div>
-        <div class="stock-card-right up">7天6板</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">风范股份</span> <span style="color:#999;">601700</span></div>
-        <div class="stock-card-mid">电网设备龙头 · 特高压+新基建</div>
-        <div class="stock-card-right up">6天5板</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">开开实业</span> <span style="color:#999;">600272</span></div>
-        <div class="stock-card-mid">医药零售 · 创新药联动</div>
-        <div class="stock-card-right up">4连板</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">一鸣食品</span> <span style="color:#999;">605179</span></div>
-        <div class="stock-card-mid">食品饮料情绪龙头 · 消费主线</div>
-        <div class="stock-card-right up">10天6板 / 2连板</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">甘李药业</span> <span style="color:#999;">603087</span></div>
-        <div class="stock-card-mid">胰岛素龙头 · 创新药板块共振</div>
-        <div class="stock-card-right up">涨停</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">杭钢股份</span> <span style="color:#999;">600126</span></div>
-        <div class="stock-card-mid">算力租赁 · 阿里云AIDC产业链</div>
-        <div class="stock-card-right up">涨停</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">鸿博股份</span> <span style="color:#999;">002229</span></div>
-        <div class="stock-card-mid">算力租赁 · AI算力+英伟达合作</div>
-        <div class="stock-card-right up">涨停</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">皇氏集团</span> <span style="color:#999;">002329</span></div>
-        <div class="stock-card-mid">乳业 · 食品饮料+消费复苏</div>
-        <div class="stock-card-right up">涨停</div>
-    </div>
-    <p style="font-size:11px;color:#999;margin-top:6px;">新股N超纯开盘涨+581.92% · N国仪-U涨+418.38% · 爱丽家居11日涨185.56%停牌核查</p>
-</div>
-
-<div class="section">
-    <h2>📌 自选股关注（今日重点）</h2>
-    <p style="font-size:11px;color:#999;margin-bottom:6px;">基于今日盘前日报+盘中热点，筛选值得重点关注的标的。当前核心矛盾：资源/消费强势 vs CPO/存储崩盘，策略从进攻切换为防御。</p>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">华友钴业</span> <span style="color:#999;">603799.SH</span></div>
-        <div class="stock-card-mid">★★★★★ 买入 · 刚果禁铜钴出口+美国矿产投资+油价暴涨三重共振 · PE~22x</div>
-        <div class="stock-card-right up">今日首选</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">紫金矿业</span> <span style="color:#999;">601899.SH</span></div>
-        <div class="stock-card-mid">★★★★★ 买入 · 金价4448美元新高+央行21月增持+PE仅14x全池最低</div>
-        <div class="stock-card-right up">防御首选</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">中钨高新</span> <span style="color:#999;">000657.SZ</span></div>
-        <div class="stock-card-mid">★★★★☆ 买入但须锁利 · 五天+52%极度超买 · 强烈建议减仓1/2以上</div>
-        <div class="stock-card-right" style="color:#f39c12;">锁利！不追高</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">青岛啤酒</span> <span style="color:#999;">600600.SH</span></div>
-        <div class="stock-card-mid">★★★★☆ 买入 · 消费十五五规划+夏季旺季+22xPE历史中低位 · 防御配置</div>
-        <div class="stock-card-right up">消费防御</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">宁德时代</span> <span style="color:#999;">300750.SZ</span></div>
-        <div class="stock-card-mid">★★★★☆ 买入 · 除权后强势反弹+亿纬锂能涨价+固态电池峰会催化</div>
-        <div class="stock-card-right up">中线持有</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">紫光国微</span> <span style="color:#999;">002049.SZ</span></div>
-        <div class="stock-card-mid">★★★★☆ 买入 · 半导体普跌中独自抗跌 · FPGA国产替代逻辑坚实</div>
-        <div class="stock-card-right up">独立走强</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">中际旭创</span> <span style="color:#999;">300308.SZ</span></div>
-        <div class="stock-card-mid">★☆☆☆☆ 观望不抄底！· FCC禁令草案+Coherent-14%三重暴击 · 三日-9.5%</div>
-        <div class="stock-card-right down">坚决不抄底</div>
-    </div>
-    <div class="stock-card">
-        <div class="stock-card-left"><span style="font-weight:700;">科华数据</span> <span style="color:#999;">002335.SZ</span></div>
-        <div class="stock-card-mid">★★★☆☆ 持有 · 阿里云AIDC扩产直接利好 · 等科技风口回归</div>
-        <div class="stock-card-right" style="color:#f39c12;">耐心持有</div>
-    </div>
-</div>
-
-<div class="section">
-    <h2>📰 盘中要闻</h2>
-    <div class="news-item">
-        <span class="tag tag-resource">资源</span>
-        <span class="tag tag-policy">地缘</span>
-        <span class="news-title">霍尔木兹海峡局势升级：特朗普宣称美军"100%控制"，WTI原油暴涨+5.05%报82.13美元</span>
-        <p style="font-size:11px;color:#666;">美伊互提索赔+美国战略石油储备跌至1983年来新低+协议未达成。油气油服板块逆势高开领涨，资金避险情绪急剧升温。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-policy">政策</span>
-        <span class="news-title">央行印发"十五五"改革发展规划+9份配套行动方案</span>
-        <p style="font-size:11px;color:#666;">涵盖科技金融体制、债券市场"科技板"、数字金融、金融支持消费、人民币离岸市场等方向，全方位利好。金融+科技+消费三重受益。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-ai">AI算力</span>
-        <span class="tag tag-foreign">外资</span>
-        <span class="news-title">英伟达联手高盛/黑石/贝莱德/KKR等六巨头，筹建超5000亿美元AI计算基础设施融资平台</span>
-        <p style="font-size:11px;color:#666;">拟调动逾5000亿美元第三方资本为AI计算提供资金。但消息公布后英伟达股价收跌近3%，市场出现"循环融资"担忧。阿里云亦宣布全球数据中心产能提升两倍。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-semicon">半导体</span>
-        <span class="tag tag-risk">风险</span>
-        <span class="news-title">费城半导体指数大跌3%！美股光通信惨烈暴跌：Coherent-14% Lumentum-8%</span>
-        <p style="font-size:11px;color:#666;">FCC起草禁止中国光模块进口规则草案+英特尔拟增发200亿美元引发抛售。直接冲击A股CPO板块：中际旭创跌超5%、光迅科技触及跌停。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-pharma">医药</span>
-        <span class="news-title">创新药板块8月累计涨超20%！百花医药6连板引领医药主升浪</span>
-        <p style="font-size:11px;color:#666;">药明康德刷新年内新高（H1净利110.8亿+29.43%），甘李药业涨停，百普赛斯创业板2板。创新药BD交易全球前十占八，行业景气度持续攀升。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-policy">政策</span>
-        <span class="tag tag-resource">能源</span>
-        <span class="news-title">煤炭工业十五五规划印发：2030年智能化煤矿产能比例75%</span>
-        <p style="font-size:11px;color:#666;">发改委与能源局联合印发，明确大型现代化煤矿产能比重提升至87%，矿井智能化改造迎窗口期，利好煤矿智能化设备商。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-semicon">半导体</span>
-        <span class="tag tag-foreign">外资</span>
-        <span class="news-title">韩国设立5万亿韩元半导体基金+拟颁特别法为半导体"清障"</span>
-        <p style="font-size:11px;color:#666;">重点投资半导体材料、零部件和设备领域。全球半导体产业链博弈加剧，国产替代紧迫性进一步提升。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-ai">AI</span>
-        <span class="tag tag-policy">政策</span>
-        <span class="news-title">上海推动AI模型出口新政：支持智能体/多模态生成等产品出口</span>
-        <p style="font-size:11px;color:#666;">算力和基础大模型扩大境外调用，中国AI商业化出海加速。叠加千问办公助理开始收费+豆包抽佣，AI变现路径逐步清晰。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-consumer">消费</span>
-        <span class="news-title">大消费全线回暖：食品饮料/农牧/影视三线齐涨</span>
-        <p style="font-size:11px;color:#666;">一鸣食品10天6板、皇氏集团涨停、益生股份涨停。扩大消费十五五规划（2030年社零60万亿）+防御轮动双重驱动。但机构提醒传统消费更多是超跌反弹逻辑。</p>
-    </div>
-    <div class="news-item">
-        <span class="tag tag-risk">风险</span>
-        <span class="news-title">⚠️ 周三（8/12）被多机构标记为潜在风险窗口</span>
-        <p style="font-size:11px;color:#666;">沪指六连阳后技术面超买+布林上轨压制+成交量连续缩量（2.52万亿较前日缩1413亿）+美联储鹰派票委释放多次加息信号。今明两天可能成为短期高点，建议整体仓位降至5-6成。</p>
-    </div>
-</div>
-
-<div class="section">
-    <h2>🔴 重大风险警示</h2>
-    <div class="alert-box red">
-        <strong>🚨 CPO光模块板块系统性风险延续！中际旭创/新易盛8/11继续跌超5%</strong><br>
-        美股Coherent盘后继续下跌+FCC起草禁止中国光模块进口规则草案+英特尔增发200亿引发科技股抛售=四重暴击持续发酵。<strong>这不是普通回调，是政策+海外竞争+恐慌情绪的三重共振。</strong>光迅科技触及跌停，CPO板块全面溃败。<strong>坚决不抄底！持有者反弹减仓！</strong>等缩量止跌信号出现再评估。
-    </div>
-    <div class="alert-box red">
-        <strong>🚨 科技股全面承压：半导体/存储/算力硬件集体退潮</strong><br>
-        寒武纪跌超6%、费城半导体指数大跌3%、存储板块利好出尽回调。资金从科技赛道大规模流出，转向资源+消费+军工防御方向。<strong>短期回避科技硬件方向，等待止跌+资金回流信号。</strong>
-    </div>
-    <div class="alert-box">
-        <strong>⚠️ 中钨高新五天+52%极度超买！成交110亿天量！</strong><br>
-        强烈建议减仓1/2-2/3锁利。虽是资源股龙头但涨幅已严重透支短期基本面。余仓博78元（布林上轨），止损65元。<strong>不要因为涨了就觉得还会涨——五天+52%后追高的风险收益比极差。</strong>
-    </div>
-    <div class="alert-box">
-        <strong>⚠️ 周三（8/12）风险窗口+美联储加息信号双重压力</strong><br>
-        美联储鹰派票委哈马克释放可能需要多次加息的信号+六连阳后技术面超买+成交量连续缩量。建议整体仓位降至5-6成，留现金应对回撤。<strong>新增资金优先配置资源+消费防御，不追高科技。</strong>
-    </div>
 </div>
 
 <div class="footer">
-    <p>⚠️ 本报告由AI基于公开数据自动生成，仅供参考，不构成投资建议。投资有风险，入市须谨慎。</p>
-    <p>数据来源：东方财富、第一财经、新浪财经、证券时报、同花顺、公开新闻报道</p>
-    <p>生成时间: 2026-08-11 周二 盘中 | 基于8/10收盘数据+8/11实时热点</p>
+    <p>⚠️ 免责声明：本报告由 AI 自动生成，仅供参考，不构成投资建议。投资有风险，入市须谨慎。</p>
+    <p>数据来源：新浪财经 API（行情） · 量价关系推断（资金流向） · 公开新闻报道</p>
+    <p>生成时间：2026-08-11 周二 盘中 | 基于8/10收盘数据+8/11盘前要闻</p>
 </div>
 
 </body>
