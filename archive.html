@@ -70,10 +70,10 @@ async function reportExists(url){
       const {done,value}=await reader.read();
       if(done) break;
       acc += dec.decode(value,{stream:true});
-      if(/关注股票日报|股市热点关注/.test(acc)) break;
+      if(/<title>\s*(关注股票日报|股市热点关注)\s+\d{4}-\d{2}-\d{2}/.test(acc)) break;
     }
     reader.cancel().catch(()=>{});
-    return /关注股票日报|股市热点关注/.test(acc);
+    return /<title>\s*(关注股票日报|股市热点关注)\s+\d{4}-\d{2}-\d{2}/.test(acc);
   }catch(e){return false;}
 }
 
