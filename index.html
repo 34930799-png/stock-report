@@ -96,7 +96,24 @@ async function unlock() {
   }
 }
 
-async function exists(url){try{return(await fetch(url,{method:'HEAD'})).ok;}catch(e){return false;}}
+// 判断报告是否真实存在：读取响应前若干KB检查是否为报告页。
+// 因 Cloudflare Pages 对不存在路径会 fallback 返回 index.html(HTTP 200)，用 HEAD 判断会误判非交易日存在。
+async function exists(url){
+  try{
+    const r = await fetch(url);
+    if(!r.ok || !r.body) return false;
+    const reader = r.body.getReader();
+    let acc=''; const dec=new TextDecoder();
+    for(let i=0;i<4;i++){
+      const {done,value}=await reader.read();
+      if(done) break;
+      acc += dec.decode(value,{stream:true});
+      if(/关注股票日报|股市热点关注/.test(acc)) break;
+    }
+    reader.cancel().catch(()=>{});
+    return /关注股票日报|股市热点关注/.test(acc);
+  }catch(e){return false;}
+}
 
 async function initApp() {
   let now = new Date(), today = fmt(now);

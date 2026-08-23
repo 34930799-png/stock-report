@@ -1,0 +1,4 @@
+# Cloudflare Pages 兜底：/daily/* 与 /hotspot/* 的缺失路径返回 404，而非 fallback 到 index.html(200)
+# 真实存在的报告为静态文件，优先于本规则返回，不受影响。首页/历史列表据此可正确区分非交易日。
+/daily/*   /404  404
+/hotspot/*  /404  404

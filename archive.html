@@ -56,26 +56,64 @@ if (sessionStorage.getItem('sa') !== '1') {
 
 const weekdays = ['日','一','二','三','四','五','六'];
 
-// 生成过去60天的报告列表
-function buildList(prefix, containerId) {
+function fmt(d) { return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+
+// 判断报告是否真实存在：读取响应前若干KB检查是否为报告页。
+// 因 Cloudflare Pages 对不存在路径会 fallback 返回 index.html(HTTP 200)，必须检查内容而非状态码。
+async function reportExists(url){
+  try{
+    const r = await fetch(url);
+    if(!r.ok || !r.body) return false;
+    const reader = r.body.getReader();
+    let acc=''; const dec=new TextDecoder();
+    for(let i=0;i<4;i++){
+      const {done,value}=await reader.read();
+      if(done) break;
+      acc += dec.decode(value,{stream:true});
+      if(/关注股票日报|股市热点关注/.test(acc)) break;
+    }
+    reader.cancel().catch(()=>{});
+    return /关注股票日报|股市热点关注/.test(acc);
+  }catch(e){return false;}
+}
+
+// 只列出真实存在的报告：非交易日不生成链接，历史报告点击均可正常打开
+async function buildList(prefix, containerId) {
   const list = document.getElementById(containerId);
   const today = new Date();
-  let html = '';
-  let count = 0;
-
+  const dates = [];
   for (let i = 0; i < 60; i++) {
     const d = new Date(today);
     d.setDate(d.getDate() - i);
-    const ds = d.getFullYear() + '-' +
-      String(d.getMonth()+1).padStart(2,'0') + '-' +
-      String(d.getDate()).padStart(2,'0');
-    html += `<li>
-      <a href="${prefix}/${ds}">📄 ${ds}</a>
-      <span class="weekday">周${weekdays[d.getDay()]}</span>
-    </li>`;
-    count++;
+    dates.push({ ds: fmt(d), wd: weekdays[d.getDay()] });
   }
-  list.innerHTML = html;
+  list.innerHTML = '<li style="color:#999;">正在检查历史报告...</li>';
+
+  const exist = {};
+  let idx = 0;
+  async function worker() {
+    while (idx < dates.length) {
+      const i = idx++;
+      const { ds } = dates[i];
+      exist[ds] = await reportExists(prefix + '/' + ds);
+      render();
+    }
+  }
+  await Promise.all(Array.from({length:6}, worker));
+  render();
+
+  function render() {
+    let html = '';
+    for (const {ds, wd} of dates) {
+      if (!exist[ds]) continue;
+      html += `<li>
+        <a href="${prefix}/${ds}">📄 ${ds}</a>
+        <span class="weekday">周${wd}</span>
+      </li>`;
+    }
+    if (!html) html = '<li style="color:#999;">（暂无历史报告）</li>';
+    list.innerHTML = html;
+  }
 }
 
 buildList('daily', 'dailyList');
