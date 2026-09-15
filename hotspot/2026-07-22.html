@@ -8,28 +8,28 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
-.tag-comm { background:#e67e22; }
+.tag-comm { background:#9c5a00; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
+.tag-market { background:#9c5a00; }
 .tag-risk { background:#c0392b; }
 .tag-foreign { background:#16a085; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
@@ -37,14 +37,14 @@ tr:hover { background:#fffbf0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:95px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .watch-reason { font-size:11px; color:#666; min-width:0; flex:1; margin:0 8px; }
 .watch-action { font-weight:700; font-size:11px; white-space:nowrap; }
-.action-buy { color:#e74c3c; }
-.action-hold { color:#f39c12; }
-.action-sell { color:#27ae60; }
+.action-buy { color:#c0392b; }
+.action-hold { color:#9c5a00; }
+.action-sell { color:#1e7d3c; }
 .market-note { font-size:11px; color:#999; margin-top:6px; }
 </style>
 </head>
@@ -62,13 +62,13 @@ tr:hover { background:#fffbf0; }
         <tr><td>上证指数</td><td>3864.37</td><td style="font-weight:600;">3880.28</td><td class="up">+0.41%</td></tr>
         <tr><td>深证成指</td><td>14264.29</td><td style="font-weight:600;">14331.39</td><td class="up">+0.47%</td></tr>
         <tr><td>创业板指</td><td>3685.97</td><td style="font-weight:600;">3673.67</td><td class="down">-0.33%</td></tr>
-        <tr><td style="color:#e74c3c;font-weight:700;">科创50</td><td style="font-weight:600;">1903.16</td><td style="color:#e74c3c;font-weight:700;">1926.46</td><td class="up" style="font-size:15px;">+1.22% 🔥</td></tr>
+        <tr><td style="color:#c0392b;font-weight:700;">科创50</td><td style="font-weight:600;">1903.16</td><td style="color:#c0392b;font-weight:700;">1926.46</td><td class="up" style="font-size:15px;">+1.22% 🔥</td></tr>
         <tr><td>中小100</td><td>8756.80</td><td style="font-weight:600;">8847.62</td><td class="up">+1.04%</td></tr>
     </table>
     <p class="market-note">
-        两市成交约<span style="color:#e74c3c;font-weight:700;">1.75万亿</span>（盘中）· 预计全日2.5-2.8万亿 ·
+        两市成交约<span style="color:#c0392b;font-weight:700;">1.75万亿</span>（盘中）· 预计全日2.5-2.8万亿 ·
         涨停约55只 · 跌停约8只 · 上涨约2000只 vs 下跌约2500只（分化明显）<br>
-        <span style="color:#e74c3c;">🔴 连板赚钱效应突出：昨日涨停+4.44% / 昨日连板+5.34%</span> ·
+        <span style="color:#c0392b;">🔴 连板赚钱效应突出：昨日涨停+4.44% / 昨日连板+5.34%</span> ·
         🟢 科创50继续领涨，创业板小幅回调消化昨日+7%涨幅
     </p>
 </div>
@@ -252,19 +252,19 @@ tr:hover { background:#fffbf0; }
     <table>
         <tr><th style="width:20%;">要点</th><th style="width:80%;">内容</th></tr>
         <tr>
-            <td style="font-weight:700;color:#e74c3c;">仓位建议</td>
+            <td style="font-weight:700;color:#c0392b;">仓位建议</td>
             <td style="text-align:left;font-size:12px;">5-7成。昨日深V后今日分化符合预期，不建议追高。保留现金等待回踩确认</td>
         </tr>
         <tr>
-            <td style="font-weight:700;color:#e74c3c;">主线方向</td>
+            <td style="font-weight:700;color:#c0392b;">主线方向</td>
             <td style="text-align:left;font-size:12px;">半导体（AI芯片+存储+封测）＞ CPO/光通信（回调低吸）＞ 资源股（短线补涨）</td>
         </tr>
         <tr>
-            <td style="font-weight:700;color:#f39c12;">回避方向</td>
+            <td style="font-weight:700;color:#9c5a00;">回避方向</td>
             <td style="text-align:left;font-size:12px;">电池/新能源（宁德时代持续跑输）、消费白马（青岛啤酒连跌）、纯题材小票（AIGC-1.05%尾端风险）</td>
         </tr>
         <tr>
-            <td style="font-weight:700;color:#e74c3c;">关键观察</td>
+            <td style="font-weight:700;color:#c0392b;">关键观察</td>
             <td style="text-align:left;font-size:12px;">午后量能能否维持2.5万亿+；科创板是否冲高回落；北向资金流向变化；2点后有无跳水</td>
         </tr>
     </table>

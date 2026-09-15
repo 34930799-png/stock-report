@@ -12,7 +12,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.7; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:680px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; position:sticky; top:0; }
@@ -21,14 +21,14 @@ tr:hover { background:#fffbf0; }
 .stock-name { font-weight:600; }
 .stock-code { color:#999; font-size:10px; }
 .price { font-weight:600; font-size:13px; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .signal { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
 .range { color:#666; font-size:11px; }
 .small { font-size:10px; color:#666; max-width:100px; white-space:normal; }
 .top-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .top-card:last-child { border-bottom:none; }
-.top-rank { font-size:24px; font-weight:700; color:#e74c3c; min-width:36px; }
+.top-rank { font-size:24px; font-weight:700; color:#c0392b; min-width:36px; }
 .top-name { font-weight:600; font-size:14px; }
 .top-price { font-size:14px; font-weight:600; color:#16213e; }
 .top-reason { font-size:11px; color:#666; }
@@ -36,13 +36,13 @@ tr:hover { background:#fffbf0; }
 .footer p { margin:2px 0; }
 .summary { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
 .summary-item { background:#f0f0f0; padding:4px 8px; border-radius:4px; font-size:11px; }
-.buy-count { color:#e74c3c; font-weight:700; }
-.hold-count { color:#f39c12; font-weight:700; }
-.sell-count { color:#27ae60; font-weight:700; }
+.buy-count { color:#c0392b; font-weight:700; }
+.hold-count { color:#9c5a00; font-weight:700; }
+.sell-count { color:#1e7d3c; font-weight:700; }
 .market-overview { font-size:13px; line-height:1.8; }
 .alert-box { background:#fff3cd; border:1px solid #ffc107; border-radius:6px; padding:10px; margin:8px 0; font-size:12px; }
-.alert-box.red { background:#ffeaea; border-color:#e74c3c; }
-.alert-box.green { background:#eafaf1; border-color:#27ae60; }
+.alert-box.red { background:#ffeaea; border-color:#c0392b; }
+.alert-box.green { background:#eafaf1; border-color:#1e7d3c; }
 </style>
 </head>
 <body>
@@ -55,11 +55,11 @@ tr:hover { background:#fffbf0; }
 <div class="section">
     <h2>📈 今日盘前市场概况</h2>
     <div class="market-overview">
-        <p><strong>昨日（8/5）复盘</strong>——A股连续两日大涨！<strong style="color:#e74c3c">科创50继续领涨+4.78%</strong>（两天累计+9%惊人），创业板+1.32%，深证+1.86%，上证+1.47%。全市成交约2.66万亿放量延续。<strong>但CPO龙头中际旭创-7.26%、新易盛-5.29%高台跳水</strong>——大反弹次日获利盘兑现如约而至。自选池<span style="color:#e74c3c">17涨4跌</span>，连续两日大丰收！</p>
-        <p style="margin-top:4px;"><strong>8/5板块轮动</strong>：<span style="color:#e74c3c">存储芯片（普冉+11.35%/佰维+7.14%，FMS峰会催化延续）/ 培育钻石（四方达+10.37%独立行情爆发）/ 钨材料（中钨高新涨停+10%，两天+20%）/ SiP/EMS（环旭电子涨停+10%，ICEPT封装会议催化）/ 黄金铜（紫金+6.13%，美伊协议预期降温金价反弹）/ 芯片设计（扬杰+4.85%/紫光+2.52%）</span>接力上涨。<span style="color:#27ae60">CPO（中际-7.26%/新易盛-5.29%，获利盘出逃——典型"大反弹次日高开低走"）/ 长鑫科技（-1.27%，DRAM天量后缩量下跌）/ 青岛啤酒（-1.23%，消费三连跌）</span>领跌。行情从CPO向存储/半导体/封装/钨材料扩散，轮动健康。</p>
-        <p style="margin-top:4px;"><strong>自选池8/5涨跌全景</strong>：21只股票<span style="color:#e74c3c">17只收红、4只收绿</span>。涨幅最大：<span style="color:#e74c3c">普冉股份 +11.35%</span>（两天+19.6%！312→374元，FMS峰会超预期催化）、<span style="color:#e74c3c">四方达 +10.37%</span>（培育钻石独立行情爆发近3月新高）、<span style="color:#e74c3c">中钨高新涨停+10%</span>（两天+20%！钨材料+半导体靶材国产替代双逻辑确认）、<span style="color:#e74c3c">环旭电子涨停+10%</span>（两天+18%！ICEPT封装会议+SiP双催化）、<span style="color:#e74c3c">佰维存储 +7.14%</span>（两天+12.7%，233元放量突破230关口）、<span style="color:#e74c3c">紫金矿业 +6.13%</span>（美伊协议未官宣金价企稳反弹）、<span style="color:#e74c3c">扬杰科技 +4.85%</span>（两天+14%功率半导体延续反弹）、<span style="color:#e74c3c">澜起科技 +4.30%</span>（两天+11.6%，212元放量）。下跌：<span style="color:#27ae60">中际旭创 -7.26%</span>（CPO龙头高台跳水）、<span style="color:#27ae60">新易盛 -5.29%</span>（CPO同步回落）、<span style="color:#27ae60">长鑫科技 -1.27%</span>（天量后缩量整理）、<span style="color:#27ae60">青岛啤酒 -1.23%</span>（消费三连跌）。<strong>核心规律：CPO大反弹次日获利盘出逃（旭创-7.26%/新易盛-5.29%）完美验证了昨日"不追高等回调"的判断，但存储/半导体/封装/钨材料接力上涨，行情未结束而是轮动扩散。</strong></p>
-        <p style="margin-top:4px;"><strong>🔴 8/5盘后重大事件</strong>：① <strong style="color:#e74c3c;">隔夜美股涨跌互现</strong>——道指+0.18%、纳指-0.34%、标普-0.12%，科技股获利回吐。美联储释放鹰派信号——9月降息预期降温。② <strong>央行5000亿买断式逆回购8/5落地</strong>——GC001收1.355%维持极低。③ <strong style="color:#e74c3c;">FMS 2026今日闭幕</strong>——三星宣布HBM4 2027年量产（16层堆叠）、SK海力士HBM3E产能翻倍。④ <strong>ICEPT 2026封装会议西安开幕（8/5-7）</strong>——先进封装/Chiplet/3D封装成焦点。⑤ <strong style="color:#e74c3c;">美国8/5宣布对华新一轮半导体设备出口限制</strong>——限制14nm以下逻辑/18nm以下DRAM设备，国产替代逻辑再强化。⑥ <strong>英伟达B300算力卡订单超预期</strong>——大客户需求翻倍。⑦ <strong>美伊协议仍未官宣</strong>——油价76美元附近企稳。⑧ <strong>中芯国际Q2营收超预期+28%</strong>——产能利用率回升至85%+。⑨ <strong>A股两融余额连续3日回升</strong>——融资买入占比升至8.2%。⑩ <strong>财政部1-7月一般公共预算收入同比+5.2%</strong>。</p>
-        <p style="margin-top:4px;"><strong>📊 今日（8/6）盘前预判</strong>：<strong style="color:#e74c3c;">连续两日大涨+周四效应+CPO龙头率先回调=今日大概率震荡分化，主线从CPO向存储/半导体/封装/钨材料扩散。核心矛盾：行情第三天的持续性 vs 周四谨慎情绪+CPO高台跳水的示范效应。</strong>核心逻辑：① <strong style="color:#e74c3c;">周四效应</strong>——历史规律周四机构倾向减仓锁定周中利润。自选池两天涨幅惊人（中钨+20%/普冉+19.6%/环旭+18%/佰维+12.7%），获利盘兑现压力显著。② <strong>CPO双雄8/5高台跳水是先行信号</strong>——两天涨幅过大的品种今日可能接力回调。③ <strong>外部环境降级为"中性偏弱"</strong>（纳指-0.34%+美联储鹰派）——美股无法为A股提供额外动力。④ <strong>存储反弹关键看FMS闭幕</strong>——若无超预期消息则短期反弹可能暂歇。⑤ <strong>美国设备限制的双面性</strong>——短期利空情绪但中长期利好国产替代（澜起/中钨/长鑫受益）。⑥ <strong>美伊协议未官宣</strong>——资源品短期企稳但风险未除。<strong>操作建议</strong>：周四控制仓位5-6成不变，两天涨幅>15%的标的减1/3锁利；CPO等进一步回调（旭创900-920/新易盛400-410）再布局；存储/封装/钨材料持有但设止盈；算力/数据中心/AI应用中线持有。</p>
+        <p><strong>昨日（8/5）复盘</strong>——A股连续两日大涨！<strong style="color:#c0392b">科创50继续领涨+4.78%</strong>（两天累计+9%惊人），创业板+1.32%，深证+1.86%，上证+1.47%。全市成交约2.66万亿放量延续。<strong>但CPO龙头中际旭创-7.26%、新易盛-5.29%高台跳水</strong>——大反弹次日获利盘兑现如约而至。自选池<span style="color:#c0392b">17涨4跌</span>，连续两日大丰收！</p>
+        <p style="margin-top:4px;"><strong>8/5板块轮动</strong>：<span style="color:#c0392b">存储芯片（普冉+11.35%/佰维+7.14%，FMS峰会催化延续）/ 培育钻石（四方达+10.37%独立行情爆发）/ 钨材料（中钨高新涨停+10%，两天+20%）/ SiP/EMS（环旭电子涨停+10%，ICEPT封装会议催化）/ 黄金铜（紫金+6.13%，美伊协议预期降温金价反弹）/ 芯片设计（扬杰+4.85%/紫光+2.52%）</span>接力上涨。<span style="color:#1e7d3c">CPO（中际-7.26%/新易盛-5.29%，获利盘出逃——典型"大反弹次日高开低走"）/ 长鑫科技（-1.27%，DRAM天量后缩量下跌）/ 青岛啤酒（-1.23%，消费三连跌）</span>领跌。行情从CPO向存储/半导体/封装/钨材料扩散，轮动健康。</p>
+        <p style="margin-top:4px;"><strong>自选池8/5涨跌全景</strong>：21只股票<span style="color:#c0392b">17只收红、4只收绿</span>。涨幅最大：<span style="color:#c0392b">普冉股份 +11.35%</span>（两天+19.6%！312→374元，FMS峰会超预期催化）、<span style="color:#c0392b">四方达 +10.37%</span>（培育钻石独立行情爆发近3月新高）、<span style="color:#c0392b">中钨高新涨停+10%</span>（两天+20%！钨材料+半导体靶材国产替代双逻辑确认）、<span style="color:#c0392b">环旭电子涨停+10%</span>（两天+18%！ICEPT封装会议+SiP双催化）、<span style="color:#c0392b">佰维存储 +7.14%</span>（两天+12.7%，233元放量突破230关口）、<span style="color:#c0392b">紫金矿业 +6.13%</span>（美伊协议未官宣金价企稳反弹）、<span style="color:#c0392b">扬杰科技 +4.85%</span>（两天+14%功率半导体延续反弹）、<span style="color:#c0392b">澜起科技 +4.30%</span>（两天+11.6%，212元放量）。下跌：<span style="color:#1e7d3c">中际旭创 -7.26%</span>（CPO龙头高台跳水）、<span style="color:#1e7d3c">新易盛 -5.29%</span>（CPO同步回落）、<span style="color:#1e7d3c">长鑫科技 -1.27%</span>（天量后缩量整理）、<span style="color:#1e7d3c">青岛啤酒 -1.23%</span>（消费三连跌）。<strong>核心规律：CPO大反弹次日获利盘出逃（旭创-7.26%/新易盛-5.29%）完美验证了昨日"不追高等回调"的判断，但存储/半导体/封装/钨材料接力上涨，行情未结束而是轮动扩散。</strong></p>
+        <p style="margin-top:4px;"><strong>🔴 8/5盘后重大事件</strong>：① <strong style="color:#c0392b;">隔夜美股涨跌互现</strong>——道指+0.18%、纳指-0.34%、标普-0.12%，科技股获利回吐。美联储释放鹰派信号——9月降息预期降温。② <strong>央行5000亿买断式逆回购8/5落地</strong>——GC001收1.355%维持极低。③ <strong style="color:#c0392b;">FMS 2026今日闭幕</strong>——三星宣布HBM4 2027年量产（16层堆叠）、SK海力士HBM3E产能翻倍。④ <strong>ICEPT 2026封装会议西安开幕（8/5-7）</strong>——先进封装/Chiplet/3D封装成焦点。⑤ <strong style="color:#c0392b;">美国8/5宣布对华新一轮半导体设备出口限制</strong>——限制14nm以下逻辑/18nm以下DRAM设备，国产替代逻辑再强化。⑥ <strong>英伟达B300算力卡订单超预期</strong>——大客户需求翻倍。⑦ <strong>美伊协议仍未官宣</strong>——油价76美元附近企稳。⑧ <strong>中芯国际Q2营收超预期+28%</strong>——产能利用率回升至85%+。⑨ <strong>A股两融余额连续3日回升</strong>——融资买入占比升至8.2%。⑩ <strong>财政部1-7月一般公共预算收入同比+5.2%</strong>。</p>
+        <p style="margin-top:4px;"><strong>📊 今日（8/6）盘前预判</strong>：<strong style="color:#c0392b;">连续两日大涨+周四效应+CPO龙头率先回调=今日大概率震荡分化，主线从CPO向存储/半导体/封装/钨材料扩散。核心矛盾：行情第三天的持续性 vs 周四谨慎情绪+CPO高台跳水的示范效应。</strong>核心逻辑：① <strong style="color:#c0392b;">周四效应</strong>——历史规律周四机构倾向减仓锁定周中利润。自选池两天涨幅惊人（中钨+20%/普冉+19.6%/环旭+18%/佰维+12.7%），获利盘兑现压力显著。② <strong>CPO双雄8/5高台跳水是先行信号</strong>——两天涨幅过大的品种今日可能接力回调。③ <strong>外部环境降级为"中性偏弱"</strong>（纳指-0.34%+美联储鹰派）——美股无法为A股提供额外动力。④ <strong>存储反弹关键看FMS闭幕</strong>——若无超预期消息则短期反弹可能暂歇。⑤ <strong>美国设备限制的双面性</strong>——短期利空情绪但中长期利好国产替代（澜起/中钨/长鑫受益）。⑥ <strong>美伊协议未官宣</strong>——资源品短期企稳但风险未除。<strong>操作建议</strong>：周四控制仓位5-6成不变，两天涨幅>15%的标的减1/3锁利；CPO等进一步回调（旭创900-920/新易盛400-410）再布局；存储/封装/钨材料持有但设止盈；算力/数据中心/AI应用中线持有。</p>
         <p style="margin-top:4px;font-size:11px;color:#999;">⚠️ 今日核心观察：① 周四效应——涨幅过大的标的（中钨+20%/普冉+19.6%/环旭+18%/四方达+18%）是否出现CPO式获利盘兑现；② FMS峰会闭幕——决定存储反弹能否延续至下周；③ 美国半导体设备新限制——国产替代概念能否逆势走强；④ 央行流动性——GC001是否维持1.5%以下；⑤ 美伊协议进展——若突然官宣则黄金急跌；⑥ 午后2:00-2:30机构调仓窗口——周四关键时间节点。</p>
     </div>
 </div>
@@ -68,7 +68,7 @@ tr:hover { background:#fffbf0; }
     <h2>📋 信号概览</h2>
     <p style="font-size:12px;color:#666;margin-bottom:8px;">基于8/5收盘价+隔夜美股科技微跌+美联储鹰派+央行5000亿逆回购落地+FMS峰会闭幕+ICEPT封装会议+美国半导体设备新限制综合评估。核心矛盾：连续两日大涨后的周四效应+CPO高台跳水的示范效应 vs 存储/半导体/封装接力上涨。策略：不追高两天涨幅>15%品种，CPO等进一步回调，存储/封装/钨材料持有但设止盈。</p>
     <div class="summary">
-        <div class="summary-item">★★★★★ 中钨高新 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★★ 普冉股份 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★★ 科华数据 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 佰维存储 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 澜起科技 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 环旭电子 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 中际旭创 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★☆☆ 扬杰科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 四方达 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 宁德时代 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 科大讯飞 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 紫金矿业 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 新易盛 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 紫光国微 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 大华股份 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 华友钴业 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 汉得信息 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 华测导航 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★☆☆☆☆ 长鑫科技 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 立讯精密 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 青岛啤酒 <span style="color:#27ae60">卖出</span></div>
+        <div class="summary-item">★★★★★ 中钨高新 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★★ 普冉股份 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★★ 科华数据 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★☆ 佰维存储 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★☆ 澜起科技 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★☆ 环旭电子 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★☆ 中际旭创 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★☆☆ 扬杰科技 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 四方达 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 宁德时代 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 科大讯飞 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 紫金矿业 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 新易盛 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 紫光国微 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 大华股份 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 华友钴业 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 汉得信息 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 华测导航 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★☆☆☆☆ 长鑫科技 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 立讯精密 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 青岛啤酒 <span style="color:#1e7d3c">卖出</span></div>
     </div>
     <p style="font-size:11px;color:#999;margin-top:8px;">买入<span class="buy-count">7</span> · 持有观望<span class="hold-count">11</span> · 卖出<span class="sell-count">3</span> · <span style="color:#999;">（自选池21只）</span></p>
 </div>
@@ -84,11 +84,11 @@ tr:hover { background:#fffbf0; }
             <td class="price up">57.43</td>
             <td class="up">+10.00%</td>
             <td>~32x</td>
-            <td><span class="signal" style="background:#e74c3c;">买入</span></td>
+            <td><span class="signal" style="background:#c0392b;">买入</span></td>
             <td>★★★★★</td>
             <td class="range">50-60</td>
             <td class="small">两天+20%涨停，周四获利压力显著</td>
-            <td class="small" style="color:#e74c3c;">钨业龙头+半导体靶材国产替代+涨停突破57元。两天+20%后建议减1/3锁利，余仓持有博60元目标。止损53元</td>
+            <td class="small" style="color:#c0392b;">钨业龙头+半导体靶材国产替代+涨停突破57元。两天+20%后建议减1/3锁利，余仓持有博60元目标。止损53元</td>
         </tr>
         <tr>
             <td><span class="stock-code">sh688766</span><br><span class="stock-name">普冉股份</span></td>
@@ -96,11 +96,11 @@ tr:hover { background:#fffbf0; }
             <td class="price up">373.88</td>
             <td class="up">+11.35%</td>
             <td>~48x</td>
-            <td><span class="signal" style="background:#e74c3c;">买入</span></td>
+            <td><span class="signal" style="background:#c0392b;">买入</span></td>
             <td>★★★★★</td>
             <td class="range">320-390</td>
             <td class="small">两天+19.6%+FMS闭幕日，短线面临获利回吐</td>
-            <td class="small" style="color:#e74c3c;">存储超跌反弹最强标的！312→374两天+19.6%。FMS闭幕若无超预期消息则短期回调。372设止盈保底，不追高</td>
+            <td class="small" style="color:#c0392b;">存储超跌反弹最强标的！312→374两天+19.6%。FMS闭幕若无超预期消息则短期回调。372设止盈保底，不追高</td>
         </tr>
         <tr>
             <td><span class="stock-code">sz002335</span><br><span class="stock-name">科华数据</span></td>
@@ -108,11 +108,11 @@ tr:hover { background:#fffbf0; }
             <td class="price up">31.60</td>
             <td class="up">+1.97%</td>
             <td>~44x</td>
-            <td><span class="signal" style="background:#e74c3c;">买入</span></td>
+            <td><span class="signal" style="background:#c0392b;">买入</span></td>
             <td>★★★★★</td>
             <td class="range">28-34</td>
             <td class="small">连涨4日累计+10%，短期回调不影响中线</td>
-            <td class="small" style="color:#e74c3c;">算力网4万亿+数据中心UPS+新型电力系统规划三重利好，连涨4日量价齐升，中线坚定持有目标35元</td>
+            <td class="small" style="color:#c0392b;">算力网4万亿+数据中心UPS+新型电力系统规划三重利好，连涨4日量价齐升，中线坚定持有目标35元</td>
         </tr>
         <tr style="background:#fffbf0;">
             <td><span class="stock-code">sh688525</span><br><span class="stock-name">佰维存储</span></td>
@@ -120,11 +120,11 @@ tr:hover { background:#fffbf0; }
             <td class="price up">233.06</td>
             <td class="up">+7.14%</td>
             <td>~42x</td>
-            <td><span class="signal" style="background:#e74c3c;">买入</span></td>
+            <td><span class="signal" style="background:#c0392b;">买入</span></td>
             <td>★★★★☆</td>
             <td class="range">210-245</td>
             <td class="small">两天+12.7%+FMS闭幕，追高风险</td>
-            <td class="small" style="color:#e74c3c;">存储模组233元放量突破230关口，两天从207→233+12.7%。FMS闭幕日，等回调225附近再考虑加仓。止损210元</td>
+            <td class="small" style="color:#c0392b;">存储模组233元放量突破230关口，两天从207→233+12.7%。FMS闭幕日，等回调225附近再考虑加仓。止损210元</td>
         </tr>
         <tr>
             <td><span class="stock-code">sh688008</span><br><span class="stock-name">澜起科技</span></td>
@@ -132,11 +132,11 @@ tr:hover { background:#fffbf0; }
             <td class="price up">212.00</td>
             <td class="up">+4.30%</td>
             <td>~52x</td>
-            <td><span class="signal" style="background:#e74c3c;">买入</span></td>
+            <td><span class="signal" style="background:#c0392b;">买入</span></td>
             <td>★★★★☆</td>
             <td class="range">195-225</td>
             <td class="small">两天+11.6%+美国设备限制=国产替代利好</td>
-            <td class="small" style="color:#e74c3c;">DDR5接口芯片龙头212元两天+11.6%。美国设备限制强化国产替代逻辑+DDR5渗透率>50%，逢低加仓目标225元</td>
+            <td class="small" style="color:#c0392b;">DDR5接口芯片龙头212元两天+11.6%。美国设备限制强化国产替代逻辑+DDR5渗透率>50%，逢低加仓目标225元</td>
         </tr>
         <tr>
             <td><span class="stock-code">sh601231</span><br><span class="stock-name">环旭电子</span></td>
@@ -144,11 +144,11 @@ tr:hover { background:#fffbf0; }
             <td class="price up">25.96</td>
             <td class="up">+10.00%</td>
             <td>~17x</td>
-            <td><span class="signal" style="background:#e74c3c;">买入</span></td>
+            <td><span class="signal" style="background:#c0392b;">买入</span></td>
             <td>★★★★☆</td>
             <td class="range">22-28</td>
             <td class="small">两天+18%涨停，追板风险大</td>
-            <td class="small" style="color:#e74c3c;">SiP封装龙头涨停25.96元两天+18%。ICEPT会议（8/5-7）+先进封装概念+17xPE低估值。不追板，等开板回调24.5-25区间布局</td>
+            <td class="small" style="color:#c0392b;">SiP封装龙头涨停25.96元两天+18%。ICEPT会议（8/5-7）+先进封装概念+17xPE低估值。不追板，等开板回调24.5-25区间布局</td>
         </tr>
         <tr>
             <td><span class="stock-code">sz300308</span><br><span class="stock-name">中际旭创</span></td>
@@ -156,11 +156,11 @@ tr:hover { background:#fffbf0; }
             <td class="price down">947.74</td>
             <td class="down">-7.26%</td>
             <td>~38x</td>
-            <td><span class="signal" style="background:#e74c3c;">买入</span></td>
+            <td><span class="signal" style="background:#c0392b;">买入</span></td>
             <td>★★★★☆</td>
             <td class="range">900-1100</td>
             <td class="small">大反弹次日-7.26%高台跳水，但CPO主线不变</td>
-            <td class="small" style="color:#e74c3c;">CPO全球龙头获利盘出逃-7.26%。英伟达CPO量产+博通CPO出货逻辑不变。等900-920区间（20日均线）布局，目标1100元</td>
+            <td class="small" style="color:#c0392b;">CPO全球龙头获利盘出逃-7.26%。英伟达CPO量产+博通CPO出货逻辑不变。等900-920区间（20日均线）布局，目标1100元</td>
         </tr>
         <tr style="background:#fffbf0;">
             <td><span class="stock-code">sz300373</span><br><span class="stock-name">扬杰科技</span></td>
@@ -168,7 +168,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">91.01</td>
             <td class="up">+4.85%</td>
             <td>~35x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★★☆☆</td>
             <td class="range">82-96</td>
             <td class="small">两天+14%反弹，但功率半导体非当前主线</td>
@@ -180,7 +180,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">33.73</td>
             <td class="up">+10.37%</td>
             <td>~48x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★★☆☆</td>
             <td class="range">29-36</td>
             <td class="small">两天+18%独立行情无板块联动，周四获利压力</td>
@@ -192,7 +192,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">405.20</td>
             <td class="up">+2.56%</td>
             <td>~22x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★★☆☆</td>
             <td class="range">380-420</td>
             <td class="small">稳步上行+突破400元，8/10除权前抢权行情</td>
@@ -204,7 +204,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">44.17</td>
             <td class="up">+1.56%</td>
             <td>~108x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★★☆☆</td>
             <td class="range">40-47</td>
             <td class="small">AI应用稳步上行，连板龙头传智教育考验8连板</td>
@@ -216,7 +216,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">34.09</td>
             <td class="up">+6.13%</td>
             <td>~14x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★★☆☆</td>
             <td class="range">31-36</td>
             <td class="small">美伊协议未官宣反弹+6.13%，但风险未解</td>
@@ -228,7 +228,7 @@ tr:hover { background:#fffbf0; }
             <td class="price down">424.30</td>
             <td class="down">-5.29%</td>
             <td>~35x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★☆☆☆</td>
             <td class="range">400-460</td>
             <td class="small">CPO高台跳水-5.29%，回调可能尚未到位</td>
@@ -240,7 +240,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">67.20</td>
             <td class="up">+2.52%</td>
             <td>~28x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★☆☆☆</td>
             <td class="range">62-72</td>
             <td class="small">温和上行+2.52%，反弹弱于芯片板块均值</td>
@@ -252,7 +252,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">17.17</td>
             <td class="up">+0.23%</td>
             <td>~15x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★☆☆☆</td>
             <td class="range">15.5-18.5</td>
             <td class="small">大盘暴涨两天几乎原地踏步，资金不关注</td>
@@ -264,7 +264,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">42.01</td>
             <td class="up">+3.02%</td>
             <td>~21x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★☆☆☆</td>
             <td class="range">39-45</td>
             <td class="small">温和反弹+3.02%，能源金属整体仍承压</td>
@@ -276,7 +276,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">17.57</td>
             <td class="up">+4.03%</td>
             <td>~40x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★☆☆☆</td>
             <td class="range">15.5-19</td>
             <td class="small">超跌反弹+4.03%，但非AI核心主线</td>
@@ -288,7 +288,7 @@ tr:hover { background:#fffbf0; }
             <td class="price up">28.77</td>
             <td class="up">+0.38%</td>
             <td>~35x</td>
-            <td><span class="signal" style="background:#f39c12;">持有</span></td>
+            <td><span class="signal" style="background:#9c5a00;">持有</span></td>
             <td>★★☆☆☆</td>
             <td class="range">26-30</td>
             <td class="small">大盘暴涨两天几乎原地踏步，资金完全不关注</td>
@@ -300,11 +300,11 @@ tr:hover { background:#fffbf0; }
             <td class="price down">54.30</td>
             <td class="down">-1.27%</td>
             <td>~55x</td>
-            <td><span class="signal" style="background:#27ae60;">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c;">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">48-58</td>
             <td class="small">天量508亿后缩量下跌-1.27%，资金撤退</td>
-            <td class="small" style="color:#27ae60;">8/4 508亿天量滞涨→8/5缩量下跌，经典"天量见天价"信号。DRAM逻辑不变但短期资金面恶化，建议减仓观望</td>
+            <td class="small" style="color:#1e7d3c;">8/4 508亿天量滞涨→8/5缩量下跌，经典"天量见天价"信号。DRAM逻辑不变但短期资金面恶化，建议减仓观望</td>
         </tr>
         <tr style="background:#fff5f5;">
             <td><span class="stock-code">sz002475</span><br><span class="stock-name">立讯精密</span></td>
@@ -312,11 +312,11 @@ tr:hover { background:#fffbf0; }
             <td class="price up">55.87</td>
             <td class="up">+0.70%</td>
             <td>~21x</td>
-            <td><span class="signal" style="background:#27ae60;">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c;">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">53-62</td>
             <td class="small">两天仅+3.9%跑输所有科技指数，机构出货</td>
-            <td class="small" style="color:#27ae60;">科技连续两日暴涨但仅+3.9%严重跑输。反弹极弱验证机构持续出货消费电子。趁反弹减仓换存储/封装主线</td>
+            <td class="small" style="color:#1e7d3c;">科技连续两日暴涨但仅+3.9%严重跑输。反弹极弱验证机构持续出货消费电子。趁反弹减仓换存储/封装主线</td>
         </tr>
         <tr style="background:#fff5f5;">
             <td><span class="stock-code">sh600600</span><br><span class="stock-name">青岛啤酒</span></td>
@@ -324,11 +324,11 @@ tr:hover { background:#fffbf0; }
             <td class="price down">54.01</td>
             <td class="down">-1.23%</td>
             <td>~17x</td>
-            <td><span class="signal" style="background:#27ae60;">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c;">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">52-58</td>
             <td class="small">三连跌！科技暴涨日消费防御持续被抽血</td>
-            <td class="small" style="color:#27ae60;">56→55→54三连跌，机构风格从消费→科技切换不可逆。减仓换科技主线</td>
+            <td class="small" style="color:#1e7d3c;">56→55→54三连跌，机构风格从消费→科技切换不可逆。减仓换科技主线</td>
         </tr>
     </table>
     </div>
@@ -424,7 +424,7 @@ tr:hover { background:#fffbf0; }
         中际旭创-7.26%、新易盛-5.29%——CPO作为8/4科技大反攻的龙头板块率先大幅回调，是否预示整个科技反弹行情阶段性见顶？旭创5791万股放量下跌=资金出逃信号。但需区分：CPO回调是"获利盘兑现"而非"逻辑破坏"——英伟达CPO量产+博通CPO出货+AI算力需求井喷三大逻辑不变。旭创900-920（20日均线）+新易盛400-410是二次入场良机，需耐心等待。
     </div>
 
-    <div class="alert-box" style="background:#ffeaea;border-color:#f39c12;">
+    <div class="alert-box" style="background:#ffeaea;border-color:#9c5a00;">
         <strong>🟡 风险四：FMS峰会闭幕日——存储反弹能否延续的关键节点</strong><br>
         FMS 2026今日闭幕。8/5已释放核心利好（三星HBM4 2027量产、SK海力士HBM3E产能翻倍），今日若无超预期消息则存储反弹可能暂告一段落。普冉（两天+19.6%）和佰维（两天+12.7%）面临回调压力。操作：持仓者设止盈（普冉350/佰维220），未持仓者等下周再评估。
     </div>
@@ -446,7 +446,7 @@ tr:hover { background:#fffbf0; }
         </tr>
     </table>
     </div>
-    <p style="font-size:11px;color:#666;margin-top:8px;">📌 GC001 8/5收盘1.355%维持极低水平（连续两日<1.5%）。<strong style="color:#e74c3c;">央行5000亿买断式逆回购（3个月期）8/5落地——流动性充裕无忧。</strong>今日（周四）需注意：<strong style="color:#f39c12;">周四效应通常导致GC001小幅走高</strong>（历史规律周四较周三高约10-20bp），但央行5000亿3个月资金+存量充裕流动性下，GC001大概率维持1.5%以下。若GC001盘中突然跳升至2%以上则为异常信号——说明银行间流动性出现边际收紧。</p>
+    <p style="font-size:11px;color:#666;margin-top:8px;">📌 GC001 8/5收盘1.355%维持极低水平（连续两日<1.5%）。<strong style="color:#c0392b;">央行5000亿买断式逆回购（3个月期）8/5落地——流动性充裕无忧。</strong>今日（周四）需注意：<strong style="color:#9c5a00;">周四效应通常导致GC001小幅走高</strong>（历史规律周四较周三高约10-20bp），但央行5000亿3个月资金+存量充裕流动性下，GC001大概率维持1.5%以下。若GC001盘中突然跳升至2%以上则为异常信号——说明银行间流动性出现边际收紧。</p>
 </div>
 
 <div class="section">

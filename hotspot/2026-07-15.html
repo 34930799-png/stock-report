@@ -8,47 +8,47 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#e67e22; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#9c5a00; }
 .tag-risk { background:#c0392b; }
-.tag-pharma { background:#27ae60; }
+.tag-pharma { background:#1e7d3c; }
 .tag-fiber { background:#16a085; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:80px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .watch-tag { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
-.watch-tag-buy { background:#e74c3c; }
-.watch-tag-hold { background:#f39c12; }
-.watch-tag-sell { background:#27ae60; }
+.watch-tag-buy { background:#c0392b; }
+.watch-tag-hold { background:#9c5a00; }
+.watch-tag-sell { background:#1e7d3c; }
 .watch-tag-risk { background:#c0392b; }
-.note-box { background:#fffbf0; border-left:3px solid #f39c12; padding:8px 10px; border-radius:4px; font-size:11px; color:#666; margin-top:10px; }
-.note-box strong { color:#e74c3c; }
-.intraday-tag { display:inline-block; padding:2px 8px; border-radius:4px; background:#e74c3c; color:#fff; font-size:10px; font-weight:700; margin-left:4px; animation: pulse 2s infinite; }
+.note-box { background:#fffbf0; border-left:3px solid #9c5a00; padding:8px 10px; border-radius:4px; font-size:11px; color:#666; margin-top:10px; }
+.note-box strong { color:#c0392b; }
+.intraday-tag { display:inline-block; padding:2px 8px; border-radius:4px; background:#c0392b; color:#fff; font-size:10px; font-weight:700; margin-left:4px; animation: pulse 2s infinite; }
 @keyframes pulse { 0%, 100% { opacity:1; } 50% { opacity:0.6; } }
 </style>
 </head>
@@ -66,7 +66,7 @@ tr:hover { background:#fffbf0; }
         <tr><td>上证指数</td><td style="font-weight:600;">3967.13</td><td>3963.73</td><td class="down">-0.09%</td><td rowspan="5" style="font-weight:700;">盘中<br><span style="font-size:10px;color:#999;">两市交投活跃</span></td></tr>
         <tr><td>深证成指</td><td style="font-weight:600;">14924.87</td><td>14970.77</td><td class="up">+0.31%</td></tr>
         <tr><td>创业板指</td><td style="font-weight:600;">3851.14</td><td>3879.77</td><td class="up" style="font-size:15px;">+0.74% 🔥</td></tr>
-        <tr><td style="color:#e74c3c;font-weight:700;">科创综指</td><td style="font-weight:700;">~2264</td><td style="color:#e74c3c;font-weight:700;">2282.57</td><td class="up">+0.81%</td></tr>
+        <tr><td style="color:#c0392b;font-weight:700;">科创综指</td><td style="font-weight:700;">~2264</td><td style="color:#c0392b;font-weight:700;">2282.57</td><td class="up">+0.81%</td></tr>
         <tr><td>北证50</td><td>~1152</td><td>—</td><td>—</td></tr>
     </table>
     <p style="font-size:11px;color:#999;margin-top:6px;">开盘近3000股下跌 → 约9:54三大指数集体转涨，近4000只个股上涨 · 沪指盘中涨0.14% · 深成指涨0.38% · 创业板指涨0.44%</p>
@@ -250,19 +250,19 @@ tr:hover { background:#fffbf0; }
     </div>
 </div>
 
-<div class="section" style="border-left:3px solid #e74c3c;">
+<div class="section" style="border-left:3px solid #c0392b;">
     <h2>⚠️ 风险提示与策略建议</h2>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#e74c3c;">1. 外围风险边际缓和但未消除：</span>
-        <span style="color:#e74c3c;font-size:12px;">美国CPI负增长短期利好，但美联储加息概率仍达45%+美伊战争持续（油价高位）。韩国股市虽企稳但脆弱性未改。关注今晚美国PPI+明日韩国KOSPI开盘。</span>
+        <span style="font-weight:700;color:#c0392b;">1. 外围风险边际缓和但未消除：</span>
+        <span style="color:#c0392b;font-size:12px;">美国CPI负增长短期利好，但美联储加息概率仍达45%+美伊战争持续（油价高位）。韩国股市虽企稳但脆弱性未改。关注今晚美国PPI+明日韩国KOSPI开盘。</span>
     </div>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#f39c12;">2. Meta算力风波余波：利好利空交织：</span>
-        <span style="color:#f39c12;font-size:12px;">Meta扩大Hyperion投资至500亿美元（利好AI硬件长期需求），但同时拟出售富余算力（利空短期供给格局）。SK海力士暴涨27%修复存储板块信心，但A股存储/光模块资金分歧仍大。</span>
+        <span style="font-weight:700;color:#9c5a00;">2. Meta算力风波余波：利好利空交织：</span>
+        <span style="color:#9c5a00;font-size:12px;">Meta扩大Hyperion投资至500亿美元（利好AI硬件长期需求），但同时拟出售富余算力（利空短期供给格局）。SK海力士暴涨27%修复存储板块信心，但A股存储/光模块资金分歧仍大。</span>
     </div>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#f39c12;">3. 中报窗口期：业绩为王，远离纯概念：</span>
-        <span style="color:#f39c12;font-size:12px;">今日超半数涨停股直接挂钩中报预增，业绩线是当前最强确定性。反之纯概念炒作+高PE无业绩支撑品种（普冉股份PE近200倍、佰维存储等）持续被抛弃。今日为沪深主板中报预告有条件强制披露截止日，晚间关注最后一批预告。</span>
+        <span style="font-weight:700;color:#9c5a00;">3. 中报窗口期：业绩为王，远离纯概念：</span>
+        <span style="color:#9c5a00;font-size:12px;">今日超半数涨停股直接挂钩中报预增，业绩线是当前最强确定性。反之纯概念炒作+高PE无业绩支撑品种（普冉股份PE近200倍、佰维存储等）持续被抛弃。今日为沪深主板中报预告有条件强制披露截止日，晚间关注最后一批预告。</span>
     </div>
     <div style="padding:6px 0;font-size:13px;">
         <span style="font-weight:700;color:#2980b9;">4. 策略：</span>

@@ -8,45 +8,45 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#e67e22; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#9c5a00; }
 .tag-risk { background:#c0392b; }
-.tag-pharma { background:#27ae60; }
+.tag-pharma { background:#1e7d3c; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:80px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .watch-tag { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
-.watch-tag-buy { background:#e74c3c; }
-.watch-tag-hold { background:#f39c12; }
-.watch-tag-sell { background:#27ae60; }
+.watch-tag-buy { background:#c0392b; }
+.watch-tag-hold { background:#9c5a00; }
+.watch-tag-sell { background:#1e7d3c; }
 .watch-tag-risk { background:#c0392b; }
-.note-box { background:#fffbf0; border-left:3px solid #f39c12; padding:8px 10px; border-radius:4px; font-size:11px; color:#666; margin-top:10px; }
-.note-box strong { color:#e74c3c; }
+.note-box { background:#fffbf0; border-left:3px solid #9c5a00; padding:8px 10px; border-radius:4px; font-size:11px; color:#666; margin-top:10px; }
+.note-box strong { color:#c0392b; }
 </style>
 </head>
 <body>
@@ -63,10 +63,10 @@ tr:hover { background:#fffbf0; }
         <tr><td>上证指数</td><td>3913.79</td><td style="font-weight:600;">~3905</td><td class="down">-0.22%</td><td rowspan="5" style="font-weight:700;">2.93万亿<br><span style="font-size:10px;color:#999;">放量约1100亿</span></td></tr>
         <tr><td>深证成指</td><td>14522.85</td><td style="font-weight:600;">~14650</td><td class="up">+0.88%</td></tr>
         <tr><td>创业板指</td><td>3723.52</td><td style="font-weight:600;">~3780</td><td class="up">+1.52%</td></tr>
-        <tr><td style="color:#e74c3c;font-weight:700;">科创50</td><td style="font-weight:700;">1994.32</td><td style="color:#e74c3c;font-weight:700;">~2070</td><td class="up" style="font-size:15px;">+3.79% 🔥</td></tr>
+        <tr><td style="color:#c0392b;font-weight:700;">科创50</td><td style="font-weight:700;">1994.32</td><td style="color:#c0392b;font-weight:700;">~2070</td><td class="up" style="font-size:15px;">+3.79% 🔥</td></tr>
         <tr><td>北证50</td><td>~1127</td><td>~1110</td><td class="down">-1.5%</td></tr>
     </table>
-    <p style="font-size:11px;color:#999;margin-top:6px;">涨停约70只 · 跌停约25只 · 上涨约2300只 vs 下跌约2600只 · 中际旭创成交<span style="color:#e74c3c;font-weight:600;">416亿</span>居首</p>
+    <p style="font-size:11px;color:#999;margin-top:6px;">涨停约70只 · 跌停约25只 · 上涨约2300只 vs 下跌约2600只 · 中际旭创成交<span style="color:#c0392b;font-weight:600;">416亿</span>居首</p>
     <div class="note-box">
         <strong>📌 今日盘面特征：</strong>"黑色星期一"次日，半导体/CPO强势超跌反弹引领科技股修复，油气板块因美伊冲突升级暴涨。指数分化严重——上证受银行/高股息支撑微跌，科创50因半导体大涨近4%。<strong>成交2.93万亿放量1100亿</strong>，资金在暴跌后重新入场博弈反弹。
     </div>
@@ -245,19 +245,19 @@ tr:hover { background:#fffbf0; }
     </div>
 </div>
 
-<div class="section" style="border-left:3px solid #e74c3c;">
+<div class="section" style="border-left:3px solid #c0392b;">
     <h2>⚠️ 风险提示与策略建议</h2>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#e74c3c;">1. 外围不确定性极高：</span>
-        <span style="color:#e74c3c;font-size:12px;">美伊战争持续升级+韩国股市暴跌+美联储加息预期升温，三重外部风险叠加，市场随时可能二次探底。</span>
+        <span style="font-weight:700;color:#c0392b;">1. 外围不确定性极高：</span>
+        <span style="color:#c0392b;font-size:12px;">美伊战争持续升级+韩国股市暴跌+美联储加息预期升温，三重外部风险叠加，市场随时可能二次探底。</span>
     </div>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#f39c12;">2. 超跌反弹持续性存疑：</span>
-        <span style="color:#f39c12;font-size:12px;">今日半导体/CPO反弹强劲，但需放量收复5日线确认止跌。一日游行情概率不低，追高风险大。</span>
+        <span style="font-weight:700;color:#9c5a00;">2. 超跌反弹持续性存疑：</span>
+        <span style="color:#9c5a00;font-size:12px;">今日半导体/CPO反弹强劲，但需放量收复5日线确认止跌。一日游行情概率不低，追高风险大。</span>
     </div>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#f39c12;">3. 自选股风险标的务必止损：</span>
-        <span style="color:#f39c12;font-size:12px;">普冉股份（-14.22%+PE200倍）、佰维存储（-12.62%）、宁德时代（破布林下轨）、华友钴业（8连跌）— 反弹即减仓窗口，不要恋战。</span>
+        <span style="font-weight:700;color:#9c5a00;">3. 自选股风险标的务必止损：</span>
+        <span style="color:#9c5a00;font-size:12px;">普冉股份（-14.22%+PE200倍）、佰维存储（-12.62%）、宁德时代（破布林下轨）、华友钴业（8连跌）— 反弹即减仓窗口，不要恋战。</span>
     </div>
     <div style="padding:6px 0;font-size:13px;">
         <span style="font-weight:700;color:#2980b9;">4. 策略：</span>

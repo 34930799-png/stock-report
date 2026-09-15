@@ -8,37 +8,37 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
+.tag-market { background:#9c5a00; }
 .tag-risk { background:#c0392b; }
-.tag-power { background:#27ae60; }
-.tag-pharma { background:#e67e22; }
+.tag-power { background:#1e7d3c; }
+.tag-pharma { background:#9c5a00; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:80px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.sector-bar-fill-down { height:16px; border-radius:3px; background: linear-gradient(90deg, #27ae60, #95a5a6); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill-down { height:16px; border-radius:3px; background: linear-gradient(90deg, #1e7d3c, #95a5a6); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .stock-card-left { flex:1; min-width:0; }
@@ -61,7 +61,7 @@ tr:hover { background:#fffbf0; }
         <tr><td>上证指数</td><td style="font-weight:600;">3882.41</td><td class="down">-0.80%</td><td rowspan="5" style="font-weight:700;">2.42万亿<br><span style="font-size:10px;color:#999;">缩量1685亿</span></td></tr>
         <tr><td>深证成指</td><td style="font-weight:600;">14488.65</td><td class="down">-2.64%</td></tr>
         <tr><td>创业板指</td><td style="font-weight:600;">3692.46</td><td class="down" style="font-size:14px;">-3.44%</td></tr>
-        <tr><td style="color:#e74c3c;font-weight:700;">科创50</td><td style="color:#e74c3c;font-weight:700;">1846.88</td><td class="down" style="font-size:14px;">-4.02%(昨)</td></tr>
+        <tr><td style="color:#c0392b;font-weight:700;">科创50</td><td style="color:#c0392b;font-weight:700;">1846.88</td><td class="down" style="font-size:14px;">-4.02%(昨)</td></tr>
         <tr><td>北证50</td><td style="font-weight:600;">1209.37</td><td class="down">-0.44%</td></tr>
     </table>
     <p style="font-size:11px;color:#999;margin-top:6px;">涨停~50只 · 跌停~30只 · 炸板率偏高 · 上涨约2500只 vs 下跌约2861只（分化严重）</p>
@@ -145,46 +145,46 @@ tr:hover { background:#fffbf0; }
     <div class="stock-card">
         <div class="stock-card-left">
             <span style="font-weight:700;">佰维存储</span> <span style="color:#999;">688525.SH</span>
-            <span style="font-size:10px;color:#e74c3c;background:#fff5f5;padding:1px 5px;border-radius:2px;">★★★★★ 买入</span>
+            <span style="font-size:10px;color:#c0392b;background:#fff5f5;padding:1px 5px;border-radius:2px;">★★★★★ 买入</span>
         </div>
         <div class="stock-card-mid">存储芯片 · 超卖区买入信号 · PE仅12倍 · 逆市抗跌潜力</div>
-        <div class="stock-card-right" style="color:#e74c3c;">逢低分批介入</div>
+        <div class="stock-card-right" style="color:#c0392b;">逢低分批介入</div>
     </div>
 
     <div class="stock-card">
         <div class="stock-card-left">
             <span style="font-weight:700;">紫金矿业</span> <span style="color:#999;">601899.SH</span>
-            <span style="font-size:10px;color:#e74c3c;background:#fff5f5;padding:1px 5px;border-radius:2px;">★★★★☆ 买入</span>
+            <span style="font-size:10px;color:#c0392b;background:#fff5f5;padding:1px 5px;border-radius:2px;">★★★★☆ 买入</span>
         </div>
         <div class="stock-card-mid">黄金+铜 · 地缘避险+美元走弱 · PE13倍 · RSI74略高</div>
-        <div class="stock-card-right" style="color:#e74c3c;">避险配置首选</div>
+        <div class="stock-card-right" style="color:#c0392b;">避险配置首选</div>
     </div>
 
     <div class="stock-card">
         <div class="stock-card-left">
             <span style="font-weight:700;">中际旭创</span> <span style="color:#999;">300308.SZ</span>
-            <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;">★★★☆☆ 持有</span>
+            <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;">★★★☆☆ 持有</span>
         </div>
         <div class="stock-card-mid">CPO光模块龙头 · 跌4.82%至1113元 · 等待CPO板块企稳</div>
-        <div class="stock-card-right" style="color:#f39c12;">暂持观望</div>
+        <div class="stock-card-right" style="color:#9c5a00;">暂持观望</div>
     </div>
 
     <div class="stock-card">
         <div class="stock-card-left">
             <span style="font-weight:700;">汉得信息</span> <span style="color:#999;">300170.SZ</span>
-            <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;">★★★☆☆ 持有</span>
+            <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;">★★★☆☆ 持有</span>
         </div>
         <div class="stock-card-mid">企业数字化 · +1.33%相对抗跌 · PE69倍偏高 · 布林下轨支撑</div>
-        <div class="stock-card-right" style="color:#f39c12;">观察抗跌持续性</div>
+        <div class="stock-card-right" style="color:#9c5a00;">观察抗跌持续性</div>
     </div>
 
     <div class="stock-card">
         <div class="stock-card-left">
             <span style="font-weight:700;">环旭电子</span> <span style="color:#999;">601231.SH</span>
-            <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;">★★★☆☆ 持有</span>
+            <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;">★★★☆☆ 持有</span>
         </div>
         <div class="stock-card-mid">SiP封装 · 跌4.33% · 受半导体板块拖累 · PE32倍适中</div>
-        <div class="stock-card-right" style="color:#f39c12;">等半导体企稳</div>
+        <div class="stock-card-right" style="color:#9c5a00;">等半导体企稳</div>
     </div>
 
     <div class="stock-card">

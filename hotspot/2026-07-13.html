@@ -8,36 +8,36 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-risk { background:#e67e22; }
-.tag-medical { background:#27ae60; }
+.tag-market { background:#9c5a00; }
+.tag-risk { background:#9c5a00; }
+.tag-medical { background:#1e7d3c; }
 .tag-energy { background:#d35400; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:90px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:7px 0; border-bottom:1px solid #f5f5f5; font-size:12px; gap:8px; }
 .stock-card:last-child { border-bottom:none; }
 .stock-left { display:flex; align-items:center; gap:6px; flex:1; min-width:0; }
@@ -59,7 +59,7 @@ tr:hover { background:#fffbf0; }
         <tr><td>上证指数</td><td style="font-weight:600;">3982.45</td><td class="down">-0.34%</td><td>3966.02</td><td rowspan="5" style="font-weight:700;">2.87万亿<br><span style="font-size:10px;color:#999;">缩量约5200亿</span></td></tr>
         <tr><td>深证成指</td><td style="font-weight:600;">15072.38</td><td class="up">+0.17%</td><td>14908.98</td></tr>
         <tr><td>创业板指</td><td style="font-weight:600;">3858.60</td><td class="up">+0.41%</td><td>3809.86</td></tr>
-        <tr><td style="color:#e74c3c;font-weight:700;">科创50</td><td style="color:#e74c3c;font-weight:700;">2082.31</td><td class="up" style="font-size:15px;">+0.84% 🔥</td><td>2038.36</td></tr>
+        <tr><td style="color:#c0392b;font-weight:700;">科创50</td><td style="color:#c0392b;font-weight:700;">2082.31</td><td class="up" style="font-size:15px;">+0.84% 🔥</td><td>2038.36</td></tr>
         <tr><td>沪深300</td><td>4767.89</td><td class="up">+0.08%</td><td>4745.44</td></tr>
     </table>
     <p style="font-size:11px;color:#999;margin-top:6px;">涨停68只 · 跌停12只 · 上涨约2600只 vs 下跌约2000只 · 炸板率21.3%</p>
@@ -80,7 +80,7 @@ tr:hover { background:#fffbf0; }
     <div class="sector-bar"><span class="sector-name">军工/船舶</span><span class="sector-pct up">+1.6%</span><div class="sector-bar-fill" style="width:31%;"></div></div>
     <div class="sector-bar"><span class="sector-name">商业航天</span><span class="sector-pct up">+1.3%</span><div class="sector-bar-fill" style="width:25%;"></div></div>
     <div class="sector-bar"><span class="sector-name">科创芯片</span><span class="sector-pct up">+0.8%</span><div class="sector-bar-fill" style="width:15%;"></div></div>
-    <p style="font-size:11px;color:#999;margin-top:6px;">🔴 <strong>电子特气/工业气体</strong>单日净流入约<strong style="color:#e74c3c;">+85亿</strong>，氦气出口管制驱动九丰能源2连板（封单24亿）带动板块暴动。🟢 <strong>石油开采</strong>受布油大涨3.5%催化净流入约+62亿。🟢 <strong>中药</strong>受中医药振兴规划+创新药入基药目录催化。🔻 <strong>领跌：</strong>HBM存储 -3.1% / 先进封装 -2.5% / 玻璃纤维 -2.3% / 贵金属 -1.8% / 贸易 -1.5%</p>
+    <p style="font-size:11px;color:#999;margin-top:6px;">🔴 <strong>电子特气/工业气体</strong>单日净流入约<strong style="color:#c0392b;">+85亿</strong>，氦气出口管制驱动九丰能源2连板（封单24亿）带动板块暴动。🟢 <strong>石油开采</strong>受布油大涨3.5%催化净流入约+62亿。🟢 <strong>中药</strong>受中医药振兴规划+创新药入基药目录催化。🔻 <strong>领跌：</strong>HBM存储 -3.1% / 先进封装 -2.5% / 玻璃纤维 -2.3% / 贵金属 -1.8% / 贸易 -1.5%</p>
 </div>
 
 <div class="section">
@@ -143,42 +143,42 @@ tr:hover { background:#fffbf0; }
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">澜起科技</span> <span style="color:#999;">688008.SH</span></div>
         <div style="font-size:11px;flex:1;">★★★★★ 买入 · 存储芯片龙头+科创50逆势修复+0.84%</div>
-        <div class="stock-right" style="color:#e74c3c;font-weight:700;">今日首选<br><span style="font-size:10px;color:#999;">SK海力士ADR催化</span></div>
+        <div class="stock-right" style="color:#c0392b;font-weight:700;">今日首选<br><span style="font-size:10px;color:#999;">SK海力士ADR催化</span></div>
     </div>
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">紫光国微</span> <span style="color:#999;">002049.SZ</span></div>
         <div style="font-size:11px;flex:1;">★★★★★ 买入 · 芯片国产替代+氦气管制利好材料链</div>
-        <div class="stock-right" style="color:#e74c3c;font-weight:700;">逢低介入<br><span style="font-size:10px;color:#999;">半导体修复中</span></div>
+        <div class="stock-right" style="color:#c0392b;font-weight:700;">逢低介入<br><span style="font-size:10px;color:#999;">半导体修复中</span></div>
     </div>
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">佰维存储</span> <span style="color:#999;">688525.SH</span></div>
         <div style="font-size:11px;flex:1;">★★★★☆ 买入 · 存储芯片+SK海力士供应短缺预警利好</div>
-        <div class="stock-right" style="color:#f39c12;">逢低介入<br><span style="font-size:10px;color:#999;">设好止损</span></div>
+        <div class="stock-right" style="color:#9c5a00;">逢低介入<br><span style="font-size:10px;color:#999;">设好止损</span></div>
     </div>
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">中钨高新</span> <span style="color:#999;">000657.SZ</span></div>
         <div style="font-size:11px;flex:1;">★★★★★ 买入 · 技术面最强+稀有金属避险逻辑</div>
-        <div class="stock-right" style="color:#e74c3c;font-weight:700;">可介入<br><span style="font-size:10px;color:#999;">无风险信号</span></div>
+        <div class="stock-right" style="color:#c0392b;font-weight:700;">可介入<br><span style="font-size:10px;color:#999;">无风险信号</span></div>
     </div>
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">紫金矿业</span> <span style="color:#999;">601899.SH</span></div>
         <div style="font-size:11px;flex:1;">★★★☆☆ 持有 · 美伊局势推升油价+铜金避险+PE仅12倍</div>
-        <div class="stock-right" style="color:#f39c12;">短线反弹<br><span style="font-size:10px;color:#999;">中线观望</span></div>
+        <div class="stock-right" style="color:#9c5a00;">短线反弹<br><span style="font-size:10px;color:#999;">中线观望</span></div>
     </div>
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">中际旭创</span> <span style="color:#999;">300308.SZ</span></div>
         <div style="font-size:11px;flex:1;">★★★☆☆ 持有观望 · 光模块缩量企稳 · 但外资流出压力仍在</div>
-        <div class="stock-right" style="color:#f39c12;">等止跌确认<br><span style="font-size:10px;color:#999;">英伟达利好支撑</span></div>
+        <div class="stock-right" style="color:#9c5a00;">等止跌确认<br><span style="font-size:10px;color:#999;">英伟达利好支撑</span></div>
     </div>
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">宁德时代</span> <span style="color:#999;">300750.SZ</span></div>
         <div style="font-size:11px;flex:1;">⚠️ 重大风险 · 跌破布林下轨+电池板块持续弱势</div>
-        <div class="stock-right" style="color:#e74c3c;font-weight:700;">建议止损<br><span style="font-size:10px;color:#999;">破位未修复</span></div>
+        <div class="stock-right" style="color:#c0392b;font-weight:700;">建议止损<br><span style="font-size:10px;color:#999;">破位未修复</span></div>
     </div>
     <div class="stock-card">
         <div class="stock-left"><span style="font-weight:700;">华友钴业</span> <span style="color:#999;">603799.SH</span></div>
         <div style="font-size:11px;flex:1;">⚠️ 重大风险 · 多日连跌+持续破布林下轨</div>
-        <div class="stock-right" style="color:#e74c3c;font-weight:700;">坚决止损<br><span style="font-size:10px;color:#999;">能源金属弱势</span></div>
+        <div class="stock-right" style="color:#c0392b;font-weight:700;">坚决止损<br><span style="font-size:10px;color:#999;">能源金属弱势</span></div>
     </div>
 </div>
 

@@ -8,33 +8,33 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#27ae60; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#1e7d3c; }
 .tag-risk { background:#c0392b; }
 .tag-foreign { background:#16a085; }
 .tag-gold { background:#d4a017; }
-.tag-flash { background:#e74c3c; }
+.tag-flash { background:#c0392b; }
 .tag-cpo { background:#c0392b; }
 .tag-med { background:#1abc9c; }
 .tag-robot { background:#2c3e50; }
@@ -43,21 +43,21 @@ tr:hover { background:#fffbf0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:110px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:80px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #1e7d3c, #2ecc71); }
 .watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .watch-card:last-child { border-bottom:none; }
-.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-rank { font-size:20px; font-weight:700; color:#c0392b; min-width:28px; text-align:center; }
 .watch-info { flex:1; }
 .watch-name { font-weight:600; font-size:13px; }
 .watch-detail { font-size:11px; color:#666; }
 .watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
-.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
-.market-note strong { color:#e74c3c; }
+.market-note { font-size:11px; color:#9c5a00; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#c0392b; }
 .heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
-.alert-box { background:#fff5f5; border-left:3px solid #e74c3c; padding:8px 10px; margin:8px 0; font-size:12px; border-radius:0 4px 4px 0; }
+.alert-box { background:#fff5f5; border-left:3px solid #c0392b; padding:8px 10px; margin:8px 0; font-size:12px; border-radius:0 4px 4px 0; }
 .alert-box strong { color:#c0392b; }
-.alert-box.green { background:#f0f9f0; border-left-color:#27ae60; }
+.alert-box.green { background:#f0f9f0; border-left-color:#1e7d3c; }
 .alert-box.green strong { color:#1e7d3c; }
 </style>
 </head>
@@ -109,9 +109,9 @@ tr:hover { background:#fffbf0; }
 
 <div class="section">
     <h2>💰 主力资金热力图（自选股 8/17 盘中资金流向 · 同花顺问财）</h2>
-    <p style="font-size:12px;color:#666;margin-bottom:8px;">8/17 盘中（约11:00）自选股主力资金净流入/流出排名（同花顺问财全口径）。核心特征：<strong style="color:#e74c3c;">存储四大龙头巨量净流入（长鑫+40.46亿/佰维+7.80亿/澜起+4.94亿/普冉+2.41亿）+ 立讯+4.83亿</strong> vs <strong style="color:#27ae60;">CPO双雄"涨但资金跑"（新易盛-3.10亿/中际旭创-1.40亿）+ AI应用/安防/软件持续失血（紫光国微-1.66亿/大华-1.16亿/汉得-1.08亿）</strong>。</p>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">8/17 盘中（约11:00）自选股主力资金净流入/流出排名（同花顺问财全口径）。核心特征：<strong style="color:#c0392b;">存储四大龙头巨量净流入（长鑫+40.46亿/佰维+7.80亿/澜起+4.94亿/普冉+2.41亿）+ 立讯+4.83亿</strong> vs <strong style="color:#1e7d3c;">CPO双雄"涨但资金跑"（新易盛-3.10亿/中际旭创-1.40亿）+ AI应用/安防/软件持续失血（紫光国微-1.66亿/大华-1.16亿/汉得-1.08亿）</strong>。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#e74c3c;">🟢 主力净流入 TOP</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#c0392b;">🟢 主力净流入 TOP</h3>
 
     <div class="sector-bar">
         <span class="sector-name">🥇 长鑫科技</span>
@@ -169,7 +169,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">功率半导体+2.69%，主力净流入0.47亿（流入3.45亿/流出2.98亿），涨+资金进=看多，汽车芯片认证标准发布+半导体景气支撑。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#27ae60;">🔴 主力净流出 TOP</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#1e7d3c;">🔴 主力净流出 TOP</h3>
 
     <div class="sector-bar">
         <span class="sector-name">🚨 新易盛</span>
@@ -236,7 +236,7 @@ tr:hover { background:#fffbf0; }
     <h2>🔥 行业热力图（基于 8/17 早盘实时 + 8/14 收盘复盘）</h2>
     <p style="font-size:12px;color:#666;margin-bottom:8px;">8/17 早盘涨幅居前板块 + 涨停梯队复盘。🆕标记为今日新增催化。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#e74c3c;">🟢 强势板块</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#c0392b;">🟢 强势板块</h3>
 
     <div class="sector-bar">
         <span class="sector-name">🆕 存储/半导体</span>
@@ -280,7 +280,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">华正新材（PCB）涨停、沃格光电（玻璃基板）涨停。催化=宏和科技上半年净利+334%、AI算力硬件需求带动PCB/先进封装材料。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#27ae60;">🔴 弱势/风险板块</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#1e7d3c;">🔴 弱势/风险板块</h3>
 
     <div class="sector-bar">
         <span class="sector-name">🥇 AI应用/软件</span>
@@ -373,7 +373,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">普冉股份 <span class="stock-code">688766.SH</span> <span class="down">涨幅巨大·冲高防回吐</span></div>
             <div class="watch-detail">盘中465.35元(+13.22%全池第一) · 主力净流入2.41亿但涨幅已13% · NOR/NAND涨价 · 看多但短线追高谨慎</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★★☆ 持有不追高</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★★☆ 持有不追高</div>
     </div>
 
     <div class="watch-card">
@@ -400,7 +400,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">中际旭创 <span class="stock-code">300308.SZ</span> <span class="down">巨量巨震·资金净流出</span></div>
             <div class="watch-detail">盘中957.96元(+1.59%) · 主力净流出1.40亿 · 154亿巨量振幅5.7% · 高位获利盘兑现 · 谨慎持有</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 谨慎持有</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 谨慎持有</div>
     </div>
 
     <div class="watch-card">
@@ -409,7 +409,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">四方达 <span class="stock-code">300179.SZ</span> <span class="down">涨5%但资金平衡</span></div>
             <div class="watch-detail">盘中39.01元(+5.46%) · 主力净流入仅0.02亿（基本平衡）· 培育钻石 · 涨但资金不跟=诱多嫌疑，不追高</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 观望不追</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 观望不追</div>
     </div>
 
     <div class="watch-card">

@@ -8,29 +8,29 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#27ae60; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#1e7d3c; }
 .tag-risk { background:#c0392b; }
 .tag-foreign { background:#16a085; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
@@ -38,19 +38,19 @@ tr:hover { background:#fffbf0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:90px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #1e7d3c, #2ecc71); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .watch-card:last-child { border-bottom:none; }
-.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-rank { font-size:20px; font-weight:700; color:#c0392b; min-width:28px; text-align:center; }
 .watch-info { flex:1; }
 .watch-name { font-weight:600; font-size:13px; }
 .watch-detail { font-size:11px; color:#666; }
 .watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
-.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
-.market-note strong { color:#e74c3c; }
+.market-note { font-size:11px; color:#9c5a00; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#c0392b; }
 .heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
 </style>
 </head>
@@ -86,7 +86,7 @@ tr:hover { background:#fffbf0; }
             <td class="down">低开-1.68%，盘中一度跌逾-2%</td>
         </tr>
         <tr>
-            <td style="color:#e74c3c;font-weight:700;">科创50</td>
+            <td style="color:#c0392b;font-weight:700;">科创50</td>
             <td style="font-weight:600;">1789.69</td>
             <td class="down">低开-1.32%</td>
             <td class="up">盘中翻红！半导体绝地反击</td>
@@ -113,8 +113,8 @@ tr:hover { background:#fffbf0; }
     <div class="sector-bar"><span class="sector-name">半导体设备</span><span class="sector-pct up">+2~3%</span><div class="sector-bar-fill" style="width:45%;"></div></div>
     <div class="sector-bar"><span class="sector-name">银行</span><span class="sector-pct up">+1%</span><div class="sector-bar-fill" style="width:25%;"></div></div>
     <div class="sector-bar"><span class="sector-name">煤炭</span><span class="sector-pct up">+0~1%</span><div class="sector-bar-fill" style="width:18%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">贵金属</span><span class="sector-pct down" style="color:#27ae60;">-3~4%</span><div class="sector-bar-fill green" style="width:60%;"></div></div>
-    <div class="sector-bar"><span class="sector-name">半导体/算力</span><span class="sector-pct down" style="color:#27ae60;">-2~3%</span><div class="sector-bar-fill green" style="width:50%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">贵金属</span><span class="sector-pct down" style="color:#1e7d3c;">-3~4%</span><div class="sector-bar-fill green" style="width:60%;"></div></div>
+    <div class="sector-bar"><span class="sector-name">半导体/算力</span><span class="sector-pct down" style="color:#1e7d3c;">-2~3%</span><div class="sector-bar-fill green" style="width:50%;"></div></div>
     <div class="heatmap-legend">
         <span>🔴 <strong>领涨</strong>：电网设备（特高压招标292.6亿超去年全年+十五五电网投资5万亿）| 油气（布油破100美元）| 锂电（VC暴涨超10%）| 军工</span>
         <span>🟢 <strong>领跌</strong>：贵金属（金价回吐逾2%）| 半导体材料/GPU/ASIC | 算力硬件 | 机器人 | 光伏</span>
@@ -185,7 +185,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">紫金矿业 <span style="color:#999;font-size:11px;">601899.SH</span></div>
             <div class="watch-detail">★★★★★ 买入 · 金铜双驱龙头。今日受国际金价回吐逾2%影响低开3.7%，但PE仅12倍的资源核心资产在"高低切"中筹码稀缺。逢低是加仓良机</div>
         </div>
-        <div class="watch-action" style="color:#e74c3c;">低开是机会<br>逢低加仓</div>
+        <div class="watch-action" style="color:#c0392b;">低开是机会<br>逢低加仓</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">#2</div>
@@ -193,7 +193,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">宁德时代 <span style="color:#999;font-size:11px;">300750.SZ</span></div>
             <div class="watch-detail">★★★★☆ 买入 · 今日放榜！锂电龙头+3.69%后强势整理。碳酸锂站上14.5万+VC暴涨+锂电消费税催化，业绩超预期概率大。关注盘后财报</div>
         </div>
-        <div class="watch-action" style="color:#e74c3c;">持仓等财报<br>顺势而为</div>
+        <div class="watch-action" style="color:#c0392b;">持仓等财报<br>顺势而为</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">#3</div>
@@ -201,7 +201,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">华友钴业 <span style="color:#999;font-size:11px;">603799.SH</span></div>
             <div class="watch-detail">★★★★☆ 买入 · PE仅11倍全池最低，锂钴双受益。今日锂电产业链延续强势，VC暴涨利好电解液/添加剂方向。安全边际极厚</div>
         </div>
-        <div class="watch-action" style="color:#e74c3c;">性价比最优<br>逢低介入</div>
+        <div class="watch-action" style="color:#c0392b;">性价比最优<br>逢低介入</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">#4</div>
@@ -209,7 +209,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">紫光国微 <span style="color:#999;font-size:11px;">002049.SZ</span></div>
             <div class="watch-detail">★★★★☆ 买入 · 芯片国产替代标杆。半导体板块-3.24%中逆势抗跌+1.4%，今日半导体设备反弹有望带动。最抗跌的芯片股</div>
         </div>
-        <div class="watch-action" style="color:#e74c3c;">中线布局<br>逆势抗跌</div>
+        <div class="watch-action" style="color:#c0392b;">中线布局<br>逆势抗跌</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">#5</div>
@@ -217,7 +217,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">立讯精密 <span style="color:#999;font-size:11px;">002475.SZ</span></div>
             <div class="watch-detail">★★★★☆ 买入 · 消费电子龙头+3.43%，受惠高低切资金流入。公司开启股份回购计划。PE27倍合理，消费电子旺季临近</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">中线持有<br>回购利好</div>
+        <div class="watch-action" style="color:#9c5a00;">中线持有<br>回购利好</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">#6</div>
@@ -225,7 +225,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">科华数据 <span style="color:#999;font-size:11px;">002335.SZ</span></div>
             <div class="watch-detail">★★★☆☆ 持有观望 · 数据中心/AI基建受益电网设备大涨的联动效应，+3.47%反弹。电网投资5万亿间接利好数据中心电力配套</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">暂持<br>关注量能</div>
+        <div class="watch-action" style="color:#9c5a00;">暂持<br>关注量能</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">#7</div>
@@ -233,7 +233,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">澜起科技 <span style="color:#999;font-size:11px;">688008.SH</span></div>
             <div class="watch-detail">★★★☆☆ 持有观望 · 存储龙头+1.12%小幅反弹。贝莱德称芯片股抛售是反应过度，长鑫IPO前资金避险但下方有支撑。等7/27长鑫上市落地</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">等长鑫落地<br>暂不加仓</div>
+        <div class="watch-action" style="color:#9c5a00;">等长鑫落地<br>暂不加仓</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">#8</div>
@@ -241,7 +241,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">青岛啤酒 <span style="color:#999;font-size:11px;">600600.SH</span></div>
             <div class="watch-detail">★★★☆☆ 持有观望 · +1.57%摆脱风险区，PE16倍防御属性突出。市场大幅震荡中消费蓝筹有避险价值。设止损位50</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">防御配置<br>止损50</div>
+        <div class="watch-action" style="color:#9c5a00;">防御配置<br>止损50</div>
     </div>
 </div>
 
@@ -307,23 +307,23 @@ tr:hover { background:#fffbf0; }
     </div>
 </div>
 
-<div class="section" style="border-left:3px solid #e74c3c;">
+<div class="section" style="border-left:3px solid #c0392b;">
     <h2>⚠️ 风险提示与策略建议</h2>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#e74c3c;">外围多重利空共振</span>
-        <span style="color:#e74c3c;font-size:12px;">美股科技重挫（纳指-2.15%）+中东冲突升温（布油破100）+美国新关税生效+美债收益率4.7%，今日A股大幅低开。周五叠加月末效应，市场情绪脆弱</span>
+        <span style="font-weight:700;color:#c0392b;">外围多重利空共振</span>
+        <span style="color:#c0392b;font-size:12px;">美股科技重挫（纳指-2.15%）+中东冲突升温（布油破100）+美国新关税生效+美债收益率4.7%，今日A股大幅低开。周五叠加月末效应，市场情绪脆弱</span>
     </div>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#f39c12;">存储芯片/CPO持续失血</span>
-        <span style="color:#f39c12;font-size:12px;">长鑫7/27 IPO抽血效应持续，科创50三连阴累跌约-6%。佰维存储、普冉股份仍在风险区。贝莱德虽喊"反应过度"，但短线不宜抄底，等长鑫上市落地后再评估</span>
+        <span style="font-weight:700;color:#9c5a00;">存储芯片/CPO持续失血</span>
+        <span style="color:#9c5a00;font-size:12px;">长鑫7/27 IPO抽血效应持续，科创50三连阴累跌约-6%。佰维存储、普冉股份仍在风险区。贝莱德虽喊"反应过度"，但短线不宜抄底，等长鑫上市落地后再评估</span>
     </div>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#f39c12;">油价飙升的双刃剑</span>
-        <span style="color:#f39c12;font-size:12px;">布油破100利好油气/能源板块，但推升全球通胀预期，美联储加息概率升至36%。航空、化工、物流等成本敏感行业承压。高油价若持续，将压制整体市场风险偏好</span>
+        <span style="font-weight:700;color:#9c5a00;">油价飙升的双刃剑</span>
+        <span style="color:#9c5a00;font-size:12px;">布油破100利好油气/能源板块，但推升全球通胀预期，美联储加息概率升至36%。航空、化工、物流等成本敏感行业承压。高油价若持续，将压制整体市场风险偏好</span>
     </div>
     <div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;">
-        <span style="font-weight:700;color:#e74c3c;">下周核心变量</span>
-        <span style="color:#e74c3c;font-size:12px;">①7月政治局会议（稳增长政策预期）②长鑫科技7/27 IPO申购落地 ③宁德时代今日盘后财报 ④中美300亿美元对等降税谈判进展</span>
+        <span style="font-weight:700;color:#c0392b;">下周核心变量</span>
+        <span style="color:#c0392b;font-size:12px;">①7月政治局会议（稳增长政策预期）②长鑫科技7/27 IPO申购落地 ③宁德时代今日盘后财报 ④中美300亿美元对等降税谈判进展</span>
     </div>
     <p style="font-size:11px;color:#999;margin-top:8px;">
         <strong>策略建议</strong>：市场处于"高低切"第二阶段——资源/电网/锂电主线确认，科技股超跌后有技术性反弹（今日半导体设备已现）。建议仓位5成以下，配置向电网设备+锂电+消费电子倾斜，回避存储/CPO/AI应用。今日周五，控制仓位等周末政治局会议信号。周一将是关键变盘窗口。

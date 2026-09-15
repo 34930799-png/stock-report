@@ -8,19 +8,19 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
@@ -29,12 +29,12 @@ tr:hover { background:#fffbf0; }
 .tag-storage { background:#5b8def; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#27ae60; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#1e7d3c; }
 .tag-risk { background:#c0392b; }
 .tag-foreign { background:#16a085; }
 .tag-cpo { background:#c0392b; }
-.tag-fiber { background:#e67e22; }
+.tag-fiber { background:#9c5a00; }
 .tag-gold { background:#d4a017; }
 .tag-sec { background:#2c3e50; }
 .tag-agri { background:#1e8a3c; }
@@ -51,23 +51,23 @@ tr:hover { background:#fffbf0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:110px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:80px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #1e7d3c, #2ecc71); }
 .watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .watch-card:last-child { border-bottom:none; }
-.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-rank { font-size:20px; font-weight:700; color:#c0392b; min-width:28px; text-align:center; }
 .watch-info { flex:1; }
 .watch-name { font-weight:600; font-size:13px; }
 .watch-detail { font-size:11px; color:#666; }
 .watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
-.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
-.market-note strong { color:#e74c3c; }
+.market-note { font-size:11px; color:#9c5a00; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#c0392b; }
 .heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
-.alert-box { background:#fff5f5; border-left:3px solid #e74c3c; padding:8px 10px; margin:8px 0; font-size:12px; border-radius:0 4px 4px 0; }
+.alert-box { background:#fff5f5; border-left:3px solid #c0392b; padding:8px 10px; margin:8px 0; font-size:12px; border-radius:0 4px 4px 0; }
 .alert-box strong { color:#c0392b; }
-.alert-box.green { background:#f0f9f0; border-left-color:#27ae60; }
+.alert-box.green { background:#f0f9f0; border-left-color:#1e7d3c; }
 .alert-box.green strong { color:#1e7d3c; }
-.alert-box.yellow { background:#fffdf0; border-left-color:#f39c12; }
+.alert-box.yellow { background:#fffdf0; border-left-color:#9c5a00; }
 .alert-box.yellow strong { color:#b8860b; }
 .alert-box.red { background:#fdecea; border-left-color:#c0392b; border-width:4px; }
 .alert-box.red strong { color:#b71c1c; }
@@ -78,7 +78,7 @@ tr:hover { background:#fffbf0; }
 <div class="header">
     <h1>🔥 股市热点关注</h1>
     <div class="date">2026-09-03 周四 · 上午盘中快照（11:00 · 盘中实时数据）</div>
-    <div class="subtitle">缩量弱反弹、资源周期反攻：沪指 <strong>+0.30%</strong> 报 3953.09 点、深成指 <strong>+0.04%</strong>、创业板指 <strong>-0.01%</strong>、科创50 <strong>-0.44%</strong>（盘中）；两市预计成交 <strong>约 1.66 万亿</strong>（第一个小时缩量约1227亿、量能连续萎缩）。核心主线：<strong>海运（凤凰航运/海通发展涨停）+ 黄金反弹（伦敦金现+0.6%报4413.95）+ 大金融（国盛证券直线涨停超61万手封板）+ 能源金属/电池（宁德/华友/紫金）+ 机器人/液冷</strong>低位轮动补涨，而<strong>半导体/光模块/存储/军工高位继续下探、高位人气股退潮（沃特股份9天5板后跌停、海鸥住工7板投降、最高连板降至4板）</strong>。<strong style="color:#ffe082;">自选池资金面：23 只问财当日实测净流入 7 只（宁德时代 <strong>+4.40 亿全池最强</strong>、紫金矿业 +2.67 亿、四方达 +0.87 亿、扬杰 +0.65、华测导航 +0.35、华友 +0.32、青岛啤酒 +0.25）、净流出 1 只（汉得信息 -0.54 亿）；近15日资金流向显示 <strong>中际旭创 -33.87 亿（全池最大流出、最高风险警示！）、亨通光电 -24.17 亿、中钨高新 -17.30 亿、科大讯飞 -16.60 亿、澜起 -14.25 亿、佰维 -12.95 亿</strong>持续出逃，而 <strong>宁德时代 +32.97 亿、紫金矿业 +33.62 亿</strong>近15日累计流入双双超30亿——资金正从科技切向资源/新能源/黄金。</strong></div>
+    <div class="subtitle">缩量弱反弹、资源周期反攻：沪指 <strong>+0.30%</strong> 报 3953.09 点、深成指 <strong>+0.04%</strong>、创业板指 <strong>-0.01%</strong>、科创50 <strong>-0.44%</strong>（盘中）；两市预计成交 <strong>约 1.66 万亿</strong>（第一个小时缩量约1227亿、量能连续萎缩）。核心主线：<strong>海运（凤凰航运/海通发展涨停）+ 黄金反弹（伦敦金现+0.6%报4413.95）+ 大金融（国盛证券直线涨停超61万手封板）+ 能源金属/电池（宁德/华友/紫金）+ 机器人/液冷</strong>低位轮动补涨，而<strong>半导体/光模块/存储/军工高位继续下探、高位人气股退潮（沃特股份9天5板后跌停、海鸥住工7板投降、最高连板降至4板）</strong>。<strong style="color:#9c5a00;">自选池资金面：23 只问财当日实测净流入 7 只（宁德时代 <strong>+4.40 亿全池最强</strong>、紫金矿业 +2.67 亿、四方达 +0.87 亿、扬杰 +0.65、华测导航 +0.35、华友 +0.32、青岛啤酒 +0.25）、净流出 1 只（汉得信息 -0.54 亿）；近15日资金流向显示 <strong>中际旭创 -33.87 亿（全池最大流出、最高风险警示！）、亨通光电 -24.17 亿、中钨高新 -17.30 亿、科大讯飞 -16.60 亿、澜起 -14.25 亿、佰维 -12.95 亿</strong>持续出逃，而 <strong>宁德时代 +32.97 亿、紫金矿业 +33.62 亿</strong>近15日累计流入双双超30亿——资金正从科技切向资源/新能源/黄金。</strong></div>
 </div>
 
 <div class="section">
@@ -126,7 +126,7 @@ tr:hover { background:#fffbf0; }
     <h2>💰 主力资金热力图（9/3 盘中 11:00 · 板块方向 + 自选股实测资金）</h2>
     <p style="font-size:12px;color:#666;margin-bottom:8px;">✅ <strong>今日 23 只自选股 100% 完成同花顺问财实时抓取（browse 本地模式，23/23 全覆盖）</strong>——其中 <strong>8 只抓到"当日资金净流入"实测数值（含流入/流出拆分）</strong>，其余 15 只抓到"近15日资金流向"趋势值。⚠️ 板块级精确资金数值盘中未公开披露，以下板块部分以<strong>方向性描述</strong>为主，量化结论以个股实测数据为准。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#e74c3c;">🟢 资金流入方向（9/3 盘中 11:00 · 当日实测）</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#c0392b;">🟢 资金流入方向（9/3 盘中 11:00 · 当日实测）</h3>
 
     <div class="sector-bar">
         <span class="sector-name">🔋 电池/新能源</span>
@@ -177,7 +177,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">青岛啤酒净流入 <strong>+0.25 亿</strong>（流入0.54/流出0.30）、股价 +0.79%，15xPE防御，消费在退潮后小幅修复，力度弱、属低位防御补涨。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#27ae60;">🔴 资金流出方向（9/3 盘中 11:00 · 近15日趋势）</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#1e7d3c;">🔴 资金流出方向（9/3 盘中 11:00 · 近15日趋势）</h3>
 
     <div class="sector-bar">
         <span class="sector-name">💡 CPO/光模块</span>
@@ -234,7 +234,7 @@ tr:hover { background:#fffbf0; }
     <h2>🔥 行业热力图（9/3 盘中强势/弱势板块）</h2>
     <p style="font-size:12px;color:#666;margin-bottom:8px;">9/3 主线特征：<strong>海运（凤凰航运/海通发展涨停）+ 黄金反弹（伦敦金现+0.6%）+ 大金融（国盛证券直线涨停）+ 能源金属/电池 + 机器人/液冷低位轮动，半导体/光模块/存储/军工高位继续下探</strong>；指数高开后震荡走弱、热点快速轮动。截至 11:00 涨停约 32 家、开板 20 家、封板率 62%，下跌个股超 3200 家（缩量普跌格局）。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#e74c3c;">🟢 领涨板块（9/3 盘中）</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#c0392b;">🟢 领涨板块（9/3 盘中）</h3>
 
     <div class="sector-bar">
         <span class="sector-name">🚢 海运/港口航运</span>
@@ -278,7 +278,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">低位个股出现"秒板"：大众交通、百大集团、恒盛能源、巨轮智能、美能能源等；煤炭、零售、体育、短剧、房地产等方向轮动，方向分散、均属低位补涨。</p>
 
-    <h3 style="font-size:13px;margin:12px 0 8px;color:#27ae60;">🔴 领跌板块（9/3 盘中）</h3>
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#1e7d3c;">🔴 领跌板块（9/3 盘中）</h3>
 
     <div class="sector-bar">
         <span class="sector-name">🔌 半导体/算力硬件</span>
@@ -354,7 +354,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">华友钴业 <span class="up">+1.85% · 当日净流入 💹 ✅</span></div>
             <div class="watch-detail">现 38.64 元(+1.85%) · 成交 9.7 亿 · 问财当日净流入 <strong>+0.32 亿</strong>（流入5.16/流出4.84）· 钴/锂能源金属，随资源周期反攻，11xPE低估值但周期高位谨防"低PE陷阱"，今日资金转正、力度偏弱，观察持续性</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 观察</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 观察</div>
     </div>
 
     <div class="watch-card">
@@ -381,7 +381,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">华测导航 <span class="up">+1.10% · 当日净流入 💹 ✅</span></div>
             <div class="watch-detail">现 28.50 元(+1.10%) · 成交 1.2 亿 · 问财当日净流入 <strong>+0.35 亿</strong>（流入0.79/流出0.44）· 北斗/低空/测绘，近5日资金总体净流入、近15日+0.24亿，军工分化中导航独立走强，弱市稳健标的</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 稳健</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 稳健</div>
     </div>
 
     <div class="watch-card">
@@ -390,7 +390,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">扬杰科技 <span class="up">+0.94% · 当日净流入 💹 ✅</span></div>
             <div class="watch-detail">现 88.82 元(+0.94%) · 成交 4.5 亿 · 问财当日净流入 <strong>+0.65 亿</strong>（流入2.57/流出1.93）· <strong>功率半导体，半导体板块承压中率先资金转正，问财AI"扭转近日净流出和下跌态势、短期有望反弹"，36xPE，是半导体中难得的逆势承接信号，关注止跌确认</strong></div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 关注</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 关注</div>
     </div>
 
     <div class="watch-card">
@@ -399,7 +399,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">青岛啤酒 <span class="up">+0.79% · 当日净流入 💹 ✅</span></div>
             <div class="watch-detail">现 50.96 元(+0.79%) · 成交 0.8 亿 · 问财当日净流入 <strong>+0.25 亿</strong>（流入0.54/流出0.30）· 15xPE防御，消费退潮后小幅修复，力度弱、属低位防御补涨，等企稳</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 等企稳</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 等企稳</div>
     </div>
 
     <div class="watch-card">
@@ -426,7 +426,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">复旦微电 <span class="down">-0.09% · 近15日净流出 📅 ⚪</span></div>
             <div class="watch-detail">现 55.24 元(-0.09%) · 成交 3.7 亿 · 问财近15日净流出 <strong>-1.71 亿</strong>· FPGA/存储，50xPE，资金小幅流出、股价基本持平，科技回调中跟随调整，等企稳</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 观察</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 观察</div>
     </div>
 
     <div class="watch-card">
@@ -462,7 +462,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">新易盛 <span class="down">-0.54% · 近15日净流入 📅 ⚠️</span></div>
             <div class="watch-detail">现 384.63 元(-0.54%) · 成交 62.5 亿 · 问财近15日净流入 <strong>+9.21 亿</strong>· <strong>CPO弹性标的，近15日资金转正（昨日还-10.68亿大幅流出）但今日股价微跌=资金流入+下跌（主力低吸），光模块板块分歧中，谨慎观察资金能否持续</strong></div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 分歧观察</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 分歧观察</div>
     </div>
 
     <div class="watch-card">
@@ -489,7 +489,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">科华数据 <span class="down">-0.87% · 近15日净流出 📅 ❌</span></div>
             <div class="watch-detail">现 29.71 元(-0.87%) · 成交 1.5 亿 · 问财近15日净流出 <strong>-3.30 亿</strong>· AIDC+算力网，40xPE，资金持续流出，科技回调中跟随调整，等企稳</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 观察</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 观察</div>
     </div>
 
     <div class="watch-card">
@@ -525,7 +525,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">立讯精密 <span class="down">-1.66% · 近15日净流入 📅 ⚠️</span></div>
             <div class="watch-detail">现 56.13 元(-1.66%) · 成交 27.2 亿 · 问财近15日净流入 <strong>+6.18 亿</strong>· <strong>消费电子龙头近15日资金净流入但今日股价下跌=资金流入+下跌（主力低吸），25xPE，苹果发布会临近，回调可关注低吸机会</strong></div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 低吸观察</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 低吸观察</div>
     </div>
 
     <div class="watch-card">
@@ -579,7 +579,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">四方达 <span class="up">培育钻石/超硬 · 当日+0.87亿 · +4.56%全池领涨 · 自选池</span></div>
             <div class="watch-detail"><strong>推荐理由</strong>：① <strong>资金+股价双确认（连续两日最强做多）</strong>——问财当日净流入 <strong>+0.87 亿</strong>（流入8.38/流出7.51）、股价 +4.56% 全池领涨，问财 AI"股价上涨伴随资金净流入、扭转近日净流出态势"；② <strong>逻辑</strong>——培育钻石/超硬材料小盘题材，弱市中低位题材弹性，与今日低位补涨风格一致；③ 近10日 33.10-38.00 区间震荡，今日放量上攻逼近 38 前高。<strong style="color:#c0392b;">风险：149xPE高估值、波动剧烈，属题材博弈绝非价值买点，仅轻仓、严格止损、严禁追高。</strong><br><strong>价格区间</strong>：现价 36.89 元；回调 <strong>36.0-36.5</strong> 分批轻仓；目标 <strong>37.5-38.0</strong>（前高）；<strong>跌破 34.9 止损（严禁追高）</strong>。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 题材弹性（轻仓）</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 题材弹性（轻仓）</div>
     </div>
 
     <div class="watch-card">
@@ -588,7 +588,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">华友钴业 <span class="up">能源金属 · 当日+0.32亿 · +1.85% · 资源反攻 · 自选池</span></div>
             <div class="watch-detail"><strong>推荐理由</strong>：① <strong>资源周期反攻</strong>——问财当日净流入 <strong>+0.32 亿</strong>（流入5.16/流出4.84）、股价 +1.85%，钴/锂能源金属随资源板块反攻；② <strong>逻辑</strong>——钴/镍/锂一体化布局，11xPE低估值，周期底部+资源涨价预期，与黄金/铜/铝共振（云铝/神火涨3%）；③ 近10日从 39.35 回落至 37.94，今日放量反弹至 38.64，接近阶段低位。<strong style="color:#c0392b;">风险：11xPE是周期"低PE陷阱"典型，盈利顶点PE最低，需判断周期位置；今日资金力度偏弱。</strong><br><strong>价格区间</strong>：现价 38.64 元；回调 <strong>38.2-38.5</strong> 分批低吸；目标 <strong>39.8-40.5</strong>；<strong>跌破 37.6 止损</strong>。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 周期修复（轻仓）</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 周期修复（轻仓）</div>
     </div>
 
     <div class="watch-card">
@@ -597,7 +597,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">华测导航 <span class="up">北斗/低空 · 当日+0.35亿 · 近5日净流入 · 弱市稳健 · 自选池</span></div>
             <div class="watch-detail"><strong>推荐理由</strong>：① <strong>弱市稳健+资金持续净流入</strong>——问财当日净流入 <strong>+0.35 亿</strong>（流入0.79/流出0.44），近5日资金总体净流入、近15日+0.24亿，股价 +1.10% 逆势微涨；② <strong>逻辑</strong>——北斗/低空/测绘，政策驱动+稳健业绩，军工分化中导航独立走强，弱市中题材弹性较稳；③ 近10日 26.88-28.95 区间抬升，今日温和放量上行，趋势未破。<strong style="color:#c0392b;">风险：力度弱、资金无大额流入，属稳健防守而非进攻。</strong><br><strong>价格区间</strong>：现价 28.50 元；回调 <strong>28.2-28.4</strong> 分批低吸；目标 <strong>29.0-29.5</strong>；<strong>跌破 27.8 止损</strong>。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">★★★☆☆ 防御关注</div>
+        <div class="watch-action" style="color:#9c5a00;">★★★☆☆ 防御关注</div>
     </div>
 
     <div class="alert-box yellow">

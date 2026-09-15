@@ -8,52 +8,52 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#27ae60; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#1e7d3c; }
 .tag-risk { background:#c0392b; }
 .tag-foreign { background:#16a085; }
 .tag-gold { background:#d4a017; }
-.tag-nuclear { background:#e67e22; }
-.tag-flash { background:#e74c3c; }
+.tag-nuclear { background:#9c5a00; }
+.tag-flash { background:#c0392b; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:100px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:80px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #1e7d3c, #2ecc71); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .watch-card:last-child { border-bottom:none; }
-.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-rank { font-size:20px; font-weight:700; color:#c0392b; min-width:28px; text-align:center; }
 .watch-info { flex:1; }
 .watch-name { font-weight:600; font-size:13px; }
 .watch-detail { font-size:11px; color:#666; }
 .watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
-.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
-.market-note strong { color:#e74c3c; }
+.market-note { font-size:11px; color:#9c5a00; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#c0392b; }
 .heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
 .break-line { border-top:2px dashed #e0e0e0; margin:10px 0; }
 </style>
@@ -78,7 +78,7 @@ tr:hover { background:#fffbf0; }
             <td class="up">+1.47%</td>
             <td>3884.40</td>
             <td>3815.12</td>
-            <td rowspan="4" style="font-weight:600;">约2.66万亿<br><span style="font-size:10px;color:#e74c3c;">继续放量</span></td>
+            <td rowspan="4" style="font-weight:600;">约2.66万亿<br><span style="font-size:10px;color:#c0392b;">继续放量</span></td>
         </tr>
         <tr>
             <td>深证成指</td>
@@ -90,7 +90,7 @@ tr:hover { background:#fffbf0; }
             <td>13644.84</td>
         </tr>
         <tr>
-            <td style="font-weight:700;color:#e74c3c;">创业板指</td>
+            <td style="font-weight:700;color:#c0392b;">创业板指</td>
             <td>3372.08</td>
             <td style="font-weight:600;">3488.97</td>
             <td>3535.14</td>
@@ -99,7 +99,7 @@ tr:hover { background:#fffbf0; }
             <td>3372.04</td>
         </tr>
         <tr>
-            <td style="font-weight:700;color:#e74c3c;">科创50 🔥🔥</td>
+            <td style="font-weight:700;color:#c0392b;">科创50 🔥🔥</td>
             <td>1615.26</td>
             <td style="font-weight:600;">1616.36</td>
             <td>1693.67</td>
@@ -117,7 +117,7 @@ tr:hover { background:#fffbf0; }
     <h2>🗺️ 行业热力图</h2>
     <p style="font-size:12px;color:#666;margin-bottom:8px;">基于8/5收盘数据 · 板块强弱排序</p>
 
-    <h3 style="font-size:13px;color:#e74c3c;margin:10px 0 6px;">🔥 强势板块 TOP 10</h3>
+    <h3 style="font-size:13px;color:#c0392b;margin:10px 0 6px;">🔥 强势板块 TOP 10</h3>
     <div class="sector-bar"><span class="sector-name">🥇 存储芯片</span><span class="sector-pct up">+7.2%</span><div class="sector-bar-fill" style="width:72%;"></div></div>
     <div class="sector-bar"><span class="sector-name">🥈 培育钻石</span><span class="sector-pct up">+6.5%</span><div class="sector-bar-fill" style="width:65%;"></div></div>
     <div class="sector-bar"><span class="sector-name">🥉 SiP/先进封装</span><span class="sector-pct up">+5.8%</span><div class="sector-bar-fill" style="width:58%;"></div></div>
@@ -129,7 +129,7 @@ tr:hover { background:#fffbf0; }
     <div class="sector-bar"><span class="sector-name">⑨ 数据中心（AIDC）</span><span class="sector-pct up">+3.2%</span><div class="sector-bar-fill" style="width:32%;"></div></div>
     <div class="sector-bar"><span class="sector-name">⑩ 功率半导体</span><span class="sector-pct up">+2.8%</span><div class="sector-bar-fill" style="width:28%;"></div></div>
 
-    <h3 style="font-size:13px;color:#27ae60;margin:14px 0 6px;">📉 弱势板块</h3>
+    <h3 style="font-size:13px;color:#1e7d3c;margin:14px 0 6px;">📉 弱势板块</h3>
     <div class="sector-bar"><span class="sector-name">CPO （获利回吐）</span><span class="sector-pct down">-3.5%</span><div class="sector-bar-fill green" style="width:35%;"></div></div>
     <div class="sector-bar"><span class="sector-name">DRAM</span><span class="sector-pct down">-1.5%</span><div class="sector-bar-fill green" style="width:15%;"></div></div>
     <div class="sector-bar"><span class="sector-name">白酒</span><span class="sector-pct down">-1.2%</span><div class="sector-bar-fill green" style="width:12%;"></div></div>
@@ -233,7 +233,7 @@ tr:hover { background:#fffbf0; }
     <p style="font-size:11px;color:#666;margin-top:6px;">📌 8/5核心规律：连板股继续强势（传智8连板/高争6连板/新能5连板/美利云4连板），说明市场做多情绪未散。但CPO板块出现大面积炸板/回落——东山精密虽2连板但封单力度下降，中际旭创/新易盛/天孚通信等CPO龙头均收跌。行情从"龙头主升"切换为"轮动扩散"。</p>
     <p style="font-size:11px;color:#666;">📌 存储芯片：普冉+11.35%/佰维+7.14%领涨，FMS峰会三星HBM4+SK海力士扩产催化。关注今日闭幕是否释放超预期利好。</p>
     <p style="font-size:11px;color:#666;">📌 自选池涨停：中钨高新（首板涨停+两天+20%）、环旭电子（首板涨停+两天+18%）。两标的均为自选池核心持仓。</p>
-    <p style="font-size:11px;color:#e74c3c;">⚠️ 今日核心看点：① 传智教育能否9连板（AI应用持续性终极考验）；② CPO龙头回调后能否企稳（旭创900/新易盛400支撑位）；③ FMS闭幕是否释放超预期利好（决定存储反弹方向）；④ 美国设备限制——芯片国产替代板块如何反应；⑤ 周四午后机构调仓——两天涨幅>15%品种获利盘压力</p>
+    <p style="font-size:11px;color:#c0392b;">⚠️ 今日核心看点：① 传智教育能否9连板（AI应用持续性终极考验）；② CPO龙头回调后能否企稳（旭创900/新易盛400支撑位）；③ FMS闭幕是否释放超预期利好（决定存储反弹方向）；④ 美国设备限制——芯片国产替代板块如何反应；⑤ 周四午后机构调仓——两天涨幅>15%品种获利盘压力</p>
 </div>
 
 <div class="section">
@@ -270,7 +270,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">中际旭创 sz300308 <span class="down">-7.26%</span></div>
             <div class="watch-detail">CPO龙头大反弹次日高台跳水-7.26%（1022→948）。CPO产业逻辑不变但短期需等回调到位。900-920区间（20日均线）是理想二次入场点。今日耐心等待不抄底。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">等回调买</div>
+        <div class="watch-action" style="color:#9c5a00;">等回调买</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">⭐</div>
@@ -294,7 +294,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">环旭电子 sh601231 <span class="up">涨停+10%</span></div>
             <div class="watch-detail">SiP封装龙头涨停25.96元两天+18%！ICEPT封装会议（8/5-7西安）+先进封装概念持续+17xPE仍低。已涨停不建议追板，等开板回调至24.5-25区间布局。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">等开板买</div>
+        <div class="watch-action" style="color:#9c5a00;">等开板买</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">—</div>
@@ -310,7 +310,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">科大讯飞 sz002230 <span class="up">+1.56%</span></div>
             <div class="watch-detail">AI应用龙头44.17元稳步上行。传智教育冲击9连板+DeepSeek登陆超算+沙利文GIL闭幕。中线持有不追加。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">持有</div>
+        <div class="watch-action" style="color:#9c5a00;">持有</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">—</div>
@@ -318,7 +318,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">扬杰科技 sz300373 <span class="up">+4.85%</span></div>
             <div class="watch-detail">功率半导体91元两天+14%反弹。集成电路条例修订+美国设备限制双利好，但功率器件非本轮主线。持有不追高。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">持有</div>
+        <div class="watch-action" style="color:#9c5a00;">持有</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">—</div>
@@ -326,11 +326,11 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">四方达 sz300179 <span class="up">+10.37%</span></div>
             <div class="watch-detail">培育钻石33.73元独立爆发两天+18%，创近3月新高。独立小众赛道+周四获利压力。设止盈33元锁利，不加仓。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">减仓锁利</div>
+        <div class="watch-action" style="color:#9c5a00;">减仓锁利</div>
     </div>
 
     <div class="break-line"></div>
-    <p style="font-size:12px;color:#e74c3c;font-weight:600;margin-bottom:6px;">⚠️ 以下为建议减仓/回避标的</p>
+    <p style="font-size:12px;color:#c0392b;font-weight:600;margin-bottom:6px;">⚠️ 以下为建议减仓/回避标的</p>
 
     <div class="watch-card" style="background:#fff5f5;border-radius:4px;padding:6px 8px;">
         <div class="watch-rank" style="color:#c0392b;">⚠️</div>
@@ -442,11 +442,11 @@ tr:hover { background:#fffbf0; }
         </tr>
         <tr>
             <td style="font-weight:600;">🎯 主线方向</td>
-            <td class="small"><strong style="color:#e74c3c;">① 存储芯片（FMS闭幕日——三星HBM4路线图+SK海力士扩产催化，但反弹已两天需注意追高风险）</strong> / ② 半导体/芯片设计（美国设备限制刺激国产替代——澜起科技/中钨高新受益） / ③ 先进封装/SiP（ICEPT会议进行中2天——环旭电子涨停+18%后等开板回调） / ④ 算力/数据中心（英伟达B300订单超预期+算力租赁美利云4连板——科华数据中线持有） / ⑤ 钨材料（中钨高新两天+20%涨停——趋势极强但需减1/3锁利） / ⑥ CPO等回调（旭创900-920/新易盛400-410区间二次布局——产业逻辑不变但今日不抄底）</td>
+            <td class="small"><strong style="color:#c0392b;">① 存储芯片（FMS闭幕日——三星HBM4路线图+SK海力士扩产催化，但反弹已两天需注意追高风险）</strong> / ② 半导体/芯片设计（美国设备限制刺激国产替代——澜起科技/中钨高新受益） / ③ 先进封装/SiP（ICEPT会议进行中2天——环旭电子涨停+18%后等开板回调） / ④ 算力/数据中心（英伟达B300订单超预期+算力租赁美利云4连板——科华数据中线持有） / ⑤ 钨材料（中钨高新两天+20%涨停——趋势极强但需减1/3锁利） / ⑥ CPO等回调（旭创900-920/新易盛400-410区间二次布局——产业逻辑不变但今日不抄底）</td>
         </tr>
         <tr>
             <td style="font-weight:600;">🚫 回避方向</td>
-            <td class="small"><strong style="color:#27ae60;">① 银行/保险（连续三日被抽血，机构风格切换不可逆）</strong> / ② 消费防御（白酒/食品饮料/啤酒三连跌——机构资金从消费→科技趋势明确，青岛啤酒三连跌验证） / ③ 消费电子（立讯精密反弹极弱+3.9%严重跑输所有科技指数，机构出货确认） / ④ DRAM（长鑫科技天量508亿后缩量下跌——天量见天价信号，短期回避） / ⑤ 黄金/资源品（美伊协议随时官宣——紫金矿业趁反弹减仓至半仓）</td>
+            <td class="small"><strong style="color:#1e7d3c;">① 银行/保险（连续三日被抽血，机构风格切换不可逆）</strong> / ② 消费防御（白酒/食品饮料/啤酒三连跌——机构资金从消费→科技趋势明确，青岛啤酒三连跌验证） / ③ 消费电子（立讯精密反弹极弱+3.9%严重跑输所有科技指数，机构出货确认） / ④ DRAM（长鑫科技天量508亿后缩量下跌——天量见天价信号，短期回避） / ⑤ 黄金/资源品（美伊协议随时官宣——紫金矿业趁反弹减仓至半仓）</td>
         </tr>
         <tr>
             <td style="font-weight:600;">🔑 关键观察</td>

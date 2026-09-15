@@ -13,7 +13,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
 .header .date { font-size:12px; opacity:0.7; }
 .alert { background:#fff3cd; border:1px solid #ffc107; margin:8px; border-radius:8px; padding:10px 12px; font-size:12px; color:#856404; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:680px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; position:sticky; top:0; }
@@ -22,30 +22,30 @@ tr:hover { background:#fffbf0; }
 .stock-name { font-weight:600; }
 .stock-code { color:#999; font-size:10px; }
 .price { font-weight:600; font-size:13px; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .signal { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
 .range { color:#666; font-size:11px; }
 .small { font-size:10px; color:#666; max-width:100px; white-space:normal; }
 .top-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .top-card:last-child { border-bottom:none; }
-.top-rank { font-size:24px; font-weight:700; color:#e74c3c; min-width:36px; }
+.top-rank { font-size:24px; font-weight:700; color:#c0392b; min-width:36px; }
 .top-name { font-weight:600; font-size:14px; }
 .top-price { font-size:14px; font-weight:600; color:#16213e; }
 .top-reason { font-size:11px; color:#666; }
 .hot-item { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f0f0f0; font-size:12px; }
 .hot-item:last-child { border-bottom:none; }
 .hot-name { font-weight:600; }
-.hot-pct { color:#e74c3c; font-weight:600; }
+.hot-pct { color:#c0392b; font-weight:600; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .summary { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
 .summary-item { background:#f0f0f0; padding:4px 8px; border-radius:4px; font-size:11px; }
-.buy-count { color:#e74c3c; font-weight:700; }
-.hold-count { color:#f39c12; font-weight:700; }
-.sell-count { color:#27ae60; font-weight:700; }
+.buy-count { color:#c0392b; font-weight:700; }
+.hold-count { color:#9c5a00; font-weight:700; }
+.sell-count { color:#1e7d3c; font-weight:700; }
 .feature-box { background:#f8f9fa; border-radius:4px; padding:8px; margin:4px 0; font-size:12px; }
-.warning { color:#e74c3c; font-weight:700; }
+.warning { color:#c0392b; font-weight:700; }
 </style>
 </head>
 <body>
@@ -62,7 +62,7 @@ tr:hover { background:#fffbf0; }
 <div class="section">
     <h2>📋 信号概览</h2>
     <div class="summary">
-        <div class="summary-item">★★★★★ 青岛啤酒 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★★ 华友钴业 <span style="color:#e74c3c">买入</span></div><div class="summary-item">★★★★☆ 大华股份 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 紫金矿业 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 立讯精密 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 紫光国微 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★★☆☆ 扬杰科技 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 环旭电子 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 华测导航 <span style="color:#f39c12">持有观望</span></div><div class="summary-item">★★☆☆☆ 宁德时代 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 澜起科技 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 科华数据 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 四方达 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 中钨高新 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 中际旭创 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 佰维存储 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 科大讯飞 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 普冉股份 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 汉得信息 <span style="color:#27ae60">卖出</span></div><div class="summary-item">★☆☆☆☆ 新易盛 <span style="color:#27ae60">卖出</span></div>
+        <div class="summary-item">★★★★★ 青岛啤酒 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★★ 华友钴业 <span style="color:#c0392b">买入</span></div><div class="summary-item">★★★★☆ 大华股份 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 紫金矿业 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 立讯精密 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 紫光国微 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★★☆☆ 扬杰科技 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 环旭电子 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 华测导航 <span style="color:#9c5a00">持有观望</span></div><div class="summary-item">★★☆☆☆ 宁德时代 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 澜起科技 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 科华数据 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 四方达 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 中钨高新 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 中际旭创 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 佰维存储 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 科大讯飞 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 普冉股份 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 汉得信息 <span style="color:#1e7d3c">卖出</span></div><div class="summary-item">★☆☆☆☆ 新易盛 <span style="color:#1e7d3c">卖出</span></div>
     </div>
     <div style="margin-top:12px; display:flex; gap:12px; font-size:13px;">
         <span>🔴 <span class="buy-count">买入</span> <strong>2</strong> 只</span>
@@ -87,7 +87,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">53.45</td>
             <td class="down">-1.82%</td>
             <td>10倍</td>
-            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td><span class="signal" style="background:#c0392b">买入</span></td>
             <td>★★★★★</td>
             <td class="range">48.93 ~ 62.75</td>
             <td class="small" style="">RSI22极端超卖</td>
@@ -98,7 +98,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">44.89</td>
             <td class="down">-4.31%</td>
             <td>9倍</td>
-            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td><span class="signal" style="background:#c0392b">买入</span></td>
             <td>★★★★★</td>
             <td class="range">44.57 ~ 54.72</td>
             <td class="small" style="">现价接近布林下轨，超跌反弹机会</td>
@@ -109,7 +109,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">16.43</td>
             <td class="down">-1.26%</td>
             <td>20倍</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td>★★★★☆</td>
             <td class="range">15.75 ~ 16.94</td>
             <td class="small" style="">无明显风险信号</td>
@@ -120,7 +120,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">27.62</td>
             <td class="down">-2.33%</td>
             <td>9倍</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td>★★★☆☆</td>
             <td class="range">24.14 ~ 31.76</td>
             <td class="small" style="">无明显风险信号</td>
@@ -131,7 +131,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">63.28</td>
             <td class="up">+0.64%</td>
             <td>31倍</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td>★★★☆☆</td>
             <td class="range">61.09 ~ 74.24</td>
             <td class="small" style="">无明显风险信号</td>
@@ -142,7 +142,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">82.00</td>
             <td class="down">-1.44%</td>
             <td>53倍</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td>★★★☆☆</td>
             <td class="range">68.18 ~ 90.96</td>
             <td class="small" style="">无明显风险信号</td>
@@ -153,7 +153,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">134.9</td>
             <td class="up">+2.63%</td>
             <td>46倍</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td>★★★☆☆</td>
             <td class="range">84.06 ~ 160.5</td>
             <td class="small" style="">PB7.4倍偏高</td>
@@ -164,7 +164,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">29.19</td>
             <td class="down">-1.55%</td>
             <td>43倍</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td>★★☆☆☆</td>
             <td class="range">28.53 ~ 42.26</td>
             <td class="small" style="">接近布林下轨</td>
@@ -175,7 +175,7 @@ tr:hover { background:#fffbf0; }
             <td class="price">27.13</td>
             <td class="down">-2.79%</td>
             <td>44倍</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td>★★☆☆☆</td>
             <td class="range">26.89 ~ 31.51</td>
             <td class="small" style="">接近布林下轨；RSI36偏弱</td>
@@ -186,10 +186,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">372.5</td>
             <td class="down">-0.54%</td>
             <td>21倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★★☆☆☆</td>
             <td class="range">377.1 ~ 409.4</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">价格跌破布林下轨(破位)<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">价格跌破布林下轨(破位)<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>11</td>
@@ -197,10 +197,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">253.2</td>
             <td class="down">-5.76%</td>
             <td>96倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">207.5 ~ 313.0</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PE96估值偏高；PB15.6倍偏高；单日暴跌-5.8%<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PE96估值偏高；PB15.6倍偏高；单日暴跌-5.8%<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>12</td>
@@ -208,10 +208,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">35.99</td>
             <td class="down">-5.14%</td>
             <td>92倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">34.55 ~ 43.47</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PE>90估值偏高；单日暴跌-5.1%；接近布林下轨<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PE>90估值偏高；单日暴跌-5.1%；接近布林下轨<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>13</td>
@@ -219,10 +219,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">55.40</td>
             <td class="down">-3.52%</td>
             <td>164倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">36.62 ~ 64.84</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PE>100估值偏高；PB25.0倍极高<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PE>100估值偏高；PB25.0倍极高<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>14</td>
@@ -230,10 +230,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">76.84</td>
             <td class="down">-4.50%</td>
             <td>48倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">65.40 ~ 114.2</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PB17.4倍极高；两日累跌-14.7%<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PB17.4倍极高；两日累跌-14.7%<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>15</td>
@@ -241,10 +241,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">1122</td>
             <td class="up">+2.09%</td>
             <td>53倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">1073 ~ 1389</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PB35.4倍极端高估<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PB35.4倍极端高估<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>16</td>
@@ -252,10 +252,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">425.0</td>
             <td class="down">-6.53%</td>
             <td>18倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">252.0 ~ 529.6</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PB25.1倍极高；单日暴跌-6.5%<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PB25.1倍极高；单日暴跌-6.5%<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>17</td>
@@ -263,10 +263,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">39.95</td>
             <td class="down">-1.72%</td>
             <td>-144倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">38.62 ~ 45.23</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PE为负；MACD绿柱<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PE为负；MACD绿柱<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>18</td>
@@ -274,10 +274,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">710.0</td>
             <td class="down">-6.58%</td>
             <td>93倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">261.8 ~ 940.1</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">RSI83极端超买(>80)；PB34.6倍极高；单日暴跌-6.6%<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">RSI83极端超买(>80)；PB34.6倍极高；单日暴跌-6.6%<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>19</td>
@@ -285,10 +285,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">14.05</td>
             <td class="down">-2.90%</td>
             <td>96倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">14.53 ~ 19.07</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">价格跌破布林下轨(破位)；PE96估值偏高；RSI32弱势<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">价格跌破布林下轨(破位)；PE96估值偏高；RSI32弱势<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr><tr>
             <td>20</td>
@@ -296,10 +296,10 @@ tr:hover { background:#fffbf0; }
             <td class="price">510.1</td>
             <td class="up">+0.63%</td>
             <td>64倍</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td>★☆☆☆☆</td>
             <td class="range">425.5 ~ 767.6</td>
-            <td class="small" style="color:#e74c3c;font-weight:700;">PB36.4倍极端高估；全专家一致看空<br><span style="color:#e74c3c;font-size:9px;font-weight:700;">重大风险</span></td>
+            <td class="small" style="color:#c0392b;font-weight:700;">PB36.4倍极端高估；全专家一致看空<br><span style="color:#c0392b;font-size:9px;font-weight:700;">重大风险</span></td>
             <td class="small">止损/大幅减仓</td>
         </tr>
         </tbody>
@@ -321,47 +321,47 @@ tr:hover { background:#fffbf0; }
             <td>1</td>
             <td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td>
             <td style="font-weight:700">0.68</td>
-            <td><span class="signal" style="background:#e74c3c">买入</span></td>
-            <td class="small"><span style="color:#e74c3c">看多(0.72)</span></td>
+            <td><span class="signal" style="background:#c0392b">买入</span></td>
+            <td class="small"><span style="color:#c0392b">看多(0.72)</span></td>
             <td class="small"><span style="color:#888">中性(0.58)</span></td>
-            <td class="small"><span style="color:#e74c3c">看多(0.90)</span></td>
+            <td class="small"><span style="color:#c0392b">看多(0.90)</span></td>
             <td class="small"><span style="color:#888">中性(0.42)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>2</td>
             <td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td>
             <td style="font-weight:700">0.65</td>
-            <td><span class="signal" style="background:#e74c3c">买入</span></td>
+            <td><span class="signal" style="background:#c0392b">买入</span></td>
             <td class="small"><span style="color:#888">中性(0.55)</span></td>
             <td class="small"><span style="color:#888">中性(0.52)</span></td>
-            <td class="small"><span style="color:#e74c3c">看多(1.00)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.35)</span></td>
+            <td class="small"><span style="color:#c0392b">看多(1.00)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.35)</span></td>
             <td class="small">低</td>
         </tr><tr>
             <td>3</td>
             <td><span class="stock-name">大华股份</span><br><span class="stock-code">002236.SZ</span></td>
             <td style="font-weight:700">0.63</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td class="small"><span style="color:#888">中性(0.62)</span></td>
             <td class="small"><span style="color:#888">中性(0.53)</span></td>
-            <td class="small"><span style="color:#e74c3c">看多(0.85)</span></td>
+            <td class="small"><span style="color:#c0392b">看多(0.85)</span></td>
             <td class="small"><span style="color:#888">中性(0.48)</span></td>
             <td class="small">高</td>
         </tr><tr>
             <td>4</td>
             <td><span class="stock-name">紫金矿业</span><br><span class="stock-code">601899.SH</span></td>
             <td style="font-weight:700">0.57</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td class="small"><span style="color:#888">中性(0.52)</span></td>
             <td class="small"><span style="color:#888">中性(0.56)</span></td>
-            <td class="small"><span style="color:#e74c3c">看多(0.88)</span></td>
+            <td class="small"><span style="color:#c0392b">看多(0.88)</span></td>
             <td class="small"><span style="color:#888">中性(0.40)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>5</td>
             <td><span class="stock-name">立讯精密</span><br><span class="stock-code">002475.SZ</span></td>
             <td style="font-weight:700">0.52</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td class="small"><span style="color:#888">中性(0.50)</span></td>
             <td class="small"><span style="color:#888">中性(0.48)</span></td>
             <td class="small"><span style="color:#888">中性(0.55)</span></td>
@@ -371,7 +371,7 @@ tr:hover { background:#fffbf0; }
             <td>6</td>
             <td><span class="stock-name">紫光国微</span><br><span class="stock-code">002049.SZ</span></td>
             <td style="font-weight:700">0.50</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td class="small"><span style="color:#888">中性(0.61)</span></td>
             <td class="small"><span style="color:#888">中性(0.48)</span></td>
             <td class="small"><span style="color:#888">中性(0.42)</span></td>
@@ -381,17 +381,17 @@ tr:hover { background:#fffbf0; }
             <td>7</td>
             <td><span class="stock-name">扬杰科技</span><br><span class="stock-code">300373.SZ</span></td>
             <td style="font-weight:700">0.49</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td class="small"><span style="color:#888">中性(0.58)</span></td>
             <td class="small"><span style="color:#888">中性(0.45)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.35)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.35)</span></td>
             <td class="small"><span style="color:#888">中性(0.52)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>8</td>
             <td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td>
             <td style="font-weight:700">0.43</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
             <td class="small"><span style="color:#888">中性(0.44)</span></td>
             <td class="small"><span style="color:#888">中性(0.38)</span></td>
             <td class="small"><span style="color:#888">中性(0.50)</span></td>
@@ -401,120 +401,120 @@ tr:hover { background:#fffbf0; }
             <td>9</td>
             <td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td>
             <td style="font-weight:700">0.40</td>
-            <td><span class="signal" style="background:#f39c12">持有观望</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.35)</span></td>
+            <td><span class="signal" style="background:#9c5a00">持有观望</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.35)</span></td>
             <td class="small"><span style="color:#888">中性(0.42)</span></td>
             <td class="small"><span style="color:#888">中性(0.45)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.38)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.38)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>10</td>
             <td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td>
             <td style="font-weight:700">0.44</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.30)</span></td>
             <td class="small"><span style="color:#888">中性(0.48)</span></td>
-            <td class="small"><span style="color:#e74c3c">看多(0.65)</span></td>
+            <td class="small"><span style="color:#c0392b">看多(0.65)</span></td>
             <td class="small"><span style="color:#888">中性(0.48)</span></td>
             <td class="small">低</td>
         </tr><tr>
             <td>11</td>
             <td><span class="stock-name">澜起科技</span><br><span class="stock-code">688008.SH</span></td>
             <td style="font-weight:700">0.39</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.32)</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.32)</span></td>
             <td class="small"><span style="color:#888">中性(0.42)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.35)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.30)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.35)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>12</td>
             <td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td>
             <td style="font-weight:700">0.38</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.32)</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.32)</span></td>
             <td class="small"><span style="color:#888">中性(0.38)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.35)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.35)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.30)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>13</td>
             <td><span class="stock-name">四方达</span><br><span class="stock-code">300179.SZ</span></td>
             <td style="font-weight:700">0.38</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td class="small"><span style="color:#888">中性(0.52)</span></td>
             <td class="small"><span style="color:#888">中性(0.48)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.10)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.10)</span></td>
             <td class="small"><span style="color:#888">中性(0.42)</span></td>
             <td class="small">低</td>
         </tr><tr>
             <td>14</td>
             <td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td>
             <td style="font-weight:700">0.36</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td class="small"><span style="color:#888">中性(0.40)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.28)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.28)</span></td>
             <td class="small"><span style="color:#888">中性(0.38)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.25)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.25)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>15</td>
             <td><span class="stock-name">中际旭创</span><br><span class="stock-code">300308.SZ</span></td>
             <td style="font-weight:700">0.35</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td class="small"><span style="color:#888">中性(0.38)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.33)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.28)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.33)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.28)</span></td>
             <td class="small"><span style="color:#888">中性(0.48)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>16</td>
             <td><span class="stock-name">佰维存储</span><br><span class="stock-code">688525.SH</span></td>
             <td style="font-weight:700">0.33</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.35)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.33)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.35)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.33)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.30)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.30)</span></td>
             <td class="small">高</td>
         </tr><tr>
             <td>17</td>
             <td><span class="stock-name">科大讯飞</span><br><span class="stock-code">002230.SZ</span></td>
             <td style="font-weight:700">0.32</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.30)</span></td>
             <td class="small"><span style="color:#888">中性(0.40)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.15)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.15)</span></td>
             <td class="small"><span style="color:#888">中性(0.45)</span></td>
             <td class="small">中</td>
         </tr><tr>
             <td>18</td>
             <td><span class="stock-name">普冉股份</span><br><span class="stock-code">688766.SH</span></td>
             <td style="font-weight:700">0.30</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
             <td class="small"><span style="color:#888">中性(0.42)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.30)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.15)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.25)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.30)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.15)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.25)</span></td>
             <td class="small">低</td>
         </tr><tr>
             <td>19</td>
             <td><span class="stock-name">汉得信息</span><br><span class="stock-code">300170.SZ</span></td>
             <td style="font-weight:700">0.29</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.25)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.28)</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.25)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.28)</span></td>
             <td class="small"><span style="color:#888">中性(0.40)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.28)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.28)</span></td>
             <td class="small">高</td>
         </tr><tr>
             <td>20</td>
             <td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td>
             <td style="font-weight:700">0.27</td>
-            <td><span class="signal" style="background:#27ae60">卖出</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.28)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.25)</span></td>
-            <td class="small"><span style="color:#27ae60">看空(0.20)</span></td>
+            <td><span class="signal" style="background:#1e7d3c">卖出</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.28)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.25)</span></td>
+            <td class="small"><span style="color:#1e7d3c">看空(0.20)</span></td>
             <td class="small"><span style="color:#888">中性(0.42)</span></td>
             <td class="small">高</td>
         </tr>
@@ -559,85 +559,85 @@ tr:hover { background:#fffbf0; }
     <h2>🔥 近期高性价比关注</h2>
     <div class="hot-item">
                 <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#1</span>
+                    <span style="font-weight:700;color:#c0392b;min-width:18px;">#1</span>
                     <span class="hot-name" style="flex-shrink:0;">中材国际</span>
                     <span class="stock-code" style="flex-shrink:0;">600970</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">国际工程</span>
+                    <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">国际工程</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
                     <span style="font-weight:600;">6.88</span>
                     <span class="down">-1.01%</span>
                     <span style="color:#666;">PE10</span>
                     <span style="color:#999;">178亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.85</span>
+                    <span style="color:#c0392b;font-weight:600;font-size:12px;">性价比0.85</span>
                 </div>
             </div><div class="hot-item">
                 <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#2</span>
+                    <span style="font-weight:700;color:#c0392b;min-width:18px;">#2</span>
                     <span class="hot-name" style="flex-shrink:0;">华峰化学</span>
                     <span class="stock-code" style="flex-shrink:0;">002064</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">氨纶</span>
+                    <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">氨纶</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
                     <span style="font-weight:600;">9.03</span>
                     <span class="down">-1.31%</span>
                     <span style="color:#666;">PE16</span>
                     <span style="color:#999;">448亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.77</span>
+                    <span style="color:#c0392b;font-weight:600;font-size:12px;">性价比0.77</span>
                 </div>
             </div><div class="hot-item">
                 <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#3</span>
+                    <span style="font-weight:700;color:#c0392b;min-width:18px;">#3</span>
                     <span class="hot-name" style="flex-shrink:0;">九洲药业</span>
                     <span class="stock-code" style="flex-shrink:0;">603456</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">医疗研发外包</span>
+                    <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">医疗研发外包</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
                     <span style="font-weight:600;">12.95</span>
                     <span class="down">-1.30%</span>
                     <span style="color:#666;">PE16</span>
                     <span style="color:#999;">115亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.76</span>
+                    <span style="color:#c0392b;font-weight:600;font-size:12px;">性价比0.76</span>
                 </div>
             </div><div class="hot-item">
                 <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#4</span>
+                    <span style="font-weight:700;color:#c0392b;min-width:18px;">#4</span>
                     <span class="hot-name" style="flex-shrink:0;">中钢国际</span>
                     <span class="stock-code" style="flex-shrink:0;">000928</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">国际工程</span>
+                    <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">国际工程</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
                     <span style="font-weight:600;">4.82</span>
                     <span class="down">-1.23%</span>
                     <span style="color:#666;">PE9</span>
                     <span style="color:#999;">69亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.74</span>
+                    <span style="color:#c0392b;font-weight:600;font-size:12px;">性价比0.74</span>
                 </div>
             </div><div class="hot-item">
                 <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0;">
-                    <span style="font-weight:700;color:#e74c3c;min-width:18px;">#5</span>
+                    <span style="font-weight:700;color:#c0392b;min-width:18px;">#5</span>
                     <span class="hot-name" style="flex-shrink:0;">北方国际</span>
                     <span class="stock-code" style="flex-shrink:0;">000065</span>
-                    <span style="font-size:10px;color:#f39c12;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">国际工程</span>
+                    <span style="font-size:10px;color:#9c5a00;background:#fff8e1;padding:1px 5px;border-radius:2px;flex-shrink:0;">国际工程</span>
                 </div>
                 <div style="display:flex;align-items:center;gap:8px;font-size:11px;flex-shrink:0;">
                     <span style="font-weight:600;">9.38</span>
                     <span class="down">-1.26%</span>
                     <span style="color:#666;">PE24</span>
                     <span style="color:#999;">108亿</span>
-                    <span style="color:#e74c3c;font-weight:600;font-size:12px;">性价比0.71</span>
+                    <span style="color:#c0392b;font-weight:600;font-size:12px;">性价比0.71</span>
                 </div>
             </div>
 </div>
 
-<div class="section" style="border-left:3px solid #e74c3c;"><h2>重大风险警示</h2><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">中钨高新</span><span style="color:#999;font-size:11px;">(000657.SZ)</span> <span style="color:#e74c3c;font-size:12px;">两日累跌-14.7%（-10.2%/-4.5%），PB17.4倍高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">普冉股份</span><span style="color:#999;font-size:11px;">(688766.SH)</span> <span style="color:#e74c3c;font-size:12px;">RSI83极端超买(>80)，PB34.6倍极端高估，单日-6.6%</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">普冉股份</span><span style="color:#999;font-size:11px;">(688766.SH)</span> <span style="color:#e74c3c;font-size:12px;">PB34.6倍极端高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">佰维存储</span><span style="color:#999;font-size:11px;">(688525.SH)</span> <span style="color:#e74c3c;font-size:12px;">PB25.1倍极端高估，单日-6.5%暴跌</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">四方达</span><span style="color:#999;font-size:11px;">(300179.SZ)</span> <span style="color:#e74c3c;font-size:12px;">PE164倍/PB25.0倍极端高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">新易盛</span><span style="color:#999;font-size:11px;">(300502.SZ)</span> <span style="color:#e74c3c;font-size:12px;">PB36.4倍极端高估，全专家一致看空(0.27)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">中际旭创</span><span style="color:#999;font-size:11px;">(300308.SZ)</span> <span style="color:#e74c3c;font-size:12px;">PB35.4倍极端高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">澜起科技</span><span style="color:#999;font-size:11px;">(688008.SH)</span> <span style="color:#e74c3c;font-size:12px;">PE96倍+PB15.6倍，单日暴跌-5.8%</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">宁德时代</span><span style="color:#999;font-size:11px;">(300750.SZ)</span> <span style="color:#e74c3c;font-size:12px;">价格跌破布林下轨(破位)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">汉得信息</span><span style="color:#999;font-size:11px;">(300170.SZ)</span> <span style="color:#e74c3c;font-size:12px;">价格跌破布林下轨(破位)+PE96+RSI32弱势</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">科大讯飞</span><span style="color:#999;font-size:11px;">(002230.SZ)</span> <span style="color:#e74c3c;font-size:12px;">PE为负，公司亏损</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#e74c3c;">科华数据</span><span style="color:#999;font-size:11px;">(002335.SZ)</span> <span style="color:#e74c3c;font-size:12px;">PE92倍+单日-5.1%，接近布林下轨</span></div><p style="font-size:11px;color:#999;margin-top:6px;">以上股票存在重大风险信号，建议立即评估止损或减仓操作。今日重点关注：澜起科技(-5.8%)、佰维存储(-6.5%)、普冉股份(-6.6%)单日暴跌，中钨高新两日累跌近15%。</p></div>
+<div class="section" style="border-left:3px solid #c0392b;"><h2>重大风险警示</h2><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">中钨高新</span><span style="color:#999;font-size:11px;">(000657.SZ)</span> <span style="color:#c0392b;font-size:12px;">两日累跌-14.7%（-10.2%/-4.5%），PB17.4倍高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">普冉股份</span><span style="color:#999;font-size:11px;">(688766.SH)</span> <span style="color:#c0392b;font-size:12px;">RSI83极端超买(>80)，PB34.6倍极端高估，单日-6.6%</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">普冉股份</span><span style="color:#999;font-size:11px;">(688766.SH)</span> <span style="color:#c0392b;font-size:12px;">PB34.6倍极端高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">佰维存储</span><span style="color:#999;font-size:11px;">(688525.SH)</span> <span style="color:#c0392b;font-size:12px;">PB25.1倍极端高估，单日-6.5%暴跌</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">四方达</span><span style="color:#999;font-size:11px;">(300179.SZ)</span> <span style="color:#c0392b;font-size:12px;">PE164倍/PB25.0倍极端高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">新易盛</span><span style="color:#999;font-size:11px;">(300502.SZ)</span> <span style="color:#c0392b;font-size:12px;">PB36.4倍极端高估，全专家一致看空(0.27)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">中际旭创</span><span style="color:#999;font-size:11px;">(300308.SZ)</span> <span style="color:#c0392b;font-size:12px;">PB35.4倍极端高估</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">澜起科技</span><span style="color:#999;font-size:11px;">(688008.SH)</span> <span style="color:#c0392b;font-size:12px;">PE96倍+PB15.6倍，单日暴跌-5.8%</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">宁德时代</span><span style="color:#999;font-size:11px;">(300750.SZ)</span> <span style="color:#c0392b;font-size:12px;">价格跌破布林下轨(破位)</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">汉得信息</span><span style="color:#999;font-size:11px;">(300170.SZ)</span> <span style="color:#c0392b;font-size:12px;">价格跌破布林下轨(破位)+PE96+RSI32弱势</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">科大讯飞</span><span style="color:#999;font-size:11px;">(002230.SZ)</span> <span style="color:#c0392b;font-size:12px;">PE为负，公司亏损</span></div><div style="padding:6px 0;border-bottom:1px solid #fce4e4;font-size:13px;"><span style="font-weight:700;color:#c0392b;">科华数据</span><span style="color:#999;font-size:11px;">(002335.SZ)</span> <span style="color:#c0392b;font-size:12px;">PE92倍+单日-5.1%，接近布林下轨</span></div><p style="font-size:11px;color:#999;margin-top:6px;">以上股票存在重大风险信号，建议立即评估止损或减仓操作。今日重点关注：澜起科技(-5.8%)、佰维存储(-6.5%)、普冉股份(-6.6%)单日暴跌，中钨高新两日累跌近15%。</p></div>
 
 <div class="section">
     <h2>💰 国债逆回购实时利率</h2>
 <div class="table-wrap"><table><thead><tr><th>品种</th><th>期限</th><th>最新利率</th><th>开盘</th><th>昨收</th><th>最高</th><th>最低</th><th>10万/天收益</th><th>成交(亿)</th></tr></thead><tbody><tr>
-                <td style="font-weight:700;color:#e74c3c;">GC001</td>
+                <td style="font-weight:700;color:#c0392b;">GC001</td>
                 <td>1天</td>
-                <td style="font-weight:700;color:#e74c3c;">1.440%</td>
+                <td style="font-weight:700;color:#c0392b;">1.440%</td>
                 <td>-</td>
                 <td>1.440%</td>
                 <td>-</td>
@@ -694,7 +694,7 @@ tr:hover { background:#fffbf0; }
                 <td>-</td>
                 <td>¥3.85</td>
                 <td>-</td>
-            </tr></tbody></table></div><p style="font-size:11px;color:#666;margin-top:8px;">⚠️ 盘前数据（昨收利率），开盘后将更新实时利率。当前参考: <span style="color:#e74c3c;font-weight:600;">GC001(1天)约1.44%</span>，10万元一天约赚 ¥3.95。资金可用日取回无手续费。</p>
+            </tr></tbody></table></div><p style="font-size:11px;color:#666;margin-top:8px;">⚠️ 盘前数据（昨收利率），开盘后将更新实时利率。当前参考: <span style="color:#c0392b;font-weight:600;">GC001(1天)约1.44%</span>，10万元一天约赚 ¥3.95。资金可用日取回无手续费。</p>
 </div>
 
 <div class="section">

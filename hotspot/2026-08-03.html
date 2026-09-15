@@ -8,51 +8,51 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#27ae60; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#1e7d3c; }
 .tag-risk { background:#c0392b; }
 .tag-foreign { background:#16a085; }
 .tag-gold { background:#d4a017; }
-.tag-nuclear { background:#e67e22; }
+.tag-nuclear { background:#9c5a00; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:100px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:80px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #1e7d3c, #2ecc71); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .watch-card:last-child { border-bottom:none; }
-.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-rank { font-size:20px; font-weight:700; color:#c0392b; min-width:28px; text-align:center; }
 .watch-info { flex:1; }
 .watch-name { font-weight:600; font-size:13px; }
 .watch-detail { font-size:11px; color:#666; }
 .watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
-.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
-.market-note strong { color:#e74c3c; }
+.market-note { font-size:11px; color:#9c5a00; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#c0392b; }
 .heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
 .break-line { border-top:2px dashed #e0e0e0; margin:10px 0; }
 </style>
@@ -98,10 +98,10 @@ tr:hover { background:#fffbf0; }
             <td>3280.84</td>
         </tr>
         <tr>
-            <td style="font-weight:700;color:#e74c3c;">科创50 ⚠️</td>
+            <td style="font-weight:700;color:#c0392b;">科创50 ⚠️</td>
             <td>1619.29</td>
             <td style="font-weight:600;">1635.96</td>
-            <td style="font-weight:700;color:#27ae60;">1575.01</td>
+            <td style="font-weight:700;color:#1e7d3c;">1575.01</td>
             <td class="down" style="font-size:14px;font-weight:700;">-3.73%</td>
             <td>1621.99</td>
             <td>1564.82</td>
@@ -116,7 +116,7 @@ tr:hover { background:#fffbf0; }
     <h2>🗺️ 行业热力图</h2>
     <p style="font-size:12px;color:#666;margin-bottom:8px;">基于盘中实时数据 · 板块强弱排序</p>
 
-    <h3 style="font-size:13px;color:#e74c3c;margin:10px 0 6px;">🔥 强势板块 TOP 10</h3>
+    <h3 style="font-size:13px;color:#c0392b;margin:10px 0 6px;">🔥 强势板块 TOP 10</h3>
     <div class="sector-bar"><span class="sector-name">🥇 核电</span><span class="sector-pct up">+8.52%</span><div class="sector-bar-fill" style="width:85%;"></div></div>
     <div class="sector-bar"><span class="sector-name">🥈 AI应用/教育</span><span class="sector-pct up">+6.81%</span><div class="sector-bar-fill" style="width:68%;"></div></div>
     <div class="sector-bar"><span class="sector-name">🥉 人形机器人</span><span class="sector-pct up">+5.93%</span><div class="sector-bar-fill" style="width:59%;"></div></div>
@@ -128,7 +128,7 @@ tr:hover { background:#fffbf0; }
     <div class="sector-bar"><span class="sector-name">⑨ 航空</span><span class="sector-pct up">+2.18%</span><div class="sector-bar-fill" style="width:22%;"></div></div>
     <div class="sector-bar"><span class="sector-name">⑩ 新型电网</span><span class="sector-pct up">+2.05%</span><div class="sector-bar-fill" style="width:21%;"></div></div>
 
-    <h3 style="font-size:13px;color:#27ae60;margin:14px 0 6px;">📉 弱势板块</h3>
+    <h3 style="font-size:13px;color:#1e7d3c;margin:14px 0 6px;">📉 弱势板块</h3>
     <div class="sector-bar"><span class="sector-name">存储芯片 💀</span><span class="sector-pct down">-5.87%</span><div class="sector-bar-fill green" style="width:59%;"></div></div>
     <div class="sector-bar"><span class="sector-name">半导体设备</span><span class="sector-pct down">-4.92%</span><div class="sector-bar-fill green" style="width:49%;"></div></div>
     <div class="sector-bar"><span class="sector-name">半导体</span><span class="sector-pct down">-4.15%</span><div class="sector-bar-fill green" style="width:42%;"></div></div>
@@ -284,7 +284,7 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">宁德时代 sz300750 <span class="down">-0.51%</span></div>
             <div class="watch-detail">窄幅震荡-0.51%，393元附近整理。油价暴跌提升燃油车性价比短期压制新能源车情绪。但22xPE+全球龙头地位稳固，中长期逻辑不变。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">持有</div>
+        <div class="watch-action" style="color:#9c5a00;">持有</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">—</div>
@@ -292,11 +292,11 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">新易盛 sz300502 <span class="up">+0.63%</span></div>
             <div class="watch-detail">反弹力度远弱于旭创（+0.63% vs +2.66%）。7/30 -11.9%的创伤需要时间修复。等确认站上400再看。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">观望</div>
+        <div class="watch-action" style="color:#9c5a00;">观望</div>
     </div>
 
     <div class="break-line"></div>
-    <p style="font-size:12px;color:#e74c3c;font-weight:600;margin-bottom:6px;">⚠️ 以下为重大风险标的（存储/半导体二次探底）</p>
+    <p style="font-size:12px;color:#c0392b;font-weight:600;margin-bottom:6px;">⚠️ 以下为重大风险标的（存储/半导体二次探底）</p>
 
     <div class="watch-card" style="background:#fff5f5;border-radius:4px;padding:6px 8px;">
         <div class="watch-rank" style="color:#c0392b;">⚠️</div>
@@ -416,11 +416,11 @@ tr:hover { background:#fffbf0; }
         </tr>
         <tr>
             <td style="font-weight:600;">🎯 主线方向</td>
-            <td class="small"><strong style="color:#e74c3c;">① 核电（首日爆发，催化剂强度极高，可参与首日博弈）</strong> / ② AI应用（传智教育6连板验证持续性，寻找讯飞/同花顺等大票补涨机会） / ③ 算力租赁（4万亿+板块涨停潮，中期逻辑最硬） / ④ 机器人（特斯拉+宇树，关注减速器/传感器）</td>
+            <td class="small"><strong style="color:#c0392b;">① 核电（首日爆发，催化剂强度极高，可参与首日博弈）</strong> / ② AI应用（传智教育6连板验证持续性，寻找讯飞/同花顺等大票补涨机会） / ③ 算力租赁（4万亿+板块涨停潮，中期逻辑最硬） / ④ 机器人（特斯拉+宇树，关注减速器/传感器）</td>
         </tr>
         <tr>
             <td style="font-weight:600;">🚫 回避方向</td>
-            <td class="small"><strong style="color:#27ae60;">① 存储芯片/NOR Flash/NAND（板块系统性撤离，不要接飞刀！）</strong> / ② 半导体设备（跟跌科创50，等指数企稳） / ③ 贵金属/石油（美伊谈判+OPEC增产双重利空） / ④ 消费电子（立讯-5%无利空暴跌=机构在出货）</td>
+            <td class="small"><strong style="color:#1e7d3c;">① 存储芯片/NOR Flash/NAND（板块系统性撤离，不要接飞刀！）</strong> / ② 半导体设备（跟跌科创50，等指数企稳） / ③ 贵金属/石油（美伊谈判+OPEC增产双重利空） / ④ 消费电子（立讯-5%无利空暴跌=机构在出货）</td>
         </tr>
         <tr>
             <td style="font-weight:600;">🔑 关键观察</td>

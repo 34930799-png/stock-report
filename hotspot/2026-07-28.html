@@ -8,29 +8,29 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
-.tag-energy { background:#27ae60; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#1e7d3c; }
 .tag-risk { background:#c0392b; }
 .tag-foreign { background:#16a085; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
@@ -38,19 +38,19 @@ tr:hover { background:#fffbf0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:90px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
-.sector-bar-fill.green { background: linear-gradient(90deg, #27ae60, #2ecc71); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #1e7d3c, #2ecc71); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
 .watch-card:last-child { border-bottom:none; }
-.watch-rank { font-size:20px; font-weight:700; color:#e74c3c; min-width:28px; text-align:center; }
+.watch-rank { font-size:20px; font-weight:700; color:#c0392b; min-width:28px; text-align:center; }
 .watch-info { flex:1; }
 .watch-name { font-weight:600; font-size:13px; }
 .watch-detail { font-size:11px; color:#666; }
 .watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
-.market-note { font-size:11px; color:#f39c12; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
-.market-note strong { color:#e74c3c; }
+.market-note { font-size:11px; color:#9c5a00; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#c0392b; }
 .heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
 </style>
 </head>
@@ -88,7 +88,7 @@ tr:hover { background:#fffbf0; }
             <td>支撑3480 / 压力3650</td>
         </tr>
         <tr>
-            <td style="color:#e74c3c;font-weight:700;">科创50 🔥</td>
+            <td style="color:#c0392b;font-weight:700;">科创50 🔥</td>
             <td style="font-weight:600;">1807.95</td>
             <td class="up">+1.16%</td>
             <td class="down" style="font-weight:700;">1780~1790</td>
@@ -170,7 +170,7 @@ tr:hover { background:#fffbf0; }
     <h2>🚀 强势股速览（基于隔夜消息+昨日动能的今日重点标的）</h2>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#1</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#1</span>
             <span style="font-weight:600;">宁德时代</span><span class="stock-code" style="font-size:10px;color:#999;">300750</span>
             <span class="tag tag-energy">锂电</span>
         </div>
@@ -179,7 +179,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#2</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#2</span>
             <span style="font-weight:600;">中钨高新</span><span class="stock-code" style="font-size:10px;color:#999;">000657</span>
             <span class="tag tag-energy">钨材料</span>
         </div>
@@ -188,7 +188,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#3</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#3</span>
             <span style="font-weight:600;">立讯精密</span><span class="stock-code" style="font-size:10px;color:#999;">002475</span>
             <span class="tag tag-ai">AI硬件</span>
         </div>
@@ -197,7 +197,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#4</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#4</span>
             <span style="font-weight:600;">工业富联</span><span class="stock-code" style="font-size:10px;color:#999;">601138</span>
             <span class="tag tag-ai">AI服务器</span>
         </div>
@@ -206,7 +206,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#5</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#5</span>
             <span style="font-weight:600;">华友钴业</span><span class="stock-code" style="font-size:10px;color:#999;">603799</span>
             <span class="tag tag-energy">能源金属</span>
         </div>
@@ -215,7 +215,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#6</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#6</span>
             <span style="font-weight:600;">大华股份</span><span class="stock-code" style="font-size:10px;color:#999;">002236</span>
             <span class="tag tag-ai">AI安防</span>
         </div>
@@ -224,7 +224,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#7</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#7</span>
             <span style="font-weight:600;">紫光国微</span><span class="stock-code" style="font-size:10px;color:#999;">002049</span>
             <span class="tag tag-semicon">芯片设计</span>
         </div>
@@ -233,7 +233,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#e74c3c;min-width:24px;">#8</span>
+            <span style="font-weight:700;color:#c0392b;min-width:24px;">#8</span>
             <span style="font-weight:600;">四方达</span><span class="stock-code" style="font-size:10px;color:#999;">300179</span>
             <span class="tag tag-market">培育钻石</span>
         </div>
@@ -242,7 +242,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#27ae60;min-width:24px;">🔻</span>
+            <span style="font-weight:700;color:#1e7d3c;min-width:24px;">🔻</span>
             <span style="font-weight:600;">澜起科技</span><span class="stock-code" style="font-size:10px;color:#999;">688008</span>
             <span class="tag tag-semicon">存储芯片</span>
         </div>
@@ -251,7 +251,7 @@ tr:hover { background:#fffbf0; }
     </div>
     <div class="stock-card">
         <div style="display:flex;align-items:center;gap:8px;flex:1;">
-            <span style="font-weight:700;color:#27ae60;min-width:24px;">🔻🔻</span>
+            <span style="font-weight:700;color:#1e7d3c;min-width:24px;">🔻🔻</span>
             <span style="font-weight:600;">普冉股份</span><span class="stock-code" style="font-size:10px;color:#999;">688766</span>
             <span class="tag tag-semicon">存储芯片</span>
         </div>
@@ -271,12 +271,12 @@ tr:hover { background:#fffbf0; }
         <div class="watch-action up">强势持有</div>
     </div>
     <div class="watch-card">
-        <div class="watch-rank" style="color:#e74c3c;">!</div>
+        <div class="watch-rank" style="color:#c0392b;">!</div>
         <div class="watch-info">
             <div class="watch-name">科创50指数 & 存储标的 <span class="down">澜起-2.66% 普冉-4.58%</span></div>
             <div class="watch-detail"><strong>今日最大看点！</strong>昨日科创50从-1.26%V反到+1.16%显示极强韧性，但隔夜费半-2.23%+英伟达-5%+SK海力士-7.5%破发三重暴击。今日科创50开盘必然承压，但关键是：能否像昨天一样在1780附近V回？若能——说明A股半导体开始与美股脱钩，存储标的的"长鑫抽血"也接近利空出尽；若不能——科创50可能跌回1720-1760区间。昨日最低1764是今天的生命线。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">关键观察</div>
+        <div class="watch-action" style="color:#9c5a00;">关键观察</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">3</div>
@@ -295,20 +295,20 @@ tr:hover { background:#fffbf0; }
         <div class="watch-action up">积极关注</div>
     </div>
     <div class="watch-card">
-        <div class="watch-rank" style="color:#f39c12;">5</div>
+        <div class="watch-rank" style="color:#9c5a00;">5</div>
         <div class="watch-info">
             <div class="watch-name">中际旭创/新易盛 <span class="up">中际1076.94+2.91% 新易盛490.99+3.14%</span></div>
             <div class="watch-detail">CPO双雄昨日V反力度惊人（中际从-4.2%到+2.9%、新易盛从-3.5%到+3.1%），说明有资金在积极抄底。但隔夜费半暴跌+光通信板块大跌，今日大概率低开。关键观察：① 能否守住昨日最低点（中际1003、新易盛459.5）——守住则可能形成双底；② 如果开盘急跌3-5%后再V回，则是短线极强的买入信号。趋势性下跌未确认结束，仅限于观察。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">观望等企稳</div>
+        <div class="watch-action" style="color:#9c5a00;">观望等企稳</div>
     </div>
     <div class="watch-card">
-        <div class="watch-rank" style="color:#e74c3c;">!</div>
+        <div class="watch-rank" style="color:#c0392b;">!</div>
         <div class="watch-info">
             <div class="watch-name">长鑫科技 688825 <span class="up">收49.00 +466% · 市值3.27万亿</span></div>
             <div class="watch-detail">首日暴涨466%成交1412亿创A股历史。市值3.27万亿超越英特尔登顶A股第一。阿里76亿投资浮盈近1400亿。今日T+1交易：① 换手率是关键——首日换手率约49%，如果今天能降到30%以下说明筹码快速锁定；② 45-50元区间博弈——跌破45说明首日冲高回落趋势延续，需要更长时间消化；③ 长鑫换手率下降利好整个科创板——如果长鑫缩量企稳，澜起/佰维/普冉等被抽血标的可能迎来反弹。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">观察风向标</div>
+        <div class="watch-action" style="color:#9c5a00;">观察风向标</div>
     </div>
     <div class="watch-card">
         <div class="watch-rank">7</div>
@@ -316,10 +316,10 @@ tr:hover { background:#fffbf0; }
             <div class="watch-name">紫金矿业 601899 <span class="up">收31.76 +0.79%</span></div>
             <div class="watch-detail">油价暴跌8.7%短期压制资源品情绪。但金价仍有避险支撑（伊朗停火谈判存在变数），铜价中长期供需偏紧。PE12倍防御垫厚，中线逻辑不变。今日开盘可能受油价拖累低开，但不是趋势性转向，中线持有者可继续持有。</div>
         </div>
-        <div class="watch-action" style="color:#f39c12;">中线持有</div>
+        <div class="watch-action" style="color:#9c5a00;">中线持有</div>
     </div>
     <div class="watch-card">
-        <div class="watch-rank" style="color:#e74c3c;">!</div>
+        <div class="watch-rank" style="color:#c0392b;">!</div>
         <div class="watch-info">
             <div class="watch-name">普冉股份 688766 <span class="down">收371.78 -4.58% · 三连跌-19%</span></div>
             <div class="watch-detail">三连跌487→372暴跌24%！昨日盘中最低348触及跌停位（350.7）。PE220倍在存储杀估值中最脆弱。SK海力士隔夜-7.5%破发是新的估值锚下行信号——全球存储定价正在重构。长鑫市值3.27万亿以PS远高于美光，存储板块"以PS定价"的时代可能正在结束。不抄底不接飞刀！等缩量企稳+PE回归合理区间再考虑。</div>

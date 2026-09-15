@@ -8,37 +8,37 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:12px; opacity:0.9; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
 table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
 th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
 td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
 tr:hover { background:#fffbf0; }
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 .news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
 .news-item:last-child { border-bottom:none; }
 .news-title { font-weight:600; color:#16213e; }
 .news-src { font-size:10px; color:#999; }
 .tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
-.tag-semicon { background:#e74c3c; }
+.tag-semicon { background:#c0392b; }
 .tag-ai { background:#8e44ad; }
 .tag-policy { background:#2980b9; }
-.tag-market { background:#f39c12; }
+.tag-market { background:#9c5a00; }
 .tag-risk { background:#c0392b; }
-.tag-consumer { background:#27ae60; }
-.tag-foreign { background:#e67e22; }
+.tag-consumer { background:#1e7d3c; }
+.tag-foreign { background:#9c5a00; }
 .tag-pharma { background:#16a085; }
 .footer { text-align:center; padding:16px; font-size:10px; color:#999; }
 .footer p { margin:2px 0; }
 .sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
 .sector-name { font-weight:600; min-width:80px; font-size:12px; }
 .sector-pct { font-weight:600; font-size:12px; min-width:60px; }
-.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #e74c3c, #f39c12); }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
 .stock-card { display:flex; align-items:center; justify-content:space-between; padding:6px 0; border-bottom:1px solid #f5f5f5; font-size:12px; }
 .stock-card:last-child { border-bottom:none; }
 .market-note { font-size:11px; color:#999; margin-top:6px; line-height:1.6; }
@@ -79,10 +79,10 @@ tr:hover { background:#fffbf0; }
             <td class="down">-0.55%↓</td>
         </tr>
         <tr>
-            <td style="color:#e74c3c;font-weight:700;">科创50</td>
-            <td style="color:#e74c3c;font-weight:700;">1924.27</td>
+            <td style="color:#c0392b;font-weight:700;">科创50</td>
+            <td style="color:#c0392b;font-weight:700;">1924.27</td>
             <td class="down" style="font-size:14px;font-weight:700;">-4.25% 🔥</td>
-            <td style="color:#e74c3c;">1869.94</td>
+            <td style="color:#c0392b;">1869.94</td>
             <td class="down" style="font-weight:700;">-3.67%</td>
         </tr>
         <tr>
@@ -112,7 +112,7 @@ tr:hover { background:#fffbf0; }
     <div class="sector-bar"><span class="sector-name">减速器</span><span class="sector-pct up">+2%+</span><div class="sector-bar-fill" style="width:36%;"></div></div>
     <div class="sector-bar"><span class="sector-name">零售百货</span><span class="sector-pct up">+1.5%</span><div class="sector-bar-fill" style="width:28%;"></div></div>
     <p class="market-note">
-        🔴 创新药/医药单日净流入居首，白酒消费紧跟。🟢 <strong>领跌</strong>：存储芯片 -5%+ / 先进封装 -6%+ / 半导体 -5.6% / CPO -5% / 算力硬件 -4% · 半导体单日净流出超<strong style="color:#e74c3c;">300亿</strong>
+        🔴 创新药/医药单日净流入居首，白酒消费紧跟。🟢 <strong>领跌</strong>：存储芯片 -5%+ / 先进封装 -6%+ / 半导体 -5.6% / CPO -5% / 算力硬件 -4% · 半导体单日净流出超<strong style="color:#c0392b;">300亿</strong>
     </p>
 </div>
 
@@ -176,32 +176,32 @@ tr:hover { background:#fffbf0; }
     <div class="stock-card">
         <div><span style="font-weight:700;">青岛啤酒</span> <span style="color:#999;">600600.SH</span></div>
         <div style="font-size:11px;">★★★★☆ 买入 · 消费防御核心 · PE15倍+白酒联动</div>
-        <div style="color:#e74c3c;font-weight:700;">适量加仓</div>
+        <div style="color:#c0392b;font-weight:700;">适量加仓</div>
     </div>
     <div class="stock-card">
         <div><span style="font-weight:700;">紫金矿业</span> <span style="color:#999;">601899.SH</span></div>
         <div style="font-size:11px;">★★★☆☆ 买入 · 美伊冲突推升金价 · PE11倍避险资产</div>
-        <div style="color:#e74c3c;font-weight:700;">对冲科技风险</div>
+        <div style="color:#c0392b;font-weight:700;">对冲科技风险</div>
     </div>
     <div class="stock-card">
         <div><span style="font-weight:700;">中际旭创</span> <span style="color:#999;">300308.SZ</span></div>
         <div style="font-size:11px;">★★★★★ 持有观望 · AI光模块最强抗跌 · 仅跌1.24%</div>
-        <div style="color:#f39c12;">核心持仓，暂持</div>
+        <div style="color:#9c5a00;">核心持仓，暂持</div>
     </div>
     <div class="stock-card">
         <div><span style="font-weight:700;">立讯精密</span> <span style="color:#999;">002475.SZ</span></div>
         <div style="font-size:11px;">★★★☆☆ 持有观望 · 苹果市值新高+AI手机催化 · 今日+5%</div>
-        <div style="color:#f39c12;">短线有反弹动力</div>
+        <div style="color:#9c5a00;">短线有反弹动力</div>
     </div>
     <div class="stock-card">
         <div><span style="font-weight:700;">紫光国微</span> <span style="color:#999;">002049.SZ</span></div>
         <div style="font-size:11px;">★★★★☆ 持有观望 · 跌约3%跟跌半导体 · 国产替代逻辑未破</div>
-        <div style="color:#f39c12;">等企稳加仓</div>
+        <div style="color:#9c5a00;">等企稳加仓</div>
     </div>
     <div class="stock-card">
         <div><span style="font-weight:700;">大华股份</span> <span style="color:#999;">002236.SZ</span></div>
         <div style="font-size:11px;">★★★☆☆ 持有观望 · PE13倍防御属性 · 安防刚需</div>
-        <div style="color:#f39c12;">暂持观望</div>
+        <div style="color:#9c5a00;">暂持观望</div>
     </div>
     <p class="market-note" style="margin-top:8px;">
         ⚠️ <strong>风险警示区</strong>：佰维存储（三日跌30%+）、普冉股份（三日跌25%+）、澜起科技（破布林下轨）— 存储芯片重灾区，切勿抄底<br>
@@ -276,43 +276,43 @@ tr:hover { background:#fffbf0; }
     <table>
         <tr><th>连板数</th><th>股票</th><th>板块</th><th>涨停逻辑</th></tr>
         <tr>
-            <td><span style="color:#e74c3c;font-weight:700;font-size:16px;">5板</span></td>
+            <td><span style="color:#c0392b;font-weight:700;font-size:16px;">5板</span></td>
             <td style="font-weight:700;">哈药股份</td>
             <td>医药</td>
             <td style="font-size:11px;">118产品入基药目录+医药连板龙头</td>
         </tr>
         <tr>
-            <td><span style="color:#e74c3c;font-weight:700;">2板</span></td>
+            <td><span style="color:#c0392b;font-weight:700;">2板</span></td>
             <td style="font-weight:700;">迪哲医药</td>
             <td>创新药</td>
             <td style="font-size:11px;">阿斯利康许可协议+创新药板块龙头</td>
         </tr>
         <tr>
-            <td><span style="color:#e74c3c;font-weight:700;">首板</span></td>
+            <td><span style="color:#c0392b;font-weight:700;">首板</span></td>
             <td style="font-weight:700;">格林精密</td>
             <td>AI手机</td>
             <td style="font-size:11px;">Apple智能获备案+端侧AI规范化</td>
         </tr>
         <tr>
-            <td><span style="color:#e74c3c;font-weight:700;">首板</span></td>
+            <td><span style="color:#c0392b;font-weight:700;">首板</span></td>
             <td style="font-weight:700;">古井贡酒</td>
             <td>白酒</td>
             <td style="font-size:11px;">消费十五五+白酒板块连续大涨</td>
         </tr>
         <tr>
-            <td><span style="color:#e74c3c;font-weight:700;">首板</span></td>
+            <td><span style="color:#c0392b;font-weight:700;">首板</span></td>
             <td style="font-weight:700;">博瑞医药</td>
             <td>创新药</td>
             <td style="font-size:11px;">减肥药概念+创新药资金涌入</td>
         </tr>
         <tr>
-            <td><span style="color:#e74c3c;font-weight:700;">首板</span></td>
+            <td><span style="color:#c0392b;font-weight:700;">首板</span></td>
             <td style="font-weight:700;">巨人网络</td>
             <td>游戏</td>
             <td style="font-size:11px;">暑期档+AI游戏催化</td>
         </tr>
         <tr>
-            <td><span style="color:#e74c3c;font-weight:700;">首板</span></td>
+            <td><span style="color:#c0392b;font-weight:700;">首板</span></td>
             <td style="font-weight:700;">幸福蓝海</td>
             <td>影视</td>
             <td style="font-size:11px;">暑期档票房破30亿</td>

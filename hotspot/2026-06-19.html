@@ -8,11 +8,11 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:13px; color:#222; background:#f5f5f5; line-height:1.5; }
-.header { background: linear-gradient(135deg, #c0392b, #e74c3c); color:#fff; padding:16px 12px; text-align:center; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
 .header h1 { font-size:18px; margin-bottom:4px; }
 .header .date { font-size:11px; opacity:0.85; }
 .section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.06); }
-.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #e74c3c; padding-left:8px; }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
 
 /* 指数卡片 */
 .index-grid { display:flex; gap:8px; flex-wrap:wrap; }
@@ -21,26 +21,26 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
 .index-price { font-size:16px; font-weight:700; color:#16213e; margin:2px 0; }
 
 /* 涨跌颜色 */
-.up { color:#e74c3c; font-weight:600; }
-.down { color:#27ae60; font-weight:600; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
 
 /* 涨跌家数 */
 .breadth { text-align:center; margin-top:8px; font-size:11px; padding:6px; background:#fafafa; border-radius:6px; }
 
 /* 板块卡片 */
 .sector-grid { display:flex; flex-direction:column; gap:5px; }
-.sector-card { padding:8px 10px; border-radius:6px; border-left:4px solid #e74c3c; }
+.sector-card { padding:8px 10px; border-radius:6px; border-left:4px solid #c0392b; }
 .sector-name { font-size:13px; font-weight:600; }
 
 /* 强势股 */
 .mover-item { display:flex; align-items:center; gap:6px; padding:5px 0; border-bottom:1px solid #f0f0f0; font-size:12px; }
 .mover-item:last-child { border-bottom:none; }
-.limit-badge { background:#e74c3c; color:#fff; padding:1px 5px; border-radius:3px; font-size:10px; font-weight:700; }
+.limit-badge { background:#c0392b; color:#fff; padding:1px 5px; border-radius:3px; font-size:10px; font-weight:700; }
 
 /* 推荐个股 */
 .pick-card { display:flex; gap:10px; padding:10px 0; border-bottom:1px solid #f0f0f0; }
 .pick-card:last-child { border-bottom:none; }
-.pick-rank { font-size:22px; font-weight:700; color:#e74c3c; min-width:32px; line-height:1.2; }
+.pick-rank { font-size:22px; font-weight:700; color:#c0392b; min-width:32px; line-height:1.2; }
 .pick-body { flex:1; }
 .pick-header { display:flex; align-items:baseline; gap:6px; }
 .pick-name { font-weight:600; font-size:14px; }
@@ -250,7 +250,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span class="pick-price">¥408.01</span>
                         <span class="up">+6.92%</span>
                         <span style="font-size:11px;color:#666;">PE -</span>
-                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                        <span class="signal-badge" style="background:#c0392b">买入</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 296.01 ~ 436.90</span>
@@ -258,7 +258,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">均线多头排列</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 可考虑逢低介入</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 可考虑逢低介入</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 日内波动>7%</span>
                     </div>
                 </div>
@@ -274,7 +274,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span class="pick-price">¥14.94</span>
                         <span class="up">+4.70%</span>
                         <span style="font-size:11px;color:#666;">PE -</span>
-                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                        <span class="signal-badge" style="background:#c0392b">买入</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 10.83 ~ 14.93</span>
@@ -282,7 +282,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">均线多头排列；接近阻力位</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 已超阻力位，不建议追高</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 已超阻力位，不建议追高</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 现价超阻力位0%</span>
                     </div>
                 </div>
@@ -298,7 +298,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span class="pick-price">¥14.65</span>
                         <span class="up">+5.93%</span>
                         <span style="font-size:11px;color:#666;">PE -</span>
-                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                        <span class="signal-badge" style="background:#c0392b">买入</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 13.23 ~ 16.57</span>
@@ -306,7 +306,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">指标中性</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 可考虑逢低介入</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 可考虑逢低介入</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 日内波动>6%</span>
                     </div>
                 </div>
@@ -322,7 +322,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span class="pick-price">¥140.70</span>
                         <span class="up">+4.45%</span>
                         <span style="font-size:11px;color:#666;">PE -</span>
-                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                        <span class="signal-badge" style="background:#c0392b">买入</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 121.30 ~ 157.03</span>
@@ -330,7 +330,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">指标中性</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 可考虑逢低介入</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 可考虑逢低介入</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 无明显风险信号</span>
                     </div>
                 </div>
@@ -340,13 +340,13 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                     <div class="pick-header">
                         <span class="pick-name">新易盛</span>
                         <span style="color:#999;font-size:10px;">300502.SZ</span>
-                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                        <span class="source-badge" style="background:#c0392b">自选</span>
                     </div>
                     <div class="pick-meta">
                         <span class="pick-price">¥581.48</span>
                         <span class="up">+4.23%</span>
                         <span style="font-size:11px;color:#666;">PE 73倍</span>
-                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                        <span class="signal-badge" style="background:#c0392b">买入</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 497.20 ~ 811.37</span>
@@ -354,7 +354,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">指标中性</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 可考虑逢低介入</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 可考虑逢低介入</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 无明显风险信号</span>
                     </div>
                 </div>
@@ -364,13 +364,13 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                     <div class="pick-header">
                         <span class="pick-name">立讯精密</span>
                         <span style="color:#999;font-size:10px;">002475.SZ</span>
-                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                        <span class="source-badge" style="background:#c0392b">自选</span>
                     </div>
                     <div class="pick-meta">
                         <span class="pick-price">¥69.93</span>
                         <span class="up">+3.88%</span>
                         <span style="font-size:11px;color:#666;">PE 35倍</span>
-                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                        <span class="signal-badge" style="background:#c0392b">买入</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 63.64 ~ 77.24</span>
@@ -378,7 +378,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">指标中性</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 可考虑逢低介入</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 可考虑逢低介入</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 无明显风险信号</span>
                     </div>
                 </div>
@@ -388,13 +388,13 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                     <div class="pick-header">
                         <span class="pick-name">紫光国微</span>
                         <span style="color:#999;font-size:10px;">002049.SZ</span>
-                        <span class="source-badge" style="background:#e74c3c">自选</span>
+                        <span class="source-badge" style="background:#c0392b">自选</span>
                     </div>
                     <div class="pick-meta">
                         <span class="pick-price">¥80.39</span>
                         <span class="up">+0.49%</span>
                         <span style="font-size:11px;color:#666;">PE 51倍</span>
-                        <span class="signal-badge" style="background:#e74c3c">买入</span>
+                        <span class="signal-badge" style="background:#c0392b">买入</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 70.36 ~ 87.60</span>
@@ -402,7 +402,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">指标中性</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 可考虑逢低介入</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 可考虑逢低介入</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 无明显风险信号</span>
                     </div>
                 </div>
@@ -418,7 +418,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span class="pick-price">¥31.66</span>
                         <span class="up">+10.01%</span>
                         <span style="font-size:11px;color:#666;">PE 42倍</span>
-                        <span class="signal-badge" style="background:#f39c12">持有</span>
+                        <span class="signal-badge" style="background:#9c5a00">持有</span>
                     </div>
                     <div class="pick-info">
                         <span style="font-size:10px;color:#666;">区间: 21.53 ~ 30.20</span>
@@ -426,7 +426,7 @@ body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft Y
                         <span style="font-size:10px;color:#888;">均线多头排列；接近阻力位；5日涨25%短期过热；放量</span>
                     </div>
                     <div class="pick-action">
-                        <span style="font-size:10px;color:#e74c3c;">📌 持有，回调可加仓</span>
+                        <span style="font-size:10px;color:#c0392b;">📌 持有，回调可加仓</span>
                         <span style="font-size:10px;color:#999;"> | ⚠️ 现价超阻力位5%；日内波动>10%</span>
                     </div>
                 </div>
