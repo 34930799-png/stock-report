@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<title>股市热点关注 2026-09-23</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background: linear-gradient(135deg, #c0392b, #c0392b); color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:12px; opacity:0.9; }
+.header .subtitle { font-size:11px; opacity:0.75; margin-top:4px; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:500px; }
+th { background:#f0f0f0; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; }
+td { padding:6px 4px; text-align:center; border-bottom:1px solid #eee; }
+tr:hover { background:#fffbf0; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
+.amber { color:#9c5a00; font-weight:600; }
+.news-item { padding:8px 0; border-bottom:1px solid #f0f0f0; font-size:12px; line-height:1.6; }
+.news-item:last-child { border-bottom:none; }
+.news-title { font-weight:600; color:#16213e; }
+.news-src { font-size:10px; color:#999; }
+.tag { display:inline-block; padding:1px 5px; border-radius:2px; color:#fff; font-size:10px; margin-right:4px; }
+.tag-storage { background:#5b8def; }
+.tag-ai { background:#8e44ad; }
+.tag-policy { background:#2980b9; }
+.tag-market { background:#9c5a00; }
+.tag-energy { background:#1e7d3c; }
+.tag-risk { background:#c0392b; }
+.tag-foreign { background:#16a085; }
+.tag-cpo { background:#c0392b; }
+.tag-fiber { background:#9c5a00; }
+.tag-gold { background:#d4a017; }
+.tag-sec { background:#2c3e50; }
+.tag-agri { background:#1e8a3c; }
+.tag-estate { background:#7b241c; }
+.tag-media { background:#6a1b9a; }
+.tag-consumer { background:#c2185b; }
+.tag-military { background:#3f51b5; }
+.tag-pcb { background:#0097a7; }
+.tag-grid { background:#e65100; }
+.tag-ship { background:#0d47a1; }
+.tag-robot { background:#455a64; }
+.tag-crypto { background:#5e35b1; }
+.tag-drive { background:#00695c; }
+.tag-pharma { background:#ad1457; }
+.tag-coal { background:#37474f; }
+.tag-apple { background:#757575; }
+.tag-macro { background:#1565c0; }
+.tag-diamond { background:#7b1fa2; }
+.tag-netsec { background:#0b3d91; }
+.tag-semi { background:#1a237e; }
+.tag-mlcc { background:#5e35b1; }
+.tag-games { background:#00695c; }
+.tag-eldercare { background:#ad1457; }
+.tag-publish { background:#455a64; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+.sector-bar { display:flex; align-items:center; margin:4px 0; gap:8px; }
+.sector-name { font-weight:600; min-width:110px; font-size:12px; }
+.sector-pct { font-weight:600; font-size:12px; min-width:80px; }
+.sector-bar-fill { height:16px; border-radius:3px; background: linear-gradient(90deg, #c0392b, #9c5a00); }
+.sector-bar-fill.green { background: linear-gradient(90deg, #1e7d3c, #1e7d3c); }
+.watch-card { display:flex; align-items:center; padding:8px 0; border-bottom:1px solid #f0f0f0; gap:10px; }
+.watch-card:last-child { border-bottom:none; }
+.watch-rank { font-size:20px; font-weight:700; color:#c0392b; min-width:28px; text-align:center; }
+.watch-info { flex:1; }
+.watch-name { font-weight:600; font-size:13px; }
+.watch-detail { font-size:11px; color:#666; }
+.watch-action { font-size:11px; font-weight:600; min-width:80px; text-align:right; }
+.market-note { font-size:11px; color:#9c5a00; background:#fff8e1; padding:6px 8px; border-radius:4px; margin-top:8px; }
+.market-note strong { color:#c0392b; }
+.heatmap-legend { font-size:10px; color:#999; margin-top:6px; display:flex; gap:12px; flex-wrap:wrap; }
+.alert-box { background:#fff5f5; border-left:3px solid #c0392b; padding:8px 10px; margin:8px 0; font-size:12px; border-radius:0 4px 4px 0; }
+.alert-box strong { color:#c0392b; }
+.alert-box.green { background:#f0f9f0; border-left-color:#1e7d3c; }
+.alert-box.green strong { color:#1e7d3c; }
+.alert-box.yellow { background:#fffdf0; border-left-color:#9c5a00; }
+.alert-box.yellow strong { color:#b8860b; }
+.alert-box.red { background:#fdecea; border-left-color:#c0392b; border-width:4px; }
+.alert-box.red strong { color:#b71c1c; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>🔥 股市热点关注</h1>
+    <div class="date">2026-09-23 周三 · 收盘快照（15:35 收盘数据 · 21:40 生成）</div>
+    <div class="subtitle"><strong>「高标断板 + 缩量调整」的震荡回调日：四大指数集体收跌（沪指 -0.39% 报 3936.52 点、深成指 -0.64%、创业板指 -0.60%、科创50 -0.25%），北证50 逆势 +2.60%，两市全天成交约 1.76 万亿（较昨日缩量约 3705 亿），超 3500 股下跌、涨停 51 家、连板高度降至 4 板（昨日高标华瓷股份/内蒙新华/南华生物集体断板）。</strong>主线切换为<strong>「PCB/AI 硬件（覆铜板提价 10% 催化，澳弘电子 9 天 7 板）+ 存储芯片 + CRO/创新药 + 地产链（分化）+ 培育钻石/量子科技/玻璃基板多点开花」</strong>；<strong>领跌集中在传媒/影视（中信出版 -12% 跌停、中视传媒跌停）、煤炭、油气等方向</strong>。<strong>📌 关键时点提示：本报告为收盘快照（生成时点 21:40，行情为 9/23 全天收盘 15:35 数据）；Tushare moneyflow 已于盘后更新（latest_date=20260923），故当日真主力为 9/23 实测口径（非量价推断）。💡 关键更新：9/23 盘后真主力数据显示——存储方向获真主力大幅回流（佰维存储当日 +9.09 亿、长鑫科技 +6.76 亿，均为全市场净流入居前），数据中心科华数据当日 +5.17 亿 + 大涨 7.80% 三重共振；但 CPO 方向出现获利了结（新易盛当日 -14.93 亿全池流出第一、亨通光电 -10.72 亿 + 大跌 -4.19% 出货确认）。</strong></div>
+</div>
+
+<div class="section">
+    <h2>📊 市场概况（9/23 收盘 · 15:35 快照）</h2>
+    <p style="font-size:11px;color:#999;margin-bottom:8px;">⚠️ 本报告为 9/23 收盘分析（生成时点 21:40，行情为全天收盘 15:35 快照），成交额为全天累计值（沪 8341.3 亿 + 深 9308.4 亿 ≈ 1.76 万亿，较昨日缩量约 3705 亿）。四大指数集体收跌、北证50 逆势 +2.60%（小微盘情绪仍活跃）。</p>
+    <div class="table-wrap">
+    <table>
+        <tr><th>指数</th><th>昨收</th><th>收盘价</th><th>涨跌幅</th><th>点评</th></tr>
+        <tr>
+            <td>上证指数</td>
+            <td>3952.13</td>
+            <td style="font-weight:600;">3936.52</td>
+            <td class="down">-0.39%</td>
+            <td style="font-size:11px;">跌 15.61 点，全天最高 3951.52 / 最低 3934.46，弱势震荡；<strong>金融/资源权重走弱拖累沪指，PCB/存储/医药题材轮动，量能萎缩至 8341 亿（较昨日缩量）</strong></td>
+        </tr>
+        <tr>
+            <td>深证成指</td>
+            <td>13723.74</td>
+            <td style="font-weight:600;">13636.07</td>
+            <td class="down">-0.64%</td>
+            <td style="font-size:11px;">跌 87.66 点，全天最高 13742.55 / 最低 13617.05；<strong>传媒/影视领跌压制指数，PCB/AI硬件、存储、CRO、地产链活跃但缩量（深市成交 9308 亿）</strong></td>
+        </tr>
+        <tr>
+            <td>创业板指</td>
+            <td>3399.93</td>
+            <td style="font-weight:600;">3379.61</td>
+            <td class="down">-0.60%</td>
+            <td style="font-size:11px;">跌 20.32 点，全天最高 3412.53 / 最低 3372.95，高开低走；<strong>宁德时代 -1.19% 拖累权重，但 PCB/AI硬件、CRO、量子科技等题材活跃（创业板成交 4398 亿）</strong></td>
+        </tr>
+        <tr>
+            <td>科创50</td>
+            <td>1665.04</td>
+            <td style="font-weight:600;">1660.85</td>
+            <td class="down">-0.25%</td>
+            <td style="font-size:11px;">跌 4.19 点，全天最高 1676.85 / 最低 1656.98，跌幅最小；<strong>半导体/存储相对抗跌（佰维 +2.52%/长鑫 +1.31% 获主力回流），科创50 相对强势（成交 752 亿）</strong></td>
+        </tr>
+    </table>
+    </div>
+    <div class="market-note">
+        <strong>🟡 收盘研判：9/23 是「高标断板 + 缩量调整」的震荡回调日——四大指数集体收跌（沪指 -0.39%、深成指 -0.64%、创业板指 -0.60%、科创50 -0.25%），北证50 逆势 +2.60%，两市成交缩量至 1.76 万亿（较昨日 -3705 亿），超 3500 股下跌、涨停 51 家、连板高度降至 4 板（昨日高标华瓷股份/内蒙新华/南华生物集体断板但收红盘）。</strong>① <strong>量能</strong>：全天 1.76 万亿缩量约 3705 亿，短线情绪降温（连板晋级率仅 37.5%），赚钱效应收缩；② <strong>指数</strong>：四大指数集体收跌、北证50 逆势 +2.60%（小微盘情绪仍活跃），科技成长风格分化、权重/资源走弱；③ <strong>主线</strong>：<strong>PCB/AI 硬件成为最强主线</strong>（江西宏瑞兴覆铜板提价 10% + 中国巨石提价电子布催化，澳弘电子 9 天 7 板、大亚圣象 4 连板），存储芯片（佰维/长鑫获主力回流）、CRO/创新药（义翘神州/奥浦迈/益诺思涨超 10%）、地产链（我爱我家/华远控股/华丽家族 3 连板但午后炸板分化）、培育钻石/量子科技/玻璃基板多点开花；④ <strong>资金验证（关键）</strong>：<strong>全市场主力资金净流出（上证 -122 亿/深证 -196 亿/创业板 -85 亿），仅电子行业获逾 157 亿净流入；自选池 Tushare 真主力（9/23 盘后已更新）显示——存储（佰维 +9.09/长鑫 +6.76 亿当日大幅回流）+ 数据中心（科华 +5.17 亿）获真主力流入，但 CPO 方向获利了结（新易盛 -14.93 亿全池流出第一/中际旭创 -1.95 亿）、光通信/海缆亨通 -10.72 亿出货确认。</strong><strong>判断：9/23 是「缩量回调 + 高标断板」日，短线情绪降温、量能萎缩，主力资金整体净流出、仅电子（PCB/存储）方向获真主力回流，以「跟随主线但不追高 + 回调低吸 PCB/存储/数据中心 + 防御压舱」为主，坚决回避传媒/影视、煤炭、油气等领跌方向，题材连板高度已降至 4 板、高位板风险极高，严格止损。</strong></div>
+</div>
+
+<div class="section">
+    <h2>💰 主力资金热力图（Tushare 真主力口径 · 截至 9/23 收盘）</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">✅ <strong>23 只自选股 100% 完成 Tushare moneyflow 真主力抓取（超大单+大单口径，23/23 全覆盖，latest_date=20260923）。</strong>⚠️ <strong style="color:#9c5a00;">本报告为收盘快照（生成时点 21:40），Tushare moneyflow 已于盘后更新，故以下「当日/近5/10/15日」均为截至 9/23（周三）收盘的真实口径（非量价推断、非前一交易日数据）。</strong>当日盘中资金方向无需量价推断——已用 9/23 盘后真主力实测替代，口径明确标注。问财登录态（9222）本次未调用（Tushare 真主力当日数据已可得，无需盘中兜底）。<strong style="color:#c0392b;">📌 关键背景（截至 9/23 收盘）：💡 9/23 当日真主力回流最集中在「存储 + 数据中心」（佰维 +9.09／长鑫 +6.76／科华 +5.17／四方达 +2.04 亿）；当日真主力大幅流出集中在「CPO 获利了结 + 光通信/海缆出货」（新易盛 -14.93 全池流出第一／亨通 -10.72／澜起 -4.2／中钨 -3.83 亿）。近15日真主力净流入仅 6 只（中际旭创 +78.41 全池第一、新易盛 +57.25、环旭电子 +4.63、科华数据 +4.31、四方达 +1.46、扬杰科技 +0.02 亿），净流出超10亿最高风险警示 5 只（宁德 -50.98／立讯 -38.61／亨通 -19.91／中钨 -16.3／佰维 -12.03 亿）。</strong></p>
+
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#c0392b;">🟢 真主力净流入方向（近15日 · 截至 9/23 收盘 · 6只）</h3>
+
+    <div class="sector-bar">
+        <span class="sector-name">💡 CPO/光模块</span>
+        <span class="sector-bar-fill" style="width:100%;"></span>
+        <span class="sector-pct up">中际旭创 +78.41 亿 · 新易盛 +57.25 亿</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>中际旭创近15日 +78.41 亿全池第一、新易盛 +57.25 亿全池第二</strong>，CPO 仍是近15日真主力净流入最集中方向（AI资本开支翻倍预期 + 光互连标准密集落地）。<strong style="color:#9c5a00;">但需警惕：① 中际旭创 pe_ttm 53.13x 已越过高危线 50x；② 9/23 当日 CPO 方向出现获利了结——新易盛当日 -14.93 亿（全池流出第一）+ 股价 -0.84%、中际旭创当日 -1.95 亿 + 股价 -0.56%，短线资金高位兑现；③ 华为昇腾960 NPO 技术对传统可插拔光模块长期存在技术替代风险。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">📱 消费电子/EMS</span>
+        <span class="sector-bar-fill" style="width:6%;"></span>
+        <span class="sector-pct up">环旭电子 +4.63 亿 · 当日 +0.24 亿</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">环旭电子近15日 +4.63 亿真主力净流入（近10日 +4.88 亿），苹果链 EMS 标的，是自选池消费电子里唯一近15日净流入的标的（立讯精密 -38.61 亿流出拖累板块）。今日 +0.15% 微涨（成交 6.5 亿），资金面健康、回调低吸。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🖥️ 数据中心</span>
+        <span class="sector-bar-fill" style="width:6%;"></span>
+        <span class="sector-pct up">科华数据 +4.31 亿 · 当日 +5.17 亿 · 大涨 +7.80%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>科华数据近15日 +4.31 亿真主力净流入，当日 +5.17 亿大幅流入 + 股价大涨 +7.80%（量比 4.77 巨量、换手 11.36%）</strong>，数据中心（UPS/液冷）受益 AI 算力硬件主线，是今日自选池「当日主力大幅流入 + 大涨 + 近15日净流入」三重共振的最强标的。<strong style="color:#9c5a00;">但换手 11.36% 极高（筹码松动）、43.14xPE 需增长支撑，今日已大涨、严禁追高、等回调。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">💎 培育钻石</span>
+        <span class="sector-bar-fill" style="width:2%;"></span>
+        <span class="sector-pct up">四方达 +1.46 亿 · 当日 +2.04 亿</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;">四方达近15日 +1.46 亿真主力净流入、当日 +2.04 亿（今日 +3.94% 放量上涨），培育钻石今日普涨（沃尔德/黄河旋风涨超 4%）。<strong style="color:#c0392b;">但 180.15xPE 极高估值 + 换手 13.41% 极高 + 近5日 -3.18 亿（近期资金反复），属「净流入但高位题材投机」，坚决不追、回避。</strong></p>
+
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#1e7d3c;">🔴 真主力净流出方向（近15日 · 截至 9/23 收盘 · 超10亿=最高风险警示）</h3>
+
+    <div class="sector-bar">
+        <span class="sector-name">🔋 电池</span>
+        <span class="sector-bar-fill green" style="width:100%;"></span>
+        <span class="sector-pct down">宁德时代 -50.98 亿（全池最大 · 近10日-53.60亿）</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>宁德时代近15日 -50.98 亿真主力大幅流出（全池第一，近10日 -53.60 亿持续恶化）</strong>，但 9/23 当日 +1.65 亿微幅回流、股价 -1.19% 下跌——<strong style="color:#c0392b;">「主力流入 + 股价下跌 = 逢低吸筹」的初期信号，但近15日/近10日大幅流出趋势未扭转，16.39xPE 低估值仍是「低估值陷阱」、坚决回避、勿抄底。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">📱 苹果链</span>
+        <span class="sector-bar-fill green" style="width:76%;"></span>
+        <span class="sector-pct down">立讯精密 -38.61 亿（当日-2.22亿）</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>立讯精密近15日 -38.61 亿真主力累计流出</strong>（9/23 当日 -2.22 亿续流出），今日 -0.88% 下跌（成交 22.3 亿），苹果链龙头资金面仍未转正、铁律不推荐、回避。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">💡 光通信/海缆</span>
+        <span class="sector-bar-fill green" style="width:39%;"></span>
+        <span class="sector-pct down">亨通光电 -19.91 亿（当日-10.72亿出货）</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>亨通光电近15日 -19.91 亿真主力累计流出，9/23 当日 -10.72 亿大幅流出 + 股价大跌 -4.19%（换手 6.42%）</strong>——<strong style="color:#c0392b;">「主力流出 + 股价大跌 = 出货确认」，近15日净流出超10亿触发最高风险警示、铁律不推荐、坚决回避。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🧪 钨材料</span>
+        <span class="sector-bar-fill green" style="width:32%;"></span>
+        <span class="sector-pct down">中钨高新 -16.30 亿（当日-3.83亿）</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>中钨高新近15日 -16.30 亿真主力流出</strong>（9/23 当日 -3.83 亿续流出、股价 -1.84%）。<strong style="color:#c0392b;">47.95xPE 需增长支撑 + 近15日净流出超10亿触发最高风险警示、铁律不推荐、回避。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">💾 存储（佰维）</span>
+        <span class="sector-bar-fill green" style="width:24%;"></span>
+        <span class="sector-pct down">佰维存储 -12.03 亿（但当日+9.09亿大幅回流）</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>佰维存储近15日 -12.03 亿真主力累计流出（超10亿触发最高风险警示）</strong>，但<strong style="color:#c0392b;">9/23 当日 +9.09 亿全池当日流入第一 + 股价 +2.52% 放量上涨（量比 1.57）</strong>——属「近15日流出但当日主力大幅回流」的初期反转信号（全市场主力净流入居前），但铁律「近15日净流出超10亿触发最高风险警示、不推荐」，仅作「主力回流初期」观察、严禁追高。</p>
+
+    <div class="alert-box red">
+        <strong>🚨 资金面核心结论（截至 9/23 收盘，Tushare 真主力当日口径）：存储/数据中心获真主力回流、CPO 方向获利了结——主力资金结构性切换，累计流出趋势仍待扭转。</strong>23 只自选股<strong>近15日真主力净流入仅 6 只</strong>（中际旭创 +78.41 全池第一／新易盛 +57.25／环旭电子 +4.63／科华数据 +4.31／四方达 +1.46／扬杰科技 +0.02 亿），<strong>净流出 17 只</strong>，其中<strong>超10亿触发最高风险警示的 5 只</strong>：宁德 -50.98（全池最大）、立讯 -38.61、亨通 -19.91、中钨 -16.30、佰维 -12.03 亿。<strong>9/23 当日真主力关键信号：① 存储获真主力大幅回流（佰维 +9.09 全池当日第一／长鑫 +6.76 亿）+ 股价上涨 = 强烈看多，但近15日仍流出、属「回流延续但流出未扭转」、反弹不追；② 数据中心科华数据 +5.17 亿 + 大涨 7.80% = 三重共振最强标的（但换手 11.36% 极高、严禁追高）；③ CPO 获利了结——新易盛当日 -14.93 亿（全池流出第一）/中际旭创 -1.95 亿 + 股价下跌 = 高位兑现，趋势未扭转但需警惕短线回调；④ 光通信/海缆亨通光电当日 -10.72 亿 + 大跌 -4.19% = 出货确认；⑤ 电池宁德时代当日 +1.65 亿 + 股价下跌 = 逢低吸筹初期信号，但累计流出未扭转。</strong>综合：9/23 是「缩量回调 + 高标断板」日，全市场主力净流出（仅电子行业获净流入），真主力结构性切换至「存储 + 数据中心 + PCB/AI硬件」，CPO 高位兑现。<strong>操作上以「跟随主线但不追高 + 回调低吸数据中心/EMS（科华/环旭）+ 防御压舱（青岛啤酒）」为主，坚决回避 CPO 高位追高（新易盛/中际旭创）、光通信/海缆出货（亨通）、电池、苹果链龙头、有色等真主力流出方向，题材连板高度已降至 4 板、不接力高位板、控仓位。</strong></div>
+</div>
+
+<div class="section">
+    <h2>🔥 行业热力图（9/23 收盘强势/弱势板块）</h2>
+
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#c0392b;">🟢 领涨板块（9/23 收盘）</h3>
+
+    <div class="sector-bar">
+        <span class="sector-name">🖥️ PCB/AI硬件</span>
+        <span class="sector-bar-fill" style="width:100%;"></span>
+        <span class="sector-pct up">最强主线 · 澳弘电子9天7板 · 大亚圣象4连板</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>PCB/覆铜板/AI 硬件概念逆势最强主线</strong>：澳弘电子 9 天 7 板（续创历史新高）、大亚圣象 4 连板（PCB+建材），依顿电子、中一科技、江南新材、沃格光电（玻璃基板）等涨停。<strong>催化：江西宏瑞兴覆铜板产品提价 10%、中国巨石此前亦提价电子布，PCB 涨价逻辑强化；京东方宣布未来五年研发投入超 800 亿元、一年内敲定玻璃基钙钛矿器件与封装载板量产线。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">💾 存储芯片</span>
+        <span class="sector-bar-fill" style="width:70%;"></span>
+        <span class="sector-pct up">佰维存储+9.09亿 · 长鑫科技+6.76亿主力回流</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>存储芯片景气度获机构看好、逆势活跃</strong>：自选池佰维存储 +2.52%（当日真主力 +9.09 亿全池流入第一）、长鑫科技 +1.31%（当日 +6.76 亿），均为全市场主力净流入居前个股。<strong>催化：存储涨价周期延续 + AI 硬件需求拉动 HBM/DRAM，机构（华安/银河/国信）普遍看好 AI 算力硬件方向。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">💊 CRO/创新药</span>
+        <span class="sector-bar-fill" style="width:60%;"></span>
+        <span class="sector-pct up">义翘神州/奥浦迈/益诺思涨超10%</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>CRO/创新药强势</strong>：浩欧博 20cm 涨停，义翘神州、奥浦迈、益诺思均涨超 10%。<strong>催化：创新药审批与支付环境改善、CRO 需求复苏预期，机构认为医药是当前主线之一。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">🏠 房地产链</span>
+        <span class="sector-bar-fill" style="width:45%;"></span>
+        <span class="sector-pct up">我爱我家/华远控股/华丽家族3连板</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>地产链活跃但午后分化</strong>：我爱我家、华远控股、华丽家族 3 连板，万科 A 一度 4 天 3 板但炸板回落，中华企业、世联行亦炸板回落。<strong>催化：市场传闻全国性房贷贴息政策（首套贴息最高 100BP、额度 1000 亿），但多家券商认为落地可能性不大，题材热度午后降温。</strong></p>
+
+    <div class="sector-bar">
+        <span class="sector-name">💎 培育钻石/量子</span>
+        <span class="sector-bar-fill" style="width:35%;"></span>
+        <span class="sector-pct up">沃尔德/黄河旋风涨超4% · 天奥电子涨停</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>培育钻石普涨 + 量子科技活跃</strong>：沃尔德、黄河旋风涨超 4%，自选池四方达 +3.94%；量子科技天奥电子涨停、科大国创涨超 10%。题材多点开花、轮动加快。</p>
+
+    <h3 style="font-size:13px;margin:12px 0 8px;color:#1e7d3c;">🔴 领跌板块（9/23 收盘）</h3>
+
+    <div class="sector-bar">
+        <span class="sector-name">🎬 传媒/影视</span>
+        <span class="sector-bar-fill green" style="width:100%;"></span>
+        <span class="sector-pct down">中信出版-12%跌停 · 中视传媒跌停</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>传媒/影视板块大幅调整</strong>：中信出版跌超 12%、中视传媒跌停，华媒控股、龙版传媒跌停，欢瑞世纪跌超 7%。昨日强势的出版传媒方向今日集体退潮，与「华字辈」高标断板相呼应，题材退潮明显。</p>
+
+    <div class="sector-bar">
+        <span class="sector-name">⛏️ 煤炭/油气/能源设备</span>
+        <span class="sector-bar-fill green" style="width:50%;"></span>
+        <span class="sector-pct down">煤炭股下挫 · 能源设备走弱</span>
+    </div>
+    <p style="font-size:11px;color:#666;margin:0 0 8px 118px;"><strong>煤炭、能源设备、油气、游戏、通信服务等板块跌幅居前</strong>，资源防御方向整体回调（与自选池紫金矿业走弱相呼应），资金从资源/防御撤出、切换至电子（PCB/存储）科技主线。</p>
+</div>
+
+<div class="section">
+    <h2>🚀 强势股速览（9/23 收盘涨停/连板梯队）</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">9/23 收盘短线情绪：全市场约 51 股涨停、连板股 12 只、连板高度降至 4 板、晋级率约 37.5%，<strong>昨日高标集体断板（华瓷股份/内蒙新华/南华生物断板但收红盘、三羊马跌停）</strong>，短线情绪明显降温。今日连板梯队（收盘）：4 连板（新华文轩/传媒+并购、大亚圣象/PCB+建材），3 连板（我爱我家、华远控股、华丽家族/地产链，南威软件/AI应用）。涨停梯队（PCB/存储/CRO/地产链/培育钻石/量子为主）：</p>
+    <div class="table-wrap">
+    <table>
+        <tr><th>股票</th><th>连板/涨幅</th><th>方向</th><th>梯队定位</th></tr>
+        <tr><td style="font-weight:600;">澳弘电子</td><td class="up">9天7板</td><td>PCB/覆铜板</td><td><strong>全场最高标 · PCB主线龙头</strong></td></tr>
+        <tr><td style="font-weight:600;">新华文轩</td><td class="up">4连板</td><td>传媒+并购</td><td>传媒并购梯队龙头</td></tr>
+        <tr><td style="font-weight:600;">大亚圣象</td><td class="up">4连板</td><td>PCB+建材</td><td>PCB/建材梯队龙头</td></tr>
+        <tr><td style="font-weight:600;">我爱我家/华远控股/华丽家族</td><td class="up">3连板</td><td>房地产</td><td>地产梯队人气</td></tr>
+        <tr><td style="font-weight:600;">南威软件</td><td class="up">3连板</td><td>AI应用</td><td>AI应用梯队人气</td></tr>
+        <tr><td style="font-weight:600;">浩欧博</td><td class="up">20cm涨停</td><td>CRO</td><td>CRO梯队人气</td></tr>
+        <tr><td style="font-weight:600;">中一科技</td><td class="up">20cm涨停</td><td>PET铜箔/复合集流体</td><td>铜箔梯队人气</td></tr>
+        <tr><td style="font-weight:600;">沃格光电</td><td class="up">涨停</td><td>玻璃基板</td><td>玻璃基板人气</td></tr>
+        <tr><td style="font-weight:600;">天奥电子</td><td class="up">涨停</td><td>量子科技</td><td>量子梯队人气</td></tr>
+        <tr><td style="font-weight:600;">古越龙山</td><td class="up">涨停</td><td>黄酒</td><td>消费梯队人气</td></tr>
+    </table>
+    </div>
+    <div class="market-note">
+        <strong>⚠️ 连板梯队提示：</strong>今日核心是<strong>「PCB/AI 硬件最强主线（覆铜板提价 10% 催化）+ 存储芯片 + CRO/医药 + 地产链（分化）多点开花」</strong>——但<strong>短线情绪明显降温：连板高度从 6 板降至 4 板、晋级率仅 37.5%、昨日高标集体断板</strong>。<strong style="color:#c0392b;">注意：① PCB/AI硬件是今日最强主线（覆铜板/电子布提价逻辑），但自选池无 PCB 标的、且多为题材涨停股，无真主力数据验证、严禁追涨停；② 存储（佰维 +9.09/长鑫 +6.76 亿当日主力大幅回流）是自选池内主线映射，但近15日仍流出、属「回流延续但流出未扭转」、铁律不推荐追高；③ 传媒/影视集体跌停（中信出版 -12%）= 昨日强势方向退潮，出版传媒/华字辈情绪炒作见顶回落；④ 地产链午后炸板分化（万科 A/中华企业/世联行炸板）= 题材热度降温。短线接力优先级：PCB &gt; 存储 &gt; CRO（PCB 为提价主线、存储为涨价+回流延续、CRO 为政策/需求改善），但高度板断板、情绪降温，严禁追高涨停/连板——等回调、不接力高位板。</strong></div>
+</div>
+
+<div class="section">
+    <h2>⭐ 自选股关注（9/23 收盘 · Tushare 真主力截至 9/23 收盘）</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">23 只自选股 9/23 收盘评估，按当日涨跌幅排序。<strong style="color:#1e7d3c;">✅ 资金数据 23/23 全部来自 Tushare moneyflow 真主力（超大单+大单，latest_date=20260923，当日+近5日/近15日净流入，单位亿）。</strong>⚠️ 本报告为收盘快照（21:40 生成），当日真主力已盘后更新，无「量价推断」替代，直接使用当日实测口径。四象限标注：✅主力流入+上涨（做多）｜🚨主力流出（坚决回避）｜⚠️净流入但高位分歧（勿追高）｜⚪基本平衡。</p>
+
+    <div class="watch-card">
+        <div class="watch-rank">1</div>
+        <div class="watch-info">
+            <div class="watch-name">科华数据 <span class="up">+7.80% · 当日+5.17亿 · 近15日+4.31亿 ✅</span></div>
+            <div class="watch-detail">现 32.62 元(+7.80%) · 成交 24.0 亿(量比 4.77 巨量) · 真主力当日 <strong>+5.17 亿</strong>、近15日 <strong>+4.31 亿</strong> · 数据中心(UPS/液冷)，43.14xPE 需增长支撑，<strong style="color:#c0392b;">今日「当日主力大幅流入 + 大涨 7.80% + 近15日净流入」三重共振，是自选池最强标的（受益 AI 算力硬件/PCB 主线），但换手 11.36% 极高（筹码松动）+ 巨量、今日已大涨，严禁追高、等回调分批</strong></div>
+        </div>
+        <div class="watch-action amber">★★★★☆ 回调低吸</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">2</div>
+        <div class="watch-info">
+            <div class="watch-name">四方达 <span class="up">+3.94% · 当日+2.04亿 · 近15日+1.46亿 ⚠️</span></div>
+            <div class="watch-detail">现 43.82 元(+3.94%) · 成交 21.9 亿 · 换手 13.41% 极高 · 真主力当日 <strong>+2.04 亿</strong>、近15日 +1.46 亿（但近5日 -3.18 亿转流出）· 培育钻石，180.15xPE 极高估值，<strong style="color:#c0392b;">「净流入但高位题材投机」、180xPE 极高 + 换手 13.41% 极高 + 近5日转流出，坚决不追、回避</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避（高位题材）</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">3</div>
+        <div class="watch-info">
+            <div class="watch-name">佰维存储 <span class="up">+2.52% · 当日+9.09亿全池第一 · 近15日-12.03亿 🚨</span></div>
+            <div class="watch-detail">现 222.69 元(+2.52%) · 成交 61.2 亿(量比 1.57 放量) · 真主力当日 <strong>+9.09 亿全池当日流入第一</strong>、近15日 <strong>-12.03 亿</strong> · 存储+封测，12.88xPE 低估值，<strong style="color:#c0392b;">「近15日流出超10亿最高风险警示」+ 当日主力大幅回流（全市场净流入居前）+ 股价放量上涨，属「主力回流初期」信号，但铁律「近15日净流出超10亿」触发最高风险警示、不推荐，仅观察、严禁追高</strong></div>
+        </div>
+        <div class="watch-action amber">★★★☆☆ 观察（勿追高）</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">4</div>
+        <div class="watch-info">
+            <div class="watch-name">长鑫科技 <span class="up">+1.31% · 当日+6.76亿 · 近15日-9.67亿 🚨</span></div>
+            <div class="watch-detail">现 58.62 元(+1.31%) · 成交 121.5 亿(放量) · 真主力当日 <strong>+6.76 亿</strong>、近15日 <strong>-9.67 亿</strong>（近10日 -24.35 亿）· DRAM，48.64xPE 需增长支撑，<strong style="color:#c0392b;">当日主力大幅回流 + 股价上涨（全市场净流入居前），但近15日仍流出 9.67 亿、铁律不推荐、反弹不追、勿接飞刀</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 反弹不追</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">5</div>
+        <div class="watch-info">
+            <div class="watch-name">复旦微电 <span class="up">+1.21% · 当日-0.75亿 · 近15日-2.54亿 🚨</span></div>
+            <div class="watch-detail">现 60.86 元(+1.21%) · 成交 7.3 亿 · 真主力近15日 <strong>-2.54 亿</strong>（当日 -0.75 亿）· FPGA/存储国产替代，56.47xPE 越线，<strong style="color:#c0392b;">近15日净流出>1亿触发铁律 + 56.47xPE 越过高危线、反弹不追</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">6</div>
+        <div class="watch-info">
+            <div class="watch-name">澜起科技 <span class="up">+0.69% · 当日-4.2亿 · 近15日-6.37亿 🚨</span></div>
+            <div class="watch-detail">现 223.37 元(+0.69%) · 成交 79.9 亿(冲高230后回落) · 真主力当日 <strong>-4.2 亿</strong>、近15日 <strong>-6.37 亿</strong> · 存储接口寡头，88.69xPE 高危，<strong style="color:#c0392b;">「主力流出 + 股价上涨 = 诱多出货」警惕（当日盘中冲高 230 后回落收 223.37），近15日净流出 + 88.69xPE 高危、铁律不推荐、反弹不追</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 反弹不追</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">7</div>
+        <div class="watch-info">
+            <div class="watch-name">青岛啤酒 <span class="up">+0.62% · 当日+0.21亿 · 近15日-0.32亿 ⚪</span></div>
+            <div class="watch-detail">现 50.46 元(+0.62%) · 成交 2.1 亿(量比 1.52) · 真主力近15日 <strong>-0.32 亿</strong>（基本平衡）· 消费/啤酒，14.95xPE 低估值+股息率 4.36%，<strong style="color:#c0392b;">缩量微涨、资金基本平衡，震荡回调日弹性小、作防御压舱、回踩配置</strong></div>
+        </div>
+        <div class="watch-action amber">★★★☆☆ 防御配置</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">8</div>
+        <div class="watch-info">
+            <div class="watch-name">普冉股份 <span class="up">+0.61% · 当日+0.03亿 · 近15日-1.52亿 🚨</span></div>
+            <div class="watch-detail">现 431.00 元(+0.61%) · 成交 34.3 亿 · 真主力近15日 <strong>-1.52 亿</strong>（但近5日 +11.5 亿大幅回流）· 存储芯片，64.51xPE 高危，<strong style="color:#c0392b;">近15日净流出>1亿 + 64.51xPE 高危、铁律不推荐、反弹不追</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避（反弹不追）</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">9</div>
+        <div class="watch-info">
+            <div class="watch-name">环旭电子 <span class="up">+0.15% · 当日+0.24亿 · 近15日+4.63亿 ✅</span></div>
+            <div class="watch-detail">现 26.93 元(+0.15%) · 成交 6.5 亿 · 真主力近15日 <strong>+4.63 亿</strong>（近10日 +4.88 亿）· 苹果链 EMS，31.59xPE，<strong style="color:#c0392b;">近15日净流入 = 主力做多方向，是自选池消费电子里唯一近15日净流入的标的（立讯 -38.61 亿流出拖累板块），今日平淡但资金面健康、回调低吸</strong></div>
+        </div>
+        <div class="watch-action amber">★★★★☆ 回调低吸</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">10</div>
+        <div class="watch-info">
+            <div class="watch-name">紫金矿业 <span class="up">0.00% · 当日-0.98亿 · 近15日-2.79亿 🚨</span></div>
+            <div class="watch-detail">现 31.41 元(0.00%) · 成交 32.4 亿 · 真主力近15日 <strong>-2.79 亿</strong>（近5日 -11.28 亿）· 黄金/铜龙头，12.35xPE 低估值，<strong style="color:#c0392b;">贵金属今日走弱（煤炭/油气领跌、商品逻辑偏空），近15日净流出>1亿、12.35xPE 是「周期低PE陷阱」、铁律不推荐、回避</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">11</div>
+        <div class="watch-info">
+            <div class="watch-name">大华股份 <span class="down">-0.31% · 当日-0.27亿 · 近15日-2.64亿 🚨</span></div>
+            <div class="watch-detail">现 15.84 元(-0.31%) · 成交 2.4 亿(缩量) · 真主力近15日 <strong>-2.64 亿</strong> · 安防/AI，13.76xPE 低估值，<strong style="color:#c0392b;">近15日净流出>1亿触发铁律、缩量、不追</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">12</div>
+        <div class="watch-info">
+            <div class="watch-name">扬杰科技 <span class="down">-0.41% · 当日-0.49亿 · 近15日+0.02亿 ⚪</span></div>
+            <div class="watch-detail">现 91.38 元(-0.41%) · 成交 8.2 亿 · 真主力近15日 <strong>+0.02 亿</strong>（基本平衡，近10日 +0.85 亿）· 功率半导体，34.77xPE，<strong style="color:#c0392b;">资金基本平衡、今日逆势小跌，功率半导体未随存储/PCB 主线走强，无信号、观望</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 观望</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">13</div>
+        <div class="watch-info">
+            <div class="watch-name">中际旭创 <span class="down">-0.56% · 当日-1.95亿 · 近15日+78.41亿全池第一 ⚠️</span></div>
+            <div class="watch-detail">现 922.50 元(-0.56%) · 成交 136.8 亿(放量) · 真主力近15日 <strong>+78.41 亿全池第一</strong>（但当日 -1.95 亿转流出）· CPO 龙头，53.13xPE 越线，<strong style="color:#c0392b;">近15日净流入全池第一、产业逻辑最硬，但 53.13xPE 越过高危线 50x + 当日主力转流出（获利了结）+ 华为 NPO 技术替代风险，回踩观察、严禁追高</strong></div>
+        </div>
+        <div class="watch-action amber">★★★☆☆ 观察（勿追高）</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">14</div>
+        <div class="watch-info">
+            <div class="watch-name">华测导航 <span class="down">-0.60% · 当日-0.02亿 · 近15日-1.6亿 🚨</span></div>
+            <div class="watch-detail">现 26.67 元(-0.60%) · 成交 1.0 亿(缩量) · 真主力近15日 <strong>-1.6 亿</strong> · 北斗/低空经济，30.60xPE，<strong style="color:#c0392b;">近15日净流出>1亿触发铁律、题材弱、不追</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">15</div>
+        <div class="watch-info">
+            <div class="watch-name">紫光国微 <span class="down">-0.81% · 当日-0.51亿 · 近15日-5.61亿 🚨</span></div>
+            <div class="watch-detail">现 61.36 元(-0.81%) · 成交 5.4 亿 · 真主力近15日 <strong>-5.61 亿</strong> · 芯片设计，33.54xPE，<strong style="color:#c0392b;">近15日净流出>1亿触发铁律、反弹不追</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">16</div>
+        <div class="watch-info">
+            <div class="watch-name">新易盛 <span class="down">-0.84% · 当日-14.93亿全池流出第一 · 近15日+57.25亿 ⚠️</span></div>
+            <div class="watch-detail">现 451.20 元(-0.84%) · 成交 103.0 亿(放量) · 真主力近15日 <strong>+57.25 亿全池第二</strong>（但当日 -14.93 亿大幅流出）· CPO 弹性标的，47.97xPE，<strong style="color:#c0392b;">「主力流出 + 股价下跌 = 获利了结」——当日全池流出第一，近15日净流入但短线高位兑现、需警惕回调，回踩观察、严禁追高</strong></div>
+        </div>
+        <div class="watch-action amber">★★★☆☆ 观察（勿追高）</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">17</div>
+        <div class="watch-info">
+            <div class="watch-name">立讯精密 <span class="down">-0.88% · 当日-2.22亿 · 近15日-38.61亿 🚨</span></div>
+            <div class="watch-detail">现 54.36 元(-0.88%) · 成交 22.3 亿 · 真主力近15日 <strong>-38.61 亿</strong>（当日 -2.22 亿续流出）· 苹果链龙头，23.65xPE，<strong style="color:#c0392b;">近15日累计流出超10亿触发最高风险警示，苹果链资金面仍未转正、铁律不推荐、回避</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">18</div>
+        <div class="watch-info">
+            <div class="watch-name">科大讯飞 <span class="down">-1.05% · 当日-0.76亿 · 近15日-7.68亿 🚨</span></div>
+            <div class="watch-detail">现 38.71 元(-1.05%) · 成交 5.3 亿 · 真主力近15日 <strong>-7.68 亿</strong> · AI应用，106.36xPE 高危，<strong style="color:#c0392b;">近15日净流出>1亿 + 106.36xPE 高危、不追</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">19</div>
+        <div class="watch-info">
+            <div class="watch-name">宁德时代 <span class="down">-1.19% · 当日+1.65亿 · 近15日-50.98亿 🚨 全池最大</span></div>
+            <div class="watch-detail">现 300.99 元(-1.19%) · 成交 74.4 亿 · 真主力近15日 <strong>-50.98 亿全池最大</strong>（当日 +1.65 亿微幅回流）· 电池龙头，16.39xPE 低估值，<strong style="color:#c0392b;">「主力流入 + 股价下跌 = 逢低吸筹」初期信号，但近15日/近10日大幅流出趋势未扭转，低估值是「低估值陷阱」、坚决回避、勿抄底</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 坚决回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">20</div>
+        <div class="watch-info">
+            <div class="watch-name">华友钴业 <span class="down">-1.36% · 当日-1.28亿 · 近15日-7.32亿 🚨</span></div>
+            <div class="watch-detail">现 36.16 元(-1.36%) · 成交 10.8 亿 · 真主力近15日 <strong>-7.32 亿</strong> · 能源金属，9.92xPE 低估值，<strong style="color:#c0392b;">周期「低PE陷阱」警示（9.92xPE）+ 近15日净流出>1亿、铁律不推荐、回避</strong></div>
+        </div>
+        <div class="watch-action amber">★★☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">21</div>
+        <div class="watch-info">
+            <div class="watch-name">中钨高新 <span class="down">-1.84% · 当日-3.83亿 · 近15日-16.30亿 🚨</span></div>
+            <div class="watch-detail">现 59.15 元(-1.84%) · 成交 26.6 亿 · 真主力近15日 <strong>-16.30 亿</strong>（当日 -3.83 亿续流出）· 钨材料，47.95xPE，<strong style="color:#c0392b;">近15日净流出超10亿触发最高风险警示 + 47.95xPE 需增长支撑、铁律不推荐、回避</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">22</div>
+        <div class="watch-info">
+            <div class="watch-name">汉得信息 <span class="down">-3.09% · 当日-0.66亿 · 近15日-1.4亿 🚨</span></div>
+            <div class="watch-detail">现 15.70 元(-3.09%) · 成交 6.8 亿 · 真主力近15日 <strong>-1.4 亿</strong>（但近5日 +1.12 亿）· 软件服务，69.23xPE 高危，<strong style="color:#c0392b;">近15日净流出>1亿 + 69.23xPE 高危、今日领跌、坚决回避</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 回避</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">23</div>
+        <div class="watch-info">
+            <div class="watch-name">亨通光电 <span class="down">-4.19% · 当日-10.72亿 · 近15日-19.91亿 🚨</span></div>
+            <div class="watch-detail">现 69.94 元(-4.19%) · 成交 111.5 亿(换手 6.42%) · 真主力近15日 <strong>-19.91 亿</strong>（当日 -10.72 亿大幅流出）· 光通信/海缆，41.20xPE，<strong style="color:#c0392b;">「主力流出 + 股价大跌 = 出货确认」，近15日净流出超10亿触发最高风险警示 + 当日大幅出货、铁律不推荐、坚决回避、勿接飞刀</strong></div>
+        </div>
+        <div class="watch-action down">★☆☆☆☆ 坚决回避</div>
+    </div>
+
+    <div class="market-note">
+        <strong>📊 自选池今日资金全景（Tushare 真主力 23/23 · 截至 9/23 收盘）：</strong>近15日真主力净流入 <strong>仅 6 只</strong>（中际旭创 +78.41 全池第一／新易盛 +57.25／环旭电子 +4.63／科华数据 +4.31／四方达 +1.46／扬杰科技 +0.02 亿）、净流出 <strong>17 只</strong>，其中<strong>超10亿最高风险警示 5 只</strong>（宁德 -50.98／立讯 -38.61／亨通 -19.91／中钨 -16.30／佰维 -12.03 亿）。<strong>核心变化（9/23 盘后数据已更新）：💡 9/23 当日真主力结构性切换——① 存储获大幅回流：佰维 +9.09 亿（全池当日第一）、长鑫 +6.76 亿，均为全市场主力净流入居前；② 数据中心科华数据 +5.17 亿 + 大涨 7.80% = 三重共振最强；③ CPO 获利了结：新易盛 -14.93 亿（全池流出第一）、中际旭创 -1.95 亿，短线高位兑现；④ 光通信/海缆亨通光电 -10.72 亿 + 大跌 -4.19% = 出货确认。综合：9/23 是「缩量回调 + 高标断板」日，全市场主力净流出（仅电子行业获净流入），真主力切换至「存储 + 数据中心 + PCB/AI硬件」，CPO 高位兑现；操作上「跟随主线但不追高 + 回调低吸数据中心/EMS（科华/环旭）+ 防御（青岛啤酒）压舱」，坚决回避 CPO 高位追高、光通信/海缆出货（亨通）、电池（宁德）、苹果链龙头（立讯）、有色（中钨/华友/紫金）等真主力流出方向，不追高题材连板（高度已降至 4 板）、控仓位。</strong>
+    </div>
+</div>
+
+<div class="section">
+    <h2>🎯 值得关注的推荐股（基于热点 + 行业 + 真主力资金流向）</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:8px;">📌 综合今日热点（PCB/AI硬件/存储主线 + CRO/医药 + 地产链）、真主力资金流向（Tushare 真主力，截至 9/23 收盘）与量价表现，筛选 5 只标的。<strong style="color:#c0392b;">⚠️ 铁律执行：近15日真主力净流出 >1 亿一律不推荐（宁德 -50.98 亿/立讯 -38.61 亿/亨通 -19.91 亿/中钨 -16.30 亿/佰维 -12.03 亿/长鑫 -9.67 亿/科大讯飞 -7.68 亿/华友 -7.32 亿/澜起 -6.37 亿/紫光国微 -5.61 亿/紫金 -2.79 亿/大华 -2.64 亿/复旦微电 -2.54 亿/华测 -1.6 亿/普冉 -1.52 亿/汉得 -1.4 亿等 17 只流出，剔除）；pe_ttm > 50 的（四方达 180x/科大讯飞 106x/澜起 89x/汉得 69x/普冉 65x/复旦微电 56x/中际旭创 53x）原则上不推荐。</strong>今日是「缩量回调 + 高标断板」日（四大指数收跌、量能萎缩至 1.76 万亿、连板高度降至 4 板），全市场主力净流出、仅电子（PCB/存储）获真主力回流，<strong>推荐偏「数据中心回调低吸 + 苹果链主力做多 + CPO 观察 + 防御压舱」四线，务必轻仓、严格止损、严禁追高已大涨的存储/半导体（佰维/长鑫/澜起）及题材连板。今日最强主线「PCB」无自选池标的（题材涨停严禁追高），存储自选标的近15日流出（铁律剔除/仅观察）。</strong></p>
+
+    <div class="watch-card">
+        <div class="watch-rank">1</div>
+        <div class="watch-info">
+            <div class="watch-name">科华数据 <span class="up">数据中心 · 近15日+4.31亿 · 当日+5.17亿 · 大涨+7.80%</span></div>
+            <div class="watch-detail"><strong>推荐理由</strong>：① <strong>当日 +5.17 亿大幅流入 + 近15日 +4.31 亿真主力净流入</strong>，是今日自选池「当日主力大幅流入 + 大涨 + 近15日净流入」三重共振的最强标的；② <strong>逻辑</strong>——数据中心（UPS/液冷/储能）直接受益 AI 算力硬件主线（今日 PCB/AI硬件最强主线扩散），是自选池里对应当日主线且真主力流入的标的；③ 今日 +7.80% 放量大涨（量比 4.77 巨量）。<strong style="color:#c0392b;">风险：43.14xPE 需增长支撑、换手 11.36% 极高（筹码松动）、今日已大涨，严禁追高，必须等回调至建议区间分批、严格止损。</strong><br><strong>价格区间</strong>：现价 32.62 元；回调 <strong>30.5-31.5</strong> 分批低吸（今日低点 29.86 附近强支撑）；目标 <strong>34.0-35.0</strong>；<strong>跌破 29.5 止损</strong>。</div>
+        </div>
+        <div class="watch-action amber">★★★★☆ 回调低吸</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">2</div>
+        <div class="watch-info">
+            <div class="watch-name">环旭电子 <span class="up">苹果链EMS · 近15日+4.63亿 · 当日+0.24亿</span></div>
+            <div class="watch-detail"><strong>推荐理由</strong>：① <strong>近15日 +4.63 亿（近10日 +4.88 亿）真主力净流入</strong>，苹果链 EMS 标的，资金面健康；② <strong>逻辑</strong>——是自选池消费电子里唯一近15日净流入的标的（立讯精密 -38.61 亿流出拖累板块，环旭相对独立），消费电子/EMS 补涨逻辑；③ 今日 +0.15% 平淡，回调即低吸机会。<strong style="color:#c0392b;">风险：31.59xPE 需增长支撑、苹果链龙头立讯近15日 -38.61 亿流出拖累板块资金面，环旭相对独立但需苹果链企稳确认，回调低吸、严格止损。</strong><br><strong>价格区间</strong>：现价 26.93 元；回调 <strong>26.3-26.6</strong> 分批低吸（今日低点 26.53 支撑）；目标 <strong>27.6-28.0</strong>；<strong>跌破 26.0 止损</strong>。</div>
+        </div>
+        <div class="watch-action amber">★★★★☆ 回调低吸</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">3</div>
+        <div class="watch-info">
+            <div class="watch-name">青岛啤酒 <span class="up">消费防御 · 14.95xPE低估值</span></div>
+            <div class="watch-detail"><strong>推荐理由</strong>：① <strong>近15日 -0.32 亿真主力基本平衡、14.95xPE 低估值 + 股息率 4.36%</strong>，是自选池里 PE 最低、防御属性最强的标的之一；② <strong>逻辑</strong>——9/23 缩量回调日题材切换极快、高标断板，高股息防御资产作压舱配置，符合「回调日不追高、防御压舱」策略；③ 今日 +0.62% 微涨（量比 1.52），回踩即配置。<strong style="color:#c0392b;">风险：弹性小、近10日横盘，仅作防御压舱、不是进攻标的，等企稳分批。</strong><br><strong>价格区间</strong>：现价 50.46 元；回调 <strong>49.8-50.1</strong> 分批配置；目标 <strong>51.3-51.8</strong>；<strong>跌破 49.4 止损</strong>。</div>
+        </div>
+        <div class="watch-action amber">★★★☆☆ 防御配置</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">4</div>
+        <div class="watch-info">
+            <div class="watch-name">新易盛 <span class="up">CPO弹性 · 近15日+57.25亿 · 当日-14.93亿 ⚠️观察级</span></div>
+            <div class="watch-detail"><strong>观察理由（非买入推荐）</strong>：① <strong>近15日 +57.25 亿真主力净流入（全池第二）</strong>，CPO 弹性标的（AI算力需求 + 光互连标准落地）；② <strong>逻辑</strong>——CPO 仍是近15日真主力净流入最集中方向，产业逻辑硬；③ <strong style="color:#c0392b;">但（降级为观察的关键原因）：9/23 当日 -14.93 亿全池流出第一（获利了结）+ 股价 -0.84% 下跌，47.97xPE 接近高危线，且华为 NPO 技术路线对传统光模块存在替代风险，本报告仅作「回调观察」、不构成买入建议。</strong><br><strong>价格区间</strong>：现价 451.20 元；回调观察 <strong>440-450</strong>（今日低点 449.02）；目标 <strong>470-480</strong>；<strong>跌破 435 止损</strong>。<strong style="color:#c0392b;">铁律：严禁追高、等当日流出缓解企稳再考虑。</strong></div>
+        </div>
+        <div class="watch-action amber">★★★☆☆ 观察（勿追高）</div>
+    </div>
+
+    <div class="watch-card">
+        <div class="watch-rank">5</div>
+        <div class="watch-info">
+            <div class="watch-name">中际旭创 <span class="up">CPO龙头 · 近15日+78.41亿全池第一 ⚠️观察级</span></div>
+            <div class="watch-detail"><strong>观察理由（非买入推荐）</strong>：① <strong>近15日 +78.41 亿真主力净流入（全池第一）</strong>，CPO 全球龙头（800G/1.6T 领先），产业逻辑最硬；② <strong>逻辑</strong>——AI 算力需求 + 光模块需求上修 + 光互连标准密集落地；③ <strong style="color:#c0392b;">但（降级为观察的关键原因）：pe_ttm 53.13x 已越过高危线 50x、9/23 当日 -1.95 亿转流出（高位获利了结）+ 股价 -0.56%，且华为 NPO 技术路线对传统可插拔光模块长期存在替代风险，本报告仅作「回调观察」、不构成买入建议。</strong><br><strong>价格区间</strong>：现价 922.50 元；回调观察 <strong>895-910</strong>；目标 <strong>950-960</strong>；<strong>跌破 890 止损</strong>。<strong style="color:#c0392b;">铁律：严禁追高、等回调企稳再考虑。</strong></div>
+        </div>
+        <div class="watch-action amber">★★★☆☆ 观察（勿追高）</div>
+    </div>
+
+    <div class="alert-box yellow">
+        <strong>⚠️ 推荐说明与免责：</strong><br>
+        ① <strong>逻辑主轴</strong>：今日 5 只标的<strong>在「缩量回调 + 高标断板」日里，围绕真主力净流入或基本平衡方向筛选</strong>——科华数据（近15日+4.31亿、当日+5.17亿三重共振、数据中心回调低吸）+ 环旭电子（近15日+4.63亿、苹果链主力做多、回调低吸）+ 青岛啤酒（近15日-0.32亿基本平衡、14.95xPE低估值+高股息、防御压舱），为 3 只「推荐级」；新易盛（近15日+57.25亿但当日-14.93亿获利了结、CPO观察）、中际旭创（近15日+78.41亿全池第一但 53.13xPE 越线+当日转流出、CPO观察）为 2 只「观察级」，<strong>不构成买入建议</strong>。<br>
+        ② <strong>为何不推今日最强的 PCB 主线</strong>：澳弘电子 9 天 7 板、大亚圣象 4 连板、依顿电子/中一科技/江南新材等涨停，均为 PCB/覆铜板题材股，PCB 无自选池标的、无 Tushare 真主力数据验证，严禁追涨停、追高。<br>
+        ③ <strong>为何不推今日存储主线（佰维/长鑫）</strong>：佰维存储（+2.52%）近15日 -12.03 亿（超10亿最高风险警示）、长鑫科技（+1.31%）-9.67 亿，均为近15日真主力流出方向的「当日回流延续但流出未扭转」，铁律「净流出 >1 亿不推荐」，且当日回流能否延续待明日盘后验证、严禁追高。<br>
+        ④ <strong>仓位纪律</strong>：缩量回调日总仓位 ≤ 4 成、单只 ≤ 10%，全部推荐必须回调分批、严格止损，严禁追高已大涨的存储/半导体（佰维/长鑫/澜起/普冉）、题材连板股（澳弘电子9天7板/新华文轩4连板）及高位兑现的 CPO 龙头（新易盛/中际旭创）。<br>
+        ⑤ 本推荐基于 9/23 收盘（15:35）行情 + Tushare 真主力（截至 9/23 收盘，latest_date=20260923）+ 今日公开要闻，<strong>不构成确定性投资建议</strong>，市场有风险，入市须谨慎。
+    </div>
+</div>
+
+<div class="section">
+    <h2>📰 今日要闻（9/23 · 分类）</h2>
+
+    <div class="news-item">
+        <span class="tag tag-pcb">🖥️PCB/覆铜板提价</span>
+        <div class="news-title">江西宏瑞兴覆铜板产品提价 10%、中国巨石此前提价电子布，PCB 概念逆势走强：澳弘电子 9 天 7 板、大亚圣象 4 连板</div>
+        <div class="news-src">9/23 · PCB/AI硬件</div>
+        <p style="font-size:11px;color:#666;">覆铜板厂商江西宏瑞兴宣布产品提价 10%，中国巨石此前亦提价电子布，PCB 涨价逻辑强化，成为今日最强主线；澳弘电子 9 天 7 板续创历史新高，大亚圣象 4 连板，依顿电子、中一科技、江南新材涨停。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-macro">🏛️李强上海调研</span>
+        <div class="news-title">李强在上海调研：加快培育壮大新兴产业和未来产业，持续做大做强先进制造业，推动「人工智能+制造」</div>
+        <div class="news-src">9/23 · 政策/宏观</div>
+        <p style="font-size:11px;color:#666;">国务院总理李强在上海调研时强调，加快培育壮大新兴产业和未来产业，持续做大做强先进制造业，推动"人工智能+制造"，促进制造业全流程智能升级，为 AI 硬件/先进制造方向提供政策催化。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-ai">🔋宁德时代联合五菱</span>
+        <div class="news-title">宁德时代联合五菱发布新一代专业级城配电池；工信部旗下媒体刊文称「『去宁德化』论调要不得」</div>
+        <div class="news-src">9/23 · 新能源/电池</div>
+        <p style="font-size:11px;color:#666;">宁德时代联合五菱发布新一代专业级城配电池；工信部旗下媒体刊文称"『去宁德化』论调要不得"。但宁德时代今日股价 -1.19%、近15日真主力 -50.98 亿（全池最大流出），基本面利好未能扭转资金流出趋势。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-estate">🏠住建部「好房子」+ 房贷贴息传闻</span>
+        <div class="news-title">住建部：「十五五」建设「好房子」，层高标准由 2.8 米提高至 3 米、4 层以上加装电梯；地产链午后炸板分化</div>
+        <div class="news-src">9/23 · 地产/政策</div>
+        <p style="font-size:11px;color:#666;">住建部明确"十五五"时期建设"好房子"，层高标准由 2.8 米提高至 3 米，4 层及以上住宅需加装电梯。地产股午后炸板分化（万科 A 一度 4 天 3 板但炸板、中华企业/世联行炸板），市场传闻全国性房贷贴息政策（首套贴息最高 100BP、额度 1000 亿），但多家券商认为落地可能性不大。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-grid">📡发改委北斗产业</span>
+        <div class="news-title">国家发改委：推动北斗产业规模 5 年内超过 1 万亿元；集中推介 36 个民间投资项目（总投资 614 亿元）</div>
+        <div class="news-src">9/23 · 政策/产业</div>
+        <p style="font-size:11px;color:#666;">国家发改委提出推动北斗产业规模 5 年内超过 1 万亿元；集中推介 36 个民间投资项目，总投资 614 亿元，拟引入民间资本 156 亿元，利好北斗/低空经济（自选池华测导航，但近15日真主力 -1.6 亿流出、题材弱）。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-semi">🖥️京东方玻璃基板 800 亿</span>
+        <div class="news-title">京东方宣布未来五年研发投入超 800 亿元、一年内敲定玻璃基钙钛矿器件与封装载板量产线，沃格光电涨停</div>
+        <div class="news-src">9/23 · 面板/半导体</div>
+        <p style="font-size:11px;color:#666;">京东方宣布未来五年研发投入超 800 亿元、一年内敲定玻璃基钙钛矿器件与封装载板量产线，玻璃基板概念走强，沃格光电涨停，带动 PCB/先进封装方向情绪。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-ai">🤖Meta Muse 登顶</span>
+        <div class="news-title">Meta 旗下 AI 智能体 Muse 登顶苹果应用商店，带动 AI 应用热度；马斯克预测未来 20 年或有 1000 亿台人形机器人</div>
+        <div class="news-src">9/23 · AI应用</div>
+        <p style="font-size:11px;color:#666;">Meta 旗下 AI 智能体 Muse 登顶苹果应用商店，带动 AI 应用热度，南威软件 3 连板；马斯克预测未来 20 年或有 1000 亿台人形机器人，AI 应用/机器人方向催化密集。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-foreign">🌎地缘与能源</span>
+        <div class="news-title">美伊会谈「有建设性」；伊朗称若美解除封锁可 7 天重开霍尔木兹海峡，沙特阿美或恢复延布港原油装运</div>
+        <div class="news-src">9/23 · 地缘/能源</div>
+        <p style="font-size:11px;color:#666;">美伊会谈被称"有建设性"；伊朗称若美解除封锁可 7 天重开霍尔木兹海峡，沙特阿美暗示原油出口可能逐步恢复正常。地缘缓和利空油价，煤炭/油气板块今日领跌。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-market">📉高标断板缩量</span>
+        <div class="news-title">9/23 缩量调整：两市成交 1.76 万亿（较昨日缩量约 3705 亿）、超 3500 股下跌、连板高度降至 4 板，高标集体断板</div>
+        <div class="news-src">9/23 · 盘面</div>
+        <p style="font-size:11px;color:#666;">9/23 两市成交约 1.76 万亿（缩量约 3705 亿），超 3500 只个股下跌，全市场约 51 股涨停、连板 12 只、连板高度降至 4 板、晋级率约 37.5%；昨日高标华瓷股份、内蒙新华、南华生物集体断板但收红盘，短线情绪明显降温。</p>
+    </div>
+
+    <div class="news-item">
+        <span class="tag tag-market">📊机构观点</span>
+        <div class="news-title">华安证券：四季度有望出现「吃饭行情」，AI 算力硬件及配套方向仍是首选；银河：算力硬件受益于 AI 定价逻辑切换</div>
+        <div class="news-src">9/23 · 机构/策略</div>
+        <p style="font-size:11px;color:#666;">华安证券认为四季度有望出现"吃饭行情"，AI 算力硬件及配套方向仍是首选；银河证券认为美联储加息落地后 AI 定价逻辑从"远期愿景"切换至"当期兑现"，算力硬件受益；浙商证券认为中线底部逐渐确立、指数短期双底形态。</p>
+    </div>
+</div>
+
+<div class="section">
+    <h2>📋 今日操作要点（9/23 收盘）</h2>
+
+    <div class="alert-box green">
+        <strong>🟢 核心判断：9/23 是「高标断板 + 缩量调整」的震荡回调日——四大指数集体收跌（沪指 -0.39% 报 3936.52 点、深成指 -0.64%、创业板指 -0.60%、科创50 -0.25%）、北证50 逆势 +2.60%、两市成交缩量至 1.76 万亿（较昨日 -3705 亿）、超 3500 股下跌、涨停 51 家、连板高度降至 4 板。</strong>三大特征：① <strong>情绪降温</strong>——高标断板（华瓷股份/内蒙新华/南华生物集体断板）、连板晋级率仅 37.5%，题材轮动加快但赚钱效应收缩；② <strong>主线切换</strong>——「PCB/AI硬件（覆铜板提价 10%）最强主线 + 存储芯片 + CRO/创新药 + 地产链（分化）+ 培育钻石/量子/玻璃基板多点开花」；③ <strong>资金结构性切换</strong>——全市场主力净流出（仅电子行业获逾 157 亿净流入），自选池 Tushare 真主力（9/23 盘后）显示存储（佰维 +9.09/长鑫 +6.76 亿）+ 数据中心（科华 +5.17 亿）获真主力回流，CPO 方向（新易盛 -14.93/中际旭创 -1.95 亿）获利了结。
+    </div>
+
+    <div class="alert-box red">
+        <strong>🚨 今日最重要的一课：「当日回流」与「流出趋势扭转」是两回事——9/23 盘后真主力数据已证实存储获真主力大幅回流（佰维 +9.09 亿全池当日第一、长鑫 +6.76 亿），但近15日累计仍流出（佰维 -12.03 亿触发最高风险警示、长鑫 -9.67 亿），「回流是边际改善、不等于流出趋势扭转」。</strong>同时警惕：① CPO 方向获利了结——新易盛当日 -14.93 亿（全池流出第一）+ 股价 -0.84%、中际旭创 -1.95 亿 + 股价 -0.56%，近15日净流入但短线高位兑现，需警惕回调；② 光通信/海缆亨通光电当日 -10.72 亿 + 大跌 -4.19% = 出货确认；③ 电池宁德时代当日 +1.65 亿 + 股价 -1.19% = 逢低吸筹初期信号，但近15日 -50.98 亿全池最大流出趋势未扭转；④ 传媒/影视集体跌停（中信出版 -12%）+ 高标断板 = 题材退潮、高位板风险极高。纪律：验证了「流出趋势中的反弹不追高」的铁律——今日是缩量回调日，操作要义：跟随主线但不追高 + 回调低吸数据中心/EMS（科华/环旭）+ 防御压舱（青岛啤酒），坚决回避 CPO 高位追高、光通信/海缆出货（亨通）、电池、苹果链龙头、有色等真主力流出方向，不追高题材连板（高度已降至 4 板）、控仓位、等明日盘后真主力验证存储回流是否延续。</strong>
+    </div>
+
+    <div class="alert-box yellow">
+        <strong>⚠️ 自选池分档操作（真主力方向为硬约束，截至 9/23 收盘）：</strong><br>
+        ① <strong>✅ 近15日真主力净流入/基本平衡（可关注）</strong>：<strong>中际旭创（+78.41亿全池第一、但当日-1.95亿转流出+53.13xPE越线，回踩观察严禁追高）、新易盛（+57.25亿、但当日-14.93亿获利了结，回踩观察勿追高）、环旭电子（+4.63亿、当日+0.24亿，回调低吸）、科华数据（+4.31亿、当日+5.17亿+大涨7.80%，三重共振但换手极高、回调低吸）、四方达（+1.46亿、但180xPE极高+近5日转流出，回避）、扬杰科技（+0.02亿基本平衡，观望）、青岛啤酒（-0.32亿基本平衡、14.95xPE低估值+高股息，防御压舱）</strong>；<br>
+        ② <strong>❌ 真主力净流出 >1亿（坚决回避、反弹即减仓）</strong>：<strong style="color:#c0392b;">宁德（-50.98亿全池最大，当日微幅回流但流出未扭转、勿抄底）、立讯（-38.61亿）、亨通（-19.91亿，当日-10.72亿出货确认）、中钨（-16.30亿）、佰维（-12.03亿，当日+9.09亿大幅回流但流出未扭转、仅观察不追）、长鑫（-9.67亿，当日+6.76亿回流但流出未扭转）、科大讯飞（-7.68亿）、华友（-7.32亿）、澜起（-6.37亿，当日-4.2亿诱多出货）、紫光国微（-5.61亿）、紫金（-2.79亿）、大华（-2.64亿）、复旦微电（-2.54亿）、华测（-1.6亿）、普冉（-1.52亿）、汉得（-1.4亿）</strong>——铁律不推荐，坚决回避、不追；<br>
+        ③ <strong>🚨 特别警示：今日存储/数据中心放量上涨（佰维 +2.52%/长鑫 +1.31%/科华 +7.80%）是「真主力当日回流」——佰维 +9.09/长鑫 +6.76/科华 +5.17 亿当日大幅流入，但佰维/长鑫近15日累计仍流出（-12.03/-9.67 亿），回流持续性待明日盘后验证；CPO 方向（新易盛/中际旭创）当日获利了结、短线警惕回调；光通信/海缆亨通光电当日出货确认、坚决回避。
+    </div>
+
+    <p style="font-size:12px;line-height:1.8;margin-top:8px;">
+    <strong>💰 仓位建议</strong>：总仓位 <strong>3-4 成以内</strong>，现金保留 ≥ 6 成。单只不超 10%，方向性仓位合计不超 15%。<strong>缩量回调日情绪降温、全市场主力净流出（仅电子行业获净流入）、今日反弹资金性质待明日盘后验证，务必等回调分批、严格执行止损，切忌追高今日已大涨的存储/半导体（佰维/长鑫/澜起/普冉）、高位兑现的 CPO 龙头（新易盛/中际旭创）、题材连板股（澳弘电子9天7板/新华文轩4连板），切忌抄底主力出货确认的光通信/海缆（亨通）、电池（宁德）、苹果链龙头（立讯）。</strong><br>
+    <strong>🎯 主线方向</strong>：① <strong>数据中心回调低吸</strong>（科华数据 +4.31 亿、当日 +5.17 亿三重共振，回调低吸、严禁追高）；② <strong>苹果链主力做多</strong>（环旭电子 +4.63 亿净流入，今日平淡、回调低吸）；③ <strong>防御压舱</strong>（青岛啤酒 14.95xPE+股息 4.36%，缩量微涨回踩配置）；④ <strong>CPO 回踩观察</strong>（新易盛/中际旭创近15日净流入全池前二，但当日获利了结，回踩观察、严禁追高）；⑤ <strong>PCB/AI硬件主线观察</strong>（今日最强主线但无自选池标的、题材涨停严禁追高，等回调后关注有真主力数据验证的细分龙头）。<br>
+    <strong>🚫 回避方向</strong>：① <strong>存储/半导体追高（回流延续但流出未扭转）</strong>（佰维 -12.03 亿/长鑫 -9.67 亿/澜起 -6.37 亿/普冉 -1.52 亿/紫光国微 -5.61 亿，今日反弹坚决不追高）；② <strong>光通信/海缆（主力出货确认）</strong>（亨通 -19.91 亿、当日 -10.72 亿 + 大跌 -4.19%）；③ <strong>电池（主力出货未止）</strong>（宁德 -50.98 亿，当日微幅回流但流出趋势未扭转、低估值陷阱勿抄底）；④ <strong>苹果链龙头（资金面未转正）</strong>（立讯 -38.61 亿）；⑤ <strong>有色/资源（主力出货+商品逻辑偏空）</strong>（中钨 -16.30 亿/华友 -7.32 亿/紫金 -2.79 亿）；⑥ <strong>高位题材</strong>（四方达 180xPE+培育钻石、科大讯飞 106xPE、汉得 69xPE、澜起 89xPE）；⑦ <strong>题材连板妖股</strong>（澳弘电子 9 天 7 板已高位、新华文轩 4 连板、地产链 3 连板炸板分化，纯情绪炒作）。<br>
+    <strong>👀 关键观察</strong>：① <strong>明日盘后真主力数据（最关键）</strong>——今日存储（佰维/长鑫）获真主力大幅回流，若明日盘后 Tushare 确认回流延续则「回流→扭转」渐成立、存储反弹可延续，若再度流出则「回流延续」证伪、坚决回避；② <strong>CPO 获利了结是否延续</strong>——新易盛当日 -14.93 亿、中际旭创 -1.95 亿，若明日继续流出则 CPO 短线回调风险加大；③ <strong>PCB 主线持续性</strong>——覆铜板提价 10% 催化，观察提价能否扩散、是今日最强主线但无自选池标的；④ <strong>量能</strong>——今日缩量 3705 亿至 1.76 万亿，若持续缩量则反弹动能不足、防御为主；⑤ <strong>题材情绪</strong>——连板高度降至 4 板、高标断板，情绪降温期勿接力高位板；⑥ <strong>季末资金面</strong>——9/30 季末临近，国债逆回购利率（GC001 1.375%）平稳，关注月末资金面边际变化。<br>
+    <strong>📌 核心策略</strong>：高标断板 + 缩量调整 → <strong>9/23 震荡回调、情绪降温</strong>。今日全市场主力净流出（仅电子行业获净流入），自选池真主力结构性切换至「存储 + 数据中心」，CPO 高位兑现。<strong>操作要义：轻仓跟随主线但不追高，把握「数据中心回调低吸（科华）+ 苹果链主力做多（环旭）+ 防御压舱（青岛啤酒）」三条线，CPO 仅回踩观察，等回调分批、严格止损，坚决回避追高存储/半导体、CPO 高位、光通信/海缆出货、电池、苹果链龙头、有色等真主力流出方向，不追高题材连板、不接飞刀、不盲目抄底——等明日盘后真主力数据验证「存储回流延续 vs 流出扭转」「CPO 兑现 vs 回流」后再决定是否加仓。</strong>
+    </p>
+</div>
+
+<div class="footer">
+    <p>⚠️ 免责声明：本报告由 AI 自动生成，仅供参考，不构成投资建议。投资有风险，入市须谨慎。</p>
+    <p>数据来源：新浪财经 API（指数/个股行情，实测验证，15:35 收盘快照） · Tushare moneyflow（23/23 只自选股真主力资金流向，超大单+大单口径，当日+近5/10/15日，latest_date=20260923，截至 9/23 收盘） · Tushare daily_basic（pe_ttm/pb/换手率/量比/股息率） · 今日公开要闻与收盘复盘（WebSearch）</p>
+    <p>生成时间：2026-09-23 周三 21:40（盘后） | 行情为全天收盘快照（15:35），成交额为全天累计值 | 真主力资金数据为 9/23 当日盘后实测（非量价推断、非前一交易日数据）| 问财登录态 9222 本次未调用（当日真主力已可得）| 北向资金实时数据不可得（披露口径调整，不以下线值顶替）| 国债逆回购利率（收盘）：GC001 1.375% · GC003 1.350% · GC007 1.450%</p>
+</div>
+
+</body>
+</html>
