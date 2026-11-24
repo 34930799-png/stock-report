@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关注股票日报 2026-11-25</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: -apple-system, "PingFang SC", "HarmonyOS Sans", "Microsoft YaHei", sans-serif; font-size:14px; color:#222; background:#f5f5f5; line-height:1.5; }
+.header { background:#16213e; color:#fff; padding:16px 12px; text-align:center; }
+.header h1 { font-size:18px; margin-bottom:4px; }
+.header .date { font-size:12px; opacity:0.7; }
+.section { background:#fff; margin:8px; border-radius:8px; padding:12px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+.section h2 { font-size:15px; margin-bottom:10px; border-left:3px solid #c0392b; padding-left:8px; }
+.table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:12px; min-width:680px; }
+th { background:#f5f5f5; padding:6px 4px; text-align:center; font-weight:600; white-space:nowrap; position:sticky; top:0; }
+td { padding:6px 4px; text-align:center; border-bottom:1px solid #f5f5f5; white-space:nowrap; }
+tr:hover { background:#fff8e1; }
+.stock-name { font-weight:600; }
+.stock-code { color:#999; font-size:10px; }
+.price { font-weight:600; font-size:13px; }
+.up { color:#c0392b; font-weight:600; }
+.down { color:#1e7d3c; font-weight:600; }
+.flat { color:#999; font-weight:600; }
+.warn { color:#9c5a00; font-weight:600; }
+.neutral { color:#666; }
+.signal { display:inline-block; padding:1px 6px; border-radius:3px; color:#fff; font-size:10px; font-weight:600; }
+.signal.buy { background:#c0392b; }
+.signal.hold { background:#9c5a00; }
+.signal.sell { background:#1e7d3c; }
+.signal.obs { background:#666; }
+.range { color:#666; font-size:11px; }
+.small { font-size:10px; color:#666; max-width:170px; white-space:normal; text-align:left; }
+.pos { color:#c0392b; font-weight:600; }
+.neg { color:#1e7d3c; font-weight:600; }
+.row-hl { background:#fff8e1; }
+.top-card { display:flex; align-items:flex-start; padding:10px 0; border-bottom:1px solid #f5f5f5; gap:10px; }
+.top-card:last-child { border-bottom:none; }
+.top-rank { font-size:28px; font-weight:700; color:#c0392b; min-width:36px; text-align:center; }
+.top-rank.secondary { color:#9c5a00; }
+.top-name { font-weight:600; font-size:14px; }
+.top-price { font-size:14px; font-weight:600; color:#16213e; }
+.top-reason { font-size:11px; color:#666; line-height:1.6; }
+.note { font-size:12px; color:#666; margin-bottom:8px; }
+.note-sm { font-size:11px; color:#666; margin-top:8px; }
+.terms { font-size:11px; color:#666; line-height:1.8; }
+.summary { display:flex; gap:6px; flex-wrap:wrap; margin-top:8px; }
+.summary-item { background:#f5f5f5; padding:4px 8px; border-radius:4px; font-size:11px; }
+.buy-count { color:#c0392b; font-weight:700; }
+.hold-count { color:#9c5a00; font-weight:700; }
+.sell-count { color:#1e7d3c; font-weight:700; }
+.market-overview { font-size:13px; line-height:1.8; }
+.market-overview p { margin-bottom:10px; }
+.alert-box { background:#fff8e1; border:1px solid #9c5a00; border-radius:6px; padding:10px; margin:8px 0; font-size:12px; line-height:1.75; }
+.alert-box.red { background:#fdecea; border-color:#c0392b; }
+.alert-box.green { background:#f0f9f0; border-color:#1e7d3c; }
+.alert-box.gray { background:#fff5f5; border-color:#999; }
+.footer { text-align:center; padding:16px; font-size:10px; color:#999; }
+.footer p { margin:2px 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>📊 关注股票日报</h1>
+    <div class="date">2026-11-25 周三 07:00 盘前口径 | 基于 11/24（周二）收盘 + 隔夜美股（11/24 美东）+ 今日盘前消息 + 今日预判</div>
+</div>
+
+<div class="section">
+    <div class="alert-box gray">
+        <strong>数据口径声明：</strong>全文行情、涨跌、量比、估值均为 <strong>2026-11-24 收盘值</strong>；主力资金统一采用 <strong>Tushare moneyflow 真主力（超大单+大单）</strong>，数据日期 <strong>2026-11-24</strong>，含当日 / 近 5 / 10 / 15 日净流入，单位亿元。北向资金实时数据不可得（接口返回值恒为 0.00，详见资金章节）。本报告为 <strong>11/25 盘前取数</strong>，不含 11/25 盘中数据。
+    </div>
+</div>
+
+<div class="section">
+    <h2>📈 今日盘前市场概况</h2>
+    <div class="market-overview">
+
+        <p><strong>11/24（周二）复盘——一次教科书级的“利好兑现”：23 只自选股 22 只高开，13 只收跌，创业板收在全天最低点。</strong></p>
+
+        <p>指数层面：<span class="up">沪指收 3548.37（+0.27%，+9.42 点）</span>，开 3567.84（+0.82%）、最高 3585.22（+1.31%）、最低 3539.01（恰好等于前收盘 3538.95），<strong>高开 0.82% 后全天回吐，收盘只剩 0.27% 的涨幅</strong>；<span class="down">深证成指收 10423.60（-0.29%，-30.77 点）</span>，开 10708.62（+2.43%）、最高 10729.13、最低 10418.11，<strong>收在全天次低，把 2.43% 的高开全部还回去</strong>；<span class="down">创业板指收 2278.99（-0.05%，-1.21 点）</span>，开 2368.70（+3.88%）、最高 2376.34（+4.22%）、最低 2278.99，<strong>收盘价 = 当日最低价，光头阴线，盘中 4.22% 的涨幅一分不剩</strong>；<span class="up">科创50 收 1250.09（+1.81%）</span>，是唯一收红且收在 MA20（1245.00）上方的主要指数——半导体权重在这里撑住了；沪深300 +0.14%。</p>
+
+        <p>成交与广度：沪深两市成交 <strong>1.66 万亿元</strong>（沪市 7719 亿 + 深市 8832 亿），较 11/23 的 1.56 万亿<strong>放量约 1000 亿元</strong>。但广度是反向的：<strong>上涨约 1950 家、下跌约 3490 家</strong>，涨超 9% 的 103 只、跌超 9% 的 10 只；<strong>涨停仅 55-64 只（不同口径），炸板 68 只，封板率约 45%</strong>——对照 11/23 的 151 只涨停，一天之内赚钱效应腰斩。<strong>放量、指数微涨、3490 只下跌、封板率 45%，这是典型的“权重护盘 + 个股失血”结构。</strong></p>
+
+        <p>板块结构：<strong>国防军工（申万一级 +1.52%，第一）、电子（+1.51%）</strong>领涨；<strong>机器人是当日最强主线，22 只涨停约占全场四成</strong>（克来机电、长华集团 3 连板，安培龙、宁波东力、柯力传感 2 连板）；PCB 中京电子 4 连板；AI 漫剧延续（浙文影业、横店影视 2 连板）；保险、消费电子偏强。领跌端是资源与周期：<strong>有色金属、贵金属、稀土、煤炭、石油石化、玻璃玻纤、化纤</strong>；<strong>AI 硬件午后遭集中卖出</strong>——中际旭创、新易盛均由大幅高开转为收跌，这是“外盘映射只值一个开盘价”的直接证据。</p>
+
+        <p>我们的自选池 11/24 <span class="up">10 涨 13 跌、平均 +0.08%、中位数 -0.05%</span>，与创业板指（-0.05%）几乎同步、跑输沪指（+0.27%）。涨幅前五：<span class="up">华友钴业 +5.72%、立讯精密 +3.98%、汉得信息 +2.55%、长鑫科技 +1.00%、复旦微电 +0.94%</span>；跌幅前五：<span class="down">紫金矿业 -4.33%、中钨高新 -2.66%、普冉股份 -1.41%、亨通光电 -1.35%、扬杰科技 -1.31%（当日除息 0.50 元/股，按除权参考价 65.01 计算）</span>。<strong>最关键的池内统计：23 只中有 22 只高开、16 只高开超过 3%，但收盘只有 10 只上涨。</strong>高开幅度与收盘涨幅的背离，就是 11/24 的全部故事。</p>
+
+        <p><strong>隔夜外盘（11/24 美东，周二）——“美股一日游”，费半几乎把前一天的涨幅还回去一半。</strong></p>
+
+        <p><span class="up">道琼斯 50,018.70（+0.85%，收复 5 万点）</span>、<span class="down">标普 500 7,201.09（-0.50%）</span>、<span class="down">纳斯达克 23,733.54（-1.48%）</span>、<span class="down">费城半导体指数 8,832.50（-7.88%）</span>。个股：<span class="down">英伟达 -5.86% 报 155.38 美元、AMD -8.86%、美光 -10.97%、SK 海力士 -9.90%、闪迪 -11.13%、迈威尔 -9.10%</span>，三倍做多半导体 ETF 约 <strong>-19%</strong>。中概相对抗跌：纳斯达克中国金龙指数 +0.19%。</p>
+
+        <p>下跌的触发不是业绩，是<strong>政策风险回摆</strong>：① 特朗普关税风暴恐再起；② 美国众议院候任议长称<strong>不会放弃对英伟达的调查</strong>，黄仁勋 <strong>12 月 1 日</strong>仍需接受国会委员会问询——11/23 那根 +31.48% 的“黄仁勋复职”阳线，隔一天就被“国会问询”对冲；③ 美联储鹰派表态升温（威廉姆斯称通胀仍高、12 月加息预期上升），美元指数创近 19 个月新高。<strong>一句话：11/23 是人事驱动的暴力反弹，11/24 是反弹次日的获利了结 + 政策风险回摆。费半 -7.88% 把前一日 +14.03% 抹去了 56%。</strong></p>
+
+        <p>商品与利率：<span class="down">COMEX 黄金 -2.45% 报 3,559.90 美元/盎司</span>（五个交易日第四次下跌）、<span class="down">COMEX 白银 -5.53% 报 40.76 美元/盎司</span>（52 周新低）、<span class="down">LME 三个月铜 -2.33% 报 12,162.5 美元/吨</span>（盘中跌破 12,000）。CME 盘后<strong>上调金银期货保证金</strong>（金 5%→6%、银 8%→9%）。驱动是“美联储鹰派 + 美元走强 + AI 叙事降温”三杀——铜的“AI 需求”定价正在被修正。<strong>这直接解释了池内紫金矿业 11/24 的 -4.33%，也是它 15 日真主力从 -6.80 恶化到 -11.03 的宏观背景。</strong></p>
+
+        <p><strong>今日盘前消息面：外盘给低开理由，国内给三条对冲。</strong></p>
+
+        <p>① <strong>央行今日（11/25）开展 8000 亿元 1 年期 MLF + 5000 亿元 7 天期逆回购。</strong>但必须看清量的结构：今日 MLF 到期 <strong>1 万亿元</strong>、隔夜逆回购到期 5160 亿元、国库现金定存到期 800 亿元，<strong>8000 亿 MLF 属缩量续作、净回笼 2000 亿元</strong>；叠加 11 月两个期限买断式逆回购净回笼 3000 亿元，当月中期流动性工具<strong>合计净回笼 5000 亿元，结束此前连续四个月加量续作</strong>。市场解读为“缩长放短、呵护跨月”，<strong>不是宽松加码——把 8000 亿读成“放水”是误读。</strong></p>
+
+        <p>② <strong>商务部公告 2026 年第 59 号：自 2026 年 11 月 28 日起至 2027 年 1 月 27 日，2024 年第 46 号公告第二款暂停实施。</strong>该款原本对<strong>镓、锗、锑、超硬材料</strong>相关两用物项原则上不予许可对美出口，并对石墨实施更严格审查。这是中美出口管制的边际缓和信号，对半导体材料、超硬材料是正向事件（池内四方达属超硬材料），但四方达 PE 86.7x + 15 日 -2.60 亿双红线，仍不构成推荐。</p>
+
+        <p>③ <strong>中际旭创 20-40 亿元回购（价格不超 600 元/股）</strong>；万华化学、固德威、游族网络、钛能化学等十余家披露回购，信科移动、凌钢股份股东增持。<strong>回购是“公司认为便宜”的信号，但在本轮调整中已多次出现“公告回购后继续跌”（长鑫 50 亿上限，15 日仍 -78.05 亿），回购只能托底，不能反转。</strong></p>
+
+        <p>④ <strong>两融保证金比例 11/30 起由 100% 下调至 80%</strong>，存量合约同步适用——中期增量资金逻辑仍在，但不是今天的买盘。</p>
+
+        <p>⑤ 工信部：北京、河北、上海、江苏、浙江、安徽、湖北、广东 <strong>8 省市获批开展 6G 试点</strong>。</p>
+
+        <p>⑥ 欧盟对混动汽车采取临时保障措施，商务部称将坚决维护中国产业正当权益；<strong>天齐锂业拟 68.72 亿元收购天齐集团锂矿采矿权与探矿权资产</strong>。</p>
+
+        <p>⑦ 据科创板日报，<strong>AI 服务器厂商据称要求涨价最高 45%</strong>——若属实，对 AI 硬件链是价格逻辑而非需求逻辑的支撑，可作为今天低开后的一个观察点。</p>
+
+        <p>⑧ 资金面背景：10 月以来股票型 ETF 净流入超 <strong>7300 亿元</strong>，年内 1300+ 家公司回购超 <strong>1560 亿元</strong>；小米 Q3 营收 1072 亿元，工业富联拟 10 派 6.7 元（合计 132.85 亿元）。</p>
+
+        <p><strong>今日预判：低开是基准情形，但“低开之后有没有承接”才是今天的全部问题。</strong></p>
+
+        <p>外围给出了非常明确的低开理由：费半 -7.88%、英伟达 -5.86%、美光 -10.97%，A 股 AI 硬件（光模块 / 存储 / 半导体）今天低开 <strong>2%-5%</strong> 是合理定价，创业板低开 <strong>1%-2%</strong> 也在预期内。但国内同时给了四条对冲：8000 亿 MLF（虽净回笼）+ 对美出口管制暂停 + 中际旭创 20-40 亿回购 + AI 服务器涨价传闻。<strong>低开的幅度由外盘决定，低开后的方向由国内承接决定。</strong></p>
+
+        <p><strong>基准情形（概率最高，约 55%）：</strong>沪指低开 0.3%-0.6%（3527-3537），创业板低开 1%-2%（2233-2256），AI 硬件低开 2%-5%；10:00 前出现第一波恐慌盘，随后看<strong>沪指能否守住 3539.01（11/24 低点）并回补开盘缺口</strong>。若能守住，全天“低开高走”收十字星或小阳；若跌破，下一支撑 3500.83（11/20 低点）。</p>
+
+        <p><strong>乐观情形（约 25%）：</strong>低开幅度小于 1%、10:00 前翻红，成交额维持 1.6 万亿以上，机器人 / 军工 / 内需接力，则沪指站回 3557.31（MA5）、创业板站回 2290。<strong>这需要“AI 硬件不再领跌”，仅靠权重护盘不够。</strong></p>
+
+        <p><strong>悲观情形（约 20%）：</strong>AI 硬件低开 >5% 且不回头，创业板跌破 2278.99（11/24 收盘 = 当日最低）后加速下探 2240-2250，沪指跌破 3539.01 → 3500.83。<strong>此时应把仓位降到 3% 以下，停止一切新开仓。</strong></p>
+
+        <p><strong>今天看五个可验证的指标：</strong></p>
+
+        <p>① <strong>沪指 3539.01（11/24 低点）与 3500.83（11/20 低点）。</strong>3539.01 恰好是 11/24 的前收盘，是多空分水岭；跌破且 30 分钟不收回，下一支撑 3500.83，再下是 3476.65（11/23 低点，也是 20 日最低）。</p>
+
+        <p>② <strong>创业板 2278.99（11/24 收盘 = 当日最低）。</strong>这是全市场最脆弱的位置——11/24 收出光头阴线，今天若低开直接跌破，等于确认“下跌中继”；若低开后拉回 2278.99 上方，则是“二次探底”。</p>
+
+        <p>③ <strong>成交额 1.66 万亿。</strong>若缩到 <strong>1.4 万亿以下</strong>，说明“卖压不大、买盘也没了”，任何反弹都是弱反弹；若放量下跌超过 <strong>1.8 万亿</strong>，是恐慌出逃，要按悲观情形处理。</p>
+
+        <p>④ <strong>新易盛 180.01 / 中际旭创 417.00。</strong>这两只是外盘映射最直接、也是 11/24 真主力流入最集中的两只（合计 +14.41 亿）。低开后能否收回 11/24 收盘价，是“利空落地”与“利空发酵”的分水岭。</p>
+
+        <p>⑤ <strong>涨停家数 55-64（11/24）。</strong>若今天 &lt;40 家，情绪转冷；若 &gt;80 家，说明机器人 / 军工的结构性行情仍在，指数下跌但个股有赚钱效应。</p>
+
+        <p><strong>全池资金结论：</strong>11/24 当日真主力 <span class="up">+8.76 亿</span>（10 流入 / 13 流出），5 日 <span class="up">+65.80 亿</span>（前值 +11.71 亿），10 日 <span class="neg">-153.65 亿</span>（前值 -133.21 亿，<strong>恶化 20.44 亿</strong>），15 日 <span class="neg">-103.26 亿</span>（前值 -186.94 亿，改善 83.68 亿）。<strong>三个窗口里，5 日和 15 日的“改善”都带有强烈的“机械滚窗”成分，唯一恶化的 10 日窗口才是最该重视的信号。</strong>今天正确的姿势是：<strong>不追 AI 硬件低开后的第一波反弹，只在“资金四窗口全正 + 非 AI 硬件”的标的里做条件单，不碰任何触红线的。</strong></p>
+
+    </div>
+</div>
+
+<div class="section">
+    <h2>📋 信号概览</h2>
+    <div class="note">11/25 盘前信号基于 <strong>11/24 收盘价 + 日 K 线技术指标（布林 / 量价 / 均线 / 20 日位置）+ Tushare moneyflow 真主力</strong>（超大单+大单口径，截至 11/24 收盘，含当日 / 近 5 / 10 / 15 日净流入，单位：亿元）综合评估。</div>
+
+    <p style="font-size:12px;line-height:1.9;margin-bottom:8px;">核心变化（11/24 较 11/23）：① 当日真主力 <span class="up">+8.76 亿元</span>（前值 +56.73 亿，<strong>缩量 47.97 亿</strong>），流入面从 14 只缩到 <strong>10 只</strong>、流出面从 9 只扩到 <strong>13 只</strong>；② 近 5 日 <span class="up">+65.80 亿</span>（前值 +11.71 亿，改善 54.09 亿），但中际 +52.75、新易 +43.90 <strong>两只合计 +96.65 亿，其余 21 只合计 -30.85 亿</strong>；③ 近 10 日 <span class="neg">-153.65 亿</span>（前值 -133.21 亿，<strong>恶化 20.44 亿，是唯一恶化的窗口</strong>）；④ 近 15 日 <span class="neg">-103.26 亿</span>（前值 -186.94 亿，改善 83.68 亿，主要是 11 月初大额流出滚出窗口）；⑤ <strong>四窗口全正从 1 只增至 2 只（新易盛、宁德时代）</strong>；⑥ 15 日为正从 4 只增至 <strong>5 只</strong>（新增中际旭创 +3.36，但其中约 70% 来自 11/3 的 -27.6 亿滚出窗口）；⑦ 15 日红线从 16 只收窄至 <strong>12 只</strong>（中际旭创、华友钴业、环旭电子、汉得信息退出）；⑧ 15 日 &gt;10 亿红线维持 <strong>5 只</strong>，成分变化：<strong>中际旭创退出、紫金矿业进入</strong>；⑨ PE_TTM &gt;50 维持 <strong>3 只</strong>（科大讯飞 91.8x、四方达 86.7x、汉得信息 64.6x）；⑩ 收盘低于 MA20 从 22/23 降至 <strong>21/23</strong>——华友钴业放量收复 MA20，是唯一新增的站上者。</p>
+
+    <div class="summary">
+        <div class="summary-item">🟢 四窗口全正：<span class="buy-count">2 只</span>（新易盛、宁德时代）</div>
+        <div class="summary-item">🟢 15 日真主力为正：<span class="buy-count">5 只</span>（合计 +73.31 亿）</div>
+        <div class="summary-item">⚪ 基本平衡（-1~0 亿）：<span class="hold-count">6 只</span>（复旦/汉得/华友/华测/科华/环旭）</div>
+        <div class="summary-item">🔴 15 日红线 &gt;1 亿：<span class="sell-count">12 只</span>（合计 -171.30 亿）</div>
+        <div class="summary-item">🚨 15 日 &gt;10 亿：<span class="sell-count">5 只</span>（合计 -144.91 亿）</div>
+        <div class="summary-item">🟡 5 日净流入 &gt;2 亿：<span class="buy-count">3 只</span>（中际/新易/宁德）</div>
+        <div class="summary-item">🚨 PE_TTM &gt;50：<span class="sell-count">3 只</span></div>
+        <div class="summary-item">📉 收盘低于 MA20：<span class="sell-count">21 / 23</span></div>
+        <div class="summary-item">📈 当日流入：<span class="buy-count">10 只</span> / 流出：<span class="sell-count">13 只</span></div>
+        <div class="summary-item">🟢 站上 MA20：<span class="buy-count">2 只</span>（华友、青岛啤酒）</div>
+    </div>
+
+    <div class="alert-box green" style="margin-top:10px;">
+        <strong>🟢 四窗口全正（当日/5/10/15）：2 只</strong><br>
+        新易盛 +2.39 / +43.90 / +20.70 / +48.06 亿元——四窗口全正，且 15 日 +48.06 全池最高；11/24 高开 8.62% 后收 -0.74%，但当日真主力仍净流入 2.39 亿，属“价格回吐、资金没走”。<br>
+        宁德时代 +4.73 / +13.18 / +0.02 / +7.44 亿元——<strong>10 日 +0.02 是“刚够正”</strong>，今天只要流出 1 亿就会翻负，四窗口全正并不稳固。<br>
+        另有中际旭创差 10 日一项（-0.98），三窗口正；立讯精密差 5 日/10 日两项，但 15 日 +14.16 全池第二。
+    </div>
+
+    <div class="alert-box">
+        <strong>🟢 15 日真主力为正（5 只，合计 +73.31 亿）</strong><br>
+        新易盛 +48.06、立讯精密 +14.16、宁德时代 +7.44、中际旭创 +3.36、中钨高新 +0.29。<br>
+        这 5 只是全池唯一“未触 15 日红线”的正值标的，也是今天所有推荐与观察的<strong>唯一合法来源</strong>——铁律：15 日净流出 &gt;1 亿，无论技术面多好看，都不推荐。<strong>但要注意：中际的转正约 70% 来自滚窗，中钨的 +0.29 已被 5 日 -2.68、10 日 -7.32 侵蚀——真正“现在还站得住”的只有前四只。</strong>
+    </div>
+
+    <div class="alert-box red">
+        <strong>🚨 15 日真主力净流出 &gt;10 亿（5 只，合计 -144.91 亿）</strong><br>
+        长鑫科技 -78.05、亨通光电 -24.32、澜起科技 -20.99、紫金矿业 -11.03、佰维存储 -10.52。<br>
+        按铁律<strong>绝对不推荐</strong>。成分较 11/24 盘前有一进一出：<strong>中际旭创（-36.30 → +3.36）摘掉红线，紫金矿业（-6.80 → -11.03）戴上红线</strong>——资金在换股，不是在离场。紫金今天同时面对金 -2.45%、银 -5.53%、铜 -2.33% 的三杀，是今天最不该碰的一只。
+    </div>
+
+    <div class="alert-box">
+        <strong>⚪ 基本平衡 / 未触红线（6 只）</strong><br>
+        复旦微电 -0.72、汉得信息 -0.82、华友钴业 -0.91、华测导航 -0.91、科华数据 -0.95、环旭电子 -0.96——六只均<strong>未触 15 日红线</strong>，但也没有正到可以无条件推荐。<br>
+        其中<strong>华友钴业</strong>是唯一“5 日已转正（+0.66）+ 当日流入（+2.48）+ 放量收复 MA20”的，具备升级条件；<strong>汉得信息</strong>虽未触红线，但 PE 64.6x 单独构成否决。
+    </div>
+
+    <div class="alert-box red">
+        <strong>🚨 PE_TTM &gt;50（3 只）</strong><br>
+        科大讯飞 91.8x（15 日 -6.62）、四方达 86.7x（15 日 -2.60）、汉得信息 64.6x（15 日 -0.82）。<br>
+        前两只“高估值 + 15 日红线”双杀；汉得虽未触资金红线，但 64.6x 的估值在任何环境下都不构成推荐——<strong>PE &gt;50 是一条独立的否决线，不需要第二条理由。</strong>
+    </div>
+</div>
+
+<div class="section">
+    <h2>⭐ 推荐一览表（按推荐价值 + 近15日资金态度 + 技术面 + 今日事件权重排列，23只）</h2>
+    <div class="note">
+        价格与涨跌幅为 <strong>11/24 收盘</strong>（扬杰科技 11/24 除息 0.50 元/股，涨跌幅按除权参考价 65.01 计）；PE 为 Tushare daily_basic 的 <strong>pe_ttm</strong>（11/24）；量比 = 11/24 成交量 / 前 5 日均量；主力资金为 <strong>Tushare moneyflow 真主力（超大单+大单）</strong>，单位亿元；布林区间为 20 日 ±2σ；20 日位置 =（收盘-20日最低）/（20日最高-20日最低）。<br>
+        信号说明：<strong>买入</strong>=可条件建仓；<strong>观察</strong>=等触发条件；<strong>持有</strong>=已持有者不减；<strong>减仓</strong>=逢高降低；<strong>回避</strong>=不参与。
+    </div>
+    <div class="table-wrap">
+    <table>
+        <tr>
+            <th>股票</th><th>11/24收盘</th><th>涨跌</th><th>PE(TTM)</th><th>量比</th><th>当日主力</th><th>5日</th><th>10日</th><th>15日</th><th>资金态度</th><th>量价配合</th><th>信号</th><th>星数</th><th>布林区间</th><th>20日位置</th><th>风险提示 / 操作建议（含止损）</th>
+        </tr>
+        <tr class="row-hl">
+            <td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td>
+            <td class="price">227.37</td><td class="down">-0.01%</td><td>12.0x</td><td>1.30</td>
+            <td class="up">+4.73</td><td class="up">+13.18</td><td class="up">+0.02</td><td class="up">+7.44</td>
+            <td>🟢四窗口全正</td><td>放量滞涨</td><td><span class="signal buy">条件买入</span></td><td>★★★</td>
+            <td class="range">220.40-260.79</td><td>10.0%</td>
+            <td class="small">四窗口全正（10 日 +0.02 刚够正）；PE 12.0x 全池最低、股息 2.97%、20 日位置 10.0%；11/24 放量 1.30 但收平，高开 230.01 后回落——<strong>“资金流入 + 股价滞涨”的逆势吸筹</strong>。风险：收盘低于 MA20 240.59 达 5.5%、RSI 29.1 仍弱；10 日 +0.02 随时翻负。<strong>条件：低开 ≤3%（≥220.57）、10:30 后站回 230.00；止损 220.40</strong></td>
+        </tr>
+        <tr class="row-hl">
+            <td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td>
+            <td class="price">180.01</td><td class="down">-0.74%</td><td>17.2x</td><td>1.40</td>
+            <td class="up">+2.39</td><td class="up">+43.90</td><td class="up">+20.70</td><td class="up">+48.06</td>
+            <td>🟢四窗口全正</td><td>放量下跌（高开低走）</td><td><span class="signal buy">持有/条件加仓</span></td><td>★★★</td>
+            <td class="range">139.64-235.02</td><td>26.5%</td>
+            <td class="small">四窗口全正且 15 日 +48.06 全池最高、10 日 +20.70 是唯一两位数正；PE 17.2x。11/24 高开 8.62%（197.00）后收 -0.74%，<strong>但当日真主力仍 +2.39 亿——价格回吐、资金没走</strong>。风险：隔夜费半 -7.88%、英伟达 -5.86%，光模块今日低开 3%-6% 是基准；收盘低于 MA20 187.33 达 3.9%。<strong>持有者持有、止损 170.33；空仓者低开 ≤5%（≥171.01）且 10:30 后站回 180.01 才轻仓，止损 171.00</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">立讯精密</span><br><span class="stock-code">002475.SZ</span></td>
+            <td class="price">48.10</td><td class="up">+3.98%</td><td>20.5x</td><td>1.58</td>
+            <td class="up">+0.37</td><td class="neg">-1.95</td><td class="neg">-3.95</td><td class="up">+14.16</td>
+            <td>🟢积极（15日+14.16）</td><td>放量上涨</td><td><span class="signal buy">条件买入</span></td><td>★★☆</td>
+            <td class="range">44.34-52.72</td><td>41.8%</td>
+            <td class="small">15 日 +14.16 全池第二；11/24 +3.98% 放量 1.58、收 48.10，距 MA20 48.53 仅 0.9%；消费电子/苹果链，<strong>对费半 -7.88% 的直接暴露低于光模块</strong>，是今天池内少有的“低 beta 承接位”。风险：5 日 -1.95、10 日 -3.95 仍负，中期资金未回来；PE 20.5x 需增长支撑。<strong>条件：站稳 48.53（MA20）+ 5 日资金转正；止损 46.20</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td>
+            <td class="price">31.60</td><td class="up">+5.72%</td><td>9.6x</td><td>2.47</td>
+            <td class="up">+2.48</td><td class="up">+0.66</td><td class="neg">-2.14</td><td class="neg">-0.91</td>
+            <td>⚪基本平衡（未触红线）</td><td>放量上涨</td><td><span class="signal obs">事件观察（可升级）</span></td><td>★★☆</td>
+            <td class="range">28.48-33.81</td><td>55.5%</td>
+            <td class="small"><strong>刚果（金）11/30 起暂停所有钴出口</strong>，是池内唯一“未来 5 个交易日有确定性供给事件”的标的；11/24 +5.72%、量比 2.47 全池最高、收 31.60 <strong>收复 MA20 31.15</strong>；15 日 -0.91 未触红线、5 日 +0.66 转正、PE 9.6x。风险：10 日 -2.14 仍负；11/24 铜 -2.33%、银 -5.53%，有色整体逆风。<strong>条件：不追高开 &gt;3%；回踩 30.63（MA10）不破 30.00（MA5）再买；止损 29.60</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">中际旭创</span><br><span class="stock-code">300308.SZ</span></td>
+            <td class="price">417.00</td><td class="down">-0.05%</td><td>19.0x</td><td>1.41</td>
+            <td class="up">+12.02</td><td class="up">+52.75</td><td class="neg">-0.98</td><td class="up">+3.36</td>
+            <td>🟢积极（15日+3.36）</td><td>放量滞涨（高开低走）</td><td><span class="signal obs">观察（不追）</span></td><td>★★☆</td>
+            <td class="range">339.73-615.31</td><td>15.1%</td>
+            <td class="small">15 日从 -36.30 <strong>转正至 +3.36</strong>、5 日 +52.75 全池最高、当日 +12.02 亿全池最高；但转正约 <strong>70% 来自 11/3 的 -27.6 亿滚出窗口</strong>，新增资金只是一部分。11/24 高开 11.03%（463.20）后收 -0.05%，全天成交 285.8 亿。风险：隔夜费半 -7.88% 直接冲击；收盘低于 MA20 477.52 达 12.7%。<strong>不追低开反弹；持有者跌破 406.42（MA5）减仓；空仓者站回 435.12（MA10）再评估</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td>
+            <td class="price">34.00</td><td class="down">-2.66%</td><td>23.1x</td><td>1.33</td>
+            <td class="neg">-1.01</td><td class="neg">-2.68</td><td class="neg">-7.32</td><td class="up">+0.29</td>
+            <td>🟢积极（15日+0.29）</td><td>放量下跌</td><td><span class="signal obs">观望</span></td><td>★★</td>
+            <td class="range">32.38-42.45</td><td>17.5%</td>
+            <td class="small">15 日 +0.29 仍为正、是池内唯五之一；但 11/24 -2.66% 放量下跌，5 日 -2.68、10 日 -7.32 <strong>三窗口全面转弱</strong>，15 日的正只剩“余温”。风险：收盘低于 MA20 37.41 达 9.1%；钨价处于周期高位，需防“景气顶点 PE 陷阱”；军工领涨未能带动它。<strong>站回 36.45（MA10）+ 5 日转正才评估；止损 31.90</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td>
+            <td class="price">53.50</td><td class="up">+0.85%</td><td>16.7x</td><td>0.93</td>
+            <td class="up">+0.07</td><td class="neg">-0.35</td><td class="neg">-0.11</td><td class="neg">-1.29</td>
+            <td>🚨红线（-1.29）</td><td>平量上涨</td><td><span class="signal obs">持有观望</span></td><td>★★</td>
+            <td class="range">49.91-55.32</td><td>77.8%</td>
+            <td class="small">全池<strong>唯一“11/24 低开 +0.72% 后高走 +0.85%”且站上 MA20（52.61）</strong>的标的，PE 16.7x、股息 4.11%；在 3490 只下跌的一天逆势收红，防御属性得到验证。风险：15 日 -1.29 仍触红线；20 日位置 77.8% 全池最高，<strong>高位防御的性价比在下降</strong>。<strong>持有者可留、不追高；跌破 52.61 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">复旦微电</span><br><span class="stock-code">688385.SH</span></td>
+            <td class="price">43.93</td><td class="up">+0.94%</td><td>37.6x</td><td>0.92</td>
+            <td class="neg">-0.28</td><td class="neg">-0.28</td><td class="neg">-0.29</td><td class="neg">-0.72</td>
+            <td>⚪基本平衡（未触红线）</td><td>缩量上涨</td><td><span class="signal obs">观望</span></td><td>★☆</td>
+            <td class="range">41.79-53.59</td><td>24.1%</td>
+            <td class="small">15 日 -0.72 未触红线，<strong>四个窗口全部小幅为负、幅度均 &lt;0.3 亿</strong>——“没有资金愿意买，也没有人急着卖”；FPGA/特种芯片国产替代逻辑硬。风险：PE 37.6x 需增长支撑；11/24 缩量上涨 0.92，反弹无量；收盘低于 MA20 47.69 达 7.9%。<strong>站回 44.62（MA5）+ 量能放大才评估；止损 41.79</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td>
+            <td class="price">16.78</td><td class="up">+0.30%</td><td>18.8x</td><td>1.11</td>
+            <td class="neg">-0.08</td><td class="up">+0.18</td><td class="neg">-0.90</td><td class="neg">-0.96</td>
+            <td>⚪基本平衡（未触红线）</td><td>平量滞涨</td><td><span class="signal obs">观望</span></td><td>★☆</td>
+            <td class="range">15.46-20.86</td><td>15.5%</td>
+            <td class="small">PE 18.8x、PB 1.74、股息 1.26%；<strong>5 日 +0.18 为正</strong>、15 日 -0.96 未触红线；EMS/消费电子与 AI 硬件关联度低，受费半冲击相对小。风险：当日 -0.08 仍流出；11/24 高开 4.78% 后回落；收盘低于 MA20 18.16 达 7.6%。<strong>站回 17.54（MA10）+ 5 日维持正才评估；止损 15.46</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td>
+            <td class="price">22.43</td><td class="up">+0.04%</td><td>30.5x</td><td>0.91</td>
+            <td class="neg">-0.19</td><td class="neg">-0.67</td><td class="neg">-1.12</td><td class="neg">-0.95</td>
+            <td>⚪基本平衡（未触红线）</td><td>平量滞涨</td><td><span class="signal obs">观望</span></td><td>★☆</td>
+            <td class="range">21.73-26.12</td><td>29.0%</td>
+            <td class="small">15 日 -0.95 未触红线；数据中心/储能，AI 算力基建受益方向；四个窗口流出幅度均 &lt;1.2 亿，抛压不重。风险：当日 -0.19 仍流出；PE 30.5x 需增长支撑；收盘低于 MA20 23.93 达 6.3%。<strong>站回 22.77（MA5）+ 5 日转正才评估；止损 21.73</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td>
+            <td class="price">19.64</td><td class="down">-0.96%</td><td>27.8x</td><td>1.04</td>
+            <td class="neg">-0.03</td><td class="neg">-0.40</td><td class="neg">-0.80</td><td class="neg">-0.91</td>
+            <td>⚪基本平衡（未触红线）</td><td>平量下跌</td><td><span class="signal obs">观望</span></td><td>★☆</td>
+            <td class="range">19.51-21.49</td><td>22.6%</td>
+            <td class="small">15 日 -0.91 未触红线，三窗口流出均 &lt;1 亿；导航/农机自动驾驶，业绩确定性较高。风险：11/24 -0.96% 且当日 -0.03，<strong>低开 1.01% 后继续走弱，无资金承接</strong>；收盘低于 MA20 20.50 达 4.2%。<strong>站回 19.90（MA5）+ 5 日转正才评估；止损 19.51</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">汉得信息</span><br><span class="stock-code">300170.SZ</span></td>
+            <td class="price">12.46</td><td class="up">+2.55%</td><td>64.6x</td><td>1.93</td>
+            <td class="up">+0.70</td><td class="neg">-0.20</td><td class="neg">-1.03</td><td class="neg">-0.82</td>
+            <td>⚪基本平衡（PE 高危）</td><td>放量上涨</td><td><span class="signal sell">回避</span></td><td>★☆</td>
+            <td class="range">11.67-15.81</td><td>27.6%</td>
+            <td class="small">15 日 -0.82 未触红线、11/24 +2.55% 放量 1.93 全池第二；<strong>但 PE 64.6x 触发 &gt;50 高危红线，单此一条即否决</strong>。风险：5 日 -0.20、10 日 -1.03 仍负；软件服务板块缺乏独立逻辑，11/24 的上涨是“AI 应用超跌反弹”而非资金趋势。<strong>绝不推荐；持有者跌破 11.67 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">紫光国微</span><br><span class="stock-code">002049.SZ</span></td>
+            <td class="price">48.42</td><td class="down">-0.06%</td><td>33.5x</td><td>1.01</td>
+            <td class="neg">-0.14</td><td class="neg">-1.45</td><td class="neg">-2.00</td><td class="neg">-1.94</td>
+            <td>🚨红线（-1.94）</td><td>平量滞涨</td><td><span class="signal obs">观望</span></td><td>★</td>
+            <td class="range">46.89-52.75</td><td>27.8%</td>
+            <td class="small">当日 -0.14 小幅流出，15 日 -1.94 触红线；PE 33.5x 需增长支撑。风险：11/24 高开 2.29% 后收平，三窗口全负；收盘低于 MA20 49.82；特种芯片需求恢复尚未见数据验证。<strong>观望；站回 49.82 才评估，跌破 46.89 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">扬杰科技</span><br><span class="stock-code">300373.SZ</span></td>
+            <td class="price">64.16</td><td class="down">-1.31%</td><td>23.0x</td><td>0.98</td>
+            <td class="up">+0.23</td><td class="neg">-1.19</td><td class="neg">-3.50</td><td class="neg">-2.91</td>
+            <td>🚨红线（-2.91）</td><td>平量下跌</td><td><span class="signal obs">观望</span></td><td>★</td>
+            <td class="range">61.62-79.88</td><td>15.1%</td>
+            <td class="small"><strong>11/24 除息 0.50 元/股</strong>，按除权参考价 65.01 计 -1.31%；当日 +0.23 小幅流入，但 5 日 -1.19 / 10 日 -3.50 / 15 日 -2.91 三窗口全负。风险：15 日触红线；收盘低于 MA20 70.75 达 9.3%；功率半导体价格战未止。<strong>观望；站回 67.90（MA10）才评估，跌破 61.62 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">澜起科技</span><br><span class="stock-code">688008.SH</span></td>
+            <td class="price">133.17</td><td class="up">+0.73%</td><td>42.3x</td><td>0.97</td>
+            <td class="up">+1.05</td><td class="up">+1.18</td><td class="neg">-14.68</td><td class="neg">-20.99</td>
+            <td>🚨红线&gt;10亿（-20.99）</td><td>平量滞涨（高开低走）</td><td><span class="signal sell">减仓</span></td><td>☆</td>
+            <td class="range">123.01-178.67</td><td>18.8%</td>
+            <td class="small">当日 +1.05、5 日 +1.18 双转正，但 10 日 -14.68、15 日 -20.99 仍是全池第三大失血；11/24 <strong>高开 8.17%（143.00）后收 133.17，全天回吐 6.9%</strong>。风险：PE 42.3x 需增长支撑；收盘低于 MA20 150.84 达 11.7%；美光 -10.97% 对存储接口链是直接映射。<strong>持有者反弹 138-142 减仓；跌破 123.01 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">普冉股份</span><br><span class="stock-code">688766.SH</span></td>
+            <td class="price">187.74</td><td class="down">-1.41%</td><td>16.4x</td><td>1.17</td>
+            <td class="neg">-0.93</td><td class="neg">-3.42</td><td class="neg">-9.45</td><td class="neg">-8.51</td>
+            <td>🚨红线（-8.51）</td><td>放量下跌（高开低走）</td><td><span class="signal sell">回避</span></td><td>☆</td>
+            <td class="range">167.90-299.96</td><td>12.0%</td>
+            <td class="small">11/24 高开 8.18%（206.00）后收 187.74，<strong>全天回吐 8.9%，量比 1.17 放量下跌</strong>；15 日 -8.51 触红线、10 日 -9.45。风险：收盘低于 MA20 233.93 达 19.8%（全池偏离最大）；美光 -10.97% 对存储链是直接打击。<strong>绝不推荐；持有者跌破 167.90 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">佰维存储</span><br><span class="stock-code">688525.SH</span></td>
+            <td class="price">122.51</td><td class="up">+0.27%</td><td>6.1x</td><td>1.27</td>
+            <td class="neg">-1.19</td><td class="neg">-2.94</td><td class="neg">-6.66</td><td class="neg">-10.52</td>
+            <td>🚨红线&gt;10亿（-10.52）</td><td>放量滞涨</td><td><span class="signal sell">回避</span></td><td>☆</td>
+            <td class="range">111.43-150.40</td><td>16.0%</td>
+            <td class="small">15 日 -10.52 触 10 亿红线、三窗口全负；当日 -1.19 在微涨中流出，属<strong>“流出+上涨”诱多</strong>。风险：PE 6.1x 全池最低，但存储周期若见顶，低 PE 就是价值陷阱第 4 类（景气顶点）；11/24 高开 7.22% 后仅收 +0.27%。<strong>不参与；持有者跌破 111.43 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">长鑫科技</span><br><span class="stock-code">688825.SH</span></td>
+            <td class="price">36.26</td><td class="up">+1.00%</td><td>17.7x</td><td>1.17</td>
+            <td class="neg">-5.62</td><td class="neg">-16.79</td><td class="neg">-71.94</td><td class="neg">-78.05</td>
+            <td>🚨红线&gt;10亿·全池最差</td><td>放量滞涨</td><td><span class="signal sell">回避</span></td><td>☆</td>
+            <td class="range">34.33-45.30</td><td>23.4%</td>
+            <td class="small">15 日 -78.05 全池最差（较 11/23 的 -102.65 改善 24.60，主要是滚窗）；<strong>当日 -5.62 仍是全池最大单日流出，5 日 -16.79、10 日 -71.94</strong>。风险：收盘低于 MA20 39.81 达 8.9%；2.46 万亿市值，50 亿回购上限不到 15 日失血的三分之二。<strong>不参与；持有者跌破 34.33 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">紫金矿业</span><br><span class="stock-code">601899.SH</span></td>
+            <td class="price">23.21</td><td class="down">-4.33%</td><td>8.6x</td><td>0.95</td>
+            <td class="neg">-1.23</td><td class="neg">-0.35</td><td class="neg">-14.25</td><td class="neg">-11.03</td>
+            <td>🚨红线&gt;10亿（新进入）</td><td>平量下跌</td><td><span class="signal sell">回避</span></td><td>☆</td>
+            <td class="range">22.99-30.41</td><td>8.8%</td>
+            <td class="small">11/24 -4.33% 全池跌幅第一；<strong>COMEX 金 -2.45%、银 -5.53%、LME 铜 -2.33% 三杀</strong>；15 日从 -6.80 恶化至 -11.03，<strong>新进入 10 亿红线</strong>。风险：RSI 11.7 极度超卖、收盘 23.21 紧贴布林下轨 22.99——<strong>超卖不等于见底</strong>；PE 8.6x 是“周期低谷 PE”还是“盈利下修前的假便宜”，尚未验证。<strong>不买；持有者反弹 24.0-24.5 减仓，跌破 22.99 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">四方达</span><br><span class="stock-code">300179.SZ</span></td>
+            <td class="price">21.82</td><td class="down">-0.55%</td><td>86.7x</td><td>1.09</td>
+            <td class="up">+0.01</td><td class="neg">-0.70</td><td class="neg">-2.06</td><td class="neg">-2.60</td>
+            <td>🚨红线（-2.60）</td><td>平量下跌</td><td><span class="signal sell">回避</span></td><td>☆</td>
+            <td class="range">20.52-29.15</td><td>16.5%</td>
+            <td class="small">商务部暂停对美<strong>超硬材料</strong>出口管制（11/28 起）对它是最直接的产业利好，<strong>但 PE 86.7x 高危 + 15 日 -2.60 触红线，双红线仍不推荐</strong>。风险：当日仅 +0.01 亿流入，事件未转化为资金；收盘低于 MA20 24.84 达 12.2%。<strong>绝不推荐；持有者跌破 20.52 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">大华股份</span><br><span class="stock-code">002236.SZ</span></td>
+            <td class="price">14.02</td><td class="down">-0.99%</td><td>14.2x</td><td>0.99</td>
+            <td class="neg">-0.07</td><td class="neg">-1.20</td><td class="neg">-1.76</td><td class="neg">-2.52</td>
+            <td>🚨红线（-2.52）</td><td>平量下跌</td><td><span class="signal obs">观望</span></td><td>★</td>
+            <td class="range">13.97-14.74</td><td>14.4%</td>
+            <td class="small">PE 14.2x、股息 4.59% 全池最高；收盘 14.02 已<strong>贴住布林下轨 13.97</strong>。风险：15 日 -2.52 触红线、三窗口全负；20 日位置 14.4%。<strong>高股息不等于买点；站稳 14.35（MA20）再看，跌破 13.97 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">科大讯飞</span><br><span class="stock-code">002230.SZ</span></td>
+            <td class="price">35.46</td><td class="down">-0.08%</td><td>91.8x</td><td>1.04</td>
+            <td class="neg">-0.14</td><td class="neg">-3.17</td><td class="neg">-6.36</td><td class="neg">-6.62</td>
+            <td>🚨红线（-6.62）</td><td>平量滞涨</td><td><span class="signal sell">回避</span></td><td>☆</td>
+            <td class="range">34.78-39.45</td><td>29.1%</td>
+            <td class="small">PE 91.8x 全池最高 + 15 日 -6.62，双红线；11/24 -0.08% 无量整理、高开 1.24% 后收平。风险：收盘低于 MA20 37.11；AI 应用退潮未止，估值没有安全边际。<strong>绝不推荐；持有者跌破 34.78 离场</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">亨通光电</span><br><span class="stock-code">600487.SH</span></td>
+            <td class="price">36.50</td><td class="down">-1.35%</td><td>13.9x</td><td>1.35</td>
+            <td class="neg">-4.38</td><td class="neg">-8.31</td><td class="neg">-23.07</td><td class="neg">-24.32</td>
+            <td>🚨红线&gt;10亿（-24.32）</td><td>放量下跌</td><td><span class="signal sell">回避</span></td><td>☆</td>
+            <td class="range">34.74-47.86</td><td>12.7%</td>
+            <td class="small">当日 -4.38 全池第二大流出；15 日 -24.32、10 日 -23.07，<strong>长窗口持续恶化</strong>；11/24 高开 5.84%（39.16）后收 36.50，回吐 6.8%。风险：收盘低于 MA20 41.30 达 11.6%；PE 13.9x 的“便宜”已被资金持续否证。<strong>不参与；持有者跌破 34.74 离场</strong></td>
+        </tr>
+    </table>
+    </div>
+    <div class="note-sm"><strong>表格读法：</strong>① <strong>资金态度</strong>按 15 日真主力分档——🟢积极（15日&gt;0）、⚪基本平衡（-1 亿~0）、🚨红线流出（&lt;-1 亿）、🚨红色加注（&lt;-10 亿）；② <strong>量价配合</strong>用 11/24 量比 + 涨跌幅判定：量比 &gt;1.15 且涨 = 放量上涨，1.15 以上且跌 = 放量下跌，0.9-1.15 = 平量；当日普遍“高开低走”，已在括号内标注；③ <strong>星数</strong>综合 15 日资金（40%）+ 估值（20%）+ 技术位置（20%）+ 当日资金拐点（20%），最高 ★★★。<br><strong>本日的核心矛盾</strong>：资金结构最好的两只（新易盛、宁德时代）都<strong>不在</strong>今天最强势的板块里——新易盛要挨费半 -7.88% 的映射，宁德要面对 10 日 +0.02 随时翻负。真正“今天最舒服”的是立讯精密和华友钴业，但它们各自缺一条腿（立讯缺 5 日资金，华友缺 10 日资金）。<strong>这就是为什么今天的推荐全部是“条件单”，没有一条市价单。</strong></div>
+</div>
+
+<div class="section">
+    <h2>📌 昨日推荐复盘（4 个决策 0 触发买入：新易盛高开 8.62% 被“不追”规则拦下、宁德差 0.02 元、中钨避开 -2.66%、华友双条件触发 +5.72%）</h2>
+    <div class="note">复盘口径：以 11/24 实际开盘价、盘中走势、收盘价，逐一核对 11/24 日报（基于 11/23 收盘）给出的触发条件与止损。</div>
+    <div class="table-wrap">
+    <table>
+        <tr><th>股票</th><th>昨日信号</th><th>触发条件</th><th>11/24 实际</th><th>结果</th><th>绩效</th></tr>
+        <tr class="row-hl">
+            <td><span class="stock-name">新易盛</span><br><span class="stock-code">300502.SZ</span></td>
+            <td><span class="signal buy">持有/条件加仓</span></td>
+            <td class="small">① 高开 ≤5%（≤190.43）；② 10:00 后站稳 181.36 且不破 172.00；③ 创业板指不跌破 2280.20 超 1%、CPO 板块不领跌</td>
+            <td class="small">开 <strong>197.00（+8.62%，① 失败）</strong>；最低 180.01（未破 172.00）；收 180.01（&lt;181.36，② 失败）；创业板收 2278.99（仅低 0.05%，③ 满足）</td>
+            <td><strong class="down">① 失败，不买</strong></td>
+            <td class="small">若按开盘 197.00 追入，收盘 180.01，<strong class="down">日内 -8.62%</strong>——<strong>“高开 &gt;5% 不追”这条规则，11/24 单独避免了 8.6 个点的浮亏</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">宁德时代</span><br><span class="stock-code">300750.SZ</span></td>
+            <td><span class="signal buy">条件买入</span></td>
+            <td class="small">① 高开 ≤3%（≤234.22）；② 10:30 后站回 230.00 且收盘 ≥227.39；③ 创业板指不跌破 2280.20 超 1%</td>
+            <td class="small">开 230.01（① 满足）；最高 236.20（盘中站上 230）；<strong>收 227.37（&lt;227.39，差 0.02 元，② 失败）</strong>；③ 满足</td>
+            <td>② 未触发，不买</td>
+            <td class="small">当日 <span class="down">-0.01%</span>；若开盘 230.01 买入，收盘 227.37 为 <span class="down">-1.15%</span>——<strong>“收盘确认”连续第五天有效</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">中钨高新</span><br><span class="stock-code">000657.SZ</span></td>
+            <td><span class="signal obs">周期观察</span></td>
+            <td class="small">① 站回 37.66（MA20）；② 5 日真主力转正</td>
+            <td class="small">最高 37.28（&lt;37.66，① 失败）；5 日 -2.68（② 失败）；收 34.00</td>
+            <td>未触发，不买</td>
+            <td class="small">当日 <span class="down">-2.66%</span>——<strong>远端均线条件过滤掉的是下跌，不是机会</strong></td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">华友钴业</span><br><span class="stock-code">603799.SH</span></td>
+            <td><span class="signal obs">事件观察（不买）</span></td>
+            <td class="small">① 站回 30.18（11/23 高）；② 5 日真主力收窄至 -1 亿内</td>
+            <td class="small">开 31.66（① 满足）；5 日 +0.66（② 满足）；最高 32.76、收 31.60</td>
+            <td><strong class="up">双条件触发</strong></td>
+            <td class="small">当日 <span class="up">+5.72%</span>，方向正确；<strong>但开盘即触发、按 31.66 买入收盘 31.60，仅 -0.19%</strong>——触发条件缺“回踩确认”条款</td>
+        </tr>
+    </table>
+    </div>
+    <p style="font-size:12px;line-height:1.85;margin-top:10px;"><strong>复盘结论四句话：</strong></p>
+    <p style="font-size:12px;line-height:1.85;">① <strong>“高开 &gt;5% 不追”是 11/24 最值钱的一条规则。</strong>新易盛高开 8.62%，若追入日内 -8.62%；而全池 23 只中 22 只高开、13 只收跌，高开幅度与收盘涨跌严重背离。<strong>规则不是保守，是止损。</strong></p>
+    <p style="font-size:12px;line-height:1.85;">② <strong>“收盘确认”连续第五天有效。</strong>宁德 11/23 差 1.99 元、11/24 差 0.02 元，两天都因“差一点”避免了买入后的浮亏。<strong>规则的价值不在“抓住”，在“不抓错”。</strong></p>
+    <p style="font-size:12px;line-height:1.85;">③ <strong>华友的触发位修正方向正确，但暴露了新问题。</strong>11/23 把“站回 MA20 31.18”改成“站回 30.18 + 5 日收窄至 -1 亿内”，11/24 双条件在开盘即满足、当日 +5.72%——条件是可达的。但<strong>“开盘即触发”等于用最差的价格买入</strong>；今天的华友条件单已加入<strong>“回踩 30.63（MA10）不破 30.00（MA5）再买”</strong>的回踩条款。<strong>教训：条件单不仅要“可达”，还要“可成交在好位置”。</strong></p>
+    <p style="font-size:12px;line-height:1.85;">④ <strong>池内整体 10 涨 13 跌、平均 +0.08%、中位数 -0.05%。</strong>4 个决策里 0 个触发买入、1 个事件触发（华友）、3 个正确规避。<strong>在一个“22 只高开、13 只收跌”的日子里，不交易就是最好的交易。</strong>今天的仓位仍然从 3% 起步，不因为“跌了”就抄底。</p>
+</div>
+
+<div class="section">
+    <h2>💰 主力资金流向总览（11/25 盘前 · Tushare moneyflow 真主力，截至前一交易日 11/24 收盘）</h2>
+    <div class="note"><strong>口径：Tushare moneyflow 真主力 = 超大单 + 大单</strong>（不含中单/小单），单位亿元；数据截至 <strong>11/24 收盘</strong>（Tushare latest_date = 20261124），为 11/25 盘前可用的最新完整数据。</div>
+    <div class="alert-box gray"><strong>北向资金：实时数据不可得</strong>——东方财富 kamt.kline 接口 11/24 返回值仍为 0.00（hk2sh / hk2sz / s2n 三项全为 0.00），沪深港通实时净买入已不再逐日披露。本报告不以 0 值顶替，也不编造数值。</div>
+
+    <div class="summary">
+        <div class="summary-item">全池当日：<span class="buy-count">+8.76 亿</span>（10 流入 / 13 流出）</div>
+        <div class="summary-item">全池 5 日：<span class="buy-count">+65.80 亿</span></div>
+        <div class="summary-item">全池 10 日：<span class="sell-count">-153.65 亿</span></div>
+        <div class="summary-item">全池 15 日：<span class="sell-count">-103.26 亿</span></div>
+    </div>
+
+    <div class="table-wrap" style="margin-top:10px;">
+    <table>
+        <tr><th>股票</th><th>当日(亿)</th><th>5日(亿)</th><th>10日(亿)</th><th>15日(亿)</th><th>资金态度</th><th>资金 vs 股价四象限（11/24）</th></tr>
+        <tr class="row-hl"><td><span class="stock-name">中际旭创</span></td><td class="up">+12.02</td><td class="up">+52.75</td><td class="neg">-0.98</td><td class="up">+3.36</td><td>🟢15日转正</td><td class="small">流入 + 下跌（-0.05%）= <strong>主力在 11% 的高开里净买入</strong>，超大单+大单净买 12.02 亿、中小单净卖——是“承接”不是“出货”，但价格没守住</td></tr>
+        <tr class="row-hl"><td><span class="stock-name">宁德时代</span></td><td class="up">+4.73</td><td class="up">+13.18</td><td class="up">+0.02</td><td class="up">+7.44</td><td>🟢四窗口全正</td><td class="small">流入 + 下跌（-0.01%）= <strong>主力逆势吸筹</strong>，四窗口全正（10 日仅 +0.02）</td></tr>
+        <tr><td><span class="stock-name">华友钴业</span></td><td class="up">+2.48</td><td class="up">+0.66</td><td class="neg">-2.14</td><td class="neg">-0.91</td><td>⚪基本平衡</td><td class="small">流入 + 上涨（+5.72%）= <strong>主动做多</strong>，钴出口暂停事件驱动，5 日已转正，10 日仍是缺口</td></tr>
+        <tr><td><span class="stock-name">新易盛</span></td><td class="up">+2.39</td><td class="up">+43.90</td><td class="up">+20.70</td><td class="up">+48.06</td><td>🟢四窗口全正</td><td class="small">流入 + 下跌（-0.74%）= <strong>价格回吐、资金没走</strong>；高开 8.62% 后的回落是兑现，不是撤退</td></tr>
+        <tr><td><span class="stock-name">澜起科技</span></td><td class="up">+1.05</td><td class="up">+1.18</td><td class="neg">-14.68</td><td class="neg">-20.99</td><td>🚨红线&gt;10亿</td><td class="small">流入 + 上涨（+0.73%）= 弱承接；高开 8.17% 后回吐 6.9%，长窗口失血未改</td></tr>
+        <tr><td><span class="stock-name">汉得信息</span></td><td class="up">+0.70</td><td class="neg">-0.20</td><td class="neg">-1.03</td><td class="neg">-0.82</td><td>⚪基本平衡（PE 高危）</td><td class="small">流入 + 上涨（+2.55%）= 放量反弹，但 PE 64.6x 否决</td></tr>
+        <tr><td><span class="stock-name">立讯精密</span></td><td class="up">+0.37</td><td class="neg">-1.95</td><td class="neg">-3.95</td><td class="up">+14.16</td><td>🟢积极（15日）</td><td class="small">流入 + 上涨（+3.98%）= <strong>主动做多</strong>，但金额小（+0.37 亿），5 日仍 -1.95</td></tr>
+        <tr><td><span class="stock-name">扬杰科技</span></td><td class="up">+0.23</td><td class="neg">-1.19</td><td class="neg">-3.50</td><td class="neg">-2.91</td><td>🚨红线</td><td class="small">流入 + 下跌（-1.31%）= 小幅承接，三窗口全负，除息日无量能</td></tr>
+        <tr><td><span class="stock-name">青岛啤酒</span></td><td class="up">+0.07</td><td class="neg">-0.35</td><td class="neg">-0.11</td><td class="neg">-1.29</td><td>🚨红线</td><td class="small">流入 + 上涨（+0.85%）= 弱做多；低开高走，资金只是“没走”，不是“回来”</td></tr>
+        <tr><td><span class="stock-name">四方达</span></td><td class="up">+0.01</td><td class="neg">-0.70</td><td class="neg">-2.06</td><td class="neg">-2.60</td><td>🚨红线</td><td class="small">流入 + 下跌（-0.55%）= 金额可忽略；超硬材料出口管制暂停未带来资金</td></tr>
+        <tr><td><span class="stock-name">华测导航</span></td><td class="neg">-0.03</td><td class="neg">-0.40</td><td class="neg">-0.80</td><td class="neg">-0.91</td><td>⚪基本平衡</td><td class="small">流出 + 下跌（-0.96%）= 无承接，四窗口小幅失血</td></tr>
+        <tr><td><span class="stock-name">大华股份</span></td><td class="neg">-0.07</td><td class="neg">-1.20</td><td class="neg">-1.76</td><td class="neg">-2.52</td><td>🚨红线</td><td class="small">流出 + 下跌（-0.99%）= 主力弃盘，高股息托不住资金</td></tr>
+        <tr><td><span class="stock-name">环旭电子</span></td><td class="neg">-0.08</td><td class="up">+0.18</td><td class="neg">-0.90</td><td class="neg">-0.96</td><td>⚪基本平衡</td><td class="small">流出 + 上涨（+0.30%）= 弱诱多；高开 4.78% 后回落</td></tr>
+        <tr><td><span class="stock-name">紫光国微</span></td><td class="neg">-0.14</td><td class="neg">-1.45</td><td class="neg">-2.00</td><td class="neg">-1.94</td><td>🚨红线</td><td class="small">流出 + 下跌（-0.06%）= 小幅弃盘，三窗口全负</td></tr>
+        <tr><td><span class="stock-name">科大讯飞</span></td><td class="neg">-0.14</td><td class="neg">-3.17</td><td class="neg">-6.36</td><td class="neg">-6.62</td><td>🚨红线·PE 91.8x</td><td class="small">流出 + 下跌（-0.08%）= 弃盘，高估值无承接</td></tr>
+        <tr><td><span class="stock-name">科华数据</span></td><td class="neg">-0.19</td><td class="neg">-0.67</td><td class="neg">-1.12</td><td class="neg">-0.95</td><td>⚪基本平衡</td><td class="small">流出 + 上涨（+0.04%）= 弱诱多，流出幅度可控</td></tr>
+        <tr><td><span class="stock-name">复旦微电</span></td><td class="neg">-0.28</td><td class="neg">-0.28</td><td class="neg">-0.29</td><td class="neg">-0.72</td><td>⚪基本平衡</td><td class="small">流出 + 上涨（+0.94%）= 缩量反弹中的小幅减仓，四窗口均 &lt;0.3 亿</td></tr>
+        <tr><td><span class="stock-name">普冉股份</span></td><td class="neg">-0.93</td><td class="neg">-3.42</td><td class="neg">-9.45</td><td class="neg">-8.51</td><td>🚨红线</td><td class="small">流出 + 下跌（-1.41%）= 主力弃盘，高开 8.18% 后回吐 8.9%</td></tr>
+        <tr><td><span class="stock-name">中钨高新</span></td><td class="neg">-1.01</td><td class="neg">-2.68</td><td class="neg">-7.32</td><td class="up">+0.29</td><td>🟢15日仍正</td><td class="small">流出 + 下跌（-2.66%）= 主力弃盘，15 日的正只剩“余温”</td></tr>
+        <tr><td><span class="stock-name">佰维存储</span></td><td class="neg">-1.19</td><td class="neg">-2.94</td><td class="neg">-6.66</td><td class="neg">-10.52</td><td>🚨红线&gt;10亿</td><td class="small">流出 + 上涨（+0.27%）= <strong>典型“诱多出货”</strong></td></tr>
+        <tr><td><span class="stock-name">紫金矿业</span></td><td class="neg">-1.23</td><td class="neg">-0.35</td><td class="neg">-14.25</td><td class="neg">-11.03</td><td>🚨红线&gt;10亿·新进入</td><td class="small">流出 + 下跌（-4.33%）= <strong>主力弃盘 + 商品三杀</strong>，15 日新进 10 亿红线</td></tr>
+        <tr><td><span class="stock-name">亨通光电</span></td><td class="neg">-4.38</td><td class="neg">-8.31</td><td class="neg">-23.07</td><td class="neg">-24.32</td><td>🚨红线&gt;10亿</td><td class="small">流出 + 下跌（-1.35%）= 放量弃盘，高开 5.84% 后回吐 6.8%</td></tr>
+        <tr><td><span class="stock-name">长鑫科技</span></td><td class="neg">-5.62</td><td class="neg">-16.79</td><td class="neg">-71.94</td><td class="neg">-78.05</td><td>🚨红线&gt;10亿·全池最差</td><td class="small">流出 + 上涨（+1.00%）= <strong>借反弹减仓</strong>，单日流出全池最大</td></tr>
+    </table>
+    </div>
+
+    <p style="font-size:12px;line-height:1.85;margin-top:10px;"><strong>四个必须看清的资金事实：</strong></p>
+    <p style="font-size:12px;line-height:1.85;">① <strong>+8.76 亿的“流入”是一只票撑起来的。</strong>中际旭创单日 +12.02 亿，<strong>一只票就超过全池净额</strong>；前四名（中际 +12.02、宁德 +4.73、华友 +2.48、新易 +2.39）合计 +21.62 亿，其余 19 只合计 <strong>-12.86 亿</strong>。这不是“资金回流”，是<strong>资金集中</strong>——和 11/23 的“两个龙头 + 一片小回流”是同一个结构，只是龙头从“新易+中际”换成了“中际+宁德”。</p>
+    <p style="font-size:12px;line-height:1.85;">② <strong>5 日 +65.80 亿是“两只票的 5 日”。</strong>中际 +52.75、新易 +43.90，两只合计 <strong>+96.65 亿</strong>，其余 21 只合计 <strong>-30.85 亿</strong>。把这两只拿掉，全池 5 日仍是净流出。<strong>所以“5 日转正”不能作为“资金全面回流”的证据。</strong></p>
+    <p style="font-size:12px;line-height:1.85;">③ <strong>10 日 -153.65 亿是唯一恶化的窗口，也是唯一没有“滚窗红利”的窗口。</strong>5 日改善是因为 11/17-11/19 的极端流出滚出窗口，15 日改善是因为 11 月初的 -74.9 亿级别流出滚出窗口——<strong>滚窗会制造“改善的幻觉”</strong>。10 日窗口较昨日 <strong>恶化 20.44 亿</strong>，说明过去两周的真实资金方向仍在流出。<strong>判断“资金真正回流”的标准不变：5 日连续 3 日为正 + 15 日为正标的增至 8 只以上 + 10 日窗口转正。三条一条都没满足。</strong></p>
+    <p style="font-size:12px;line-height:1.85;">④ <strong>资金在“换股”，不是在“离场”。</strong>中际旭创 15 日从 -36.30 转正到 +3.36，紫金矿业从 -6.80 恶化到 -11.03，一进一出；同日华友从 -3.06 收窄到 -0.91、环旭从 -1.69 收窄到 -0.96。<strong>资金正从“有色/存储二线”换向“光模块龙头/消费电子/电池”</strong>——这解释了为什么指数跌、但池内仍有 5 只 15 日为正。</p>
+</div>
+
+<div class="section">
+    <h2>🔴 重大风险警示</h2>
+
+    <div class="alert-box red">
+        <strong>🚨 最高级别（15 日真主力净流出 &gt;10 亿，共 5 只，合计 -144.91 亿）——按铁律绝对不推荐：</strong><br>
+        <strong>长鑫科技 -78.05 亿</strong>（当日 -5.62 全池最大流出、5 日 -16.79、10 日 -71.94；2.46 万亿市值，50 亿回购上限不到 15 日失血的三分之二）<br>
+        <strong>亨通光电 -24.32 亿</strong>（当日 -4.38、5 日 -8.31、10 日 -23.07，三个长窗口全部大额失血，且没有改善迹象）<br>
+        <strong>澜起科技 -20.99 亿</strong>（当日 +1.05、5 日 +1.18 双转正，但 10 日 -14.68；PE 42.3x；收盘低于 MA20 11.7%）<br>
+        <strong>紫金矿业 -11.03 亿</strong>（<strong>今日新进入 10 亿红线</strong>；金 -2.45%、银 -5.53%、铜 -2.33% 三杀；RSI 11.7 极度超卖但超卖不等于见底）<br>
+        <strong>佰维存储 -10.52 亿</strong>（PE 6.1x 全池最低，但三窗口全负；低 PE 需防“存储周期顶点”价值陷阱）<br>
+        <strong>操作含义：</strong>以上 5 只的任何反弹都是减仓窗口，不是买点。今天若因“低开”而出现反抽，对持有者是减仓机会，对空仓者不是抄底机会。
+    </div>
+
+    <div class="alert-box red">
+        <strong>🚨 今日最大风险：外盘反向低开 + 缩量，形成“利空叠加第二天”。</strong>费半 -7.88%、英伟达 -5.86%、美光 -10.97%、AMD -8.86%。必须看清三点：<br>
+        ① <strong>今天不是“利空第一天”，是“利空叠加第二天”。</strong>11/24 A 股已经跌了一天（高开低走、创业板收在全天最低），今天再低开，是“外部利空 + 内部套牢盘”的双重压力，不是“一次性出清”。<br>
+        ② <strong>创业板 11/24 收出光头阴线（收盘 = 当日最低）。</strong>这种 K 线在下跌趋势里是“下跌中继”的概率大于“反转”，尤其当它出现在一根大阳线（11/23）之后——11/23 的阳线是“政策底 + 超跌修复”，11/24 的光头阴线是对它的否定。<br>
+        ③ <strong>若今日缩量到 1.4 万亿以下，任何反弹都是弱反弹。</strong>缩量说明“卖压不大，但买盘也没了”，这种状态下指数可以横住，但个股会继续失血。<br>
+        <strong>应对：开盘 30 分钟内不做任何买入；所有条件单都加“10:30 后确认”条款；低开 &gt;5% 的标的一律不接；若沪指跌破 3539.01 且 30 分钟不收回，当日不再新开仓。</strong>
+    </div>
+
+    <div class="alert-box">
+        <strong>⚠️ 估值风险（PE_TTM &gt; 50，共 3 只）：</strong><br>
+        <strong>科大讯飞 91.8x</strong>（15 日 -6.62 亿、当日 -0.14 亿、股价 -0.08%）、<strong>四方达 86.7x</strong>（15 日 -2.60 亿、当日仅 +0.01 亿、超硬材料出口利好未转化为资金）、<strong>汉得信息 64.6x</strong>（15 日 -0.82 亿、当日 +0.70 亿放量反弹）。<br>
+        前两只“高估值 + 15 日红线”双杀；汉得虽未触资金红线，但 64.6x 在任何环境下都不构成推荐。<strong>PE &gt; 50 是一条独立的否决线，不需要第二条理由。</strong>
+    </div>
+
+    <div class="alert-box">
+        <strong>⚠️ 技术面风险：21/23 只收盘价仍低于 MA20。</strong>唯一站上 MA20 的是<strong>华友钴业（+1.4%，11/24 放量收复）</strong>与<strong>青岛啤酒（+1.7%，防御属性）</strong>。偏离 MA20 超过 10% 的有 6 只：<strong>普冉股份 -19.7%、紫金矿业 -13.1%、中际旭创 -12.7%、四方达 -12.2%、澜起科技 -11.7%、亨通光电 -11.6%</strong>。<strong>价格可以在一天内修复，均线需要 5-10 个交易日才能修复</strong>——在均线空头排列没有改变之前，任何反弹都只能按“反弹”对待，不能按“反转”对待。
+    </div>
+
+    <div class="alert-box">
+        <strong>⚠️ 资金面风险：15 日仍 -103.26 亿、10 日仍 -153.65 亿。</strong>12 只触 15 日红线（合计 -171.30 亿），5 只触 10 亿红线（合计 -144.91 亿）。<strong>头部 5 只的失血（-144.91 亿）超过全池 15 日总额（-103.26 亿）的 140.3%</strong>——失血是结构性的（集中在存储/光通信/有色的二线），不是普遍性的。这也解释了为什么新易盛、立讯、宁德、中际、中钨能保持 15 日为正：<strong>资金在“换股”，不是“离场”。</strong>
+    </div>
+
+    <div class="alert-box gray">
+        <strong>📉 北向资金：实时数据不可得。</strong>东方财富 kamt.kline 接口 11/24 返回 hk2sh / hk2sz / s2n 均为 0.00，沪深港通实时净买入已不再逐日披露。本报告不以 0 值顶替，也不编造数值——<strong>把 0.00 读成“北向零净买入”是错误解读</strong>。
+    </div>
+
+    <div class="alert-box green">
+        <strong>✅ 正面信号（四条，全部是“对冲”而非“反转”）：</strong><br>
+        ① <strong>流动性有呵护</strong>：今日 8000 亿 MLF + 5000 亿 7 天逆回购，覆盖跨月与缴准日；但净回笼 2000 亿，别读成放水。<br>
+        ② <strong>两融 11/30 下调至 80%</strong>：存量合约同步适用，测算增量资金约 4000 亿——中期逻辑，不是今天的买盘。<br>
+        ③ <strong>对美出口管制第二款暂停</strong>（11/28-2027/1/27）：中美边际缓和信号，对半导体材料/超硬材料是正向事件。<br>
+        ④ <strong>回购与 ETF 托底</strong>：中际旭创 20-40 亿回购（不超 600 元）；10 月以来股票型 ETF 净流入超 7300 亿、年内 1300+ 家公司回购超 1560 亿。<br>
+        <strong>判断“反弹升级为反转”的四个标准：</strong>① 成交额 &gt;1.7 万亿且指数收红；② 涨停家数 &gt;80 家；③ 15 日为正的标的从 5 只增加到 8 只以上；④ 10 日窗口由负转正（现 -153.65 亿）。<strong>四条全部未满足</strong>——在满足之前，仓位上限 3%，只做条件单，不做市价单。
+    </div>
+</div>
+
+<div class="section">
+    <h2>🎯 今日操作决策（1只条件买入 · 1只持有/条件加仓 · 1只条件买入 · 1只事件观察，全部附触发条件与止损）</h2>
+    <div class="note">决策原则：在 <strong>全池 15 日 -103.26 亿、10 日 -153.65 亿、12/23 触 15 日红线、隔夜费半 -7.88%、低开是基准情形</strong>的环境下，今天不是“抄底日”，是“<strong>持有最强的、等低开承接的、不追 AI 硬件第一波反弹的、不碰红线的</strong>”的日子。所有买入决策必须在 10:30 后确认，开盘 30 分钟内不做任何操作。</div>
+
+    <div class="top-card">
+        <div class="top-rank">1</div>
+        <div style="flex:1;">
+            <div class="top-name">宁德时代 <span class="stock-code">300750.SZ</span> <span class="top-price">227.37</span> <span class="down">-0.01%</span> <span class="signal buy">条件买入</span> <span class="warn">★★★</span></div>
+            <div class="top-reason">
+                <strong>为什么是它：</strong>全池<strong>两只“四窗口真主力全正”之一</strong>——当日 <span class="up">+4.73 亿</span>、5 日 <span class="up">+13.18 亿</span>、10 日 <span class="up">+0.02 亿</span>、15 日 <span class="up">+7.44 亿</span>；15 日 +7.44 全池第三。PE_TTM <strong>12.0x 全池最低</strong>（万亿市值）、股息率 2.97%、PB 2.72、20 日位置 10.0%。11/24 在 3490 只下跌的一天仅 -0.01%，但真主力净流入 4.73 亿——<strong>“资金流入 + 股价持平”是标准的低吸形态</strong>。<br>
+                <strong>安全边际来源：杀估值。</strong>全球动力电池龙头，市占率与竞争格局没有变坏，估值被压到 12 倍、接近历史底部区间。属于“杀估值”而非“杀业绩/杀逻辑”——今天的下跌不是因为它，是因为外盘。<br>
+                <strong>为什么只给“条件买入”，不给市价：</strong>① <strong>10 日 +0.02 是“刚够正”</strong>，今天只要流出 1 亿就会翻负，四窗口全正并不稳固；② 收盘 227.37 低于 MA5 231.63、MA10 236.15、MA20 240.59，<strong>三条均线全部在上方</strong>；③ 11/24 高开 230.01 后回落收平，说明 230 上方有抛压；④ <strong>连续两天“站回 230 未确认”</strong>——11/23 差 1.99 元、11/24 差 0.02 元，第三次必须看到收盘确认，不能因“前两次差一点”就降低标准。<br>
+                <strong>三条件缺一不买：</strong>① <strong>低开幅度 ≤3%（≥220.57）</strong>——若低开 &gt;3%，说明外盘冲击超预期，不接；② <strong>10:30 后站回 230.00，且收盘 ≥227.37</strong>；③ 创业板指不跌破 2240 超过 1%，锂电/储能板块不领跌。<br>
+                <strong>仓位与止损：</strong>三条件全满足后轻仓 <strong>≤3%</strong>，止损 <strong>220.40</strong>（布林下轨）；第一目标 231.63（MA5），第二目标 240.59（MA20）。
+            </div>
+        </div>
+    </div>
+
+    <div class="top-card">
+        <div class="top-rank secondary">2</div>
+        <div style="flex:1;">
+            <div class="top-name">新易盛 <span class="stock-code">300502.SZ</span> <span class="top-price">180.01</span> <span class="down">-0.74%</span> <span class="signal buy">持有/条件加仓</span> <span class="warn">★★★</span></div>
+            <div class="top-reason">
+                <strong>为什么是它：</strong>全池<strong>资金结构最强</strong>——当日 <span class="up">+2.39 亿</span>、5 日 <span class="up">+43.90 亿</span>（全池第二）、10 日 <span class="up">+20.70 亿</span>（全池唯一两位数正）、15 日 <span class="up">+48.06 亿</span>（全池最高），四窗口全正。PE_TTM 17.2x，在 CPO 链里偏低。11/24 高开 8.62%（197.00）后收 180.01（-0.74%），<strong>但当日真主力仍净流入 2.39 亿——价格回吐、资金没走</strong>，这是“利好兑现”，不是“资金撤退”。<br>
+                <strong>安全边际来源：杀估值修复 + 资金四窗口全正。</strong>20 日位置仅 26.5%，但 15 日资金 +48.06 亿——<strong>“股价杀估值、资金在吸筹”的背离</strong>，属于邱国鹭框架里的“杀估值”：全球 800G/1.6T 的需求没有消失，只是估值被 AI 叙事重定价。<br>
+                <strong>为什么今天不能市价追：</strong>① 隔夜费半 -7.88%、英伟达 -5.86%、美光 -10.97%，光模块是<strong>最直接</strong>的映射，今日低开 3%-6% 是基准；② 11/24 高开 8.62% 当天就回吐，说明 190-197 一带套牢盘沉重；③ 收盘仍低于 MA20 187.33 达 3.9%，均线尚未修复。<strong>资金强 ≠ 今天可以买；资金强只说明“跌下来有人接”，不说明“现在就是低点”。</strong><br>
+                <strong>三条件缺一不买：</strong>① <strong>低开幅度 ≤5%（≥171.01）</strong>——若低开 &gt;5%，说明外盘冲击超预期，不接；② <strong>10:30 后站回 180.01（11/24 收盘），且不跌破 171.00</strong>；③ CPO/光模块板块不领跌、创业板指不跌破 2240。<br>
+                <strong>已持有者：</strong>持有，止损 <strong>170.33</strong>（MA5）。<strong>空仓者：</strong>三条件全满足后轻仓 ≤3%，止损 171.00。
+            </div>
+        </div>
+    </div>
+
+    <div class="top-card">
+        <div class="top-rank secondary">3</div>
+        <div style="flex:1;">
+            <div class="top-name">立讯精密 <span class="stock-code">002475.SZ</span> <span class="top-price">48.10</span> <span class="up">+3.98%</span> <span class="signal buy">条件买入</span> <span class="warn">★★☆</span></div>
+            <div class="top-reason">
+                <strong>为什么是它：</strong>15 日真主力 <span class="up">+14.16 亿</span> 全池第二；11/24 <strong>+3.98% 放量 1.58</strong>、收 48.10，是池内“逆势收红且放量”的两只之一（另一只华友）。距离 MA20 48.53 仅 <strong>0.9%</strong>——一根小阳线就能收复。PE_TTM 20.5x（“需增长支撑”档，但消费电子龙头现金流稳定），市值 3724 亿，20 日位置 41.8%。<br>
+                <strong>今天的特殊价值：</strong>消费电子/苹果链对<strong>费半 -7.88% 的直接暴露低于光模块</strong>。如果今天 AI 硬件领跌，立讯是池内为数不多的“低 beta 承接位”——它不涨，但不至于跌得比光模块惨；它涨，说明资金在做“AI 硬件 → 消费电子”的轮动。<br>
+                <strong>安全边际来源：杀估值 + 订单确定性。</strong>20 日位置 41.8% 处于区间中部偏下，20.5x 的估值对应全球消费电子代工龙头的地位，不贵但也不便宜——安全边际来自“订单可见度”，不是“极端低估”。<br>
+                <strong>为什么是“条件”：</strong>① <strong>5 日 -1.95、10 日 -3.95 仍为负</strong>，中期资金没回来；② 收盘 48.10 仍低于 MA20 48.53，均线尚未收复；③ 11/24 高开 4.15% 后小幅回落，49.21 是当日高点，上方有压力；④ PE 20.5x 意味着<strong>没有“跌出来的便宜”可捡</strong>，只能等“涨出来的确认”。<br>
+                <strong>三条件：</strong>① 不追高开 &gt;3%；② <strong>站稳 48.53（MA20）且 5 日真主力转正</strong>；③ 消费电子板块不领跌。<strong>仓位 ≤3%，止损 46.20。</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-card">
+        <div class="top-rank secondary">4</div>
+        <div style="flex:1;">
+            <div class="top-name">华友钴业 <span class="stock-code">603799.SH</span> <span class="top-price">31.60</span> <span class="up">+5.72%</span> <span class="signal obs">事件观察（可升级为条件买入）</span> <span class="warn">★★☆</span></div>
+            <div class="top-reason">
+                <strong>为什么单独列它：</strong><strong>刚果（金）11/30 起暂停所有钴出口</strong>——这是池内唯一“未来 5 个交易日有确定性供给事件”的标的。11/24 <strong>+5.72%、量比 2.47 全池最高</strong>、收 31.60 <strong>放量收复 MA20 31.15</strong>；15 日 -0.91 未触红线、5 日 +0.66 转正、当日 +2.48 亿；PE_TTM 9.6x、PB 1.18、股息 1.40%。<br>
+                <strong>为什么只给“事件观察”，不直接买入：</strong>① <strong>10 日 -2.14 仍为负</strong>，资金只是“刚转正”，不是“持续流入”；② 11/24 <strong>铜 -2.33%、银 -5.53%、金 -2.45%</strong>，有色整体逆风，钴的独立行情需要铜价不拖后腿；③ 11/24 开盘 31.66 已接近收盘 31.60，<strong>追高容易买在上影线</strong>；④ 昨天刚学到教训——<strong>“开盘即触发”等于用最差的价格买入</strong>。<br>
+                <strong>修正后的条件（加入回踩条款）：</strong>① 不追高开 &gt;3%（&gt;32.55）；② <strong>回踩 30.63（MA10）不破 30.00（MA5）再买</strong>；③ 5 日真主力维持正、15 日不重新跌破 -1 亿。<strong>仓位 ≤2%，止损 29.60</strong>（跌破 30.00 先减半）。<br>
+                <strong>为什么它可能是今天最“抗跌”的一只：</strong>它的驱动是“钴供给收缩”，不是“AI 需求”，也不是“美联储利率”——今天外盘的两大利空（费半 -7.88%、美联储鹰派）都不直接作用于钴。<strong>如果今天要走“逆势品种”，华友是池内逻辑最独立的一只。</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="alert-box" style="margin-top:10px;">
+        <strong>📋 其余 19 只的操作口径：</strong><br>
+        <strong>持有（不新增）：</strong>青岛啤酒（唯一“低开高走 + 站上 MA20 52.61”，但 15 日 -1.29 触红线、20 日位置 77.8%；守住 52.61 可持有，跌破离场）。<br>
+        <strong>观察（等价格 + 资金双条件）：</strong>中际旭创（15 日转正 +3.36、5 日 +52.75，但今日费半 -7.88% 逆风；站回 435.12（MA10）再评估）、复旦微电（四窗口小幅负、15 日 -0.72；站回 44.62 + 量能放大）、环旭电子（5 日 +0.18；站回 17.54 + 5 日维持正）、科华数据（15 日 -0.95；站回 22.77 + 5 日转正）、华测导航（15 日 -0.91；站回 19.90 + 5 日转正）。<br>
+        <strong>观望（无买点）：</strong>中钨高新（15 日 +0.29 但 5/10 日 -2.68/-7.32 全面转弱）、紫光国微、扬杰科技（除息日三窗口全负）、大华股份（高股息但 15 日 -2.52）。<br>
+        <strong>减仓：</strong>澜起科技（当日 +1.05、5 日 +1.18 双转正，但 10 日 -14.68、15 日 -20.99；反弹 138-142 减仓）。<br>
+        <strong>回避：</strong>长鑫科技、亨通光电、紫金矿业、佰维存储（15 日 &gt;10 亿红线）、普冉股份（15 日 -8.51）、四方达、汉得信息、科大讯飞（高估值 + 红线双杀）。<br>
+        <strong>今天不设“抄底价”：</strong>21/23 只低于 MA20，<strong>位置低不是买入理由</strong>，资金转正 + 价格站上关键位才是。低开后的第一波反弹一律不接，等 10:30 后的第二次确认。
+    </div>
+</div>
+
+<div class="section">
+    <h2>🔍 近期高性价比关注（低估值/超跌 + 资金拐点观察，5只）</h2>
+    <div class="note">筛选标准：<strong>15 日真主力未触 1 亿红线（≥ -1.5 亿）</strong>，且技术位置处于下半区，且未进入“今日操作决策”与推荐表前列。注意：<strong>本表是“观察池”不是“买入池”</strong>——入选只代表“资金结构到了值得看的地方”，不代表“现在可以买”。真正的买入信号是“资金拐点 + 价格确认”，不是“估值便宜”。</div>
+    <div class="table-wrap">
+    <table>
+        <tr><th>股票</th><th>11/24收盘</th><th>涨跌</th><th>PE(TTM)</th><th>股息率</th><th>20日位置</th><th>15日真主力</th><th>入选理由</th><th>观察触发</th></tr>
+        <tr class="row-hl">
+            <td><span class="stock-name">复旦微电</span><br><span class="stock-code">688385.SH</span></td>
+            <td class="price">43.93</td><td class="up">+0.94%</td><td>37.6x</td><td>0.18%</td><td>24.1%</td><td class="neg">-0.72</td>
+            <td class="small"><strong>四个窗口全部小幅为负、幅度均 &lt;0.3 亿</strong>（-0.28/-0.28/-0.29/-0.72）——“没有资金愿意买，也没有人急着卖”；FPGA/特种芯片国产替代逻辑硬；11/24 缩量上涨 0.92 说明抛压小</td>
+            <td class="small">站回 44.62（MA5）+ 量能放大；跌破 41.79（布林下轨）离场</td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">环旭电子</span><br><span class="stock-code">601231.SH</span></td>
+            <td class="price">16.78</td><td class="up">+0.30%</td><td>18.8x</td><td>1.26%</td><td>15.5%</td><td class="neg">-0.96</td>
+            <td class="small">PE 18.8x、PB 1.74；<strong>5 日 +0.18 已转正</strong>，10 日 -0.90 接近平衡；EMS/消费电子与 AI 硬件关联度低，<strong>今天受费半 -7.88% 冲击相对小</strong></td>
+            <td class="small">站回 17.54（MA10）+ 5 日维持正；跌破 15.46 离场</td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">科华数据</span><br><span class="stock-code">002335.SZ</span></td>
+            <td class="price">22.43</td><td class="up">+0.04%</td><td>30.5x</td><td>0.30%</td><td>29.0%</td><td class="neg">-0.95</td>
+            <td class="small">15 日 -0.95 未触红线，四个窗口流出幅度均 &lt;1.2 亿；数据中心/储能，<strong>若 AI 服务器涨价逻辑发酵，算力基建是间接受益方向</strong>（不直接暴露于英伟达）</td>
+            <td class="small">站回 22.77（MA5）+ 5 日转正；跌破 21.73 离场</td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">华测导航</span><br><span class="stock-code">300627.SZ</span></td>
+            <td class="price">19.64</td><td class="down">-0.96%</td><td>27.8x</td><td>1.79%</td><td>22.6%</td><td class="neg">-0.91</td>
+            <td class="small">15 日 -0.91 未触红线，三窗口流出均 &lt;1 亿；导航/农机自动驾驶，<strong>业绩确定性较高、与 AI 硬件零关联</strong>；位置低但资金尚未进入</td>
+            <td class="small">站回 19.90（MA5）+ 5 日转正；跌破 19.51 离场</td>
+        </tr>
+        <tr>
+            <td><span class="stock-name">青岛啤酒</span><br><span class="stock-code">600600.SH</span></td>
+            <td class="price">53.50</td><td class="up">+0.85%</td><td>16.7x</td><td>4.11%</td><td>77.8%</td><td class="neg">-1.29</td>
+            <td class="small">全池<strong>唯一“11/24 低开高走 + 站上 MA20 52.61”</strong>的标的，PE 16.7x、股息 4.11%；防御属性最强。风险：15 日 -1.29 刚过线；20 日位置 77.8% 偏高，<strong>防御属性不能替代资金转正</strong></td>
+            <td class="small">守住 52.61 可持有；5 日资金转正才升级；跌破 52.61 离场</td>
+        </tr>
+    </table>
+    </div>
+    <p style="font-size:12px;line-height:1.85;margin-top:10px;"><strong>观察池的共同特征：</strong>5 只全部是“<strong>资金结构到了值得看的地方 + 价格仍在均线下方</strong>”——这正是“便宜但没人买”的典型状态。它们需要的不是“更便宜”，是“资金拐点 + 价格确认”：<strong>5 日真主力转正 + 站回 MA5/MA10，两个条件同时满足才升级为“可评估”</strong>，缺一继续观察。</p>
+    <p style="font-size:12px;line-height:1.85;"><strong>特别提示：</strong>复旦微电与环旭电子是本表中资金结构最靠前的两只，但它们代表两种完全不同的逻辑——前者是“四窗口均 &lt;0.3 亿的极限平衡 + FPGA 国产替代”，后者是“5 日已转正 + 18.8x 低估值 + 与 AI 硬件低关联”。<strong>在今天“外盘 AI 硬件大跌”的环境里，后者的防御价值高于前者</strong>；但在“AI 硬件修复”的环境里，前者的弹性更大。<strong>在 15 日 -103.26 亿的环境里，“便宜”只是入场券，“资金”才是发令枪。</strong></p>
+</div>
+
+<div class="section">
+    <h2>📊 国债逆回购利率（11/24 收盘 · 周三盘前视角）</h2>
+    <div class="note">以下为 <strong>11/24（周二）收盘</strong>报价，是 11/25 盘前可用的最新完整数据。11/25 为缴准日 + 政府债净缴款高点 + 跨月窗口，央行今日以 8000 亿 MLF + 5000 亿 7 天逆回购组合操作。</div>
+    <div class="table-wrap">
+    <table>
+        <tr><th>品种</th><th>代码</th><th>11/24收盘利率</th><th>涨跌幅</th><th>今开</th><th>最高</th><th>最低</th><th>操作建议（周三视角）</th></tr>
+        <tr><td>GC001（1天）</td><td>204001</td><td class="price">1.310%</td><td class="down">-2.96%</td><td>1.400%</td><td>1.425%</td><td>0.790%</td><td class="small">周三做 1 天，计息 1 天；1.31% 处历史低位，盘中最低 0.790% 说明尾盘资金极松</td></tr>
+        <tr><td>GC002（2天）</td><td>204002</td><td class="price">1.365%</td><td class="up">+0.37%</td><td>1.300%</td><td>1.460%</td><td>0.660%</td><td class="small">2 天覆盖周三至周四，利率高于 GC001</td></tr>
+        <tr><td>GC003（3天）</td><td>204003</td><td class="price">1.380%</td><td>—</td><td>1.350%</td><td>1.400%</td><td>1.310%</td><td class="small">3 天覆盖至周五，短端可选</td></tr>
+        <tr><td>GC004（4天）</td><td>204004</td><td class="price">1.375%</td><td class="down">-0.36%</td><td>1.350%</td><td>1.450%</td><td>1.200%</td><td class="small">4 天，利率略高但占用更长</td></tr>
+        <tr><td>GC007（7天）</td><td>204007</td><td class="price">1.395%</td><td class="down">-1.06%</td><td>1.400%</td><td>1.430%</td><td>1.305%</td><td class="small">7 天覆盖至 12/2，<strong>不跨月末</strong>，性价比一般</td></tr>
+        <tr><td>GC014（14天）</td><td>204014</td><td class="price">1.385%</td><td class="down">-1.42%</td><td>1.360%</td><td>1.420%</td><td>1.250%</td><td class="small"><strong>14 天跨月末与 12 月初</strong>，是当前唯一“真跨月”的短品种</td></tr>
+        <tr><td>GC028（28天）</td><td>204028</td><td class="price">1.375%</td><td class="down">-0.36%</td><td>1.355%</td><td>1.400%</td><td>1.355%</td><td class="small">28 天跨 12 月中旬，利率无优势</td></tr>
+        <tr><td>GC091（91天）</td><td>204091</td><td class="price">1.380%</td><td class="up">+1.85%</td><td>1.335%</td><td>1.385%</td><td>1.300%</td><td class="small">91 天跨年末，可提前锁定跨年资金</td></tr>
+        <tr><td>GC182（182天）</td><td>204182</td><td class="price">1.355%</td><td>—</td><td>1.305%</td><td>1.365%</td><td>1.305%</td><td class="small">182 天跨明年，利率无优势</td></tr>
+    </table>
+    </div>
+    <div class="note-sm"><strong>💡 操作提示：</strong>① 11/24 短端收在 1.31%-1.40%，<strong>跨月并未抬价</strong>——即使 11/25 是缴准日 + 政府债净缴款高点，资金面依然宽裕；② 今日有 8000 亿 MLF + 5000 亿 7 天逆回购，但 MLF 净回笼 2000 亿，<strong>若午后资金面边际收紧，GC001 可能从 1.31% 冲上 1.8%-2.0%</strong>，那才是更好的无风险窗口，不要在早盘就锁定；③ 若一定要做跨月，GC014（1.385%）覆盖 12 月初，是目前唯一“真跨月”的短品种；④ <strong>当前 1.3%-1.4% 的利率仍是历史低位，A 股的问题从来不是“没钱”，是“钱不去股市”</strong>——今天的 MLF 缩量续作恰好说明了这一点。</div>
+</div>
+
+<div class="section">
+    <h2>📖 术语说明</h2>
+    <div class="terms">
+        <p><strong>Tushare moneyflow 真主力：</strong>按单笔成交金额分档，超大单（&gt;100 万元）+ 大单（20-100 万元）的合计净买入，单位亿元。区别于“全口径资金流”（含中单/小单），真主力更接近机构与游资的实际动向。</p>
+        <p><strong>四窗口：</strong>当日、近 5 日、近 10 日、近 15 日的真主力净流入。“四窗口全正”是最强的资金信号，本日为 <strong>2 只（新易盛、宁德时代）</strong>，较昨日的 1 只增加，但宁德 10 日仅 +0.02，稳定性不足。</p>
+        <p><strong>15 日红线：</strong>近 15 日真主力净流出 &gt; 1 亿 → 绝对不推荐；&gt; 10 亿 → 最高级别风险警示。本日 <strong>12 只</strong>触 1 亿红线（合计 -171.30 亿）、<strong>5 只</strong>触 10 亿红线（合计 -144.91 亿）。</p>
+        <p><strong>PE_TTM：</strong>滚动市盈率（最近 12 个月），取自 Tushare daily_basic。&gt;50 高危、20-50 需增长支撑、≤20 低估值候选。本日 3 只 &gt;50（科大讯飞 91.8x、四方达 86.7x、汉得信息 64.6x）。</p>
+        <p><strong>关于 PEG：</strong>PEG = PE ÷ 净利润增速。本报告<strong>未取得可靠的一致预期净利润增速数据，因此不编造 PEG 数值</strong>，改用 Tushare daily_basic 的估值分档（🟢低估值候选 / ⚠️需增长支撑 / 🚨高危估值）叠加彼得·林奇六类框架做替代判断。<strong>“不编数字”比“凑一个 PEG”更重要。</strong></p>
+        <p><strong>布林区间（20 日 ±2σ）：</strong>价格波动的统计区间。收盘价跌破下轨 = 超卖但可能继续超卖；突破上轨 = 强势但可能回调。本日紫金矿业收 23.21、距下轨 22.99 仅 1.0%，大华股份收 14.02、距下轨 13.97 仅 0.4%——两只都处在“跌破即加速”的位置。</p>
+        <p><strong>20 日位置：</strong>（收盘价 - 20 日最低）/（20 日最高 - 20 日最低）。&lt;20% = 区间低位、&gt;80% = 区间高位。本日最低紫金矿业 8.8%、最高青岛啤酒 77.8%——<strong>全池仍集中在区间下半区，说明 11/23-11/24 的反弹没有改变“低位震荡”的格局。</strong></p>
+        <p><strong>量比：</strong>当日成交量 ÷ 前 5 日均量。&gt;1.5 显著放量、0.85-1.15 平量、&lt;0.85 缩量。本日量比最高华友钴业 2.47（放量上涨）、汉得信息 1.93（放量上涨）；最低科华数据 0.91、复旦微电 0.92。</p>
+        <p><strong>资金 vs 股价四象限：</strong>流入+上涨=主动做多（可关注）；流入+下跌=逢低吸筹（等止跌）；流出+上涨=诱多出货（减仓）；流出+下跌=主力弃盘（回避）。本日 <strong>5 只“流入+上涨”</strong>（澜起、华友、立讯、汉得、青岛）、<strong>5 只“流入+下跌”</strong>（中际、扬杰、新易盛、四方达、宁德）、<strong>5 只“流出+上涨”</strong>（佰维、长鑫、环旭、科华、复旦）、<strong>8 只“流出+下跌”</strong>（中钨、普冉、紫光、紫金、大华、华测、科大、亨通）。<strong>“流入+下跌”的 5 只反而是今天最值得看的——资金在跌的时候买。</strong></p>
+        <p><strong>邱国鹭“杀估值/杀业绩/杀逻辑”：</strong>杀估值=基本面没坏、只是估值下杀（可逆向）；杀业绩=短期经营困难（看周期）；杀逻辑=核心竞争力被破坏（坚决回避）。本日宁德时代、新易盛、立讯精密属“杀估值”；紫金矿业、华友钴业、中钨高新属周期股，需区分“杀业绩”与“周期低谷”；亨通光电的 15 日资金持续恶化需警惕“杀逻辑”。</p>
+        <p><strong>彼得·林奇六类股票：</strong>缓慢增长型、稳定增长型、快速增长型、周期型、困境反转型、隐蔽资产型。不同类型对应不同 PE 区间与操作策略——<strong>周期股 PE 最低时往往是盈利顶峰</strong>（价值陷阱第 4 类）。本池中钨高新、华友钴业、紫金矿业属周期型，其中紫金 8.6x 的 PE 需要先回答“铜金价格是不是周期顶”这个问题。</p>
+        <p><strong>除权除息：</strong>扬杰科技 11/24 除息 0.50 元/股，交易所前收盘价调整为 65.01 元，当日涨跌幅按此计算为 -1.31%；本文均线、布林等技术指标已按除权后口径调整。</p>
+        <p><strong>北向资金：</strong>沪股通 + 深股通的净买入。当前实时数据不再逐日披露，本报告标注“数据不可得”，不以 0 值顶替。</p>
+    </div>
+</div>
+
+<div class="footer">
+    <p>⚠️ 本报告由 AI 自动生成，仅供家庭内部学习参考，不构成投资建议。股市有风险，入市需谨慎。</p>
+    <p>数据来源：新浪财经 API（行情 · 指数 · K 线 · 国债逆回购）、Tushare（moneyflow 真主力 · daily_basic 估值）、东方财富 API（指数交叉验证 · 北向资金接口，返回值不可用）、公开新闻（财联社 · 上海证券报 · 证券时报 · 东方财富 · 新浪财经 · 央行 · 商务部）。</p>
+    <p>资金口径：Tushare moneyflow 真主力（超大单+大单），截至 2026-11-24 收盘。行情口径：2026-11-24 收盘。报告为 2026-11-25 07:00 盘前取数口径，不含 11/25 盘中数据。</p>
+    <p>© 2026 家庭股票观察 · jiating-gupiao.pages.dev</p>
+</div>
+
+</body>
+</html>
