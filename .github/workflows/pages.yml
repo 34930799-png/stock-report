@@ -4,8 +4,21 @@ on:
   push:
     branches: [master]
 
+permissions:
+  contents: read
+
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: '.'
+
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     permissions:
       pages: write
@@ -14,10 +27,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/configure-pages@v6
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: '.'
+      # 规避 actions/deploy-pages#451：artifact 最终一致性延迟，
+      # 上传后立即查询会返回 0 个。拆 job 隔开，再等 10 秒。
+      - name: Wait for artifact consistency
+        run: sleep 10
       - id: deployment
         uses: actions/deploy-pages@v5
